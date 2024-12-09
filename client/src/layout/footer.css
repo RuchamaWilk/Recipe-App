@@ -1,0 +1,24 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #e10a0a;
+    margin-top: 2em;
+  }
+  
+  footer p {
+    margin: 0;
+    padding-right: 1em;
+    color: rgb(0, 255, 42);
+  }
+  
+  footer a {
+    color: rgb(0, 255, 42);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
