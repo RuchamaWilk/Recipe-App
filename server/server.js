@@ -77,7 +77,7 @@ app.get('/api/recipes/:categoryName', (req, res) => {
   }
 });
 
-app.get('/api/recipe/:recipeName', (req, res) => {
+app.get('/api/recipeInstructions/:recipeName', (req, res) => {
   res.json("This will contain a recipe once I write the recipe in the DB");
 });
 

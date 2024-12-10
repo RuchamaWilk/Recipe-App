@@ -4,8 +4,9 @@ import './footer.css';
 export default function Footer() {
     return (
         <footer >
-            <p>@RuchamaWilk</p>
+            <p>@RuchamaWilk      
             <a href="mailto:Ruchamawilk@gmail.com">Contact Us!</a>
+            </p>
         </footer>
     );
 }

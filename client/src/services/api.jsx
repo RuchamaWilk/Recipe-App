@@ -27,7 +27,7 @@ const fetchRecipes = async (categoryName) => {
 // הפונקציה לקבלת פרטי המתכון (לפי שם המתכון)
 const fetchRecipe = async (recipeName) => {
   try {
-    const response = await axios.get(`${BASE_URL}/recipe/${recipeName}`);
+    const response = await axios.get(`${BASE_URL}/recipeInstructions/${recipeName}`);
     return response.data;
   } catch (error) {
     console.error('Error fetching recipe:', error);
