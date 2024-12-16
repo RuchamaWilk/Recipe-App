@@ -1,22 +1,12 @@
+// client/src/services/api.jsx
 import axios from 'axios';
 
 const BASE_URL = 'http://localhost:8080/api';
 
-// הפונקציה לקבלת כל הקטגוריות
-const fetchCategories = async () => {
+// הפונקציה לקבלת המתכונים בקטגוריה מסוימת
+export const fetchRecipes = async () => {
   try {
     const response = await axios.get(`${BASE_URL}`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching categories:', error);
-    throw error;
-  }
-};
-
-// הפונקציה לקבלת המתכונים בקטגוריה מסוימת
-const fetchRecipes = async (categoryName) => {
-  try {
-    const response = await axios.get(`${BASE_URL}/recipes/${categoryName}`);
     return response.data;
   } catch (error) {
     console.error('Error fetching recipes:', error);
@@ -24,19 +14,32 @@ const fetchRecipes = async (categoryName) => {
   }
 };
 
-// הפונקציה לקבלת פרטי המתכון (לפי שם המתכון)
-const fetchRecipe = async (recipeName) => {
+export const fetchRecipesById = async (id) => {
   try {
-    const response = await axios.get(`${BASE_URL}/recipeInstructions/${recipeName}`);
+    const response = await axios.get(`${BASE_URL}/recipes/${id}`);
     return response.data;
   } catch (error) {
-    console.error('Error fetching recipe:', error);
+    console.error('Error fetching recipes:', error);
     throw error;
   }
 };
 
-export default {
-  fetchCategories,
-  fetchRecipes,
-  fetchRecipe
+export const fetchRecipesByCategory = async (category) => {
+  try {
+    const response = await axios.get(`${BASE_URL}/category/${category}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching recipes:', error);
+    throw error;
+  }
+};
+
+export const addRecipe = async (recipeData) => {
+  try {
+    const response = await axios.post(`${BASE_URL}/recipes`,recipeData);
+    return response.data;
+  } catch (error) {
+    console.error('Error adding recipe:', error);
+    throw error;
+  }
 };

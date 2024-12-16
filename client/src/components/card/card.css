@@ -1,0 +1,47 @@
+/* סגנון לכרטיס */
+.card {
+  width: 300px; /* גודל קבוע לכרטיס */
+  height: 200px; /* גובה קבוע לכרטיס */
+  border: 1px solid #ddd; /* גבול דק סביב הכרטיס */
+  border-radius: 10px; /* פינות מעוגלות */
+  overflow: hidden; /* לא לאפשר התפשטות של תוכן מחוץ לכרטיס */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* צל עדין לכרטיס */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative; /* למיקום נכון של זמן ההכנה */
+}
+
+/* סגנון לתמונה בכרטיס */
+.card-img {
+  width: 100%; /* תופס את כל רוחב הכרטיס */
+  height: 70%; /* תמונה תתפוס 60% מגובה הכרטיס */
+  object-fit: cover; /* משמור על פרופורציות התמונה ותוחם אותה בתוך המידות */
+}
+
+/* סגנון לשם המתכון */
+.card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* צבע כהה יותר */
+  text-align: left; /* מיקום הטקסט בצד שמאל */
+  margin: 0;
+  display: flex;
+  align-items: center; /* שים את שם המתכון בגובה מרכזי */
+  height: 30%; /* גובה לשם המתכון */
+}
+
+/* סגנון לזמן ההכנה */
+.card .time {
+  position: absolute;
+  bottom: 10px; /* מיקום בתחתית */
+  right: 10px; /* מיקום מצד ימין */
+  background-color: #FFA500; /* צבע כתום */
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+

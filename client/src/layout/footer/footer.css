@@ -8,6 +8,8 @@ footer {
   width: 100%;
   box-sizing: border-box;
   margin-top: auto;
+  position: fixed;
+  bottom: 0;
 }
 
   
