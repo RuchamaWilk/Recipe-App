@@ -11,7 +11,7 @@ const connectDB = require('./config/db');
 
 // Middleware
 app.use(cors());
-//app.use(express.json());
+app.use(express.json());
 //app.use(bodyParser.json());
 
 const recipeRoutes = require('./routes/recipe');

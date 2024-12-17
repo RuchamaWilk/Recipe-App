@@ -35,19 +35,18 @@ router.get('/', async (req, res) => {
       res.status(500).json({ message: err.message });
     }
   });
-  
-  /*router.get('/new', function(req, res, next) {
-    const recipe = new Recipe();
-    res.render('recipe/form', { recipe });
-  });*/
 
-  router.post('/recipes', async function(req, res, next) {
+  router.post('/add-recipes', async (req, res, next) => {
+    console.log("req.body", req.body);
     const recipe = new Recipe(req.body);
+    console.log("recipe in server? ", recipe);
     try {
-        await recipe.save();
-    } catch(err) {
-        return next(err);
+      await recipe.save();
+      res.status(201).json({ message: 'Recipe added successfully!', recipe });
+    } catch (err) {
+      console.error('Error saving recipe:', err); // הדפסת השגיאה כדי להבין מה הבעיה
+      return next(err);
     }
-    res.redirect('/recipe/new');
   });
+  
 module.exports = router;

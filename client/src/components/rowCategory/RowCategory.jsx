@@ -4,7 +4,6 @@ import './rowCategory.css'
 import { useNavigate } from 'react-router-dom';
 
 
-
 const RowCategory = ({ category, recipes })=>{
     const navigate = useNavigate();
     const displayedCards = recipes.slice(0, 4);
