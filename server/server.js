@@ -5,7 +5,6 @@ const cors = require('cors');
 const PORT = process.env.PORT || 8080;
 const app = express();
 const connectDB = require('./config/db');
-//const Recipe = require('./models/recipe');
 
 
 
@@ -16,6 +15,9 @@ app.use(express.json());
 
 const recipeRoutes = require('./routes/recipe');
 app.use('/api', recipeRoutes);
+
+const chefRoutes = require('./routes/chef');
+app.use('/api/chef', chefRoutes);
 
 
 app.listen(PORT, () => {

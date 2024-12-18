@@ -46,4 +46,16 @@ export const addRecipe = async (recipeData) => {
   }
 };
 
+export const checkChef = async (email, password) => {
+  try {
+    console.log("api ",email)
+    const response = await axios.post(`${BASE_URL}/chef/login`,{email,password});
+    console.log("now??? " ,response)
+    return response.data;
+  } catch (error) {
+    console.error('Error feching chefs:', error);
+    throw error;
+  }
+};
+
 
