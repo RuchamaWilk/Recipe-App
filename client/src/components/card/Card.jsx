@@ -8,7 +8,6 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -20,26 +19,16 @@ import {useNavigate} from 'react-router-dom';
 
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
-    return <IconButton {...other} />;
-  })(({ theme }) => ({
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-    variants: [
-      {
-        props: ({ expand }) => !expand,
-        style: {
-          transform: 'rotate(0deg)',
-        },
-      },
-      {
-        props: ({ expand }) => !!expand,
-        style: {
-          transform: 'rotate(180deg)',
-        },
-      },
-    ],
+    return <IconButton {...other} />;})
+            (({ theme }) => ({
+                marginLeft: 'auto',
+                transition: theme.transitions.create('transform', {
+                duration: theme.transitions.duration.shortest,
+                }),
+                variants: [
+                { props: ({ expand }) => !expand, style: {transform: 'rotate(0deg)',},},
+                {props: ({ expand }) => !!expand, style: {transform: 'rotate(180deg)',},},
+                ],
   }));
 
 const Card = ({ recipe})=>{
@@ -49,22 +38,16 @@ const Card = ({ recipe})=>{
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
+
     const showRecipe= ()=>{
         navigate(`/recipe/${recipe.recipeId}`);
     };
+
     return(
         <CardUi sx={{ maxWidth: 345 }} >
             <CardHeader
-                avatar={
-                <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                    R
-                </Avatar>
-                }
-                action={
-                <IconButton aria-label="settings">
-                    <MoreVertIcon />
-                </IconButton>
-                }
+                avatar={ <Avatar sx={{ bgcolor: "#E6B9A6" }} aria-label="recipe"></Avatar>}
+                action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
                 title={recipe.name}
                 subheader="September 14, 2016"
             />
