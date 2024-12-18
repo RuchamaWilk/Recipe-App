@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addRecipe } from '../../services/api'; // פונקציה שנוסיף כדי לשלוח את הנתונים לשרת
 import './addRecipePage.css';
+
 const AddRecipePage = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -47,6 +48,7 @@ const AddRecipePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      console.log("nice", formData)
       await addRecipe(formData); // קריאה לפונקציה שתשלח את הנתונים לשרת
       navigate('/'); // ניתוב חזרה לדף הבית לאחר ההוספה
     } catch (error) {

@@ -35,11 +35,15 @@ export const fetchRecipesByCategory = async (category) => {
 };
 
 export const addRecipe = async (recipeData) => {
+  console.log("add? " ,recipeData);
   try {
-    const response = await axios.post(`${BASE_URL}/recipes`,recipeData);
+    const response = await axios.post(`${BASE_URL}/add-recipes`,recipeData);
+    console.log("now??? " ,response)
     return response.data;
   } catch (error) {
     console.error('Error adding recipe:', error);
     throw error;
   }
 };
+
+
