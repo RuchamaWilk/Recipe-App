@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addRecipe } from '../../services/api'; // פונקציה שנוסיף כדי לשלוח את הנתונים לשרת
-//import './addRecipePage.css';
 import { Typography ,Box} from '@mui/material';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';

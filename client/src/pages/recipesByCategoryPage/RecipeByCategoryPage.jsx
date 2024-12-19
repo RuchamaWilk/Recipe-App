@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { fetchRecipesByCategory } from '../../services/api'; // ייבוא הפונקציה
 import Card from '../../components/card/Card'
 import './recipeByCategory.css'
+import { Typography ,Box} from '@mui/material';
+
 
 const RecipeByCategory = () => {
   const { category } = useParams(); // הוצאת ה-ID מתוך ה-URL
@@ -28,7 +30,8 @@ const RecipeByCategory = () => {
     };
   return (
     <div className="recipesCategory" >
-      <h1>{category}</h1>
+            <Typography variant="h4" component="h1" gutterBottom>{category}</Typography>
+
             <div className="recipes-grid"  onClick={showRecipe}>
                 { recipesByCategory.map((item, index) => (
                 <Card key={index} recipe={item} />

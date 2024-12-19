@@ -1,6 +1,9 @@
 import React from 'react';
 import Card from '../card/Card'
 import { useNavigate } from 'react-router-dom';
+import { Typography ,Box} from '@mui/material';
+import { Button } from '@mui/material';
+
 
 
 const RowCategory = ({ category, recipes })=>{
@@ -12,13 +15,15 @@ const RowCategory = ({ category, recipes })=>{
     };
     return(
         <div style={{ color: '#2F3645'  }} >
-            <h1 > {category}</h1>
+            <Typography variant="h4" component="h1" gutterBottom>{category}</Typography>
             <div style={{display: "flex",  justifyContent: "flex-start",gap: "20px"}}>
                 { displayedCards.map((item, index) => (
                 <Card key={index} recipe={item} />
                 ))}
             </div>
-            <p onClick={showRecipes}> More</p>
+            <Box sx={{ '& button': { m: 1 }  }}>
+            <Button sx={{color: '#939185'}}onClick={showRecipes} size="small">More</Button>
+            </Box>
         </div>
     );
 };

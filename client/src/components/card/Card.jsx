@@ -20,14 +20,16 @@ const Card = ({ recipe})=>{
     };
 
     return(
-        <CardUi  >
+        <CardUi>
             <CardHeader
                 avatar={ <Avatar sx={{ bgcolor: "#E6B9A6" }} aria-label="recipe"></Avatar>}
-                action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
+                action={<IconButton aria-label="settings">
+                    <MoreVertIcon />
+                </IconButton>}
                 title={recipe.name}
                 subheader={`${recipe.avgTime} minutes`}
                 />
-            <CardMedia onClick= {showRecipe} component="img" height="140" image= {recipe.image} alt= {recipe.name}/>
+            <CardMedia onClick= {showRecipe} component="img" height="200" image= {recipe.image} alt= {recipe.name}/>
             <CardContent>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                     All about {recipe.name}
