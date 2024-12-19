@@ -64,7 +64,7 @@ const LogInPage = () => {
             onChange={(ev) => setEmail(ev.target.value)}
         />
            <Typography variant="body1" color="error">{emailError}</Typography>
-      <br />
+      <br />     
         <TextField id="outlined-basic" label="password" variant="outlined" 
             value={password}
             placeholder="Enter your password here"

@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addRecipe } from '../../services/api'; // פונקציה שנוסיף כדי לשלוח את הנתונים לשרת
-import './addRecipePage.css';
+//import './addRecipePage.css';
+import { Typography ,Box} from '@mui/material';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+
+
 
 const AddRecipePage = () => {
   const navigate = useNavigate();
@@ -57,51 +63,100 @@ const AddRecipePage = () => {
   };
 
   return (
-    <div className= 'add-recipe-page'>
-      <h1>Add New Recipe</h1>
+    <Box display="flex" flexDirection="column" alignItems="center"> 
+      <Typography variant="h4" component="h1" gutterBottom>ADD RECIPE PAGE</Typography>
       <form onSubmit={handleSubmit}>
-        <label>Name:
-          <input type="text" name="name" value={formData.name} onChange={handleChange} required />
-        </label>
-        <label>Avg Time:
-          <input type="number" name="avgTime" value={formData.avgTime} onChange={handleChange} required />
-        </label>
-        <label>Recipe ID:
-          <input type="text" name="recipeId" value={formData.recipeId} onChange={handleChange} required />
-        </label>
-        <label>Chef ID:
-          <input type="text" name="chefId" value={formData.chefId} onChange={handleChange} required />
-        </label>
-        <label>Image URL:
-          <input type="text" name="image" value={formData.image} onChange={handleChange} required />
-        </label>
-        <label>Category:
-          <input type="text" name="category" value={formData.category} onChange={handleChange} required />
-        </label>
-        <h2>Ingredients:</h2>
+        <TextField id="outlined-basic" label="Recipe Name" variant="outlined"
+          /*placeholder="Enter Name of recipe"*/
+           value={formData.name} 
+           onChange= {handleChange} 
+           required
+           name= "name" />
+        <br />
+        <br />
+        <TextField id="outlined-basic" label="Avg Time for Recipe" variant="outlined"
+           value={formData.avgTime} 
+           onChange= {handleChange} 
+           required
+           name= "avgTime" />
+        <br />
+        <br />
+        <TextField id="outlined-basic" label="Recipe ID" variant="outlined"
+           value={formData.recipeId} 
+           onChange= {handleChange} 
+           required
+           name= "recipeId" />
+        <br />
+        <br />
+        <TextField id="outlined-basic" label="chef Id" variant="outlined"
+           value={formData.chefId} 
+           onChange= {handleChange} 
+           required
+           name= "chefId" />
+        <br />
+        <br />
+        <TextField id="outlined-basic" label="Upload Picture" variant="outlined"
+           value={formData.image} 
+           onChange= {handleChange} 
+           required
+           name= "image" />
+        <br />
+        <br />
+        <TextField id="outlined-basic" label="Category" variant="outlined"
+           value={formData.category} 
+           onChange= {handleChange} 
+           required
+           name= "category" />
+        <br />
+        <br />
+        <Typography variant="h5" component="h2" gutterBottom> INGREDIENTS</Typography>
         {formData.ingredients.map((ingredient, index) => (
           <div key={index}>
-            <label>Name:
-              <input type="text" name="name" value={ingredient.name} onChange={(e) => handleIngredientChange(index, e)} required />
-            </label>
-            <label>Amount:
-              <input type="text" name="amount" value={ingredient.amount} onChange={(e) => handleIngredientChange(index, e)} required />
-            </label>
+              <TextField id="outlined-basic" label="Type Ingredient" variant="outlined"
+            value={ingredient.name} 
+            onChange={(e) => handleIngredientChange(index, e)} 
+            required
+            name= "name" />
+            
+            <TextField id="outlined-basic" label="Amount" variant="outlined"
+            value={ingredient.amount} 
+            onChange={(e) => handleIngredientChange(index, e)}
+            required
+            name= "amount" />
+            <br />
+            <br />
           </div>
         ))}
-        <button type="button" onClick={handleAddIngredient}>Add Ingredient</button>
-        <h2>Instructions:</h2>
+        
+        <br />
+        <Button variant="contained" size="large" onClick={handleAddIngredient} sx={{ backgroundColor: '#939185', color: '#fff', '&:hover': { backgroundColor: '#EEEDEB', color: '#939185' } }}>
+        Add Ingredient
+        </Button>
+        <br />
+        <br />
+        <Typography variant="h5" component="h2" gutterBottom> INSTRUCTION</Typography>
+        <br />
         {formData.instructions.map((instruction, index) => (
           <div key={index}>
-            <label>Step:
-              <input type="text" name="name" value={instruction.name} onChange={(e) => handleInstructionChange(index, e)} required />
-            </label>
+              <TextField id="outlined-basic" label="Type Instruction" variant="outlined"
+            value={instruction.name} 
+            onChange={(e) => handleInstructionChange(index, e)} 
+            required
+            name= "name" />
+            <br />
+            <br />
           </div>
         ))}
-        <button type="button" onClick={handleAddInstruction}>Add Instruction</button>
-        <button type="submit">Add Recipe</button>
+        <Button variant="contained" size="large" onClick={handleAddInstruction} sx={{ backgroundColor: '#939185', color: '#fff', '&:hover': { backgroundColor: '#EEEDEB', color: '#939185' } }}>
+        Add Instruction
+        </Button>
+        <br />
+        <br />
+        <Button variant="contained" endIcon={<SendIcon />} type="submit"  sx={{ backgroundColor: '#939185', color: '#fff', '&:hover': { backgroundColor: '#EEEDEB', color: '#939185' } }}>
+          Add Recipe
+        </Button>
       </form>
-    </div>
+    </Box>
   );
 };
 
