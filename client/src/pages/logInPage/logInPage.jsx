@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {checkChef} from '../../services/api'
+import TextField from '@mui/material/TextField';
+import LoginIcon from '@mui/icons-material/Login';
+import { Button } from '@mui/material';
+import { Typography ,Box} from '@mui/material';
+
+
+
 
 const LogInPage = () => {
   const [email, setEmail] = useState('')
@@ -12,7 +19,7 @@ const LogInPage = () => {
 
   const  onButtonClick =async () => {
     setEmailError('')
-  setPasswordError('')
+    setPasswordError('')
 
   // Check if the user has entered both fields correctly
   if ('' === email) {
@@ -48,35 +55,27 @@ const LogInPage = () => {
   }
 
   return (
-    <div >
-      <div >
-        <div>Login</div>
-      </div>
+    <Box display="flex" flexDirection="column" alignItems="center"> 
+      <Typography variant="h4" component="h1" gutterBottom> Log In</Typography>
       <br />
-      <div>
-        <input
-          value={email}
-          placeholder="Enter your email here"
-          onChange={(ev) => setEmail(ev.target.value)}
-          className={'inputBox'}
+        <TextField id="outlined-basic" label="email" variant="outlined" 
+            value={email}
+            placeholder="Enter your email here"
+            onChange={(ev) => setEmail(ev.target.value)}
         />
-        <label>{emailError}</label>
-      </div>
+           <Typography variant="body1" color="error">{emailError}</Typography>
       <br />
-      <div>
-        <input
-          value={password}
-          placeholder="Enter your password here"
-          onChange={(ev) => setPassword(ev.target.value)}
-          className={'inputBox'}
-        />
-        <label>{passwordError}</label>
-      </div>
+        <TextField id="outlined-basic" label="password" variant="outlined" 
+            value={password}
+            placeholder="Enter your password here"
+            onChange={(ev) => setPassword(ev.target.value)}
+          />
+          <Typography variant="body1" color="error">{passwordError}</Typography>
       <br />
-      <div>
-        <input  type="button" onClick={onButtonClick} value={'Log in'} />
-      </div>
-    </div>
+        <Button onClick={onButtonClick} variant="contained">
+          <LoginIcon />Log in
+        </Button>
+      </Box>
   )
 }
 
