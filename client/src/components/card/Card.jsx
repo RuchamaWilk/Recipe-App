@@ -1,62 +1,33 @@
-import { styled } from '@mui/material/styles';
 import CardUi from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
-import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import * as React from 'react';
-import {useNavigate} from 'react-router-dom';
-//import "./card.css"
-
-
-const ExpandMore = styled((props) => {
-    const { expand, ...other } = props;
-    return <IconButton {...other} />;})
-            (({ theme }) => ({
-                marginLeft: 'auto',
-                transition: theme.transitions.create('transform', {
-                duration: theme.transitions.duration.shortest,
-                }),
-                variants: [
-                { props: ({ expand }) => !expand, style: {transform: 'rotate(0deg)',},},
-                {props: ({ expand }) => !!expand, style: {transform: 'rotate(180deg)',},},
-                ],
-  }));
+import { useNavigate } from 'react-router-dom';
 
 const Card = ({ recipe})=>{
     const navigate = useNavigate();
-    const [expanded, setExpanded] = React.useState(false);
-
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
 
     const showRecipe= ()=>{
         navigate(`/recipe/${recipe.recipeId}`);
     };
 
     return(
-        <CardUi sx={{ maxWidth: 345 }} >
+        <CardUi  >
             <CardHeader
                 avatar={ <Avatar sx={{ bgcolor: "#E6B9A6" }} aria-label="recipe"></Avatar>}
                 action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
                 title={recipe.name}
-                subheader="September 14, 2016"
-            />
-            <CardMedia onClick= {showRecipe}
-                component="img"
-                height="140"
-                image= {recipe.image}
-                alt= {recipe.name}
-            />
+                subheader={`${recipe.avgTime} minutes`}
+                />
+            <CardMedia onClick= {showRecipe} component="img" height="140" image= {recipe.image} alt= {recipe.name}/>
             <CardContent>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                     All about {recipe.name}
@@ -69,23 +40,7 @@ const Card = ({ recipe})=>{
                 <IconButton aria-label="share">
                     <ShareIcon />
                 </IconButton>
-                <ExpandMore
-                    expand={expanded}
-                    onClick={handleExpandClick}
-                    aria-expanded={expanded}
-                    aria-label="show more"
-                    >
-                    <ExpandMoreIcon />
-                </ExpandMore>
             </CardActions>
-            <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                <Typography sx={{ marginBottom: 2 }}>Method:</Typography>
-                <Typography sx={{ marginBottom: 2 }}>Step 1</Typography>
-                <Typography sx={{ marginBottom: 2 }}>Step 2</Typography>
-                <Typography sx={{ marginBottom: 2 }}>Step 3</Typography>
-                </CardContent>
-            </Collapse>
         </CardUi>
     );
 };
