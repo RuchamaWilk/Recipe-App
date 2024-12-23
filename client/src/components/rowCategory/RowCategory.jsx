@@ -1,7 +1,11 @@
 import React from 'react';
 import Card from '../card/Card'
-import './rowCategory.css'
 import { useNavigate } from 'react-router-dom';
+import { Typography ,Box} from '@mui/material';
+import { Button } from '@mui/material';
+import CardActions from '@mui/material/CardActions';
+
+
 
 
 const RowCategory = ({ category, recipes })=>{
@@ -12,14 +16,21 @@ const RowCategory = ({ category, recipes })=>{
         navigate(`/category/${category}`);
     };
     return(
-        <div >
-            <h1> {category}</h1>
-            <div className="card-container">
+        <div style={{ color: '#2F3645'  }} >
+             <CardActions disableSpacing>  
+             <Typography variant="h4" component="h1" gutterBottom>{category}</Typography>
+            <Button sx={{color: '#939185'}}onClick={showRecipes} size="small">More</Button>
+
+             </CardActions>
+            
+            <div style={{display: "flex",  justifyContent: "flex-start",gap: "20px"}}>
                 { displayedCards.map((item, index) => (
                 <Card key={index} recipe={item} />
                 ))}
             </div>
-            <p onClick={showRecipes}> More</p>
+            <Box sx={{ '& button': { m: 1 }  }}>
+            
+            </Box>
         </div>
     );
 };

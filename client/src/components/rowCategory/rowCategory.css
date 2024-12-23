@@ -1,6 +1,0 @@
-.card-container {
-    display: flex;         /* הפיכת ה-container ל-flexbox */
-    justify-content: flex-start;  /* יישור כל כרטיס לפי השורה */
-    gap: 20px;            /* רווחים בין הכרטיסים */
-    /*flex-wrap: nowrap;     /* אין גלילה לשורה חדשה, כל הכרטיסים יהיו בשורה אחת */
-  }
