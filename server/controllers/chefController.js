@@ -14,8 +14,9 @@ router.get('/', async (req, res, next) => {
 });
 
 router.post('/login', async (req, res, next) => {
-    const { email, password } = req.body;
+
     try {
+        const { email, password } = req.body;
         const result = await checkForChef({ email, password }); // חזור עם תוצאה ולא json ישירות
         return res.status(200).send(result);
     } catch (err) {
