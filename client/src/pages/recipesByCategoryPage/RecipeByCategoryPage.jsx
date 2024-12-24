@@ -31,8 +31,11 @@ const RecipeByCategory = () => {
   };
 
   return (
-    <Container sx={{ ml: '-1cm' }}>
-      <Typography variant="h4" component="h1" >{category}</Typography>
+    <Box sx={{   width: "1391px"}} >
+      <Typography variant="h4" component="h1"  sx={{ 
+          textAlign: 'center',  // מרכז את הטקסט
+          marginBottom: '40px',  // מרווח גדול יותר בין הכותרת לכרטיסים
+        }}>{category}</Typography>
       <Box
         sx={{
           display: 'flex',
@@ -55,8 +58,8 @@ const RecipeByCategory = () => {
             <Card recipe={item} />
           </Box>
         ))}
+      </Box> 
       </Box>
-    </Container>
   );
 };
 
