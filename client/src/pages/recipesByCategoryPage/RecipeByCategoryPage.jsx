@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { fetchRecipesByCategory } from '../../services/api'; // ייבוא הפונקציה
-import Card from '../../components/card/Card'
-import './recipeByCategory.css'
-import { Typography ,Box} from '@mui/material';
-
+import Card from '../../components/card/Card';
+import { Typography, Box, Container } from '@mui/material';
 
 const RecipeByCategory = () => {
   const { category } = useParams(); // הוצאת ה-ID מתוך ה-URL
   const [recipesByCategory, setRecipesByCategory] = useState(null); // שמירה במצב על המתכון
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getRecipes = async () => {
@@ -22,22 +21,42 @@ const RecipeByCategory = () => {
 
     getRecipes();
   }, [category]); // הפעלת useEffect כאשר ה-ID משתנה
+
   if (!recipesByCategory) {
     return <div>Loading...</div>;
   }
-  const showRecipe= ()=>{
-    navigate(`/recipe/${id}`);
-    };
-  return (
-    <div className="recipesCategory" >
-            <Typography variant="h4" component="h1" gutterBottom>{category}</Typography>
 
-            <div className="recipes-grid"  onClick={showRecipe}>
-                { recipesByCategory.map((item, index) => (
-                <Card key={index} recipe={item} />
-                ))}
-            </div>
-    </div>
+  const showRecipe = (id) => {
+    navigate(`/recipe/${id}`);
+  };
+
+  return (
+    <Container sx={{ ml: '-1cm' }}>
+      <Typography variant="h4" component="h1" >{category}</Typography>
+      <Box
+        sx={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 0.5, // הגדרת מרווחים
+        }}
+      >
+        {recipesByCategory.map((item, index) => (
+          <Box
+            key={index}
+            sx={{
+              marginBottom: 2, // הוספת מרווח תחתון לכל כרטיס
+              cursor: 'pointer', // מציין שלחיצה על כרטיסים תביא לתוצאה
+              margin:1,
+              
+            }}
+          
+            onClick={() => showRecipe(item.recipeId)}
+          >
+            <Card recipe={item} />
+          </Box>
+        ))}
+      </Box>
+    </Container>
   );
 };
 
