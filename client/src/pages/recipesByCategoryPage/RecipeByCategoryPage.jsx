@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { fetchRecipesByCategory } from '../../services/api'; // ייבוא הפונקציה
+import { fetchRecipesByCategory } from '../../services/apiService'; // ייבוא הפונקציה
 import Card from '../../components/card/Card';
 import { Typography, Box, Container } from '@mui/material';
 

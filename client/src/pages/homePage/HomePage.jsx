@@ -1,7 +1,7 @@
 // client/src/pages/homePage/HomePage.jsx
 import React, { useEffect, useState } from 'react';
 import RowCategory from '../../components/rowCategory/RowCategory';
-import { fetchRecipes } from '../../services/api';
+import { fetchRecipes } from '../../services/apiService';
 
 
 const HomePage = () => {

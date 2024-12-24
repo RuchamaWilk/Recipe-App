@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchRecipesById } from '../../services/api';
+import { fetchRecipesById } from '../../services/apiService';
 import { Box, Typography, Card, CardMedia, CardContent, CardActions, Button, List, ListItem, ListItemText, CircularProgress,CardHeader } from '@mui/material';
 
 

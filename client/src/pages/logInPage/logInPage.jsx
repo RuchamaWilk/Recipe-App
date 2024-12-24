@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import {checkChef} from '../../services/api'
+import {checkChef} from '../../services/apiService'
 import TextField from '@mui/material/TextField';
 import LoginIcon from '@mui/icons-material/Login';
 import { Button } from '@mui/material';
