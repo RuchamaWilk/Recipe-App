@@ -1,38 +1,43 @@
 import React from 'react';
-import Card from '../card/Card'
+import Card from '../card/Card';
 import { useNavigate } from 'react-router-dom';
-import { Typography ,Box} from '@mui/material';
-import { Button } from '@mui/material';
-import CardActions from '@mui/material/CardActions';
+import { Typography, Box, Button, CardActions } from '@mui/material';
 
+const RowCategory = ({ category, recipes }) => {
+  const navigate = useNavigate();
+  const displayedCards = recipes.slice(0, 4);
 
+  const showRecipes = () => {
+    navigate(`/category/${category}`);
+  };
 
+  return (
+    <Box sx={{ color: '#2F3645' }}>
+      <CardActions disableSpacing sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Typography variant="h4" component="h1" gutterBottom>
+          {category}
+        </Typography>
+        <Button
+          sx={{
+            color: '#939185',
+            fontSize: '14px', // אפשר לשנות את הגודל אם תרצה
+          }}
+          onClick={showRecipes}
+          size="small"
+        >
+          More
+        </Button>
+      </CardActions>
 
-const RowCategory = ({ category, recipes })=>{
-    const navigate = useNavigate();
-    const displayedCards = recipes.slice(0, 4);
-
-    const showRecipes= ()=>{
-        navigate(`/category/${category}`);
-    };
-    return(
-        <div style={{ color: '#2F3645'  }} >
-             <CardActions disableSpacing>  
-             <Typography variant="h4" component="h1" gutterBottom>{category}</Typography>
-            <Button sx={{color: '#939185'}}onClick={showRecipes} size="small">More</Button>
-
-             </CardActions>
-            
-            <div style={{display: "flex",  justifyContent: "flex-start",gap: "20px"}}>
-                { displayedCards.map((item, index) => (
-                <Card key={index} recipe={item} />
-                ))}
-            </div>
-            <Box sx={{ '& button': { m: 1 }  }}>
-            
-            </Box>
-        </div>
-    );
+      <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: '20px', flexWrap: 'wrap' }}>
+        {displayedCards.map((item, index) => (
+          <Box key={index} sx={{ /*flex: '1 0 21%',*/ marginBottom: '20px' }}>
+            <Card recipe={item} />
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  );
 };
 
 export default RowCategory;
