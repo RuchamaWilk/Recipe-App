@@ -2,6 +2,8 @@ import React from 'react';
 import Card from '../card/Card';
 import { useNavigate } from 'react-router-dom';
 import { Typography, Box, Button, CardActions } from '@mui/material';
+import PropTypes from 'prop-types'
+
 
 const RowCategory = ({ category, recipes }) => {
   const navigate = useNavigate();
@@ -38,6 +40,19 @@ const RowCategory = ({ category, recipes }) => {
       </Box>
     </Box>
   );
+};
+
+RowCategory.propTypes = {
+  category: PropTypes.string.isRequired,
+  recipes: PropTypes.arrayOf(
+    PropTypes.shape({
+      recipeId: PropTypes.string.isRequired,  
+      image: PropTypes.string.isRequired,    
+      name: PropTypes.string.isRequired,      
+      avgTime: PropTypes.number.isRequired, 
+    })
+  ).isRequired, 
+
 };
 
 export default RowCategory;
