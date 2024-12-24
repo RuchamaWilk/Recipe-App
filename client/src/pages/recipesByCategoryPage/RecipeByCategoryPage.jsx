@@ -35,6 +35,9 @@ const RecipeByCategory = () => {
       <Typography variant="h4" component="h1"  sx={{ 
           textAlign: 'center',  // מרכז את הטקסט
           marginBottom: '40px',  // מרווח גדול יותר בין הכותרת לכרטיסים
+          fontFamily: 'Dancing Script, cursive', // הגדרת פונט סקריפט
+           color: '#2F3645' ,
+          fontSize: '3rem', // גודל כותרת גדול יותר
         }}>{category}</Typography>
       <Box
         sx={{

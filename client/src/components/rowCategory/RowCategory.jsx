@@ -19,7 +19,7 @@ const RowCategory = ({ category, recipes }) => {
         </Typography>
         <Button
           sx={{
-            color: '#939185',
+            color: '#2F3645',
             fontSize: '14px', // אפשר לשנות את הגודל אם תרצה
           }}
           onClick={showRecipes}
@@ -31,7 +31,7 @@ const RowCategory = ({ category, recipes }) => {
 
       <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: '20px', flexWrap: 'wrap' }}>
         {displayedCards.map((item, index) => (
-          <Box key={index} sx={{ /*flex: '1 0 21%',*/ marginBottom: '20px' }}>
+          <Box key={index} sx={{  marginBottom: '20px' }}>
             <Card recipe={item} />
           </Box>
         ))}
