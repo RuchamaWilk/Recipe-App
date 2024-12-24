@@ -1,7 +1,7 @@
 main {
   flex: 1;
   padding: 80px;
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   min-height: 81.4vh;
   margin-top: 40px;
 }
