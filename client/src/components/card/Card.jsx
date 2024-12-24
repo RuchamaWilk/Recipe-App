@@ -8,6 +8,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types'
 
 const Card = ({ recipe }) => {
     const navigate = useNavigate();
@@ -53,4 +54,14 @@ const Card = ({ recipe }) => {
     );
 };
 
+Card.propTypes = {
+    recipe: PropTypes.shape({
+      recipeId: PropTypes.string.isRequired,  // מזהה המתכון (במספר)
+      image: PropTypes.string.isRequired,     // כתובת התמונה (מחרוזת)
+      name: PropTypes.string.isRequired,      // שם המתכון (מחרוזת)
+      avgTime: PropTypes.number.isRequired,  // זמן ממוצע ב-Min (מספר)
+    }).isRequired, // שדה recipe חייב להיות תמיד
+  
+  };
+  
 export default Card;
