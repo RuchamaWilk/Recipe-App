@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './main.css';
 
 const Main = ({ children }) => {
@@ -7,6 +8,10 @@ const Main = ({ children }) => {
         {children}
       </main>
     );
+};
+
+Main.propTypes = {
+  children: PropTypes.node.isRequired, // children יכול להיות כל סוג תוכן
 };
 
 export default Main;
