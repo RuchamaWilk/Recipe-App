@@ -5,7 +5,7 @@ import Recipe from '../components/recipe/Recipe';
 import RecipeByCategory from '../pages/recipesByCategoryPage/RecipeByCategoryPage'
 import AddRecipePage from '../pages/addRecipePage/AddRecipePage';
 import LogInPage from '../pages/logInPage/logInPage';
-
+import ErrPage from '../pages/errPage/errPage'
 
 
 function AppRouters() {
@@ -17,6 +17,8 @@ function AppRouters() {
       <Route path="nice"  />
       <Route path="/add-recipe" element={<AddRecipePage />} />
       <Route path="/login" element={<LogInPage />} />
+      <Route path="*" element={<ErrPage errCode= "400" />} />
+
 
     </Routes>
   );
