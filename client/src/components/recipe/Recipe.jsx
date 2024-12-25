@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchRecipesById } from '../../services/apiService';
+import Rating from '@mui/material/Rating';
+
 import { Box, Typography, Card, CardMedia, CardContent, CardActions, Button, List, ListItem, ListItemText, CircularProgress,CardHeader } from '@mui/material';
 
 
@@ -9,6 +11,8 @@ import { Box, Typography, Card, CardMedia, CardContent, CardActions, Button, Lis
 const Recipe = () => {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
+  const [value, setValue] = useState(0);
+
 
   useEffect(() => {
     const getRecipes = async () => {
@@ -23,6 +27,12 @@ const Recipe = () => {
     getRecipes();
   }, [id]);
 
+  const handleRatingChange = (event, newValue) => {
+    setValue(newValue);
+    console.log("New rating value:", newValue);  // לוודא שהערך שנשלח הוא מספר
+    //send the value rate to DB of recipe
+  };
+
   if (!recipe) {
     return (
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
@@ -31,24 +41,45 @@ const Recipe = () => {
     );
   }
 
+
+
   return (
     <Box sx={{ maxWidth: '1000px', margin: 'auto', padding: 2 }}>
       <Card>
-      <CardHeader
-          title={
-            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <Typography variant="h4" component="h1" gutterBottom>{recipe.name}</Typography>
+          <Box sx={{ position: 'relative' }}>
+            <CardMedia
+              component="img"
+              height="250"
+              image={recipe.image}
+              alt={recipe.name}
+            />
+            <Box
+              sx={{
+                color: "#EEEDEB",
+                position: 'absolute',
+                top: '24vh',
+                left: '16px',
+                padding: '8px 16px',
+                borderRadius: '4px',
+                //border: '2px solid #939185',  // הוספת מסגרת סביב שם המתכון
+                textShadow: '-3px 1px 8px #939185'}}>
+              <Typography variant="h4" component="h1" gutterBottom  sx={{ fontSize: "60px",fontFamily: "cursive",}}>
+                {recipe.name}
+              </Typography>
             </Box>
-          }
-        />
-      
-        <CardMedia
-          component="img"
-          height="250"
-          image={recipe.image}
-          alt={recipe.name}
-        />
+        </Box>
         <CardContent>
+          <Box  sx={{ display: 'flex', justifyContent: 'space-between' }}>
+          <Typography variant="h6"  > from: {recipe.chefId } </Typography>
+            <Rating name="no-value" 
+                onChange={handleRatingChange}
+                value= {value}
+            />   
+          </Box>
+        
+          <Box sx={{ borderBottom: '1px solid #ddd', marginBottom: 4,marginTop: 2 }} />
+
+
           <Typography variant="h5" component="div">
             Ingredients
           </Typography>
@@ -69,6 +100,24 @@ const Recipe = () => {
               </ListItem>
             ))}
           </List>
+          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+          <Box 
+            sx={{
+              width: "50vw",    // רוחב הריבוע
+              height: "20vh",   // גובה הריבוע
+              backgroundColor: '#EEEDEB',  // צבע רקע
+              borderRadius: '4px',
+              marginTop: 2,  // רווח מעל הריבוע
+              display: 'flex',
+              justifyContent: 'center',
+            }}
+          >
+            <Typography variant="h6" >
+              AI
+            </Typography>
+          </Box>
+</Box>
+
         </CardContent>
       </Card>
     </Box>
