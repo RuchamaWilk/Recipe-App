@@ -2,18 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchRecipesById } from '../../services/apiService';
 import Rating from '@mui/material/Rating';
-
-import { Box, Typography, Card, CardMedia, CardContent, CardActions, Button, List, ListItem, ListItemText, CircularProgress,CardHeader } from '@mui/material';
-
-
-
+import { Box, Typography, Card, CardMedia, CardContent, List, ListItem, ListItemText, CircularProgress,CardHeader } from '@mui/material';
 
 const Recipe = () => {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);
   const [value, setValue] = useState(0);
-
-
+  
   useEffect(() => {
     const getRecipes = async () => {
       try {
