@@ -11,6 +11,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
+import { useNavigate } from 'react-router-dom'
+
 
 
 const pages = ['About Us', 'Our Chefs'];
@@ -19,6 +21,7 @@ const settings = ['Profile', 'Logout'];
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const navigate = useNavigate()
 
  
 
@@ -33,16 +36,32 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+  const onButtonHome=()=>{
+    navigate('/');
+  }
+  
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor:"#E6B9A6"}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <RestaurantIcon sx={{ display: { xs: 'none', md: 'flex' ,color: '#2F3645'}, mr: 4 }} />
-          <Typography variant="h6" noWrap component="a" sx={{mr: 2, display: { xs: 'none', md: 'flex' },
-            fontFamily: 'monospace',fontWeight: 700,letterSpacing: '.3rem',color: "#2F3645",textDecoration: 'none',}}
-            >RECIPES FOR YOU! 
-          </Typography>
+          <RestaurantIcon sx={{ display: { xs: 'none', md: 'flex' ,color: '#2F3645'}, mr: 4 }} /> 
+          <Button
+            onClick={onButtonHome}
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              fontSize: "1.4rem",
+              letterSpacing: '.3rem',
+              color: "#2F3645",
+              textDecoration: 'none'
+            }}
+          >
+            RECIPES FOR YOU!
+          </Button>
+          
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
