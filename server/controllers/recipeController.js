@@ -1,10 +1,14 @@
 const express = require('express');
 const router = express.Router();
 const { getRecipes ,fetchRecipe,fetchRecipesCategory,addRecipe} = require('../services/recipeService');
+const logger = require('../services/loggerService');
+
 
 router.get('/', async (req, res, next) => {
     try {
+      logger.info('calling getRecipes');
       const recipes = await getRecipes();
+      logger.info('success with getRecipes');
       return res.status(200).send(recipes);
     } catch (err) {
       next(err)
@@ -14,7 +18,9 @@ router.get('/', async (req, res, next) => {
   router.get('/recipes/:id', async (req, res, next) => {
     try {
         const recipeID= req.params.id;
+        logger.info( `fetchRecipe - calling recipe with ID: ${recipeID}`  );
         const result = await fetchRecipe(recipeID);
+        logger.info(`success with fetchRecipe id: ${recipeID}`);
         return res.status(200).send(result);
     } catch (err) {
         next(err);  // טיפול בשגיאות
@@ -24,7 +30,9 @@ router.get('/', async (req, res, next) => {
 router.get('/category/:category', async (req, res) => {
     try {
         const category= req.params.category
+        logger.info( `fetchRecipesCategory - calling recipes of ${category} category`  );
         const allRecipesFromCategory =await fetchRecipesCategory(category);
+        logger.info(`success with fetchRecipesCategory category: ${category}`);
         return res.status(200).send(allRecipesFromCategory);
     } catch (err) {
         next(err);
@@ -35,8 +43,11 @@ router.get('/category/:category', async (req, res) => {
   router.post('/add-recipes', async (req, res, next) => {
     try {
         const recipe = req.body;
+        logger.info( `addRecipe - set new recipe to DB, recipe ID: ${recipe.recipeID}`  );
         const newRecipe= await addRecipe(recipe);
-    return res.status(200).send(newRecipe);
+        logger.info(`successfull post recipe: ${recipe.recipeID} `);
+
+        return res.status(200).send(newRecipe);
     } catch (err) {
     next(err);
     }
