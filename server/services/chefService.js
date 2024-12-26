@@ -1,9 +1,13 @@
 // server/services/chefService.js
 const Chef = require('../models/chef.js');
+const logger = require('../services/loggerService');
+
 
 const getChefs = async () => {
     try {
+        logger.info('getChefs- find all chefs')
         const chefs = await Chef.find();
+        logger.info('success fetching chefs from DB')
         return Promise.resolve(chefs);
     } catch (err) {
         return Promise.reject(err);
@@ -12,13 +16,16 @@ const getChefs = async () => {
 
 const checkForChef = async ({email, password}) => {
     try {
+        logger.info(`checkForChef- find chef with email: ${email} and password ${password}`)
         const userOfEmail = await Chef.findOne({ emaiAdress: email });
         if (!userOfEmail) {
             throw new Error(`There is no chef with this email: ${email}`);
         }
+        logger.info(`found a chef with the email" ${email}`)
         if (password !== userOfEmail.password) {
             throw new Error(`Incorrect password for user: ${email}`);
         }
+        logger.info(`found a chef with email: ${email} and password ${password} `)
         return { success: true, message: 'Login successful' };  // חזרה עם תוצאה
     } catch (err) {
         return Promise.reject(err);
