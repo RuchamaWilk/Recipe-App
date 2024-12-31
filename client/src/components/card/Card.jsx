@@ -21,6 +21,7 @@ const Card = ({ recipe }) => {
         <CardUi sx={{
                 width: 320, height: 200, display: 'flex', flexDirection: 'column',
                 position: 'relative', 
+                borderRadius: "12px",
                 cursor: 'pointer',
                 transition: 'all 0.3s ease', 
                 '&:hover': {
