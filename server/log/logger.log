@@ -916,3 +916,35 @@
 2024-12-26 14:10:32 [info]: fetchRecipesCategory- find recipes of category: Soup
 2024-12-26 14:10:32 [info]: found recipes of category: Soup
 2024-12-26 14:10:32 [info]: success with fetchRecipesCategory category: Soup
+2024-12-29 15:40:48 [info]: calling getRecipes
+2024-12-29 15:40:48 [info]: getChefs- find all recipe
+2024-12-29 15:40:49 [info]: success fetching recipes from DB
+2024-12-29 15:40:49 [info]: success with getRecipes
+2024-12-29 15:40:49 [info]: calling getRecipes
+2024-12-29 15:40:49 [info]: getChefs- find all recipe
+2024-12-29 15:40:49 [info]: success fetching recipes from DB
+2024-12-29 15:40:49 [info]: success with getRecipes
+2024-12-29 15:43:03 [info]: calling getRecipes
+2024-12-29 15:43:03 [info]: getChefs- find all recipe
+2024-12-29 15:43:03 [info]: success fetching recipes from DB
+2024-12-29 15:43:03 [info]: success with getRecipes
+2024-12-29 15:43:03 [info]: calling getRecipes
+2024-12-29 15:43:03 [info]: getChefs- find all recipe
+2024-12-29 15:43:03 [info]: success fetching recipes from DB
+2024-12-29 15:43:03 [info]: success with getRecipes
+2024-12-29 15:43:55 [info]: fetchRecipesCategory - calling recipes of Meat category
+2024-12-29 15:43:55 [info]: fetchRecipesCategory- find recipes of category: Meat
+2024-12-29 15:43:55 [info]: found recipes of category: Meat
+2024-12-29 15:43:55 [info]: success with fetchRecipesCategory category: Meat
+2024-12-29 15:43:55 [info]: fetchRecipesCategory - calling recipes of Meat category
+2024-12-29 15:43:55 [info]: fetchRecipesCategory- find recipes of category: Meat
+2024-12-29 15:43:55 [info]: found recipes of category: Meat
+2024-12-29 15:43:55 [info]: success with fetchRecipesCategory category: Meat
+2024-12-29 15:43:59 [info]: calling getRecipes
+2024-12-29 15:43:59 [info]: getChefs- find all recipe
+2024-12-29 15:43:59 [info]: success fetching recipes from DB
+2024-12-29 15:43:59 [info]: success with getRecipes
+2024-12-29 15:43:59 [info]: calling getRecipes
+2024-12-29 15:43:59 [info]: getChefs- find all recipe
+2024-12-29 15:44:00 [info]: success fetching recipes from DB
+2024-12-29 15:44:00 [info]: success with getRecipes
