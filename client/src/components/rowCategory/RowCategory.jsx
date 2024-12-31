@@ -31,7 +31,7 @@ const RowCategory = ({ category, recipes }) => {
         </Button>
       </CardActions>
 
-      <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: '20px', flexWrap: 'wrap' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: '6px', flexWrap: 'wrap' }}>
         {displayedCards.map((item, index) => (
           <Box key={index} sx={{  marginBottom: '20px' }}>
             <Card recipe={item} />
