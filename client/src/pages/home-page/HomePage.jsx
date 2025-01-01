@@ -1,6 +1,6 @@
 // client/src/pages/homePage/HomePage.jsx
 import React, { useEffect, useState } from 'react';
-import RowCategory from '../../components/rowCategory/RowCategory';
+import RowCategory from '../../components/row-category/RowCategory';
 import { fetchRecipes } from '../../services/apiService';
 
 

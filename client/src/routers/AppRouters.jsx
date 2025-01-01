@@ -1,11 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from '../pages/homePage/HomePage';
+import HomePage from '../pages/home-page/HomePage';
 import Recipe from '../components/recipe/Recipe';
-import RecipeByCategory from '../pages/recipesByCategoryPage/RecipeByCategoryPage'
-import AddRecipePage from '../pages/addRecipePage/AddRecipePage';
-import LogInPage from '../pages/logInPage/logInPage';
-import ErrPage from '../pages/errPage/errPage'
+import RecipeByCategory from '../pages/recipes-by-category-page/RecipeByCategoryPage'
+import AddRecipePage from '../pages/add-recipe-page/AddRecipePage';
+import LogInPage from '../pages/log-in-page/logInPage';
+import ErrPage from '../pages/err-page/errPage'
 
 
 function AppRouters() {
