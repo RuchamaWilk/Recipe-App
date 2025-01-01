@@ -26,12 +26,8 @@ const RecipeByCategory = () => {
     return <div>Loading...</div>;
   }
 
-  const showRecipe = (id) => {
-    navigate(`/recipe/${id}`);
-  };
-
   return (
-    <Box sx={{   width: "1391px"}} >
+    <Container sx={{ width: "2000px"}} >
       <Typography variant="h4" component="h1"  sx={{ 
           textAlign: 'center',  // מרכז את הטקסט
           marginBottom: '40px',  // מרווח גדול יותר בין הכותרת לכרטיסים
@@ -39,30 +35,18 @@ const RecipeByCategory = () => {
            color: '#2F3645' ,
           fontSize: '3rem', // גודל כותרת גדול יותר
         }}>{category}</Typography>
-      <Box
-        sx={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: 0.5, // הגדרת מרווחים
-        }}
-      >
+      
+      <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: '8px', flexWrap: 'wrap' }}>
         {recipesByCategory.map((item, index) => (
-          <Box
+          <Box 
             key={index}
-            sx={{
-              marginBottom: 2, // הוספת מרווח תחתון לכל כרטיס
-              cursor: 'pointer', // מציין שלחיצה על כרטיסים תביא לתוצאה
-              margin:1,
-              
-            }}
-          
-            onClick={() => showRecipe(item.recipeId)}
           >
-            <Card recipe={item} />
+            <Card sx= {{width: "33%"}}recipe={item} />
           </Box>
         ))}
-      </Box> 
-      </Box>
+        </Box>
+      </Container>
+      
   );
 };
 

@@ -1,9 +1,12 @@
-main {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  min-height: 77.4vh;
-  margin-top: 90px;
-  padding-right: 4vh;
-  padding-left: 4vh;
-}
+
+  main {
+    display: grid;
+    place-items: center; /* ממרכז את התוכן אופקית ואנכית */
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 77.4vh;
+    margin-top: 90px;
+    
+  }
+  
+
