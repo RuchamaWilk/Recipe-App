@@ -39,9 +39,8 @@ const Recipe = () => {
           <CardContent>
             <ChefRating chefId={recipe.chefId} />
             <Box sx={{ borderBottom: '1px solid #ddd', marginBottom: 4,marginTop: 2 }} />
-
             <RecipeInstructions ingredients={recipe.ingredients} instructions={recipe.instructions} />
-            <RecipeAIBox aiSuggestion={recipe.aiSuggestion} />
+            <RecipeAIBox/>
           </CardContent>
         </Card>
       </Box>
