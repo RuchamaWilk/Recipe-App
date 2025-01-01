@@ -36,51 +36,47 @@ const Recipe = () => {
   }
 
   return (
-    <Box sx={{maxWidth: "1200px", minWidth: "400px", padding: 0 }}>
-      <Card>
+    <Box sx={{width: { xs: '80%', sm: '80%', md: "70%",xl: '50%' }}}>
           <Box sx={{ position: 'relative' }}>
             <CardMedia component="img" height="250"  image={recipe.image} alt={recipe.name} sx={{ filter: "brightness(50%)"}}/>
-            <Box sx={{ color: "#EEEDEB", position: 'absolute', top: '7%', left: '5%', padding: '8px 16px',
+            <Box sx={{ color: "#EEEDEB", position: 'absolute', top: '7%', left: '5%',
                  textShadow: '-3px 1px 8px #939185'}}>
-                  <Typography variant="h3" component="h1" gutterBottom  sx={{  }}>
+                  <Typography variant="h3" >
                     {recipe.name}
                   </Typography>
             </Box>
-        </Box>
-        <CardContent>
+          </Box>
+        <CardContent sx={{ paddingLeft: "25px"}}>
           <Box  sx={{ display: 'flex', justifyContent: 'space-between' }}>
-            <Typography variant="h6"  > from: {recipe.chefId } </Typography>
-              <Rating name="no-value" 
-                  onChange={handleRatingChange}
-                  value= {value}/>   
+            <Typography  > from: {recipe.chefId } </Typography>
+              <Rating name="no-value" onChange={handleRatingChange} value= {value} size= "large" />   
           </Box>
           <Box sx={{ borderBottom: '1px solid #ddd', marginBottom: 4,marginTop: 2 }} />
-          <Typography variant="h5" component="div" sx={{ marginTop: 2 }}> Ingredients</Typography>
-          <List>
-            {recipe.ingredients.map((item, index) => (
-              <ListItem key={index}>
-                <ListItemText primary={`${item.amount} ${item.name}`} />
-              </ListItem>
-            ))}
-          </List>
-          <Typography variant="h5" component="div" sx={{ marginTop: 2 }}> Instructions </Typography>
-          <List>
-            {recipe.instructions.map((item, index) => (
-              <ListItem key={index}>
-                <ListItemText primary={`${index + 1}. ${item.name}`} />
-              </ListItem>
-            ))}
-          </List>
-          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
-            <Box 
-              sx={{ width: "50vw", height: "20vh", backgroundColor: '#EEEDEB',borderRadius: '4px',marginTop: 2}}>
-              <Typography variant="h6" >AI</Typography>
+            <Typography variant="h5"  sx={{ marginTop: 2 }}> Ingredients</Typography>
+            <List>
+              {recipe.ingredients.map((item, index) => (
+                <ListItem key={index}>
+                  <ListItemText primary={`•  ${item.amount} ${item.name}`} />
+                </ListItem>
+              ))}
+            </List>
+            <Typography variant="h5"  sx={{ marginTop: 2 }}> Instructions </Typography>
+            <List>
+              {recipe.instructions.map((item, index) => (
+                <ListItem key={index}>
+                  <ListItemText primary={`${index + 1}. ${item.name}`} />
+                </ListItem>
+              ))}
+            </List>
+            <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+              <Box 
+                sx={{ width: "50vw", height: "20vh", backgroundColor: '#EEEDEB',borderRadius: '4px',marginTop: 2}}>
+                <Typography variant="h6" >AI</Typography>
+              </Box>
             </Box>
-          </Box>
 
-        </CardContent>
-      </Card>
-    </Box>
+          </CardContent>
+        </Box>
   );
 };
 
