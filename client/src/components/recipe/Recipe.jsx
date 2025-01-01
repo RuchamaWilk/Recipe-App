@@ -36,7 +36,11 @@ const Recipe = () => {
   }
 
   return (
+    
+
+    
     <Box sx={{width: { xs: '80%', sm: '80%', md: "70%",xl: '50%' }}}>
+      <Card>
           <Box sx={{ position: 'relative' }}>
             <CardMedia component="img" height="250"  image={recipe.image} alt={recipe.name} sx={{ filter: "brightness(50%)"}}/>
             <Box sx={{ color: "#EEEDEB", position: 'absolute', top: '7%', left: '5%',
@@ -76,6 +80,7 @@ const Recipe = () => {
             </Box>
 
           </CardContent>
+          </Card>
         </Box>
   );
 };
