@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from '../pages/home-page/HomePage';
-import Recipe from '../components/recipe/Recipe';
+import Recipe from '../pages/recipe-page/recipePage';
 import RecipeByCategory from '../pages/recipes-by-category-page/RecipeByCategoryPage'
 import AddRecipePage from '../pages/add-recipe-page/AddRecipePage';
 import LogInPage from '../pages/log-in-page/logInPage';
