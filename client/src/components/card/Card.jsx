@@ -65,7 +65,7 @@ Card.propTypes = {
         image: PropTypes.string.isRequired,     // כתובת התמונה (מחרוזת)
         name: PropTypes.string.isRequired,      // שם המתכון (מחרוזת)
         avgTime: PropTypes.number.isRequired,  // זמן ממוצע ב-Min (מספר)
-        chafId: PropTypes.string.isRequired
+        chefId: PropTypes.string.isRequired
     }).isRequired, // שדה recipe חייב להיות תמיד
 };
 
