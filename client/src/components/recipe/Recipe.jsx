@@ -36,13 +36,13 @@ const Recipe = () => {
   }
 
   return (
-    <Box sx={{ maxWidth: '1000px', margin: 'auto', padding: 2 }}>
+    <Box sx={{maxWidth: "1200px", minWidth: "400px", padding: 0 }}>
       <Card>
           <Box sx={{ position: 'relative' }}>
-            <CardMedia component="img" height="250" image={recipe.image} alt={recipe.name}/>
-            <Box sx={{ color: "#EEEDEB", position: 'absolute', top: '24vh', left: '16px', padding: '8px 16px',
-                borderRadius: '4px', textShadow: '-3px 1px 8px #939185'}}>
-                  <Typography variant="h4" component="h1" gutterBottom  sx={{ fontSize: "60px",fontFamily: "cursive",}}>
+            <CardMedia component="img" height="250"  image={recipe.image} alt={recipe.name} sx={{ filter: "brightness(50%)"}}/>
+            <Box sx={{ color: "#EEEDEB", position: 'absolute', top: '7%', left: '5%', padding: '8px 16px',
+                 textShadow: '-3px 1px 8px #939185'}}>
+                  <Typography variant="h3" component="h1" gutterBottom  sx={{  }}>
                     {recipe.name}
                   </Typography>
             </Box>
