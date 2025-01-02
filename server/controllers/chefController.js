@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const logger = require('../services/loggerService');
-const { getChefs, checkForChef } = require('../services/chefService');
+const { getChefs, checkForChef ,checkChefToAdd} = require('../services/chefService');
 
 router.get('/', async (req, res, next) => {
     try {
@@ -27,5 +27,21 @@ router.post('/login', async (req, res, next) => {
         next(err);
     }
 });
+
+
+router.post('/signUp', async (req, res, next) => {
+
+    try {
+        const { userName, email, password } = req.body;
+        logger.info(`Calling checkChefToAdd with user name: ${userName} email: ${email} and password: ${password}`);
+        const result = await checkChefToAdd({ userName,email, password }); 
+        logger.info('success with checkChefToAdd');
+        return res.status(200).send(result);
+    } catch (err) {
+        next(err);
+    }
+});
+
+
 
 module.exports = router;
