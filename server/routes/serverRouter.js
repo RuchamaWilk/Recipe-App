@@ -1,14 +1,14 @@
 // server/routes/serverRouter.js
 const express = require('express');
 const router = express.Router();
-const chefController = require('../controllers/chefController');
-const chefMiddleware = require('../middlewares/chefMiddleware');
-const recipeController = require('../controllers/recipeController');
-const recipeMiddleware = require('../middlewares/recipeMiddleware');
+const authController = require('../controllers/authController');
+const authMiddleware = require('../middlewares/chefMiddleware');
+const recipesController = require('../controllers/recipesController');
+const recipesMiddleware = require('../middlewares/recipeMiddleware');
 const errorMiddleware = require('../middlewares/erroeMiddleware')
 
-router.use('/chef', chefMiddleware, chefController);
-router.use('/', recipeMiddleware, recipeController);
+router.use('/auth', authMiddleware, authController);
+router.use('/recipes', recipesMiddleware, recipesController);
 
 router.use((req, res, next) => {
     return res.status(404).send('Route Not Found');
