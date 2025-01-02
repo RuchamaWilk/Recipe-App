@@ -3000,3 +3000,309 @@
 2025-01-01 21:24:09 [info]: getChefs- find all recipe
 2025-01-01 21:24:09 [info]: success fetching recipes from DB
 2025-01-01 21:24:09 [info]: success with getRecipes
+2025-01-01 21:56:34 [info]: calling getRecipes
+2025-01-01 21:56:34 [info]: getChefs- find all recipe
+2025-01-01 21:56:34 [info]: success fetching recipes from DB
+2025-01-01 21:56:34 [info]: success with getRecipes
+2025-01-01 21:56:34 [info]: calling getRecipes
+2025-01-01 21:56:34 [info]: getChefs- find all recipe
+2025-01-01 21:56:34 [info]: success fetching recipes from DB
+2025-01-01 21:56:34 [info]: success with getRecipes
+2025-01-01 21:57:12 [info]: fetchRecipe - calling recipe with ID: 12345
+2025-01-01 21:57:12 [info]: fetchRecipe- find recipe with recipeID: 12345
+2025-01-01 21:57:13 [info]: found a recipe with recipeID: 12345
+2025-01-01 21:57:13 [info]: success with fetchRecipe id: 12345
+2025-01-01 21:57:13 [info]: fetchRecipe - calling recipe with ID: 12345
+2025-01-01 21:57:13 [info]: fetchRecipe- find recipe with recipeID: 12345
+2025-01-01 21:57:13 [info]: found a recipe with recipeID: 12345
+2025-01-01 21:57:13 [info]: success with fetchRecipe id: 12345
+2025-01-01 21:57:22 [info]: calling getRecipes
+2025-01-01 21:57:22 [info]: getChefs- find all recipe
+2025-01-01 21:57:22 [info]: success fetching recipes from DB
+2025-01-01 21:57:22 [info]: success with getRecipes
+2025-01-01 21:57:22 [info]: calling getRecipes
+2025-01-01 21:57:22 [info]: getChefs- find all recipe
+2025-01-01 21:57:22 [info]: success fetching recipes from DB
+2025-01-01 21:57:22 [info]: success with getRecipes
+2025-01-01 22:44:21 [info]: calling getRecipes
+2025-01-01 22:44:21 [info]: getChefs- find all recipe
+2025-01-01 22:44:22 [info]: success fetching recipes from DB
+2025-01-01 22:44:22 [info]: success with getRecipes
+2025-01-01 22:44:22 [info]: calling getRecipes
+2025-01-01 22:44:22 [info]: getChefs- find all recipe
+2025-01-01 22:44:22 [info]: success fetching recipes from DB
+2025-01-01 22:44:22 [info]: success with getRecipes
+2025-01-01 22:45:09 [info]: fetchRecipe - calling recipe with ID: 3
+2025-01-01 22:45:09 [info]: fetchRecipe- find recipe with recipeID: 3
+2025-01-01 22:45:09 [info]: found a recipe with recipeID: 3
+2025-01-01 22:45:09 [info]: success with fetchRecipe id: 3
+2025-01-01 22:45:09 [info]: fetchRecipe - calling recipe with ID: 3
+2025-01-01 22:45:09 [info]: fetchRecipe- find recipe with recipeID: 3
+2025-01-01 22:45:09 [info]: found a recipe with recipeID: 3
+2025-01-01 22:45:09 [info]: success with fetchRecipe id: 3
+2025-01-01 22:45:13 [info]: calling getRecipes
+2025-01-01 22:45:13 [info]: getChefs- find all recipe
+2025-01-01 22:45:13 [info]: success fetching recipes from DB
+2025-01-01 22:45:13 [info]: success with getRecipes
+2025-01-01 22:45:13 [info]: calling getRecipes
+2025-01-01 22:45:13 [info]: getChefs- find all recipe
+2025-01-01 22:45:14 [info]: success fetching recipes from DB
+2025-01-01 22:45:14 [info]: success with getRecipes
+2025-01-01 22:45:15 [info]: fetchRecipe - calling recipe with ID: 789
+2025-01-01 22:45:15 [info]: fetchRecipe- find recipe with recipeID: 789
+2025-01-01 22:45:15 [info]: found a recipe with recipeID: 789
+2025-01-01 22:45:15 [info]: success with fetchRecipe id: 789
+2025-01-01 22:45:15 [info]: fetchRecipe - calling recipe with ID: 789
+2025-01-01 22:45:15 [info]: fetchRecipe- find recipe with recipeID: 789
+2025-01-01 22:45:15 [info]: found a recipe with recipeID: 789
+2025-01-01 22:45:15 [info]: success with fetchRecipe id: 789
+2025-01-01 22:45:17 [info]: calling getRecipes
+2025-01-01 22:45:17 [info]: getChefs- find all recipe
+2025-01-01 22:45:20 [info]: success fetching recipes from DB
+2025-01-01 22:45:20 [info]: success with getRecipes
+2025-01-01 22:45:20 [info]: calling getRecipes
+2025-01-01 22:45:20 [info]: getChefs- find all recipe
+2025-01-01 22:45:20 [info]: success fetching recipes from DB
+2025-01-01 22:45:20 [info]: success with getRecipes
+2025-01-01 22:54:11 [info]: fetchRecipesCategory - calling recipes of Soup category
+2025-01-01 22:54:11 [info]: fetchRecipesCategory- find recipes of category: Soup
+2025-01-01 22:54:11 [info]: found recipes of category: Soup
+2025-01-01 22:54:11 [info]: success with fetchRecipesCategory category: Soup
+2025-01-01 22:54:11 [info]: fetchRecipesCategory - calling recipes of Soup category
+2025-01-01 22:54:11 [info]: fetchRecipesCategory- find recipes of category: Soup
+2025-01-01 22:54:11 [info]: found recipes of category: Soup
+2025-01-01 22:54:11 [info]: success with fetchRecipesCategory category: Soup
+2025-01-01 22:54:14 [info]: calling getRecipes
+2025-01-01 22:54:14 [info]: getChefs- find all recipe
+2025-01-01 22:54:14 [info]: success fetching recipes from DB
+2025-01-01 22:54:14 [info]: success with getRecipes
+2025-01-01 22:54:14 [info]: calling getRecipes
+2025-01-01 22:54:14 [info]: getChefs- find all recipe
+2025-01-01 22:54:14 [info]: success fetching recipes from DB
+2025-01-01 22:54:14 [info]: success with getRecipes
+2025-01-01 22:54:16 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-01 22:54:16 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-01 22:54:17 [info]: found recipes of category: Meat
+2025-01-01 22:54:17 [info]: success with fetchRecipesCategory category: Meat
+2025-01-01 22:54:17 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-01 22:54:17 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-01 22:54:17 [info]: found recipes of category: Meat
+2025-01-01 22:54:17 [info]: success with fetchRecipesCategory category: Meat
+2025-01-01 22:55:33 [info]: fetchRecipe - calling recipe with ID: 78
+2025-01-01 22:55:33 [info]: fetchRecipe- find recipe with recipeID: 78
+2025-01-01 22:55:33 [info]: found a recipe with recipeID: 78
+2025-01-01 22:55:33 [info]: success with fetchRecipe id: 78
+2025-01-01 22:55:33 [info]: fetchRecipe - calling recipe with ID: 78
+2025-01-01 22:55:33 [info]: fetchRecipe- find recipe with recipeID: 78
+2025-01-01 22:55:34 [info]: found a recipe with recipeID: 78
+2025-01-01 22:55:34 [info]: success with fetchRecipe id: 78
+2025-01-01 22:57:31 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-01 22:57:31 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-01 22:57:31 [info]: found recipes of category: Meat
+2025-01-01 22:57:31 [info]: success with fetchRecipesCategory category: Meat
+2025-01-01 22:57:31 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-01 22:57:31 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-01 22:57:31 [info]: found recipes of category: Meat
+2025-01-01 22:57:31 [info]: success with fetchRecipesCategory category: Meat
+2025-01-01 22:57:33 [info]: calling getRecipes
+2025-01-01 22:57:33 [info]: getChefs- find all recipe
+2025-01-01 22:57:33 [info]: success fetching recipes from DB
+2025-01-01 22:57:33 [info]: success with getRecipes
+2025-01-01 22:57:33 [info]: calling getRecipes
+2025-01-01 22:57:33 [info]: getChefs- find all recipe
+2025-01-01 22:57:33 [info]: success fetching recipes from DB
+2025-01-01 22:57:33 [info]: success with getRecipes
+2025-01-01 22:58:40 [info]: calling getRecipes
+2025-01-01 22:58:40 [info]: getChefs- find all recipe
+2025-01-01 22:58:40 [info]: success fetching recipes from DB
+2025-01-01 22:58:40 [info]: success with getRecipes
+2025-01-01 22:58:40 [info]: calling getRecipes
+2025-01-01 22:58:40 [info]: getChefs- find all recipe
+2025-01-01 22:58:40 [info]: success fetching recipes from DB
+2025-01-01 22:58:40 [info]: success with getRecipes
+2025-01-01 23:49:50 [info]: calling getRecipes
+2025-01-01 23:49:50 [info]: getChefs- find all recipe
+2025-01-01 23:49:54 [info]: success fetching recipes from DB
+2025-01-01 23:49:54 [info]: success with getRecipes
+2025-01-01 23:49:54 [info]: calling getRecipes
+2025-01-01 23:49:54 [info]: getChefs- find all recipe
+2025-01-01 23:49:54 [info]: success fetching recipes from DB
+2025-01-01 23:49:54 [info]: success with getRecipes
+2025-01-01 23:50:15 [info]: calling getRecipes
+2025-01-01 23:50:15 [info]: getChefs- find all recipe
+2025-01-01 23:50:15 [info]: success fetching recipes from DB
+2025-01-01 23:50:15 [info]: success with getRecipes
+2025-01-01 23:50:16 [info]: calling getRecipes
+2025-01-01 23:50:16 [info]: getChefs- find all recipe
+2025-01-01 23:50:16 [info]: success fetching recipes from DB
+2025-01-01 23:50:16 [info]: success with getRecipes
+2025-01-02 11:15:21 [info]: calling getRecipes
+2025-01-02 11:15:21 [info]: getChefs- find all recipe
+2025-01-02 11:15:22 [info]: success fetching recipes from DB
+2025-01-02 11:15:22 [info]: success with getRecipes
+2025-01-02 11:15:22 [info]: calling getRecipes
+2025-01-02 11:15:22 [info]: getChefs- find all recipe
+2025-01-02 11:15:22 [info]: success fetching recipes from DB
+2025-01-02 11:15:22 [info]: success with getRecipes
+2025-01-02 11:15:38 [info]: fetchRecipe - calling recipe with ID: 789
+2025-01-02 11:15:38 [info]: fetchRecipe- find recipe with recipeID: 789
+2025-01-02 11:15:38 [info]: found a recipe with recipeID: 789
+2025-01-02 11:15:38 [info]: success with fetchRecipe id: 789
+2025-01-02 11:15:40 [info]: fetchRecipe - calling recipe with ID: 789
+2025-01-02 11:15:40 [info]: fetchRecipe- find recipe with recipeID: 789
+2025-01-02 11:15:40 [info]: found a recipe with recipeID: 789
+2025-01-02 11:15:40 [info]: success with fetchRecipe id: 789
+2025-01-02 11:15:41 [info]: calling getRecipes
+2025-01-02 11:15:41 [info]: getChefs- find all recipe
+2025-01-02 11:15:42 [info]: success fetching recipes from DB
+2025-01-02 11:15:42 [info]: success with getRecipes
+2025-01-02 11:15:42 [info]: calling getRecipes
+2025-01-02 11:15:42 [info]: getChefs- find all recipe
+2025-01-02 11:15:42 [info]: success fetching recipes from DB
+2025-01-02 11:15:42 [info]: success with getRecipes
+2025-01-02 11:16:12 [info]: calling getRecipes
+2025-01-02 11:16:12 [info]: getChefs- find all recipe
+2025-01-02 11:16:12 [info]: success fetching recipes from DB
+2025-01-02 11:16:12 [info]: success with getRecipes
+2025-01-02 11:16:12 [info]: calling getRecipes
+2025-01-02 11:16:12 [info]: getChefs- find all recipe
+2025-01-02 11:16:12 [info]: success fetching recipes from DB
+2025-01-02 11:16:12 [info]: success with getRecipes
+2025-01-02 12:00:05 [info]: calling getRecipes
+2025-01-02 12:00:05 [info]: getChefs- find all recipe
+2025-01-02 12:00:05 [info]: success fetching recipes from DB
+2025-01-02 12:00:05 [info]: success with getRecipes
+2025-01-02 12:00:05 [info]: calling getRecipes
+2025-01-02 12:00:05 [info]: getChefs- find all recipe
+2025-01-02 12:00:05 [info]: success fetching recipes from DB
+2025-01-02 12:00:05 [info]: success with getRecipes
+2025-01-02 12:38:12 [info]: calling getRecipes
+2025-01-02 12:38:12 [info]: getChefs- find all recipe
+2025-01-02 12:38:12 [info]: success fetching recipes from DB
+2025-01-02 12:38:12 [info]: success with getRecipes
+2025-01-02 12:38:12 [info]: calling getRecipes
+2025-01-02 12:38:12 [info]: getChefs- find all recipe
+2025-01-02 12:38:12 [info]: success fetching recipes from DB
+2025-01-02 12:38:12 [info]: success with getRecipes
+2025-01-02 12:44:04 [info]: calling getRecipes
+2025-01-02 12:44:04 [info]: getChefs- find all recipe
+2025-01-02 12:44:04 [info]: success fetching recipes from DB
+2025-01-02 12:44:04 [info]: success with getRecipes
+2025-01-02 12:52:32 [info]: calling getRecipes
+2025-01-02 12:52:32 [info]: getChefs- find all recipe
+2025-01-02 12:52:32 [info]: success fetching recipes from DB
+2025-01-02 12:52:32 [info]: success with getRecipes
+2025-01-02 12:52:56 [info]: calling getRecipes
+2025-01-02 12:52:56 [info]: getChefs- find all recipe
+2025-01-02 12:52:56 [info]: success fetching recipes from DB
+2025-01-02 12:52:56 [info]: success with getRecipes
+2025-01-02 12:53:37 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 12:53:37 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 12:54:13 [info]: calling getRecipes
+2025-01-02 12:54:13 [info]: getChefs- find all recipe
+2025-01-02 12:54:13 [info]: success fetching recipes from DB
+2025-01-02 12:54:13 [info]: success with getRecipes
+2025-01-02 12:54:32 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 12:54:32 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 12:54:55 [info]: calling getRecipes
+2025-01-02 12:54:55 [info]: getChefs- find all recipe
+2025-01-02 12:54:55 [info]: success fetching recipes from DB
+2025-01-02 12:54:55 [info]: success with getRecipes
+2025-01-02 13:01:19 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:01:19 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:01:27 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:01:27 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:01:28 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:01:28 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:01:29 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:01:29 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:04:45 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:04:45 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:05:59 [info]: calling getRecipes
+2025-01-02 13:05:59 [info]: getChefs- find all recipe
+2025-01-02 13:05:59 [info]: success fetching recipes from DB
+2025-01-02 13:05:59 [info]: success with getRecipes
+2025-01-02 13:06:00 [info]: calling getRecipes
+2025-01-02 13:06:00 [info]: getChefs- find all recipe
+2025-01-02 13:06:00 [info]: success fetching recipes from DB
+2025-01-02 13:06:00 [info]: success with getRecipes
+2025-01-02 13:06:50 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:06:50 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:06:53 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:06:53 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:07:11 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:07:11 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:09:11 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:09:11 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:11:18 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:11:18 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:12:22 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:12:22 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:20:49 [info]: calling getRecipes
+2025-01-02 13:20:49 [info]: getChefs- find all recipe
+2025-01-02 13:20:49 [info]: success fetching recipes from DB
+2025-01-02 13:20:49 [info]: success with getRecipes
+2025-01-02 13:21:20 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:21:20 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:21:20 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-02 13:21:20 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-02 13:21:20 [info]: success with checkForChef
+2025-01-02 13:21:20 [info]: calling getRecipes
+2025-01-02 13:21:20 [info]: getChefs- find all recipe
+2025-01-02 13:21:20 [info]: success fetching recipes from DB
+2025-01-02 13:21:20 [info]: success with getRecipes
+2025-01-02 13:21:20 [info]: calling getRecipes
+2025-01-02 13:21:20 [info]: getChefs- find all recipe
+2025-01-02 13:21:20 [info]: success fetching recipes from DB
+2025-01-02 13:21:20 [info]: success with getRecipes
+2025-01-02 13:22:24 [info]: calling getRecipes
+2025-01-02 13:22:24 [info]: getChefs- find all recipe
+2025-01-02 13:22:24 [info]: calling getRecipes
+2025-01-02 13:22:24 [info]: getChefs- find all recipe
+2025-01-02 13:22:24 [info]: success fetching recipes from DB
+2025-01-02 13:22:24 [info]: success with getRecipes
+2025-01-02 13:22:24 [info]: success fetching recipes from DB
+2025-01-02 13:22:24 [info]: success with getRecipes
+2025-01-02 13:27:24 [info]: calling getRecipes
+2025-01-02 13:27:24 [info]: getChefs- find all recipe
+2025-01-02 13:27:24 [info]: calling getRecipes
+2025-01-02 13:27:24 [info]: getChefs- find all recipe
+2025-01-02 13:27:24 [info]: success fetching recipes from DB
+2025-01-02 13:27:24 [info]: success with getRecipes
+2025-01-02 13:27:24 [info]: success fetching recipes from DB
+2025-01-02 13:27:24 [info]: success with getRecipes
+2025-01-02 13:27:26 [info]: calling getRecipes
+2025-01-02 13:27:26 [info]: getChefs- find all recipe
+2025-01-02 13:27:26 [info]: calling getRecipes
+2025-01-02 13:27:26 [info]: getChefs- find all recipe
+2025-01-02 13:27:26 [info]: success fetching recipes from DB
+2025-01-02 13:27:26 [info]: success with getRecipes
+2025-01-02 13:27:26 [info]: success fetching recipes from DB
+2025-01-02 13:27:26 [info]: success with getRecipes
+2025-01-02 13:28:39 [info]: Calling checkForChef with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-02 13:28:39 [info]: checkForChef- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-02 13:28:39 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-02 13:28:39 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-02 13:28:39 [info]: success with checkForChef
+2025-01-02 13:28:39 [info]: calling getRecipes
+2025-01-02 13:28:39 [info]: getChefs- find all recipe
+2025-01-02 13:28:39 [info]: success fetching recipes from DB
+2025-01-02 13:28:39 [info]: success with getRecipes
+2025-01-02 13:28:39 [info]: calling getRecipes
+2025-01-02 13:28:39 [info]: getChefs- find all recipe
+2025-01-02 13:28:40 [info]: success fetching recipes from DB
+2025-01-02 13:28:40 [info]: success with getRecipes
+2025-01-02 13:29:14 [info]: Calling checkChefToAdd with user name: ruchama email: ruchamawilk@gmail.com and password: 12365489
+2025-01-02 13:29:24 [info]: Calling checkChefToAdd with user name: ruchama email: ruchamwilk@gmail.com and password: 12365489
+2025-01-02 13:31:37 [info]: Calling checkChefToAdd with user name: ruchama email: ruchamwilk@gmail.com and password: 12365489
+2025-01-02 13:31:37 [info]: checkChefToAdd - check if there's a user with email: ruchamwilk@gmail.com
+2025-01-02 13:31:37 [info]: no chef with email: ruchamwilk@gmail.com
+2025-01-02 13:31:37 [error]: error adding new chef uuidv4 is not defined
+2025-01-02 13:32:58 [info]: Calling checkChefToAdd with user name: ruchama email: ruchamwilk@gmail.com and password: 12365489
+2025-01-02 13:32:58 [info]: checkChefToAdd - check if there's a user with email: ruchamwilk@gmail.com
+2025-01-02 13:32:59 [info]: no chef with email: ruchamwilk@gmail.com
+2025-01-02 13:32:59 [info]: saved chef ruchama in DB
+2025-01-02 13:32:59 [info]: success with checkChefToAdd
+2025-01-02 13:33:04 [info]: Calling checkChefToAdd with user name: ruchama email: ruchamwilk@gmail.com and password: 12365489
+2025-01-02 13:33:04 [info]: checkChefToAdd - check if there's a user with email: ruchamwilk@gmail.com
+2025-01-02 13:33:04 [error]: error adding new chef There is a chef with this email: ruchamwilk@gmail.com
