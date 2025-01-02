@@ -1,6 +1,8 @@
 // server/services/chefService.js
 const Chef = require('../models/chef.js');
 const logger = require('../services/loggerService');
+const { v4: uuidv4 } = require('uuid');
+
 
 
 const getChefs = async () => {
@@ -32,4 +34,30 @@ const checkForChef = async ({email, password}) => {
     }
 };
 
-module.exports = { getChefs, checkForChef };
+const checkChefToAdd = async ({ userName, email, password }) => {
+    try {
+        logger.info(`checkChefToAdd - check if there's a user with email: ${email}`);
+        const userOfEmail = await Chef.findOne({ emailAddress: email });
+        if (userOfEmail) {
+            throw new Error(`There is a chef with this email: ${email}`);
+        }
+        logger.info(`no chef with email: ${email}`);
+        
+        const chef = {
+            userName: userName,
+            emailAddress: email,
+            password: password,
+            chefId: uuidv4()
+        };
+        const newChef = new Chef(chef);
+        await newChef.save();
+        logger.info(`saved chef ${newChef.userName} in DB`);
+        return { success: true, message: 'SignUp successful' };
+    } catch (err) {
+        logger.error('error adding new chef', err);
+        return Promise.reject(err);
+    }
+};
+
+
+module.exports = { getChefs, checkForChef,checkChefToAdd };
