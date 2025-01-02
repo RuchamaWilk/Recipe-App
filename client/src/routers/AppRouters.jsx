@@ -6,7 +6,7 @@ import RecipeByCategory from '../pages/recipes-by-category-page/RecipeByCategory
 import AddRecipePage from '../pages/add-recipe-page/AddRecipePage';
 import LogInPage from '../pages/log-in-page/logInPage';
 import ErrPage from '../pages/err-page/errPage'
-import SignUpPage from '../pages/sign-up-page/SineUpPage'
+import SignUpPage from '../pages/sign-up-page/SignUpPage'
 
 
 function AppRouters() {
@@ -18,8 +18,8 @@ function AppRouters() {
       <Route path="nice"  />
       <Route path="/add-recipe" element={<AddRecipePage />} />
       <Route path="/log-in" element={<LogInPage />} />
-      <Route path="/sign-up" element={<SignUpPage />} />
-      <Route path="*" element={<ErrPage errCode= "400" />} />
+ <Route path="/sign-up" element={<SignUpPage />} /> 
+<Route path="*" element={<ErrPage errCode= "400" />} />
 
 
     </Routes>
