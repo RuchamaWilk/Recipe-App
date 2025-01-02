@@ -6,7 +6,7 @@ const BASE_URL = 'http://localhost:8080/api';
 // הפונקציה לקבלת המתכונים בקטגוריה מסוימת
 export const fetchRecipes = async () => {
   try {
-    const response = await axios.get(`${BASE_URL}`);
+    const response = await axios.get(`${BASE_URL}/recipes`);
     return response.data;
   } catch (error) {
     console.error('Error fetching recipes:', error);
