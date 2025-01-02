@@ -58,4 +58,14 @@ export const checkChef = async (email, password) => {
   }
 };
 
+export const addChefToDb = async (userName,email, password) => {
+  try {
+      const response = await axios.post(`${BASE_URL}/chef/signin`,{userName,email,password});
+      return response.data;
+    } catch (error) {
+      console.error('Error feching chefs:', error);
+      throw error;
+    }
+};
+
 
