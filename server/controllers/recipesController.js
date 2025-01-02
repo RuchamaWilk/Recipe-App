@@ -4,28 +4,28 @@ const { getRecipes ,fetchRecipe,fetchRecipesCategory,addRecipe} = require('../se
 const logger = require('../services/loggerService');
 
 
-router.get('/', async (req, res, next) => {
-    try {
+//
+
+router.get('/:id?', async (req, res, next) => {
+  try {
+    const recipeID = req.params.id;
+    
+    if (recipeID) {
+      logger.info(`fetchRecipe - calling recipe with ID: ${recipeID}`);
+      const result = await fetchRecipe(recipeID);
+      logger.info(`success with fetchRecipe id: ${recipeID}`);
+      return res.status(200).send(result);
+    } else {
       logger.info('calling getRecipes');
       const recipes = await getRecipes();
       logger.info('success with getRecipes');
       return res.status(200).send(recipes);
-    } catch (err) {
-      next(err)
     }
-  });
-
-  router.get('/recipes/:id', async (req, res, next) => {
-    try {
-        const recipeID= req.params.id;
-        logger.info( `fetchRecipe - calling recipe with ID: ${recipeID}`  );
-        const result = await fetchRecipe(recipeID);
-        logger.info(`success with fetchRecipe id: ${recipeID}`);
-        return res.status(200).send(result);
-    } catch (err) {
-        next(err);  // טיפול בשגיאות
-    }
+  } catch (err) {
+    next(err);
+  }
 });
+
 
 router.get('/category/:category', async (req, res) => {
     try {

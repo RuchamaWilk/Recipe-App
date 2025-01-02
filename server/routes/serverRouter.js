@@ -2,9 +2,9 @@
 const express = require('express');
 const router = express.Router();
 const authController = require('../controllers/authController');
-const authMiddleware = require('../middlewares/chefMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 const recipesController = require('../controllers/recipesController');
-const recipesMiddleware = require('../middlewares/recipeMiddleware');
+const recipesMiddleware = require('../middlewares/recipesMiddleware');
 const errorMiddleware = require('../middlewares/erroeMiddleware')
 
 router.use('/auth', authMiddleware, authController);
