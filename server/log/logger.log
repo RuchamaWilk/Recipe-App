@@ -3306,3 +3306,16 @@
 2025-01-02 13:33:04 [info]: Calling checkChefToAdd with user name: ruchama email: ruchamwilk@gmail.com and password: 12365489
 2025-01-02 13:33:04 [info]: checkChefToAdd - check if there's a user with email: ruchamwilk@gmail.com
 2025-01-02 13:33:04 [error]: error adding new chef There is a chef with this email: ruchamwilk@gmail.com
+2025-01-02 13:48:01 [info]: calling getRecipes
+2025-01-02 13:48:01 [info]: getChefs- find all recipe
+2025-01-02 13:48:03 [info]: success fetching recipes from DB
+2025-01-02 13:48:03 [info]: success with getRecipes
+2025-01-02 13:48:03 [info]: calling getRecipes
+2025-01-02 13:48:03 [info]: getChefs- find all recipe
+2025-01-02 13:48:03 [info]: success fetching recipes from DB
+2025-01-02 13:48:03 [info]: success with getRecipes
+2025-01-02 13:49:09 [info]: Calling checkChefToAdd with user name: hi email: hhhh@gmail.com and password: 569742315
+2025-01-02 13:49:09 [info]: checkChefToAdd - check if there's a user with email: hhhh@gmail.com
+2025-01-02 13:49:09 [info]: no chef with email: hhhh@gmail.com
+2025-01-02 13:49:09 [info]: saved chef hi in DB
+2025-01-02 13:49:09 [info]: success with checkChefToAdd

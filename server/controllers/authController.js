@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const logger = require('../services/loggerService');
-const { getChefs, checkForChef ,checkChefToAdd} = require('../services/chefService');
+const { getChefs, checkForChef ,checkChefToAdd} = require('../services/authService');
 
 router.get('/', async (req, res, next) => {
     try {

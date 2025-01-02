@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getRecipes ,fetchRecipe,fetchRecipesCategory,addRecipe} = require('../services/recipeService');
+const { getRecipes ,fetchRecipe,fetchRecipesCategory,addRecipe} = require('../services/recipesService');
 const logger = require('../services/loggerService');
 
 

@@ -1,6 +1,6 @@
 // server/services/chefService.js
 const Chef = require('../models/chef.js');
-const logger = require('../services/loggerService');
+const logger = require('./loggerService.js');
 const { v4: uuidv4 } = require('uuid');
 
 

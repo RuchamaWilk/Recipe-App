@@ -1,5 +1,5 @@
 const Recipe = require('../models/recipe.js');
-const logger = require('../services/loggerService');
+const logger = require('./loggerService.js');
 
 
 const getRecipes = async () => {
