@@ -26,7 +26,7 @@ export const fetchRecipesById = async (id) => {
 
 export const fetchRecipesByCategory = async (category) => {
   try {
-    const response = await axios.get(`${BASE_URL}/category/${category}`);
+    const response = await axios.get(`${BASE_URL}/recipes/category/${category}`);
     return response.data;
   } catch (error) {
     console.error('Error fetching recipes:', error);
@@ -37,7 +37,7 @@ export const fetchRecipesByCategory = async (category) => {
 export const addRecipe = async (recipeData) => {
   console.log("add? " ,recipeData);
   try {
-    const response = await axios.post(`${BASE_URL}/add-recipes`,recipeData);
+    const response = await axios.post(`${BASE_URL}/recipes`,recipeData);
     console.log("now??? " ,response)
     return response.data;
   } catch (error) {
@@ -49,7 +49,7 @@ export const addRecipe = async (recipeData) => {
 export const checkChef = async (email, password) => {
   try {
     console.log("api ",email)
-    const response = await axios.post(`${BASE_URL}/chef/login`,{email,password});
+    const response = await axios.post(`${BASE_URL}/auth/login`,{email,password});
     console.log("now??? " ,response)
     return response.data;
   } catch (error) {
@@ -60,7 +60,7 @@ export const checkChef = async (email, password) => {
 
 export const addChefToDb = async (userName,email, password) => {
   try {
-      const response = await axios.post(`${BASE_URL}/chef/signUp`,{userName,email,password});
+      const response = await axios.post(`${BASE_URL}/auth/signUp`,{userName,email,password});
       return response.data;
     } catch (error) {
       console.error('Error feching chefs:', error);
