@@ -26,9 +26,9 @@ router.get('/:id?', async (req, res, next) => {
 });
 
 
-router.get('/category/:category', async (req, res) => {
+router.get('/category/:categoryId', async (req, res) => {
     try {
-        const category= req.params.category
+        const category= req.params.categoryId
         logger.info( `fetchRecipesCategory - calling recipes of ${category} category`  );
         const allRecipesFromCategory =await fetchRecipesCategory(category);
         logger.info(`success with fetchRecipesCategory category: ${category}`);
@@ -39,7 +39,7 @@ router.get('/category/:category', async (req, res) => {
   });
 
 
-  router.post('/add-recipes', async (req, res, next) => {
+  router.post('/', async (req, res, next) => {
     try {
         const recipe = req.body;
         logger.info( `addRecipe - set new recipe to DB, recipe ID: ${recipe.recipeID}`  );
