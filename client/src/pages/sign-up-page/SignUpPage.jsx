@@ -1,12 +1,13 @@
+
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import {checkChef} from '../../services/apiService'
+import {addChefToDb} from '../../services/apiService'
 import TextField from '@mui/material/TextField';
 import LoginIcon from '@mui/icons-material/Login';
 import { Button } from '@mui/material';
 import { Typography ,Box} from '@mui/material';
 
-const LogInPage = () => {
+const SignUpPage = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [userName, setUserName]= useState('')
@@ -28,7 +29,7 @@ const LogInPage = () => {
     setEmailError('Please enter your email')
     return
   }
-
+  
   if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
     setEmailError('Please enter a valid email')
     return
@@ -44,11 +45,12 @@ const LogInPage = () => {
     return
   }
   try{
+    console.log("addChefToDb");
     await addChefToDb(userName,email, password);
 
 
   }catch(err){
-
+    console.error('Error during Sign Up:', error);
   }
   
   }
@@ -79,4 +81,5 @@ const LogInPage = () => {
   )
 }
 
-export default LogInPage
+export default SignUpPage
+
