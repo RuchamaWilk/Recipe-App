@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const logger = require('../services/loggerService');
-const { getUsers, signIn ,AddUser} = require('../services/authService');
+const { getUsers, signIn ,AddUser,AddChef} = require('../services/authService');
 
 router.get('/', async (req, res, next) => {
     try {
@@ -30,12 +30,25 @@ router.post('/signIn', async (req, res, next) => {
 
 
 router.post('/signUp', async (req, res, next) => {
-
+    
     try {
         const { userName, email, password } = req.body;
         logger.info(`Calling AddUser with user name: ${userName} email: ${email} and password: ${password}`);
         const result = await AddUser({ userName,email, password }); 
         logger.info('success with signUp');
+        return res.status(200).send(result);
+    } catch (err) {
+        next(err);
+    }
+});
+
+router.post('/signUp/chef', async (req, res, next) => {
+
+    try {
+        const { userName, email, password, yearsOfExperience,phoneNumber,aboutMe } = req.body;
+        logger.info(`Calling AddChef with user name: ${userName} email: ${email} and password: ${password}`);
+        const result = await AddChef({ userName, email, password, yearsOfExperience,phoneNumber,aboutMe }); 
+        logger.info('success with signUp as Chef');
         return res.status(200).send(result);
     } catch (err) {
         next(err);
