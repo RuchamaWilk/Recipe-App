@@ -34,29 +34,28 @@ const checkForChef = async ({email, password}) => {
     }
 };
 
+
 const checkChefToAdd = async ({ userName, email, password }) => {
     try {
-        logger.info(`checkChefToAdd - check if there's a user with email: ${email}`);
-        const userOfEmail = await Chef.findOne({ emailAddress: email });
-        if (userOfEmail) {
-            throw new Error(`There is a chef with this email: ${email}`);
-        }
-        logger.info(`no chef with email: ${email}`);
-        
         const chef = {
             userName: userName,
             emailAddress: email,
             password: password,
         };
         const newChef = new Chef(chef);
-        await newChef.save();
-        logger.info(`saved chef ${newChef.userName} in DB`);
+        await newChef.save(); // This will throw an error if emailAddress is not unique
+        logger.info(`Saved chef ${newChef.userName} in DB`);
         return { success: true, message: 'SignUp successful' };
     } catch (err) {
-        logger.error('error adding new chef', err);
+        if (err.code === 11000) {
+            logger.error('Duplicate email error:', err);
+            return Promise.reject(new Error('Email address must be unique'));
+        }
+        logger.error('Error adding new chef:', err);
         return Promise.reject(err);
     }
 };
+
 
 
 module.exports = { getChefs, checkForChef,checkChefToAdd };
