@@ -14,7 +14,6 @@ const instructionsSchema = new mongoose.Schema({
 const recipeSchema = new mongoose.Schema({
     name: { type: String, required: true},
     avgTime: {type: Number, required: true},
-    recipeId: { type: String,required: true, unique: true},
     chefId: {type: String,required: true},
     image: {  type: String,required: true },
     ingredients: [ingredientSchema],
