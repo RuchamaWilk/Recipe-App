@@ -17,7 +17,7 @@ const getUsers = async () => {
 
 const signIn = async ({email, password}) => {
     try {
-        logger.info(`logIn- find chef with email: ${email} and password ${password}`)
+        logger.info(`signIn- find chef with email: ${email} and password ${password}`)
         const userOfEmail = await User.findOne({ emailAddress: email });
         if (!userOfEmail) {
             throw new Error(`There is no chef with this email: ${email}`);
