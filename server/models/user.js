@@ -2,14 +2,14 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
-const chefSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     profileImage: { type: String },
     password: { type: String, required: true },
     userName: { type: String, required: true },
     emailAddress: { type: String, required: true, unique: true } 
 });
 
-chefSchema.pre('save', function(next) {
+userSchema.pre('save', function(next) {
     var user = this;
 
     if (!user.isModified('password')) return next();
@@ -21,7 +21,7 @@ chefSchema.pre('save', function(next) {
     });
 });
 
-chefSchema.methods.checkPassword = function(candidatePassword) {
+userSchema.methods.checkPassword = function(candidatePassword) {
     return new Promise((resolve, reject) => {
         bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
             if (err) return reject(err);
@@ -31,6 +31,6 @@ chefSchema.methods.checkPassword = function(candidatePassword) {
 };
 
 
-const Chef = mongoose.model('chefs', chefSchema); 
+const User = mongoose.model('users', userSchema); 
 
-module.exports = Chef;
+module.exports = User;
