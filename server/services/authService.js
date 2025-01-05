@@ -39,26 +39,57 @@ const signIn = async ({email, password}) => {
 const AddUser = async ({ userName, email, password }) => {
     try {
         logger.info(`AddUser.  ${userName} to DB`);
-        const chef = {
+        const user = {
             userName: userName,
             emailAddress: email,
             password: password,
+            type: "user"
         };
-        const newChef = new User(chef);
-        await newChef.save(); // This will throw an error if emailAddress is not unique
-        const token = generateToken(newChef._id,newChef.email);
-        logger.info(`Saved chef ${newChef.userName} in DB`);
+        const newUser = new User(user);
+        await newUser.save(); // This will throw an error if emailAddress is not unique
+        const token = generateToken(newUser._id,newUser.email);
+        logger.info(`Saved user ${newUser.userName} in DB`);
         return { success: true,token };
     } catch (err) {
         if (err.code === 11000 && err.keyValue.emailAddress) {
             logger.error('Duplicate email error:', err);
             return Promise.reject(new Error('Email address must be unique'));
         }
-        logger.error('Error adding new chef:', err);
+        logger.error('Error adding new User:', err);
+        return Promise.reject(err);
+    }
+};
+
+const AddChef = async ({ userName, email, password, yearsOfExperience,phoneNumber,aboutMe }) => {
+    try {
+        logger.info(`AddChef.  ${userName} to DB`);
+        const chef = {
+            userName: userName,
+            emailAddress: email,
+            password: password,
+            yearsOfExperience: yearsOfExperience,
+            phoneNumber: phoneNumber,
+            aboutMe: aboutMe,
+            type: "chef"
+        };
+        const newChef = new User(chef);
+        await newChef.save(); // This will throw an error if emailAddress is not unique
+        const token = generateToken(newChef._id,newChef.email);
+        logger.info(`Saved user ${newChef.userName} in DB`);
+        return { success: true,token };
+    } catch (err) {
+        if (err.code === 11000 && err.keyValue.emailAddress) {
+            logger.error('Duplicate email error:', err);
+            return Promise.reject(new Error('Email address must be unique'));
+        }
+        logger.error('Error adding new Chef:', err);
         return Promise.reject(err);
     }
 };
 
 
 
-module.exports = { getUsers, signIn,AddUser };
+
+
+
+module.exports = { getUsers, signIn,AddUser, AddChef };
