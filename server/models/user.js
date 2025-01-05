@@ -6,7 +6,12 @@ const userSchema = new mongoose.Schema({
     profileImage: { type: String },
     password: { type: String, required: true },
     userName: { type: String, required: true },
-    emailAddress: { type: String, required: true, unique: true } 
+    emailAddress: { type: String, required: true, unique: true } ,
+    joinDate: { type: Date, required: true,default: Date.now}, 
+    type: { type: String, enum: ['chef', 'user'], required: true }, 
+    yearsOfExperience: { type: Number, required: function () { return this.type === 'chef'; } },
+    phoneNumber: { type: String, required: function () { return this.type === 'chef'; } },
+    aboutMe: {type: String ,required: function () { return this.type === 'chef';}}
 });
 
 userSchema.pre('save', function(next) {
