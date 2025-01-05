@@ -1,13 +1,13 @@
-// server/services/chefService.js
-const Chef = require('../models/chef.js');
+// server/services/authService.js
+const User = require('../models/user.js');
 const logger = require('./loggerService.js');
+const { generateToken, verifyJwt } = require('../utils/jwt.js');
 
 
-
-const getChefs = async () => {
+const getUsers = async () => {
     try {
         logger.info('getChefs- find all chefs')
-        const chefs = await Chef.find();
+        const chefs = await User.find();
         logger.info('success fetching chefs from DB')
         return Promise.resolve(chefs);
     } catch (err) {
@@ -15,10 +15,10 @@ const getChefs = async () => {
     }
 };
 
-const checkForChef = async ({email, password}) => {
+const signIn = async ({email, password}) => {
     try {
-        logger.info(`checkForChef- find chef with email: ${email} and password ${password}`)
-        const userOfEmail = await Chef.findOne({ emailAddress: email });
+        logger.info(`logIn- find chef with email: ${email} and password ${password}`)
+        const userOfEmail = await User.findOne({ emailAddress: email });
         if (!userOfEmail) {
             throw new Error(`There is no chef with this email: ${email}`);
         }
@@ -28,26 +28,29 @@ const checkForChef = async ({email, password}) => {
             throw new Error(`Incorrect password for user: ${email}`);
         }
         logger.info(`found a chef with email: ${email} and password ${password} `)
-        return { success: true, message: 'Login successful' };  // חזרה עם תוצאה
+        const token = generateToken(userOfEmail._id,userOfEmail.email);
+        return {success: true,token };  // חזרה עם תוצאה
     } catch (err) {
         return Promise.reject(err);
     }
 };
 
 
-const checkChefToAdd = async ({ userName, email, password }) => {
+const AddUser = async ({ userName, email, password }) => {
     try {
+        logger.info(`AddUser.  ${userName} to DB`);
         const chef = {
             userName: userName,
             emailAddress: email,
             password: password,
         };
-        const newChef = new Chef(chef);
+        const newChef = new User(chef);
         await newChef.save(); // This will throw an error if emailAddress is not unique
+        const token = generateToken(newChef._id,newChef.email);
         logger.info(`Saved chef ${newChef.userName} in DB`);
-        return { success: true, message: 'SignUp successful' };
+        return { success: true,token };
     } catch (err) {
-        if (err.code === 11000) {
+        if (err.code === 11000 && err.keyValue.emailAddress) {
             logger.error('Duplicate email error:', err);
             return Promise.reject(new Error('Email address must be unique'));
         }
@@ -58,4 +61,4 @@ const checkChefToAdd = async ({ userName, email, password }) => {
 
 
 
-module.exports = { getChefs, checkForChef,checkChefToAdd };
+module.exports = { getUsers, signIn,AddUser };
