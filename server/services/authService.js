@@ -1,7 +1,6 @@
 // server/services/chefService.js
 const Chef = require('../models/chef.js');
 const logger = require('./loggerService.js');
-const { v4: uuidv4 } = require('uuid');
 
 
 
@@ -19,12 +18,13 @@ const getChefs = async () => {
 const checkForChef = async ({email, password}) => {
     try {
         logger.info(`checkForChef- find chef with email: ${email} and password ${password}`)
-        const userOfEmail = await Chef.findOne({ emaiAdress: email });
+        const userOfEmail = await Chef.findOne({ emailAddress: email });
         if (!userOfEmail) {
             throw new Error(`There is no chef with this email: ${email}`);
         }
         logger.info(`found a chef with the email" ${email}`)
-        if (password !== userOfEmail.password) {
+        const isMatch = await userOfEmail.checkPassword(password);
+        if (!isMatch) {
             throw new Error(`Incorrect password for user: ${email}`);
         }
         logger.info(`found a chef with email: ${email} and password ${password} `)
@@ -47,7 +47,6 @@ const checkChefToAdd = async ({ userName, email, password }) => {
             userName: userName,
             emailAddress: email,
             password: password,
-            chefId: uuidv4()
         };
         const newChef = new Chef(chef);
         await newChef.save();

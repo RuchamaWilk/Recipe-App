@@ -9,7 +9,7 @@ const chefSchema = new mongoose.Schema({
     emailAddress: { type: String, required: true, unique: true } 
 });
 
-userSchema.pre('save', function(next) {
+chefSchema.pre('save', function(next) {
     var user = this;
 
     if (!user.isModified('password')) return next();
@@ -21,7 +21,7 @@ userSchema.pre('save', function(next) {
     });
 });
 
-userSchema.methods.checkPassword = function(candidatePassword) {
+chefSchema.methods.checkPassword = function(candidatePassword) {
     return new Promise((resolve, reject) => {
         bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
             if (err) return reject(err);
