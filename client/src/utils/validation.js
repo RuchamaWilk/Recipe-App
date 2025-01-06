@@ -19,8 +19,8 @@ export const validateUserName = (userName) => {
     if (!password || password.trim() === '') {
       return 'Please enter a password';
     }
-    if (password.length < 8) {
-      return 'The password must be 8 characters or longer';
+    if (password.length < 7) {
+      return 'The password must be 7 characters or longer';
     }
     return '';
   };

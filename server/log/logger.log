@@ -4235,3 +4235,255 @@
 2025-01-05 19:38:41 [info]: getChefs- find all recipe
 2025-01-05 19:38:42 [info]: success fetching recipes from DB
 2025-01-05 19:38:42 [info]: success with getRecipes
+2025-01-05 20:35:28 [info]: Calling AddUser with user name: hi email: hi@gmail.com and password: 1234567
+2025-01-05 20:35:28 [info]: AddUser.  hi to DB
+2025-01-05 20:35:28 [info]: Saved user hi in DB
+2025-01-05 20:35:28 [info]: success with signUp
+2025-01-05 20:37:25 [info]: calling getRecipes
+2025-01-05 20:37:25 [info]: getChefs- find all recipe
+2025-01-05 20:37:25 [info]: success fetching recipes from DB
+2025-01-05 20:37:25 [info]: success with getRecipes
+2025-01-05 20:39:38 [info]: calling getRecipes
+2025-01-05 20:39:38 [info]: getChefs- find all recipe
+2025-01-05 20:39:38 [info]: success fetching recipes from DB
+2025-01-05 20:39:38 [info]: success with getRecipes
+2025-01-05 20:40:17 [info]: calling getRecipes
+2025-01-05 20:40:17 [info]: getChefs- find all recipe
+2025-01-05 20:40:17 [info]: success fetching recipes from DB
+2025-01-05 20:40:17 [info]: success with getRecipes
+2025-01-05 20:40:31 [info]: calling getRecipes
+2025-01-05 20:40:31 [info]: getChefs- find all recipe
+2025-01-05 20:40:31 [info]: success fetching recipes from DB
+2025-01-05 20:40:31 [info]: success with getRecipes
+2025-01-05 20:43:19 [info]: Calling AddChef with user name: chef email: undefined and password: 1234567
+2025-01-05 20:43:19 [info]: AddChef.  chef to DB
+2025-01-05 20:43:19 [error]: Error adding new Chef: users validation failed: emailAddress: Path `emailAddress` is required.
+2025-01-05 20:45:10 [info]: Calling AddChef with user name: chef email: undefined and password: 1234567
+2025-01-05 20:45:10 [info]: AddChef.  chef to DB
+2025-01-05 20:45:10 [info]: new chef saved in db
+2025-01-05 20:45:10 [error]: Error adding new Chef: users validation failed: emailAddress: Path `emailAddress` is required.
+2025-01-05 20:46:29 [info]: Calling AddChef with user name: chef email: undefined and password: 1234567
+2025-01-05 20:46:29 [info]: AddChef.  undefined to DB
+2025-01-05 20:46:29 [info]: new chef saved in db
+2025-01-05 20:46:29 [error]: Error adding new Chef: users validation failed: emailAddress: Path `emailAddress` is required.
+2025-01-05 20:48:35 [info]: Calling AddChef with user name: chef email: chef@gmail.com and password: 1234567
+2025-01-05 20:48:35 [info]: AddChef.  chef@gmail.com to DB
+2025-01-05 20:48:35 [info]: new chef saved in db
+2025-01-05 20:48:35 [info]: Saved user chef in DB
+2025-01-05 20:48:35 [info]: success with signUp as Chef
+2025-01-05 20:51:13 [info]: Calling AddChef with user name: chef email: chef1@gmail.com and password: 1234567
+2025-01-05 20:51:13 [info]: AddChef.  chef1@gmail.com to DB
+2025-01-05 20:51:13 [info]: new chef saved in db
+2025-01-05 20:51:13 [info]: Saved user chef in DB
+2025-01-05 20:51:13 [info]: success with signUp as Chef
+2025-01-05 20:51:13 [info]: calling getRecipes
+2025-01-05 20:51:13 [info]: getChefs- find all recipe
+2025-01-05 20:51:13 [info]: success fetching recipes from DB
+2025-01-05 20:51:13 [info]: success with getRecipes
+2025-01-05 20:51:13 [info]: calling getRecipes
+2025-01-05 20:51:13 [info]: getChefs- find all recipe
+2025-01-05 20:51:14 [info]: success fetching recipes from DB
+2025-01-05 20:51:14 [info]: success with getRecipes
+2025-01-05 20:51:55 [info]: calling getRecipes
+2025-01-05 20:51:55 [info]: getChefs- find all recipe
+2025-01-05 20:51:55 [info]: success fetching recipes from DB
+2025-01-05 20:51:55 [info]: success with getRecipes
+2025-01-05 20:51:55 [info]: calling getRecipes
+2025-01-05 20:51:55 [info]: getChefs- find all recipe
+2025-01-05 20:51:55 [info]: success fetching recipes from DB
+2025-01-05 20:51:55 [info]: success with getRecipes
+2025-01-05 20:53:03 [info]: fetchRecipe - calling recipe with ID: 3
+2025-01-05 20:53:03 [info]: fetchRecipe- find recipe with recipeID: 3
+2025-01-05 20:53:03 [info]: found a recipe with recipeID: 3
+2025-01-05 20:53:03 [info]: success with fetchRecipe id: 3
+2025-01-05 20:53:03 [info]: fetchRecipe - calling recipe with ID: 3
+2025-01-05 20:53:03 [info]: fetchRecipe- find recipe with recipeID: 3
+2025-01-05 20:53:03 [info]: found a recipe with recipeID: 3
+2025-01-05 20:53:03 [info]: success with fetchRecipe id: 3
+2025-01-05 20:53:05 [info]: calling getRecipes
+2025-01-05 20:53:05 [info]: getChefs- find all recipe
+2025-01-05 20:53:05 [info]: success fetching recipes from DB
+2025-01-05 20:53:05 [info]: success with getRecipes
+2025-01-05 20:53:05 [info]: calling getRecipes
+2025-01-05 20:53:05 [info]: getChefs- find all recipe
+2025-01-05 20:53:05 [info]: success fetching recipes from DB
+2025-01-05 20:53:05 [info]: success with getRecipes
+2025-01-05 20:53:34 [info]: calling getRecipes
+2025-01-05 20:53:34 [info]: getChefs- find all recipe
+2025-01-05 20:53:34 [info]: success fetching recipes from DB
+2025-01-05 20:53:34 [info]: success with getRecipes
+2025-01-05 20:53:34 [info]: calling getRecipes
+2025-01-05 20:53:34 [info]: getChefs- find all recipe
+2025-01-05 20:53:35 [info]: success fetching recipes from DB
+2025-01-05 20:53:35 [info]: success with getRecipes
+2025-01-06 00:14:37 [info]: calling getRecipes
+2025-01-06 00:14:37 [info]: getChefs- find all recipe
+2025-01-06 00:14:39 [info]: success fetching recipes from DB
+2025-01-06 00:14:39 [info]: success with getRecipes
+2025-01-06 00:14:39 [info]: calling getRecipes
+2025-01-06 00:14:39 [info]: getChefs- find all recipe
+2025-01-06 00:14:39 [info]: success fetching recipes from DB
+2025-01-06 00:14:39 [info]: success with getRecipes
+2025-01-06 01:29:22 [info]: calling getRecipes
+2025-01-06 01:29:22 [info]: getChefs- find all recipe
+2025-01-06 01:29:25 [info]: success fetching recipes from DB
+2025-01-06 01:29:25 [info]: success with getRecipes
+2025-01-06 01:29:25 [info]: calling getRecipes
+2025-01-06 01:29:25 [info]: getChefs- find all recipe
+2025-01-06 01:29:25 [info]: success fetching recipes from DB
+2025-01-06 01:29:25 [info]: success with getRecipes
+2025-01-06 01:36:13 [info]: fetchRecipesCategory - calling recipes of Soup category
+2025-01-06 01:36:13 [info]: fetchRecipesCategory- find recipes of category: Soup
+2025-01-06 01:36:13 [info]: found recipes of category: Soup
+2025-01-06 01:36:13 [info]: success with fetchRecipesCategory category: Soup
+2025-01-06 01:36:13 [info]: fetchRecipesCategory - calling recipes of Soup category
+2025-01-06 01:36:13 [info]: fetchRecipesCategory- find recipes of category: Soup
+2025-01-06 01:36:13 [info]: found recipes of category: Soup
+2025-01-06 01:36:13 [info]: success with fetchRecipesCategory category: Soup
+2025-01-06 01:36:15 [info]: calling getRecipes
+2025-01-06 01:36:15 [info]: getChefs- find all recipe
+2025-01-06 01:36:15 [info]: success fetching recipes from DB
+2025-01-06 01:36:15 [info]: success with getRecipes
+2025-01-06 01:36:15 [info]: calling getRecipes
+2025-01-06 01:36:15 [info]: getChefs- find all recipe
+2025-01-06 01:36:15 [info]: success fetching recipes from DB
+2025-01-06 01:36:15 [info]: success with getRecipes
+2025-01-06 01:36:17 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-06 01:36:17 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-06 01:36:17 [info]: found recipes of category: Meat
+2025-01-06 01:36:17 [info]: success with fetchRecipesCategory category: Meat
+2025-01-06 01:36:17 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-06 01:36:17 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-06 01:36:17 [info]: found recipes of category: Meat
+2025-01-06 01:36:17 [info]: success with fetchRecipesCategory category: Meat
+2025-01-06 01:36:20 [info]: calling getRecipes
+2025-01-06 01:36:20 [info]: getChefs- find all recipe
+2025-01-06 01:36:20 [info]: success fetching recipes from DB
+2025-01-06 01:36:20 [info]: success with getRecipes
+2025-01-06 01:36:20 [info]: calling getRecipes
+2025-01-06 01:36:20 [info]: getChefs- find all recipe
+2025-01-06 01:36:20 [info]: success fetching recipes from DB
+2025-01-06 01:36:20 [info]: success with getRecipes
+2025-01-06 01:36:22 [info]: fetchRecipesCategory - calling recipes of Dessert category
+2025-01-06 01:36:22 [info]: fetchRecipesCategory- find recipes of category: Dessert
+2025-01-06 01:36:22 [info]: found recipes of category: Dessert
+2025-01-06 01:36:22 [info]: success with fetchRecipesCategory category: Dessert
+2025-01-06 01:36:22 [info]: fetchRecipesCategory - calling recipes of Dessert category
+2025-01-06 01:36:22 [info]: fetchRecipesCategory- find recipes of category: Dessert
+2025-01-06 01:36:23 [info]: found recipes of category: Dessert
+2025-01-06 01:36:23 [info]: success with fetchRecipesCategory category: Dessert
+2025-01-06 01:36:43 [info]: calling getRecipes
+2025-01-06 01:36:43 [info]: getChefs- find all recipe
+2025-01-06 01:36:43 [info]: success fetching recipes from DB
+2025-01-06 01:36:43 [info]: success with getRecipes
+2025-01-06 01:36:43 [info]: calling getRecipes
+2025-01-06 01:36:43 [info]: getChefs- find all recipe
+2025-01-06 01:36:43 [info]: success fetching recipes from DB
+2025-01-06 01:36:43 [info]: success with getRecipes
+2025-01-06 01:38:18 [info]: calling getRecipes
+2025-01-06 01:38:18 [info]: getChefs- find all recipe
+2025-01-06 01:38:18 [info]: success fetching recipes from DB
+2025-01-06 01:38:18 [info]: success with getRecipes
+2025-01-06 01:38:18 [info]: calling getRecipes
+2025-01-06 01:38:18 [info]: getChefs- find all recipe
+2025-01-06 01:38:18 [info]: success fetching recipes from DB
+2025-01-06 01:38:18 [info]: success with getRecipes
+2025-01-06 10:49:20 [info]: calling getRecipes
+2025-01-06 10:49:20 [info]: getChefs- find all recipe
+2025-01-06 10:49:25 [info]: success fetching recipes from DB
+2025-01-06 10:49:25 [info]: success with getRecipes
+2025-01-06 10:49:35 [info]: calling getRecipes
+2025-01-06 10:49:35 [info]: getChefs- find all recipe
+2025-01-06 10:49:36 [info]: success fetching recipes from DB
+2025-01-06 10:49:36 [info]: success with getRecipes
+2025-01-06 11:01:05 [info]: calling getRecipes
+2025-01-06 11:01:05 [info]: getChefs- find all recipe
+2025-01-06 11:01:05 [info]: success fetching recipes from DB
+2025-01-06 11:01:05 [info]: success with getRecipes
+2025-01-06 11:01:05 [info]: calling getRecipes
+2025-01-06 11:01:05 [info]: getChefs- find all recipe
+2025-01-06 11:01:05 [info]: success fetching recipes from DB
+2025-01-06 11:01:05 [info]: success with getRecipes
+2025-01-06 11:11:02 [info]: Calling AddChef with user name: hi email: undefined and password: 1234567
+2025-01-06 11:11:02 [info]: AddChef.  undefined to DB
+2025-01-06 11:11:02 [info]: new chef saved in db
+2025-01-06 11:11:02 [error]: Error adding new Chef: users validation failed: emailAddress: Path `emailAddress` is required.
+2025-01-06 11:13:49 [info]: Calling AddChef with user name: hi email: hi@gmail.com and password: 1234567
+2025-01-06 11:13:49 [info]: AddChef.  hi@gmail.com to DB
+2025-01-06 11:13:49 [info]: new chef saved in db
+2025-01-06 11:13:49 [error]: Duplicate email error: E11000 duplicate key error collection: recipes-project.users index: emailAddress_1 dup key: { emailAddress: "hi@gmail.com" }
+2025-01-06 11:15:03 [info]: Calling AddChef with user name: hi email: hi1@gmail.com and password: 1234567
+2025-01-06 11:15:03 [info]: AddChef.  hi1@gmail.com to DB
+2025-01-06 11:15:03 [info]: new chef saved in db
+2025-01-06 11:15:04 [info]: Saved user hi in DB
+2025-01-06 11:15:04 [info]: success with signUp as Chef
+2025-01-06 11:15:04 [info]: calling getRecipes
+2025-01-06 11:15:04 [info]: getChefs- find all recipe
+2025-01-06 11:15:04 [info]: success fetching recipes from DB
+2025-01-06 11:15:04 [info]: success with getRecipes
+2025-01-06 11:15:04 [info]: calling getRecipes
+2025-01-06 11:15:04 [info]: getChefs- find all recipe
+2025-01-06 11:15:04 [info]: success fetching recipes from DB
+2025-01-06 11:15:04 [info]: success with getRecipes
+2025-01-06 11:30:17 [info]: Calling AddChef with user name:  email:  and password: 
+2025-01-06 11:30:17 [info]: AddChef.   to DB
+2025-01-06 11:30:17 [info]: new chef saved in db
+2025-01-06 11:30:17 [error]: Error adding new Chef: users validation failed: password: Path `password` is required., userName: Path `userName` is required., emailAddress: Path `emailAddress` is required., yearsOfExperience: Path `yearsOfExperience` is required., phoneNumber: Path `phoneNumber` is required., aboutMe: Path `aboutMe` is required.
+2025-01-06 11:30:34 [info]: Calling AddChef with user name: ruchama email:  and password: 
+2025-01-06 11:30:34 [info]: AddChef.   to DB
+2025-01-06 11:30:34 [info]: new chef saved in db
+2025-01-06 11:30:34 [error]: Error adding new Chef: users validation failed: password: Path `password` is required., emailAddress: Path `emailAddress` is required., yearsOfExperience: Path `yearsOfExperience` is required., phoneNumber: Path `phoneNumber` is required., aboutMe: Path `aboutMe` is required.
+2025-01-06 11:30:42 [info]: Calling AddChef with user name: ruchama email:  and password: 
+2025-01-06 11:30:42 [info]: AddChef.   to DB
+2025-01-06 11:30:42 [info]: new chef saved in db
+2025-01-06 11:30:42 [error]: Error adding new Chef: users validation failed: password: Path `password` is required., emailAddress: Path `emailAddress` is required., phoneNumber: Path `phoneNumber` is required., aboutMe: Path `aboutMe` is required.
+2025-01-06 11:32:57 [info]: Calling AddChef with user name: ruchama email:  and password: 
+2025-01-06 11:32:57 [info]: AddChef.   to DB
+2025-01-06 11:32:57 [info]: new chef saved in db
+2025-01-06 11:32:57 [error]: Error adding new Chef: users validation failed: password: Path `password` is required., emailAddress: Path `emailAddress` is required., aboutMe: Path `aboutMe` is required.
+2025-01-06 11:35:11 [info]: calling getRecipes
+2025-01-06 11:35:11 [info]: getChefs- find all recipe
+2025-01-06 11:35:11 [info]: success fetching recipes from DB
+2025-01-06 11:35:11 [info]: success with getRecipes
+2025-01-06 11:35:11 [info]: calling getRecipes
+2025-01-06 11:35:11 [info]: getChefs- find all recipe
+2025-01-06 11:35:11 [info]: success fetching recipes from DB
+2025-01-06 11:35:11 [info]: success with getRecipes
+2025-01-06 11:35:15 [info]: Calling AddChef with user name:  email:  and password: 
+2025-01-06 11:35:15 [info]: AddChef.   to DB
+2025-01-06 11:35:15 [info]: new chef saved in db
+2025-01-06 11:35:15 [error]: Error adding new Chef: users validation failed: password: Path `password` is required., userName: Path `userName` is required., emailAddress: Path `emailAddress` is required., yearsOfExperience: Path `yearsOfExperience` is required., phoneNumber: Path `phoneNumber` is required., aboutMe: Path `aboutMe` is required.
+2025-01-06 11:41:45 [info]: Calling AddUser with user name: ruchama email: ruchama@gmail.com and password: 1234567
+2025-01-06 11:41:45 [info]: AddUser.  ruchama to DB
+2025-01-06 11:41:46 [info]: Saved user ruchama in DB
+2025-01-06 11:41:46 [info]: success with signUp
+2025-01-06 11:41:54 [info]: calling getRecipes
+2025-01-06 11:41:54 [info]: getChefs- find all recipe
+2025-01-06 11:41:55 [info]: success fetching recipes from DB
+2025-01-06 11:41:55 [info]: success with getRecipes
+2025-01-06 11:41:55 [info]: calling getRecipes
+2025-01-06 11:41:55 [info]: getChefs- find all recipe
+2025-01-06 11:41:55 [info]: success fetching recipes from DB
+2025-01-06 11:41:55 [info]: success with getRecipes
+2025-01-06 11:44:52 [info]: Calling AddChef with user name: hhhh email: jjj@gmail.com and password: 123456589
+2025-01-06 11:44:52 [info]: AddChef.  jjj@gmail.com to DB
+2025-01-06 11:44:52 [info]: new chef saved in db
+2025-01-06 11:44:52 [error]: Error adding new Chef: users validation failed: yearsOfExperience: Path `yearsOfExperience` is required., phoneNumber: Path `phoneNumber` is required., aboutMe: Path `aboutMe` is required.
+2025-01-06 11:46:53 [info]: calling getRecipes
+2025-01-06 11:46:53 [info]: getChefs- find all recipe
+2025-01-06 11:46:53 [info]: success fetching recipes from DB
+2025-01-06 11:46:53 [info]: success with getRecipes
+2025-01-06 11:46:53 [info]: calling getRecipes
+2025-01-06 11:46:53 [info]: getChefs- find all recipe
+2025-01-06 11:46:53 [info]: success fetching recipes from DB
+2025-01-06 11:46:53 [info]: success with getRecipes
+2025-01-06 11:47:15 [info]: Calling AddUser with user name: y email: y@gmail.com and password: 12345678
+2025-01-06 11:47:15 [info]: AddUser.  y to DB
+2025-01-06 11:47:15 [error]: Duplicate email error: E11000 duplicate key error collection: recipes-project.users index: emailAddress_1 dup key: { emailAddress: "y@gmail.com" }
+2025-01-06 11:49:28 [info]: Calling AddUser with user name: y email: y@gmail.com and password: 12345678
+2025-01-06 11:49:28 [info]: AddUser.  y to DB
+2025-01-06 11:49:28 [error]: Duplicate email error: E11000 duplicate key error collection: recipes-project.users index: emailAddress_1 dup key: { emailAddress: "y@gmail.com" }
+2025-01-06 11:50:25 [info]: Calling AddUser with user name: y email: yg@gmail.com and password: 12345678
+2025-01-06 11:50:25 [info]: AddUser.  y to DB
+2025-01-06 11:50:26 [info]: Saved user y in DB
+2025-01-06 11:50:26 [info]: success with signUp
