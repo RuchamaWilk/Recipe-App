@@ -13,7 +13,14 @@ const SignUp = ({ open, onClose }) => {
   const [passwordError, setPasswordError] = useState('');
   const [userNameError, setUserNameError] = useState('');
 
-
+  const handleClose = () =>{
+    setEmailError('');
+    setPasswordError('');
+    setUserNameError('');
+    setUserName('');
+    setEmail('');
+    onClose();
+  }
   
   const handleSubmit = async () => {
     setEmailError('');
@@ -25,17 +32,14 @@ const SignUp = ({ open, onClose }) => {
     try {
       console.log('addUserToDb');
       await addUserToDb(userName, email, password);
-      setPassword('');
-      setEmail('');
-      setUserName('');
-      onClose();
+      handleClose()
     } catch (err) {
       console.error('Error during Sign Up:', err);
     }
   };
 
   return (
-    <Dialog open={open} onClose={onClose} >
+    <Dialog open={open} onClose={handleClose} >
       <DialogTitle sx={{ textAlign: 'center', fontWeight: 'bold' }}>Sign Up</DialogTitle>
       <DialogContent>
         <Box display="flex" flexDirection="column" alignItems="center" spacing={2} sx={{ maxWidth: '400px' }}>

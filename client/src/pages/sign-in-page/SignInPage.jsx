@@ -10,7 +10,7 @@ import {  validateEmail, validatePassword } from '../../utils/validation';
 
 
 
-const LogInPage = ({ open, onClose }) => {
+const SignInPage = ({ open, onClose }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [emailError, setEmailError] = useState('')
@@ -107,4 +107,4 @@ const LogInPage = ({ open, onClose }) => {
   );
 };
 
-export default LogInPage
+export default SignInPage
