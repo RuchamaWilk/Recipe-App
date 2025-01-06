@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate ,Link } from 'react-router-dom';
-import { addChefToDb } from '../../services/apiService';
+import {  Link } from 'react-router-dom';
+import { addUserToDb } from '../../services/apiService';
 import TextField from '@mui/material/TextField';
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, Box, Typography } from '@mui/material';
+import { validateUserName, validateEmail, validatePassword } from '../../utils/validation';
 
 const SignUp = ({ open, onClose }) => {
   const [email, setEmail] = useState('');
@@ -12,37 +13,18 @@ const SignUp = ({ open, onClose }) => {
   const [passwordError, setPasswordError] = useState('');
   const [userNameError, setUserNameError] = useState('');
 
-  const onButtonClick = async () => {
+
+  
+  const handleSubmit = async () => {
     setEmailError('');
     setPasswordError('');
     setUserNameError('');
-
-    if (userName === '') {
-      setUserNameError('Please enter a user name');
-      return;
-    }
-    if ('' === email) {
-      setEmailError('Please enter your email');
-      return;
-    }
-
-    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
-      setEmailError('Please enter a valid email');
-      return;
-    }
-
-    if ('' === password) {
-      setPasswordError('Please enter a password');
-      return;
-    }
-
-    if (password.length < 7) {
-      setPasswordError('The password must be 8 characters or longer');
-      return;
-    }
+    setUserNameError(validateUserName(userName));
+    setEmailError(validateEmail(email));
+    setPasswordError(validatePassword(password));
     try {
-      console.log('addChefToDb');
-      await addChefToDb(userName, email, password);
+      console.log('addUserToDb');
+      await addUserToDb(userName, email, password);
       setPassword('');
       setEmail('');
       setUserName('');
@@ -97,7 +79,7 @@ const SignUp = ({ open, onClose }) => {
         <Button onClick={onClose}  variant="outlined" sx={{ marginRight: 3 }}>
           Cancel
         </Button>
-        <Button onClick={onButtonClick} variant="contained" color="primary"sx={{ marginRight: 2 }}>
+        <Button onClick={handleSubmit} variant="contained" color="primary"sx={{ marginRight: 2 }}>
           Sign Up
         </Button>
       </DialogActions>
