@@ -5,6 +5,7 @@ import TextField from '@mui/material/TextField';
 import LoginIcon from '@mui/icons-material/Login';
 import { Button } from '@mui/material';
 import { Typography ,Box} from '@mui/material';
+import {  validateEmail, validatePassword } from '../../utils/validation';
 
 
 
@@ -20,27 +21,8 @@ const LogInPage = () => {
   const  onButtonClick =async () => {
     setEmailError('')
     setPasswordError('')
-
-  // Check if the user has entered both fields correctly
-  if ('' === email) {
-    setEmailError('Please enter your email')
-    return
-  }
-
-  if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
-    setEmailError('Please enter a valid email')
-    return
-  }
-
-  if ('' === password) {
-    setPasswordError('Please enter a password')
-    return
-  }
-
-  if (password.length < 7) {
-    setPasswordError('The password must be 8 characters or longer')
-    return
-  }
+    setEmailError(validateEmail(email));
+    setPasswordError(validatePassword(password));
   console.log("loginPage" ,email)
   try {
         const response =await checkChef(email, password); // קריאה לפונקציה שתשלח את הנתונים לשרת
