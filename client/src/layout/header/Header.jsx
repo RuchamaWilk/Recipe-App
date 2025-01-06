@@ -7,23 +7,33 @@ import Container from '@mui/material/Container';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import { useNavigate } from 'react-router-dom';
 import SignUp from '../../components/sign-up/SignUp';  // הוספת הקומפוננטה לפופאאוט
-
+import SignIn from '../../pages/sign-in-page/SignInPage'
 const pages = ['About Us', 'Our Chefs'];
 
 function ResponsiveAppBar() {
-  const [isPopupOpen, setIsPopupOpen] = React.useState(false); // מצב הפופאאוט
+  const [popupOpenSignUp, setPopupOpenSignUp] = React.useState(false); // מצב הפופאאוט
+  const [popupOpenSignIn, setPopupOpenSignIn] = React.useState(false); // מצב הפופאאוט
+
   const navigate = useNavigate();
 
   const onButtonHome = () => {
     navigate('/');
   };
 
-  const openPopup = () => {
-    setIsPopupOpen(true);
+  const openPopupSignUp = () => {
+    setPopupOpenSignUp(true);
   };
 
-  const closePopup = () => {
-    setIsPopupOpen(false);
+  const closePopupSignUp = () => {
+    setPopupOpenSignUp(false);
+  };
+
+  const openPopupSignIn = () => {
+    setPopupOpenSignIn(true);
+  };
+
+  const closePopupSignIn = () => {
+    setPopupOpenSignIn(false);
   };
 
   return (
@@ -56,17 +66,25 @@ function ResponsiveAppBar() {
               ))}
             </Box>
 
-            {/* כפתור הרשמה */}
+           
             <Button 
               variant="contained" 
-              onClick={openPopup} 
+              onClick={openPopupSignUp} 
             >
               Sign Up
+            </Button>
+            <Button 
+              variant="inline" 
+              onClick={openPopupSignIn} 
+            >
+              Sign In
             </Button>
           </Toolbar>
         </Container>
       </AppBar>
-      <SignUp open={isPopupOpen} onClose={closePopup} />
+      <SignUp open={popupOpenSignUp} onClose={closePopupSignUp} />
+      <SignIn open={popupOpenSignIn} onClose={closePopupSignIn} />
+
     </>
   );
 }
