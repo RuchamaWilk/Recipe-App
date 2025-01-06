@@ -62,7 +62,7 @@ const AddUser = async ({ userName, email, password }) => {
 
 const AddChef = async ({ userName, email, password, yearsOfExperience,phoneNumber,aboutMe }) => {
     try {
-        logger.info(`AddChef.  ${userName} to DB`);
+        logger.info(`AddChef.  ${email} to DB`);
         const chef = {
             userName: userName,
             emailAddress: email,
@@ -73,6 +73,7 @@ const AddChef = async ({ userName, email, password, yearsOfExperience,phoneNumbe
             type: "chef"
         };
         const newChef = new User(chef);
+        logger.info(`new chef saved in db`);
         await newChef.save(); // This will throw an error if emailAddress is not unique
         const token = generateToken(newChef._id,newChef.email);
         logger.info(`Saved user ${newChef.userName} in DB`);

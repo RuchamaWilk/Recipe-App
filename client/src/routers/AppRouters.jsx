@@ -7,7 +7,7 @@ import AddRecipePage from '../pages/add-recipe-page/AddRecipePage';
 import LogInPage from '../pages/log-in-page/logInPage';
 import ErrPage from '../pages/err-page/errPage'
 import SignUpPage from '../components/sign-up/SignUp'
-import ChefSignUpForm from '../pages/sign-up-page/SignUpPageChef'
+import SignUpPageChef from '../pages/sign-up-page/SignUpPageChef'
 
 
 function AppRouters() {
@@ -20,7 +20,7 @@ function AppRouters() {
       <Route path="/add-recipe" element={<AddRecipePage />} />
       <Route path="/log-in" element={<LogInPage />} />
       <Route path="/user-sign-up" element={<SignUpPage/>} />
-      <Route path="/chef-sign-up" element={<ChefSignUpForm/>} /> 
+      <Route path="/chef-sign-up" element={<SignUpPageChef/>} /> 
       <Route path="*" element={<ErrPage errCode= "400" />} />
 
 
