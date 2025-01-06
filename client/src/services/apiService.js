@@ -58,7 +58,7 @@ export const checkChef = async (email, password) => {
   }
 };
 
-export const addChefToDb = async (userName,email, password) => {
+export const addUserToDb = async (userName,email, password) => {
   try {
       const response = await axios.post(`${BASE_URL}/auth/signUp`,{userName,email,password});
       return response.data;
@@ -67,6 +67,17 @@ export const addChefToDb = async (userName,email, password) => {
       throw error;
     }
 };
+
+export const addChefToDb = async (chefData) => {
+  try {
+      const response = await axios.post(`${BASE_URL}/auth/signUp/chef`,chefData);
+      return response.data;
+    } catch (error) {
+      console.error('Error feching chefs:', error);
+      throw error;
+    }
+};
+
 
 
 
