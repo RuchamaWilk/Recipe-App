@@ -54,7 +54,13 @@ const ChefSignUpForm = () => {
         Sign Up As Chef
       </Typography>
       
-      <Box sx={{ display: 'flex', gap: 2, width: '100%', marginBottom: 2 }}>
+      <Box sx={{ 
+        display: 'flex', 
+        flexDirection: { xs: 'column', md: 'row' },
+        gap: 2, 
+        width: '100%', 
+        marginBottom: 2 
+      }}>
         <TextField
           label="Username"
           variant="outlined"
@@ -63,6 +69,7 @@ const ChefSignUpForm = () => {
           onChange={(e) => setUserName(e.target.value)}
           error={!!userNameError}
           helperText={userNameError}
+          sx={{ marginBottom: { xs: 0, md: 0 } }}
         />
         <TextField
           label="Email"
@@ -72,6 +79,7 @@ const ChefSignUpForm = () => {
           onChange={(e) => setEmail(e.target.value)}
           error={!!emailError}
           helperText={emailError}
+          sx={{ marginBottom: { xs: 0, md: 0 } }}
         />
         <TextField
           label="Password"
@@ -82,11 +90,17 @@ const ChefSignUpForm = () => {
           onChange={(e) => setPassword(e.target.value)}
           error={!!passwordError}
           helperText={passwordError}
+          sx={{ marginBottom: { xs: 0, md: 0 } }}
         />
       </Box>
 
-      {/* Years of Experience and Phone Number in the same row */}
-      <Box sx={{ display: 'flex', gap: 2, width: '100%', marginBottom: 2 }}>
+      <Box sx={{ 
+        display: 'flex', 
+        flexDirection: { xs: 'column', md: 'row' },
+        gap: 2, 
+        width: '100%', 
+        marginBottom: 2 
+      }}>
         <TextField
           label="Years of Experience"
           variant="outlined"
@@ -96,6 +110,7 @@ const ChefSignUpForm = () => {
           onChange={(e) => setYearsOfExperience(e.target.value)}
           error={!!yearsOfExperienceError}
           helperText={yearsOfExperienceError}
+          sx={{ marginBottom: { xs: 0, md: 0 } }}
         />
         <TextField
           label="Phone Number"
@@ -105,10 +120,10 @@ const ChefSignUpForm = () => {
           onChange={(e) => setPhoneNumber(e.target.value)}
           error={!!phoneNumberError}
           helperText={phoneNumberError}
+          sx={{ marginBottom: { xs: 0, md: 0 } }}
         />
       </Box>
 
-      {/* About Me */}
       <TextField
         label="About Me"
         variant="outlined"
@@ -120,7 +135,11 @@ const ChefSignUpForm = () => {
         sx={{ marginBottom: 2 }}
       />
       
-      <Button variant="contained" onClick={handleSubmit}>
+      <Button 
+        variant="contained" 
+        onClick={handleSubmit}
+        sx={{ width: { xs: '100%', md: 'auto' } }}
+      >
         Sign Up
       </Button>
     </Box>
