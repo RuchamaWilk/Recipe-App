@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Button, TextField, Typography, Box, Grid } from '@mui/material';
+import { Button, TextField, Typography, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-//import { addChefToDb } from '../../services/apiService'; // שירות ה-API שלך
+import { addChefToDb } from '../../services/apiService'; // שירות ה-API שלך
+import { validateUserName, validateEmail, validatePassword,validateYearsOfExperience,validatephoneNumber } from '../../utils/validation';
 
 const ChefSignUpForm = () => {
   const [userName, setUserName] = useState('');
@@ -15,6 +16,7 @@ const ChefSignUpForm = () => {
   const [userNameError, setUserNameError] = useState('');
   const [yearsOfExperienceError, setYearsOfExperienceError] = useState('');
   const [phoneNumberError, setPhoneNumberError] = useState('');
+
   
   const navigate = useNavigate();
 
@@ -24,50 +26,23 @@ const ChefSignUpForm = () => {
     setUserNameError('');
     setYearsOfExperienceError('');
     setPhoneNumberError('');
-
-    // בדיקת השדות
-    if (userName === '') {
-      setUserNameError('Please enter your username');
-      return;
-    }
-    if (email === '') {
-      setEmailError('Please enter your email');
-      return;
-    }
-    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
-      setEmailError('Please enter a valid email');
-      return;
-    }
-    if (password === '') {
-      setPasswordError('Please enter your password');
-      return;
-    }
-    if (password.length < 7) {
-      setPasswordError('Password must be at least 8 characters long');
-      return;
-    }
-    if (yearsOfExperience === '') {
-      setYearsOfExperienceError('Please enter your years of experience');
-      return;
-    }
-    if (phoneNumber === '') {
-      setPhoneNumberError('Please enter your phone number');
-      return;
-    }
-
+    setUserNameError(validateUserName(userName));
+    setEmailError(validateEmail(email));
+    setPasswordError(validatePassword(password));
+    setYearsOfExperienceError(validateYearsOfExperience(yearsOfExperience));
+    setPhoneNumberError(validatephoneNumber(phoneNumber));
     try {
       const chefData = {
         userName,
-        emailAddress: email,
+        email,
         password,
         yearsOfExperience: parseInt(yearsOfExperience),
         phoneNumber,
         aboutMe,
         type: 'chef',
       };
-      //await addChefToDb(chefData); // קריאה לשירות API להוספת השף למסד הנתונים
-      //onClose(); // סגירת הפופ-אפ אחרי ההרשמה
-      //navigate('/chef-dashboard'); // דחיפה לעמוד הבית של השפים (או לעמוד אחר שתבחר)
+      await addChefToDb(chefData); // קריאה לשירות API להוספת השף למסד הנתונים
+      navigate('/');
     } catch (error) {
       console.error('Error during Chef SignUp:', error);
     }
@@ -79,70 +54,59 @@ const ChefSignUpForm = () => {
         Sign Up As Chef
       </Typography>
       
-      {/* Grid for userName, email, password in one row */}
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={4}>
-          <TextField
-            label="Username"
-            variant="outlined"
-            fullWidth
-            value={userName}
-            onChange={(e) => setUserName(e.target.value)}
-            error={!!userNameError}
-            helperText={userNameError}
-          />
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <TextField
-            label="Email"
-            variant="outlined"
-            fullWidth
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            error={!!emailError}
-            helperText={emailError}
-          />
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <TextField
-            label="Password"
-            type="password"
-            variant="outlined"
-            fullWidth
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            error={!!passwordError}
-            helperText={passwordError}
-          />
-        </Grid>
-      </Grid>
+      <Box sx={{ display: 'flex', gap: 2, width: '100%', marginBottom: 2 }}>
+        <TextField
+          label="Username"
+          variant="outlined"
+          fullWidth
+          value={userName}
+          onChange={(e) => setUserName(e.target.value)}
+          error={!!userNameError}
+          helperText={userNameError}
+        />
+        <TextField
+          label="Email"
+          variant="outlined"
+          fullWidth
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          error={!!emailError}
+          helperText={emailError}
+        />
+        <TextField
+          label="Password"
+          type="password"
+          variant="outlined"
+          fullWidth
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          error={!!passwordError}
+          helperText={passwordError}
+        />
+      </Box>
 
-      {/* Grid for yearsOfExperience and phoneNumber in one row */}
-      <Grid container spacing={2} sx={{ marginTop: 2 }}>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            label="Years of Experience"
-            variant="outlined"
-            fullWidth
-            type="number"
-            value={yearsOfExperience}
-            onChange={(e) => setYearsOfExperience(e.target.value)}
-            error={!!yearsOfExperienceError}
-            helperText={yearsOfExperienceError}
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <TextField
-            label="Phone Number"
-            variant="outlined"
-            fullWidth
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
-            error={!!phoneNumberError}
-            helperText={phoneNumberError}
-          />
-        </Grid>
-      </Grid>
+      {/* Years of Experience and Phone Number in the same row */}
+      <Box sx={{ display: 'flex', gap: 2, width: '100%', marginBottom: 2 }}>
+        <TextField
+          label="Years of Experience"
+          variant="outlined"
+          fullWidth
+          type="number"
+          value={yearsOfExperience}
+          onChange={(e) => setYearsOfExperience(e.target.value)}
+          error={!!yearsOfExperienceError}
+          helperText={yearsOfExperienceError}
+        />
+        <TextField
+          label="Phone Number"
+          variant="outlined"
+          fullWidth
+          value={phoneNumber}
+          onChange={(e) => setPhoneNumber(e.target.value)}
+          error={!!phoneNumberError}
+          helperText={phoneNumberError}
+        />
+      </Box>
 
       {/* About Me */}
       <TextField
@@ -153,10 +117,10 @@ const ChefSignUpForm = () => {
         rows={4}
         value={aboutMe}
         onChange={(e) => setAboutMe(e.target.value)}
-        sx={{ marginTop: 2 }}
+        sx={{ marginBottom: 2 }}
       />
       
-      <Button variant="contained" onClick={handleSubmit} sx={{ marginTop: 2 }}>
+      <Button variant="contained" onClick={handleSubmit}>
         Sign Up
       </Button>
     </Box>
