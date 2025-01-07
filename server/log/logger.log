@@ -5224,3 +5224,144 @@
 2025-01-07 13:33:13 [info]: getChefs- find all recipe
 2025-01-07 13:33:14 [info]: success fetching recipes from DB
 2025-01-07 13:33:14 [info]: success with getRecipes
+2025-01-07 13:52:14 [info]: calling getRecipes
+2025-01-07 13:52:14 [info]: getChefs- find all recipe
+2025-01-07 13:52:15 [info]: success fetching recipes from DB
+2025-01-07 13:52:15 [info]: success with getRecipes
+2025-01-07 13:52:15 [info]: calling getRecipes
+2025-01-07 13:52:15 [info]: getChefs- find all recipe
+2025-01-07 13:52:15 [info]: success fetching recipes from DB
+2025-01-07 13:52:15 [info]: success with getRecipes
+2025-01-07 13:52:29 [info]: calling getRecipes
+2025-01-07 13:52:29 [info]: getChefs- find all recipe
+2025-01-07 13:52:29 [info]: success fetching recipes from DB
+2025-01-07 13:52:29 [info]: success with getRecipes
+2025-01-07 13:52:29 [info]: calling getRecipes
+2025-01-07 13:52:29 [info]: getChefs- find all recipe
+2025-01-07 13:52:29 [info]: success fetching recipes from DB
+2025-01-07 13:52:29 [info]: success with getRecipes
+2025-01-07 13:52:34 [info]: calling getRecipes
+2025-01-07 13:52:34 [info]: getChefs- find all recipe
+2025-01-07 13:52:35 [info]: success fetching recipes from DB
+2025-01-07 13:52:35 [info]: success with getRecipes
+2025-01-07 13:52:35 [info]: calling getRecipes
+2025-01-07 13:52:35 [info]: getChefs- find all recipe
+2025-01-07 13:52:35 [info]: success fetching recipes from DB
+2025-01-07 13:52:35 [info]: success with getRecipes
+2025-01-07 13:52:52 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-07 13:52:52 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-07 13:52:52 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-07 13:52:53 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-07 13:52:53 [info]: success with signIn true
+2025-01-07 13:53:12 [info]: chefMiddleware
+2025-01-07 13:53:12 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MjUwNzczLCJleHAiOjE3MzYyNTc5NzN9.z6hgFD3DXsU13PXwrYOg2txd6SP8CF6nvxDQtrGpaqM
+2025-01-07 13:53:12 [info]: secretForNow
+2025-01-07 13:53:12 [info]: type chef
+2025-01-07 13:53:12 [info]: [object Object]
+2025-01-07 13:53:12 [info]: addRecipe - set new recipe to DB, recipe Name: 677bf82137c2060f50f2593e
+2025-01-07 13:53:12 [info]: addRecipe- recipe name: d
+2025-01-07 13:53:12 [info]: chef id: 677bf82137c2060f50f2593e
+2025-01-07 13:53:12 [info]: save recipe d in DB  
+2025-01-07 13:53:12 [info]: successfull post recipe: 677d15a87dc224f6462cfced 
+2025-01-07 13:53:12 [info]: calling getRecipes
+2025-01-07 13:53:12 [info]: getChefs- find all recipe
+2025-01-07 13:53:13 [info]: success fetching recipes from DB
+2025-01-07 13:53:13 [info]: success with getRecipes
+2025-01-07 13:53:13 [info]: calling getRecipes
+2025-01-07 13:53:13 [info]: getChefs- find all recipe
+2025-01-07 13:53:13 [info]: success fetching recipes from DB
+2025-01-07 13:53:13 [info]: success with getRecipes
+2025-01-07 14:02:28 [info]: Calling signIn with email: try5@gmail.com and password: 1234567
+2025-01-07 14:02:28 [info]: signIn- find chef with email: try5@gmail.com and password 1234567
+2025-01-07 14:02:29 [info]: found a chef with the email" try5@gmail.com
+2025-01-07 14:02:29 [info]: found a chef with email: try5@gmail.com and password 1234567 
+2025-01-07 14:02:29 [info]: success with signIn true
+2025-01-07 14:17:17 [info]: calling getRecipes
+2025-01-07 14:17:17 [info]: getChefs- find all recipe
+2025-01-07 14:17:17 [info]: success fetching recipes from DB
+2025-01-07 14:17:17 [info]: success with getRecipes
+2025-01-07 14:17:17 [info]: calling getRecipes
+2025-01-07 14:17:17 [info]: getChefs- find all recipe
+2025-01-07 14:17:18 [info]: success fetching recipes from DB
+2025-01-07 14:17:18 [info]: success with getRecipes
+2025-01-07 14:17:44 [info]: calling getRecipes
+2025-01-07 14:17:44 [info]: getChefs- find all recipe
+2025-01-07 14:17:44 [info]: success fetching recipes from DB
+2025-01-07 14:17:44 [info]: success with getRecipes
+2025-01-07 14:17:44 [info]: calling getRecipes
+2025-01-07 14:17:44 [info]: getChefs- find all recipe
+2025-01-07 14:17:44 [info]: success fetching recipes from DB
+2025-01-07 14:17:44 [info]: success with getRecipes
+2025-01-07 14:17:57 [info]: calling getRecipes
+2025-01-07 14:17:57 [info]: getChefs- find all recipe
+2025-01-07 14:17:57 [info]: success fetching recipes from DB
+2025-01-07 14:17:57 [info]: success with getRecipes
+2025-01-07 14:17:57 [info]: calling getRecipes
+2025-01-07 14:17:57 [info]: getChefs- find all recipe
+2025-01-07 14:17:57 [info]: success fetching recipes from DB
+2025-01-07 14:17:57 [info]: success with getRecipes
+2025-01-07 14:18:02 [info]: calling getRecipes
+2025-01-07 14:18:02 [info]: getChefs- find all recipe
+2025-01-07 14:18:03 [info]: success fetching recipes from DB
+2025-01-07 14:18:03 [info]: success with getRecipes
+2025-01-07 14:18:03 [info]: calling getRecipes
+2025-01-07 14:18:03 [info]: getChefs- find all recipe
+2025-01-07 14:18:03 [info]: success fetching recipes from DB
+2025-01-07 14:18:03 [info]: success with getRecipes
+2025-01-07 14:22:33 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-07 14:22:33 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-07 14:22:33 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-07 14:22:33 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-07 14:22:33 [info]: success with signIn true
+2025-01-07 14:24:01 [info]: calling getRecipes
+2025-01-07 14:24:01 [info]: getChefs- find all recipe
+2025-01-07 14:24:01 [info]: success fetching recipes from DB
+2025-01-07 14:24:01 [info]: success with getRecipes
+2025-01-07 14:24:01 [info]: calling getRecipes
+2025-01-07 14:24:01 [info]: getChefs- find all recipe
+2025-01-07 14:24:02 [info]: success fetching recipes from DB
+2025-01-07 14:24:02 [info]: success with getRecipes
+2025-01-07 14:24:24 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-07 14:24:24 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-07 14:24:24 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-07 14:24:24 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-07 14:24:24 [info]: success with signIn true
+2025-01-07 14:25:04 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-07 14:25:04 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-07 14:25:04 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-07 14:25:04 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-07 14:25:04 [info]: success with signIn true
+2025-01-07 14:25:12 [info]: calling getRecipes
+2025-01-07 14:25:12 [info]: getChefs- find all recipe
+2025-01-07 14:25:12 [info]: success fetching recipes from DB
+2025-01-07 14:25:12 [info]: success with getRecipes
+2025-01-07 14:25:12 [info]: calling getRecipes
+2025-01-07 14:25:12 [info]: getChefs- find all recipe
+2025-01-07 14:25:12 [info]: success fetching recipes from DB
+2025-01-07 14:25:12 [info]: success with getRecipes
+2025-01-07 14:26:54 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-07 14:26:54 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-07 14:26:54 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-07 14:26:54 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-07 14:26:54 [info]: success with signIn true
+2025-01-07 14:26:54 [info]: calling getRecipes
+2025-01-07 14:26:54 [info]: getChefs- find all recipe
+2025-01-07 14:26:55 [info]: success fetching recipes from DB
+2025-01-07 14:26:55 [info]: success with getRecipes
+2025-01-07 14:26:55 [info]: calling getRecipes
+2025-01-07 14:26:55 [info]: getChefs- find all recipe
+2025-01-07 14:26:55 [info]: success fetching recipes from DB
+2025-01-07 14:26:55 [info]: success with getRecipes
+2025-01-07 14:28:49 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-07 14:28:49 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-07 14:28:49 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-07 14:28:49 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-07 14:28:49 [info]: success with signIn true
+2025-01-07 14:32:59 [info]: calling getRecipes
+2025-01-07 14:32:59 [info]: getChefs- find all recipe
+2025-01-07 14:32:59 [info]: success fetching recipes from DB
+2025-01-07 14:32:59 [info]: success with getRecipes
+2025-01-07 14:32:59 [info]: calling getRecipes
+2025-01-07 14:32:59 [info]: getChefs- find all recipe
+2025-01-07 14:32:59 [info]: success fetching recipes from DB
+2025-01-07 14:32:59 [info]: success with getRecipes

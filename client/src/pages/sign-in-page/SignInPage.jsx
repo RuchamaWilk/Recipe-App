@@ -1,3 +1,4 @@
+//client/src/pages/sign-in-page/SignInPage
 import React, { useState } from 'react'
 import {checkChef} from '../../services/apiService'
 import TextField from '@mui/material/TextField';
@@ -5,16 +6,19 @@ import LoginIcon from '@mui/icons-material/Login';
 import { Button,Dialog } from '@mui/material';
 import { Typography ,Box} from '@mui/material';
 import {  validateEmail, validatePassword } from '../../utils/validation';
+import { useNavigate } from 'react-router-dom';
 
 
 
 
-const SignInPage = ({ open, onClose }) => {
+const SignInPage = ({ open, onClose,onLogin  }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [emailError, setEmailError] = useState('')
   const [passwordError, setPasswordError] = useState('')
   const [signInError, setSignInError] = useState('')
+
+  const navigate = useNavigate();
 
 
   const handleClose = () =>{
@@ -24,7 +28,8 @@ const SignInPage = ({ open, onClose }) => {
     setPasswordError('')
     onClose()
   }
-  const  onButtonClick =async () => {
+
+  const onButtonClick =async () => {
     setEmailError('')
     setPasswordError('')
     setEmailError(validateEmail(email));
@@ -35,8 +40,11 @@ const SignInPage = ({ open, onClose }) => {
           console.log(response.token)
           if (response.token) {
             localStorage.setItem('token', response.token);  // שמירת הטוקן ב-localStorage
+            localStorage.setItem('email', email);
             console.log("Token saved:", response.token);
+            onLogin(email, response.token);
             handleClose()
+
           } else {
             setSignInError(response.message || 'Login failed');
           }
