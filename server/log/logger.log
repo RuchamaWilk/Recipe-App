@@ -4487,3 +4487,619 @@
 2025-01-06 11:50:25 [info]: AddUser.  y to DB
 2025-01-06 11:50:26 [info]: Saved user y in DB
 2025-01-06 11:50:26 [info]: success with signUp
+2025-01-06 14:48:18 [info]: Calling AddUser with user name:  email:  and password: 
+2025-01-06 14:48:18 [info]: AddUser.   to DB
+2025-01-06 14:48:18 [error]: Error adding new User: users validation failed: password: Path `password` is required., userName: Path `userName` is required., emailAddress: Path `emailAddress` is required.
+2025-01-06 15:22:27 [info]: calling getRecipes
+2025-01-06 15:22:27 [info]: getChefs- find all recipe
+2025-01-06 15:22:27 [info]: success fetching recipes from DB
+2025-01-06 15:22:27 [info]: success with getRecipes
+2025-01-06 15:22:27 [info]: calling getRecipes
+2025-01-06 15:22:27 [info]: getChefs- find all recipe
+2025-01-06 15:22:27 [info]: success fetching recipes from DB
+2025-01-06 15:22:27 [info]: success with getRecipes
+2025-01-06 15:35:16 [info]: calling getRecipes
+2025-01-06 15:35:16 [info]: getChefs- find all recipe
+2025-01-06 15:35:16 [info]: success fetching recipes from DB
+2025-01-06 15:35:16 [info]: success with getRecipes
+2025-01-06 15:36:08 [info]: callibg getChefs
+2025-01-06 15:36:08 [info]: getChefs- find all chefs
+2025-01-06 15:36:08 [info]: success fetching chefs from DB
+2025-01-06 15:36:08 [info]: success with getChefs
+2025-01-06 16:14:51 [info]: calling getRecipes
+2025-01-06 16:14:51 [info]: getChefs- find all recipe
+2025-01-06 16:14:52 [info]: success fetching recipes from DB
+2025-01-06 16:14:52 [info]: success with getRecipes
+2025-01-06 16:14:52 [info]: calling getRecipes
+2025-01-06 16:14:52 [info]: getChefs- find all recipe
+2025-01-06 16:14:52 [info]: success fetching recipes from DB
+2025-01-06 16:14:52 [info]: success with getRecipes
+2025-01-06 16:17:51 [info]: calling getRecipes
+2025-01-06 16:17:51 [info]: getChefs- find all recipe
+2025-01-06 16:17:51 [info]: success fetching recipes from DB
+2025-01-06 16:17:51 [info]: success with getRecipes
+2025-01-06 16:17:51 [info]: calling getRecipes
+2025-01-06 16:17:51 [info]: getChefs- find all recipe
+2025-01-06 16:17:51 [info]: success fetching recipes from DB
+2025-01-06 16:17:51 [info]: success with getRecipes
+2025-01-06 16:20:31 [info]: chefMiddleware
+2025-01-06 16:35:45 [info]: calling getRecipes
+2025-01-06 16:35:45 [info]: getChefs- find all recipe
+2025-01-06 16:35:45 [info]: success fetching recipes from DB
+2025-01-06 16:35:45 [info]: success with getRecipes
+2025-01-06 16:35:45 [info]: calling getRecipes
+2025-01-06 16:35:45 [info]: getChefs- find all recipe
+2025-01-06 16:35:45 [info]: success fetching recipes from DB
+2025-01-06 16:35:45 [info]: success with getRecipes
+2025-01-06 16:36:16 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 16:36:16 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 16:36:17 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 16:36:17 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 16:36:17 [info]: success with signIn
+2025-01-06 16:36:28 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 16:36:28 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 16:36:28 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 16:36:28 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 16:36:28 [info]: success with signIn
+2025-01-06 16:38:38 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 16:38:38 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 16:38:39 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 16:38:39 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 16:38:39 [info]: success with signIn
+2025-01-06 16:39:06 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 16:39:06 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 16:39:06 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 16:39:06 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 16:39:06 [info]: success with signIn
+2025-01-06 16:41:05 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 16:41:05 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 16:41:05 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 16:41:05 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 16:41:05 [info]: success with signIn
+2025-01-06 17:03:15 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:03:15 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:03:16 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:03:16 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:04:02 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:04:02 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:04:02 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:04:02 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:04:02 [info]: success with signIn undefined
+2025-01-06 17:10:58 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:10:58 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:10:59 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:10:59 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:10:59 [info]: success with signIn undefined
+2025-01-06 17:16:03 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:16:03 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:16:03 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:16:04 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:17:04 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:17:04 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:17:05 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:17:06 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:17:06 [info]: success with signIn true
+2025-01-06 17:20:59 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:20:59 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:20:59 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:20:59 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:20:59 [info]: success with signIn true
+2025-01-06 17:21:33 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:21:33 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:21:33 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:21:33 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:21:33 [info]: success with signIn true
+2025-01-06 17:22:29 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:22:29 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:22:29 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:22:29 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:22:29 [info]: success with signIn true
+2025-01-06 17:25:16 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:25:16 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:25:16 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:25:16 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:25:16 [info]: success with signIn true
+2025-01-06 17:27:02 [info]: calling getRecipes
+2025-01-06 17:27:02 [info]: getChefs- find all recipe
+2025-01-06 17:27:02 [info]: success fetching recipes from DB
+2025-01-06 17:27:02 [info]: success with getRecipes
+2025-01-06 17:27:12 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:27:12 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:27:12 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:27:12 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:27:12 [info]: success with signIn true
+2025-01-06 17:28:20 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:28:20 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:28:20 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:28:20 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:28:20 [info]: success with signIn true
+2025-01-06 17:30:16 [info]: calling getRecipes
+2025-01-06 17:30:16 [info]: getChefs- find all recipe
+2025-01-06 17:30:16 [info]: success fetching recipes from DB
+2025-01-06 17:30:16 [info]: success with getRecipes
+2025-01-06 17:30:22 [info]: calling getRecipes
+2025-01-06 17:30:22 [info]: getChefs- find all recipe
+2025-01-06 17:30:22 [info]: success fetching recipes from DB
+2025-01-06 17:30:22 [info]: success with getRecipes
+2025-01-06 17:30:25 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:30:25 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:30:25 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:30:25 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:30:25 [info]: success with signIn true
+2025-01-06 17:31:04 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:31:04 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:31:04 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:31:04 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:31:04 [info]: success with signIn true
+2025-01-06 17:32:23 [info]: calling getRecipes
+2025-01-06 17:32:23 [info]: getChefs- find all recipe
+2025-01-06 17:32:23 [info]: success fetching recipes from DB
+2025-01-06 17:32:23 [info]: success with getRecipes
+2025-01-06 17:32:23 [info]: calling getRecipes
+2025-01-06 17:32:23 [info]: getChefs- find all recipe
+2025-01-06 17:32:23 [info]: success fetching recipes from DB
+2025-01-06 17:32:23 [info]: success with getRecipes
+2025-01-06 17:32:41 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:32:41 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:32:41 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:32:41 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:32:41 [info]: success with signIn true
+2025-01-06 17:32:55 [info]: Calling signIn with email: ruchama@gmail.com and password: 1236548
+2025-01-06 17:32:55 [info]: signIn- find chef with email: ruchama@gmail.com and password 1236548
+2025-01-06 17:32:55 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:32:55 [info]: success with signIn false
+2025-01-06 17:33:08 [info]: Calling signIn with email: ruchama@gmail.com and password: 1234567
+2025-01-06 17:33:08 [info]: signIn- find chef with email: ruchama@gmail.com and password 1234567
+2025-01-06 17:33:08 [info]: found a chef with the email" ruchama@gmail.com
+2025-01-06 17:33:09 [info]: found a chef with email: ruchama@gmail.com and password 1234567 
+2025-01-06 17:33:09 [info]: success with signIn true
+2025-01-06 17:34:57 [info]: Calling AddChef with user name: t email: hellohi@gmail.com and password: 1234567
+2025-01-06 17:34:57 [info]: AddChef.  hellohi@gmail.com to DB
+2025-01-06 17:34:57 [info]: new chef saved in db
+2025-01-06 17:34:57 [info]: Saved user t in DB
+2025-01-06 17:34:57 [info]: success with signUp as Chef
+2025-01-06 17:34:57 [info]: calling getRecipes
+2025-01-06 17:34:57 [info]: getChefs- find all recipe
+2025-01-06 17:34:57 [info]: success fetching recipes from DB
+2025-01-06 17:34:57 [info]: success with getRecipes
+2025-01-06 17:34:57 [info]: calling getRecipes
+2025-01-06 17:34:57 [info]: getChefs- find all recipe
+2025-01-06 17:34:57 [info]: success fetching recipes from DB
+2025-01-06 17:34:57 [info]: success with getRecipes
+2025-01-06 17:35:13 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 17:35:13 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 17:35:14 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 17:35:14 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 17:35:14 [info]: success with signIn true
+2025-01-06 17:38:05 [info]: chefMiddleware
+2025-01-06 17:39:29 [info]: chefMiddleware
+2025-01-06 17:39:29 [info]: undefined
+2025-01-06 17:42:07 [info]: chefMiddleware
+2025-01-06 17:42:07 [info]: undefined
+2025-01-06 17:50:54 [info]: calling getRecipes
+2025-01-06 17:50:54 [info]: getChefs- find all recipe
+2025-01-06 17:50:55 [info]: success fetching recipes from DB
+2025-01-06 17:50:55 [info]: success with getRecipes
+2025-01-06 17:50:55 [info]: calling getRecipes
+2025-01-06 17:50:55 [info]: getChefs- find all recipe
+2025-01-06 17:50:55 [info]: success fetching recipes from DB
+2025-01-06 17:50:55 [info]: success with getRecipes
+2025-01-06 17:51:03 [info]: fetchRecipe - calling recipe with ID: 45652
+2025-01-06 17:51:03 [info]: fetchRecipe- find recipe with recipeID: 45652
+2025-01-06 17:51:03 [info]: found a recipe with recipeID: 45652
+2025-01-06 17:51:03 [info]: success with fetchRecipe id: 45652
+2025-01-06 17:51:03 [info]: fetchRecipe - calling recipe with ID: 45652
+2025-01-06 17:51:03 [info]: fetchRecipe- find recipe with recipeID: 45652
+2025-01-06 17:51:03 [info]: found a recipe with recipeID: 45652
+2025-01-06 17:51:03 [info]: success with fetchRecipe id: 45652
+2025-01-06 17:51:07 [info]: calling getRecipes
+2025-01-06 17:51:07 [info]: getChefs- find all recipe
+2025-01-06 17:51:07 [info]: success fetching recipes from DB
+2025-01-06 17:51:07 [info]: success with getRecipes
+2025-01-06 17:51:07 [info]: calling getRecipes
+2025-01-06 17:51:07 [info]: getChefs- find all recipe
+2025-01-06 17:51:07 [info]: success fetching recipes from DB
+2025-01-06 17:51:07 [info]: success with getRecipes
+2025-01-06 17:52:05 [info]: calling getRecipes
+2025-01-06 17:52:05 [info]: getChefs- find all recipe
+2025-01-06 17:52:05 [info]: success fetching recipes from DB
+2025-01-06 17:52:05 [info]: success with getRecipes
+2025-01-06 17:52:05 [info]: calling getRecipes
+2025-01-06 17:52:05 [info]: getChefs- find all recipe
+2025-01-06 17:52:05 [info]: success fetching recipes from DB
+2025-01-06 17:52:05 [info]: success with getRecipes
+2025-01-06 17:57:34 [info]: calling getRecipes
+2025-01-06 17:57:34 [info]: getChefs- find all recipe
+2025-01-06 17:57:34 [info]: success fetching recipes from DB
+2025-01-06 17:57:34 [info]: success with getRecipes
+2025-01-06 17:57:34 [info]: calling getRecipes
+2025-01-06 17:57:34 [info]: getChefs- find all recipe
+2025-01-06 17:57:34 [info]: success fetching recipes from DB
+2025-01-06 17:57:34 [info]: success with getRecipes
+2025-01-06 18:03:10 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 18:03:10 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 18:03:10 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 18:03:10 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 18:03:10 [info]: success with signIn true
+2025-01-06 18:08:01 [info]: calling getRecipes
+2025-01-06 18:08:01 [info]: getChefs- find all recipe
+2025-01-06 18:08:01 [info]: success fetching recipes from DB
+2025-01-06 18:08:01 [info]: success with getRecipes
+2025-01-06 18:08:01 [info]: calling getRecipes
+2025-01-06 18:08:01 [info]: getChefs- find all recipe
+2025-01-06 18:08:01 [info]: success fetching recipes from DB
+2025-01-06 18:08:01 [info]: success with getRecipes
+2025-01-06 18:14:50 [info]: calling getRecipes
+2025-01-06 18:14:50 [info]: getChefs- find all recipe
+2025-01-06 18:14:51 [info]: success fetching recipes from DB
+2025-01-06 18:14:51 [info]: success with getRecipes
+2025-01-06 18:14:51 [info]: calling getRecipes
+2025-01-06 18:14:51 [info]: getChefs- find all recipe
+2025-01-06 18:14:51 [info]: success fetching recipes from DB
+2025-01-06 18:14:51 [info]: success with getRecipes
+2025-01-06 18:27:46 [info]: calling getRecipes
+2025-01-06 18:27:46 [info]: getChefs- find all recipe
+2025-01-06 18:27:52 [info]: success fetching recipes from DB
+2025-01-06 18:27:52 [info]: success with getRecipes
+2025-01-06 18:27:52 [info]: calling getRecipes
+2025-01-06 18:27:52 [info]: getChefs- find all recipe
+2025-01-06 18:27:53 [info]: success fetching recipes from DB
+2025-01-06 18:27:53 [info]: success with getRecipes
+2025-01-06 18:28:15 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 18:28:15 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 18:28:16 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 18:28:16 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 18:28:16 [info]: success with signIn true
+2025-01-06 18:28:42 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 18:28:42 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 18:28:44 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 18:28:45 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 18:28:45 [info]: success with signIn true
+2025-01-06 18:29:23 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 18:29:23 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 18:29:23 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 18:29:23 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 18:29:23 [info]: success with signIn true
+2025-01-06 18:31:21 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 18:31:21 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 18:31:21 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 18:31:21 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 18:31:21 [info]: success with signIn true
+2025-01-06 18:32:45 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 18:32:45 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 18:32:45 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 18:32:45 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 18:32:45 [info]: success with signIn true
+2025-01-06 18:33:14 [info]: chefMiddleware
+2025-01-06 18:33:14 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOlsxMDMsMTIzLDI0OCwzMyw1NSwxOTQsNiwxNSw4MCwyNDIsODksNjJdfSwiaWF0IjoxNzM2MTgxMTY1LCJleHAiOjE3MzYxODgzNjV9.-5HqEHlXOmMGbQ59v7aHqc0SRv4Qw43AhMNgNSXDUDk
+2025-01-06 18:49:45 [info]: chefMiddleware
+2025-01-06 18:49:45 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOlsxMDMsMTIzLDI0OCwzMyw1NSwxOTQsNiwxNSw4MCwyNDIsODksNjJdfSwiaWF0IjoxNzM2MTgxMTY1LCJleHAiOjE3MzYxODgzNjV9.-5HqEHlXOmMGbQ59v7aHqc0SRv4Qw43AhMNgNSXDUDk
+2025-01-06 18:53:07 [info]: chefMiddleware
+2025-01-06 18:53:07 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOlsxMDMsMTIzLDI0OCwzMyw1NSwxOTQsNiwxNSw4MCwyNDIsODksNjJdfSwiaWF0IjoxNzM2MTgxMTY1LCJleHAiOjE3MzYxODgzNjV9.-5HqEHlXOmMGbQ59v7aHqc0SRv4Qw43AhMNgNSXDUDk
+2025-01-06 18:53:51 [info]: chefMiddleware
+2025-01-06 18:53:51 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOlsxMDMsMTIzLDI0OCwzMyw1NSwxOTQsNiwxNSw4MCwyNDIsODksNjJdfSwiaWF0IjoxNzM2MTgxMTY1LCJleHAiOjE3MzYxODgzNjV9.-5HqEHlXOmMGbQ59v7aHqc0SRv4Qw43AhMNgNSXDUDk
+2025-01-06 18:54:25 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 18:54:25 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 18:54:26 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 18:54:26 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 18:54:26 [info]: success with signIn true
+2025-01-06 18:56:21 [info]: chefMiddleware
+2025-01-06 18:56:21 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJne--_vSE377-9XHUwMDA2XHUwMDBmUO-_vVk-IiwiaWF0IjoxNzM2MTgyNDY2LCJleHAiOjE3MzYxODk2NjZ9.ffKlnhhVSKi-gK7A47bw-UkRQaI7vfsgiX2noAVONW0
+2025-01-06 18:58:10 [info]: calling getRecipes
+2025-01-06 18:58:10 [info]: getChefs- find all recipe
+2025-01-06 18:58:10 [info]: success fetching recipes from DB
+2025-01-06 18:58:10 [info]: success with getRecipes
+2025-01-06 18:58:10 [info]: calling getRecipes
+2025-01-06 18:58:10 [info]: getChefs- find all recipe
+2025-01-06 18:58:11 [info]: success fetching recipes from DB
+2025-01-06 18:58:11 [info]: success with getRecipes
+2025-01-06 18:58:23 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 18:58:23 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 18:58:23 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 18:58:23 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 18:58:23 [info]: success with signIn true
+2025-01-06 20:17:21 [info]: calling getRecipes
+2025-01-06 20:17:21 [info]: getChefs- find all recipe
+2025-01-06 20:17:21 [info]: success fetching recipes from DB
+2025-01-06 20:17:21 [info]: success with getRecipes
+2025-01-06 20:17:21 [info]: calling getRecipes
+2025-01-06 20:17:21 [info]: getChefs- find all recipe
+2025-01-06 20:17:21 [info]: success fetching recipes from DB
+2025-01-06 20:17:21 [info]: success with getRecipes
+2025-01-06 20:17:39 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:17:39 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:17:39 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:17:39 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:17:39 [info]: success with signIn true
+2025-01-06 20:19:20 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:19:20 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:19:20 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:19:20 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:19:20 [info]: success with signIn true
+2025-01-06 20:22:39 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:22:39 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:22:39 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:22:39 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:23:05 [info]: success with signIn true
+2025-01-06 20:23:05 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:23:05 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:23:05 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:23:06 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:23:06 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:23:07 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:23:07 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:23:07 [info]: success with signIn true
+2025-01-06 20:26:20 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:26:20 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:26:20 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:26:20 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:26:30 [info]: success with signIn true
+2025-01-06 20:27:33 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:27:33 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:27:33 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:27:34 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:27:34 [info]: success with signIn true
+2025-01-06 20:30:51 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:30:51 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:30:52 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:30:52 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:31:12 [info]: success with signIn true
+2025-01-06 20:31:12 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:31:12 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:31:12 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:31:13 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:31:13 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:31:15 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:31:15 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:31:15 [info]: success with signIn false
+2025-01-06 20:33:02 [info]: calling getRecipes
+2025-01-06 20:33:02 [info]: getChefs- find all recipe
+2025-01-06 20:33:02 [info]: success fetching recipes from DB
+2025-01-06 20:33:02 [info]: success with getRecipes
+2025-01-06 20:33:02 [info]: calling getRecipes
+2025-01-06 20:33:02 [info]: getChefs- find all recipe
+2025-01-06 20:33:02 [info]: success fetching recipes from DB
+2025-01-06 20:33:02 [info]: success with getRecipes
+2025-01-06 20:33:20 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:33:20 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:33:20 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:33:20 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:33:20 [info]: success with signIn true
+2025-01-06 20:36:11 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-06 20:36:11 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-06 20:36:11 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-06 20:36:11 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-06 20:36:11 [info]: success with signIn true
+2025-01-06 20:36:55 [info]: chefMiddleware
+2025-01-06 20:36:55 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:36:55 [info]: addRecipe - set new recipe to DB, recipe ID: undefined
+2025-01-06 20:36:55 [info]: addRecipe- recipe name: h
+2025-01-06 20:41:11 [info]: calling getRecipes
+2025-01-06 20:41:11 [info]: getChefs- find all recipe
+2025-01-06 20:41:11 [info]: success fetching recipes from DB
+2025-01-06 20:41:11 [info]: success with getRecipes
+2025-01-06 20:41:11 [info]: calling getRecipes
+2025-01-06 20:41:11 [info]: getChefs- find all recipe
+2025-01-06 20:41:12 [info]: success fetching recipes from DB
+2025-01-06 20:41:12 [info]: success with getRecipes
+2025-01-06 20:41:29 [info]: chefMiddleware
+2025-01-06 20:41:29 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:41:29 [info]: addRecipe - set new recipe to DB, recipe ID: undefined
+2025-01-06 20:41:29 [info]: addRecipe- recipe name: hh
+2025-01-06 20:51:14 [info]: chefMiddleware
+2025-01-06 20:51:14 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:51:14 [info]: addRecipe - set new recipe to DB, recipe ID: undefined
+2025-01-06 20:51:14 [info]: addRecipe- recipe name: hh
+2025-01-06 20:52:00 [info]: chefMiddleware
+2025-01-06 20:52:00 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:52:00 [info]: addRecipe - set new recipe to DB, recipe ID: undefined
+2025-01-06 20:52:00 [info]: addRecipe- recipe name: hh
+2025-01-06 20:55:04 [info]: chefMiddleware
+2025-01-06 20:55:04 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:55:04 [info]: addRecipe - set new recipe to DB, recipe ID: undefined
+2025-01-06 20:55:04 [info]: addRecipe- recipe name: hh
+2025-01-06 20:56:09 [info]: chefMiddleware
+2025-01-06 20:56:09 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:56:09 [info]: addRecipe - set new recipe to DB, recipe ID: undefined
+2025-01-06 20:56:09 [info]: addRecipe- recipe name: hh
+2025-01-06 20:56:15 [info]: chefMiddleware
+2025-01-06 20:56:15 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:56:15 [info]: addRecipe - set new recipe to DB, recipe ID: undefined
+2025-01-06 20:56:15 [info]: addRecipe- recipe name: hh
+2025-01-06 20:56:53 [info]: chefMiddleware
+2025-01-06 20:56:53 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:56:53 [info]: addRecipe - set new recipe to DB, recipe Name: hh
+2025-01-06 20:56:53 [info]: addRecipe- recipe name: hh
+2025-01-06 20:57:58 [info]: chefMiddleware
+2025-01-06 20:57:58 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:57:58 [info]: addRecipe - set new recipe to DB, recipe Name: hh
+2025-01-06 20:57:58 [info]: addRecipe- recipe name: hh
+2025-01-06 20:59:07 [info]: chefMiddleware
+2025-01-06 20:59:07 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 20:59:07 [info]: addRecipe - set new recipe to DB, recipe Name: [object Object]
+2025-01-06 21:03:39 [info]: chefMiddleware
+2025-01-06 21:03:39 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 21:03:39 [info]: addRecipe - set new recipe to DB, recipe Name: [object Object]
+2025-01-06 21:06:09 [info]: chefMiddleware
+2025-01-06 21:06:09 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 21:06:09 [info]: [object Object]
+2025-01-06 21:06:09 [info]: addRecipe - set new recipe to DB, recipe Name: hh
+2025-01-06 21:07:09 [info]: chefMiddleware
+2025-01-06 21:07:09 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 21:07:09 [info]: [object Object]
+2025-01-06 21:07:09 [info]: addRecipe - set new recipe to DB, recipe Name: hh
+2025-01-06 21:07:09 [info]: addRecipe- recipe name: hh
+2025-01-06 21:07:09 [info]: chef id: undefined
+2025-01-06 21:08:15 [info]: chefMiddleware
+2025-01-06 21:08:15 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 21:08:15 [info]: [object Object]
+2025-01-06 21:08:15 [info]: addRecipe - set new recipe to DB, recipe Name: hh
+2025-01-06 21:08:15 [info]: addRecipe- recipe name: hh
+2025-01-06 21:08:15 [info]: chef id: undefined
+2025-01-06 21:11:10 [info]: chefMiddleware
+2025-01-06 21:11:10 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 21:11:10 [info]: [object Object]
+2025-01-06 21:11:10 [info]: addRecipe - set new recipe to DB, recipe Name: hh
+2025-01-06 21:11:10 [info]: addRecipe- recipe name: hh
+2025-01-06 21:11:10 [info]: chef id: undefined
+2025-01-06 21:12:48 [info]: chefMiddleware
+2025-01-06 21:12:48 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-06 21:12:48 [info]: [object Object]
+2025-01-06 21:12:48 [info]: addRecipe - set new recipe to DB, recipe Name: hh
+2025-01-06 21:12:48 [info]: addRecipe- recipe name: hh
+2025-01-06 21:12:48 [info]: chef id: undefined
+2025-01-07 11:06:39 [info]: calling getRecipes
+2025-01-07 11:06:39 [info]: getChefs- find all recipe
+2025-01-07 11:06:39 [info]: success fetching recipes from DB
+2025-01-07 11:06:39 [info]: success with getRecipes
+2025-01-07 11:06:39 [info]: calling getRecipes
+2025-01-07 11:06:39 [info]: getChefs- find all recipe
+2025-01-07 11:06:39 [info]: success fetching recipes from DB
+2025-01-07 11:06:39 [info]: success with getRecipes
+2025-01-07 11:09:03 [info]: chefMiddleware
+2025-01-07 11:09:03 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:16:47 [info]: chefMiddleware
+2025-01-07 11:16:47 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:17:19 [info]: chefMiddleware
+2025-01-07 11:17:19 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:18:26 [info]: chefMiddleware
+2025-01-07 11:18:26 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:22:31 [info]: chefMiddleware
+2025-01-07 11:22:31 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:27:23 [info]: chefMiddleware
+2025-01-07 11:27:23 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:28:49 [info]: chefMiddleware
+2025-01-07 11:28:49 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:28:49 [info]: the problem is here?
+2025-01-07 11:33:05 [info]: chefMiddleware
+2025-01-07 11:33:05 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:33:05 [info]: secretForNow
+2025-01-07 11:35:58 [info]: chefMiddleware
+2025-01-07 11:35:58 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:35:58 [info]: secretForNow
+2025-01-07 11:37:48 [info]: chefMiddleware
+2025-01-07 11:37:48 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MTg4NTcxLCJleHAiOjE3MzYxOTU3NzF9.9VLQMDxfp15W_5Z2Xmb6CZhGM2TnmI1w-kTeESP0HNA
+2025-01-07 11:37:48 [info]: secretForNow
+2025-01-07 11:37:48 [error]: Token verification error: jwt expired
+2025-01-07 11:43:12 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-07 11:43:12 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-07 11:43:12 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-07 11:43:12 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-07 11:43:12 [info]: success with signIn true
+2025-01-07 11:43:15 [info]: chefMiddleware
+2025-01-07 11:43:15 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MjQyOTkyLCJleHAiOjE3MzYyNTAxOTJ9.hF3xodqb2TbKYJVl2Lo3LzYuADhx6eolVMWMHct0FII
+2025-01-07 11:43:15 [info]: secretForNow
+2025-01-07 11:43:15 [info]: type chef
+2025-01-07 11:43:15 [info]: [object Object]
+2025-01-07 11:43:15 [info]: addRecipe - set new recipe to DB, recipe Name: f
+2025-01-07 11:43:15 [info]: addRecipe- recipe name: f
+2025-01-07 11:43:15 [info]: chef id: 
+2025-01-07 11:49:00 [info]: chefMiddleware
+2025-01-07 11:49:00 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MjQyOTkyLCJleHAiOjE3MzYyNTAxOTJ9.hF3xodqb2TbKYJVl2Lo3LzYuADhx6eolVMWMHct0FII
+2025-01-07 11:49:00 [info]: secretForNow
+2025-01-07 11:49:00 [info]: type chef
+2025-01-07 11:49:00 [info]: [object Object]
+2025-01-07 11:49:00 [info]: addRecipe - set new recipe to DB, recipe Name: 677bf82137c2060f50f2593e
+2025-01-07 11:49:00 [info]: addRecipe- recipe name: f
+2025-01-07 11:49:00 [info]: chef id: 677bf82137c2060f50f2593e
+2025-01-07 11:49:01 [info]: save recipe f in DB  
+2025-01-07 11:49:01 [info]: successfull post recipe: undefined 
+2025-01-07 11:49:01 [info]: calling getRecipes
+2025-01-07 11:49:01 [info]: getChefs- find all recipe
+2025-01-07 11:49:01 [info]: success fetching recipes from DB
+2025-01-07 11:49:01 [info]: success with getRecipes
+2025-01-07 11:49:01 [info]: calling getRecipes
+2025-01-07 11:49:01 [info]: getChefs- find all recipe
+2025-01-07 11:49:01 [info]: success fetching recipes from DB
+2025-01-07 11:49:01 [info]: success with getRecipes
+2025-01-07 11:50:56 [info]: chefMiddleware
+2025-01-07 11:50:56 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MjQyOTkyLCJleHAiOjE3MzYyNTAxOTJ9.hF3xodqb2TbKYJVl2Lo3LzYuADhx6eolVMWMHct0FII
+2025-01-07 11:50:56 [info]: secretForNow
+2025-01-07 11:50:56 [info]: type chef
+2025-01-07 11:50:56 [info]: [object Object]
+2025-01-07 11:50:56 [info]: addRecipe - set new recipe to DB, recipe Name: 677bf82137c2060f50f2593e
+2025-01-07 11:50:56 [info]: addRecipe- recipe name: h
+2025-01-07 11:50:56 [info]: chef id: 677bf82137c2060f50f2593e
+2025-01-07 12:14:29 [info]: chefMiddleware
+2025-01-07 12:14:29 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MjQyOTkyLCJleHAiOjE3MzYyNTAxOTJ9.hF3xodqb2TbKYJVl2Lo3LzYuADhx6eolVMWMHct0FII
+2025-01-07 12:14:29 [info]: secretForNow
+2025-01-07 12:14:29 [info]: type chef
+2025-01-07 12:14:29 [info]: [object Object]
+2025-01-07 12:14:29 [info]: addRecipe - set new recipe to DB, recipe Name: 677bf82137c2060f50f2593e
+2025-01-07 12:14:29 [info]: addRecipe- recipe name: h
+2025-01-07 12:14:29 [info]: chef id: 677bf82137c2060f50f2593e
+2025-01-07 12:14:29 [error]: E11000 duplicate key error collection: recipes-project.recipes index: recipeId_1 dup key: { recipeId: null }
+2025-01-07 12:19:02 [info]: chefMiddleware
+2025-01-07 12:19:02 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MjQyOTkyLCJleHAiOjE3MzYyNTAxOTJ9.hF3xodqb2TbKYJVl2Lo3LzYuADhx6eolVMWMHct0FII
+2025-01-07 12:19:02 [info]: secretForNow
+2025-01-07 12:19:02 [info]: type chef
+2025-01-07 12:19:02 [info]: [object Object]
+2025-01-07 12:19:02 [info]: addRecipe - set new recipe to DB, recipe Name: 677bf82137c2060f50f2593e
+2025-01-07 12:19:02 [info]: addRecipe- recipe name: h
+2025-01-07 12:19:02 [info]: chef id: 677bf82137c2060f50f2593e
+2025-01-07 12:19:02 [info]: save recipe h in DB  
+2025-01-07 12:19:02 [info]: successfull post recipe: 677cff9628b8197c80b22454 
+2025-01-07 12:19:02 [info]: calling getRecipes
+2025-01-07 12:19:02 [info]: getChefs- find all recipe
+2025-01-07 12:19:03 [info]: success fetching recipes from DB
+2025-01-07 12:19:03 [info]: success with getRecipes
+2025-01-07 12:19:03 [info]: calling getRecipes
+2025-01-07 12:19:03 [info]: getChefs- find all recipe
+2025-01-07 12:19:03 [info]: success fetching recipes from DB
+2025-01-07 12:19:03 [info]: success with getRecipes
+2025-01-07 12:19:08 [info]: fetchRecipe - calling recipe with ID: undefined
+2025-01-07 12:19:08 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-07 12:19:08 [info]: fetchRecipe - calling recipe with ID: undefined
+2025-01-07 12:19:08 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-07 12:19:49 [info]: calling getRecipes
+2025-01-07 12:19:49 [info]: getChefs- find all recipe
+2025-01-07 12:19:49 [info]: success fetching recipes from DB
+2025-01-07 12:19:49 [info]: success with getRecipes
+2025-01-07 12:19:49 [info]: calling getRecipes
+2025-01-07 12:19:49 [info]: getChefs- find all recipe
+2025-01-07 12:19:49 [info]: success fetching recipes from DB
+2025-01-07 12:19:49 [info]: success with getRecipes
+2025-01-07 12:19:50 [info]: fetchRecipe - calling recipe with ID: 2
+2025-01-07 12:19:50 [info]: fetchRecipe- find recipe with recipeID: 2
+2025-01-07 12:19:50 [info]: found a recipe with recipeID: 2
+2025-01-07 12:19:50 [info]: success with fetchRecipe id: 2
+2025-01-07 12:19:50 [info]: fetchRecipe - calling recipe with ID: 2
+2025-01-07 12:19:50 [info]: fetchRecipe- find recipe with recipeID: 2
+2025-01-07 12:19:50 [info]: found a recipe with recipeID: 2
+2025-01-07 12:19:50 [info]: success with fetchRecipe id: 2
+2025-01-07 12:19:54 [info]: calling getRecipes
+2025-01-07 12:19:54 [info]: getChefs- find all recipe
+2025-01-07 12:19:54 [info]: success fetching recipes from DB
+2025-01-07 12:19:54 [info]: success with getRecipes
+2025-01-07 12:19:54 [info]: calling getRecipes
+2025-01-07 12:19:54 [info]: getChefs- find all recipe
+2025-01-07 12:19:54 [info]: success fetching recipes from DB
+2025-01-07 12:19:54 [info]: success with getRecipes
+2025-01-07 12:19:56 [info]: fetchRecipe - calling recipe with ID: 45652
+2025-01-07 12:19:56 [info]: fetchRecipe- find recipe with recipeID: 45652
+2025-01-07 12:19:56 [info]: found a recipe with recipeID: 45652
+2025-01-07 12:19:56 [info]: success with fetchRecipe id: 45652
+2025-01-07 12:19:56 [info]: fetchRecipe - calling recipe with ID: 45652
+2025-01-07 12:19:56 [info]: fetchRecipe- find recipe with recipeID: 45652
+2025-01-07 12:19:57 [info]: found a recipe with recipeID: 45652
+2025-01-07 12:19:57 [info]: success with fetchRecipe id: 45652
+2025-01-07 12:19:59 [info]: calling getRecipes
+2025-01-07 12:19:59 [info]: getChefs- find all recipe
+2025-01-07 12:19:59 [info]: success fetching recipes from DB
+2025-01-07 12:19:59 [info]: success with getRecipes
+2025-01-07 12:19:59 [info]: calling getRecipes
+2025-01-07 12:19:59 [info]: getChefs- find all recipe
+2025-01-07 12:19:59 [info]: success fetching recipes from DB
+2025-01-07 12:19:59 [info]: success with getRecipes
+2025-01-07 12:20:02 [info]: fetchRecipe - calling recipe with ID: undefined
+2025-01-07 12:20:02 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-07 12:20:02 [info]: fetchRecipe - calling recipe with ID: undefined
+2025-01-07 12:20:02 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-07 12:20:03 [info]: calling getRecipes
+2025-01-07 12:20:03 [info]: getChefs- find all recipe
+2025-01-07 12:20:03 [info]: success fetching recipes from DB
+2025-01-07 12:20:03 [info]: success with getRecipes
+2025-01-07 12:20:03 [info]: calling getRecipes
+2025-01-07 12:20:03 [info]: getChefs- find all recipe
+2025-01-07 12:20:03 [info]: success fetching recipes from DB
+2025-01-07 12:20:03 [info]: success with getRecipes

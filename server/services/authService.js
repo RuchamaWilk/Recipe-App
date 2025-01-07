@@ -1,7 +1,7 @@
 // server/services/authService.js
 const User = require('../models/user.js');
 const logger = require('./loggerService.js');
-const { generateToken, verifyJwt } = require('../utils/jwt.js');
+const {generateToken}  = require('../utils/jwt.js');
 
 
 const getUsers = async () => {
@@ -28,10 +28,11 @@ const signIn = async ({email, password}) => {
             throw new Error(`Incorrect password for user: ${email}`);
         }
         logger.info(`found a chef with email: ${email} and password ${password} `)
-        const token = generateToken(userOfEmail._id,userOfEmail.email);
-        return {success: true,token };  // חזרה עם תוצאה
+        console.log(`id: ${userOfEmail._id} email: ${userOfEmail.emailAddress} type: ${userOfEmail.type}`)
+        const token = generateToken(userOfEmail._id,userOfEmail.emailAddress, userOfEmail.type);
+        return {success: true,token: token };  // חזרה עם תוצאה
     } catch (err) {
-        return Promise.reject(err);
+        return { success: false, message: err.message };
     }
 };
 
@@ -47,9 +48,8 @@ const AddUser = async ({ userName, email, password }) => {
         };
         const newUser = new User(user);
         await newUser.save(); // This will throw an error if emailAddress is not unique
-        const token = generateToken(newUser._id,newUser.email);
         logger.info(`Saved user ${newUser.userName} in DB`);
-        return { success: true,token };
+        return { success: true };
     } catch (err) {
         if (err.code === 11000 && err.keyValue.emailAddress) {
             logger.error('Duplicate email error:', err);
@@ -75,9 +75,8 @@ const AddChef = async ({ userName, email, password, yearsOfExperience,phoneNumbe
         const newChef = new User(chef);
         logger.info(`new chef saved in db`);
         await newChef.save(); // This will throw an error if emailAddress is not unique
-        const token = generateToken(newChef._id,newChef.email);
         logger.info(`Saved user ${newChef.userName} in DB`);
-        return { success: true,token };
+        return {success: true}  ;
     } catch (err) {
         if (err.code === 11000 && err.keyValue.emailAddress) {
             logger.error('Duplicate email error:', err);

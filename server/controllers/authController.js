@@ -20,9 +20,13 @@ router.post('/signIn', async (req, res, next) => {
     try {
         const { email, password } = req.body;
         logger.info(`Calling signIn with email: ${email} and password: ${password}`);
-        const result = await signIn({ email, password }); 
-        logger.info('success with signIn');
-        return res.status(200).send(result);
+        const { success, token, message } = await signIn({ email, password });        
+        logger.info(`success with signIn ${success}`);
+        if (success) {
+            return res.status(200).send({ success, token });
+        } else {
+            return res.status(400).send({ success, message });
+        }
     } catch (err) {
         next(err);
     }
@@ -36,7 +40,7 @@ router.post('/signUp', async (req, res, next) => {
         logger.info(`Calling AddUser with user name: ${userName} email: ${email} and password: ${password}`);
         const result = await AddUser({ userName,email, password }); 
         logger.info('success with signUp');
-        return res.status(200).send(result);
+        return res.status(200).send({result: result});
     } catch (err) {
         next(err);
     }
@@ -49,7 +53,7 @@ router.post('/signUp/chef', async (req, res, next) => {
         logger.info(`Calling AddChef with user name: ${userName} email: ${email} and password: ${password}`);
         const result = await AddChef({ userName, email, password, yearsOfExperience,phoneNumber,aboutMe }); 
         logger.info('success with signUp as Chef');
-        return res.status(200).send(result);
+        return res.status(200).send({result: result});
     } catch (err) {
         next(err);
     }

@@ -1,5 +1,6 @@
 // client/src/services/api.jsx
 import axios from 'axios';
+//import verifyJwt from '../../../server/utils/jwt';
 
 const BASE_URL = 'http://localhost:8080/api';
 
@@ -35,9 +36,25 @@ export const fetchRecipesByCategory = async (category) => {
 };
 
 export const addRecipe = async (recipeData) => {
+  
   console.log("add? " ,recipeData);
   try {
-    const response = await axios.post(`${BASE_URL}/recipes`,recipeData);
+    const token = localStorage.getItem('token');
+  if (!token) {
+    console.error('No token found');
+    return;
+  }
+  console.log('Token:', token);
+  //const tokenReg=  verifyJwt(token);
+  //console.log('Token:', tokenReg);
+  //recipeData.chefId= token._id;
+  //console.log(token._id)
+    const response = await axios.post(`${BASE_URL}/recipes/add`,recipeData,{
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+    
     console.log("now??? " ,response)
     return response.data;
   } catch (error) {
@@ -50,7 +67,8 @@ export const checkChef = async (email, password) => {
   try {
     console.log("api ",email)
     const response = await axios.post(`${BASE_URL}/auth/signIn`,{email,password});
-    console.log("now??? " ,response)
+    localStorage.setItem('token', response.data.token);
+    console.log("now??? " ,response.data)
     return response.data;
   } catch (error) {
     console.error('Error feching chefs:', error);

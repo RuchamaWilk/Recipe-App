@@ -44,11 +44,14 @@ const fetchRecipesCategory = async (category) => {
 const addRecipe= async(recipe)=>{
     try {
         logger.info(`addRecipe- recipe name: ${recipe.name}`)
+        logger.info(`chef id: ${recipe.chefId}`)
         const recipes = new Recipe(recipe); 
         await recipes.save();
         logger.info(`save recipe ${recipe.name} in DB  `)
         return Promise.resolve(recipes);
     } catch (err) {
+        logger.error(err)
+
         return Promise.reject(err);
     }
     

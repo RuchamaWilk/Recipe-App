@@ -8,12 +8,15 @@ import SendIcon from '@mui/icons-material/Send';
 
 
 
+
 const AddRecipePage = () => {
+  
+  
   const navigate = useNavigate();
+  
   const [formData, setFormData] = useState({
     name: '',
     avgTime: '',
-    recipeId: '',
     chefId: '',
     image: '',
     ingredients: [{ name: '', amount: '' }],
@@ -51,6 +54,8 @@ const AddRecipePage = () => {
   };
 
   const handleSubmit = async (e) => {
+    console.log("whats going on?")
+    //formData.chefId= token._id,
     e.preventDefault();
     try {
       console.log("nice", formData)
@@ -78,20 +83,6 @@ const AddRecipePage = () => {
            onChange= {handleChange} 
            required
            name= "avgTime" />
-        <br />
-        <br />
-        <TextField id="outlined-basic" label="Recipe ID" variant="outlined"
-           value={formData.recipeId} 
-           onChange= {handleChange} 
-           required
-           name= "recipeId" />
-        <br />
-        <br />
-        <TextField id="outlined-basic" label="chef Id" variant="outlined"
-           value={formData.chefId} 
-           onChange= {handleChange} 
-           required
-           name= "chefId" />
         <br />
         <br />
         <TextField id="outlined-basic" label="Upload Picture" variant="outlined"

@@ -4,7 +4,6 @@ const { getRecipes ,fetchRecipe,fetchRecipesCategory,addRecipe} = require('../se
 const logger = require('../services/loggerService');
 
 
-
 router.get('/:id?', async (req, res, next) => {
   try {
     const recipeID = req.params.id;
@@ -39,12 +38,14 @@ router.get('/category/:categoryId', async (req, res) => {
   });
 
 
-  router.post('/', async (req, res, next) => {
+  router.post('/add', async (req, res, next) => {
     try {
         const recipe = req.body;
-        logger.info( `addRecipe - set new recipe to DB, recipe ID: ${recipe.recipeID}`  );
+        recipe.chefId = req.user._id;
+
+        logger.info( `addRecipe - set new recipe to DB, recipe Name: ${recipe.chefId}`  );
         const newRecipe= await addRecipe(recipe);
-        logger.info(`successfull post recipe: ${recipe.recipeID} `);
+        logger.info(`successfull post recipe: ${newRecipe._id} `);
 
         return res.status(200).send(newRecipe);
     } catch (err) {

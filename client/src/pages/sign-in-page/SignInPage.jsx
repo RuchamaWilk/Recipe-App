@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import {checkChef} from '../../services/apiService'
 import TextField from '@mui/material/TextField';
 import LoginIcon from '@mui/icons-material/Login';
@@ -33,10 +32,13 @@ const SignInPage = ({ open, onClose }) => {
     console.log("loginPage" ,email)
     try {
           const response =await checkChef(email, password); // קריאה לפונקציה שתשלח את הנתונים לשרת
-          if (response.success) {
-            handleClose();
+          console.log(response.token)
+          if (response.token) {
+            localStorage.setItem('token', response.token);  // שמירת הטוקן ב-localStorage
+            console.log("Token saved:", response.token);
+            handleClose()
           } else {
-              setSignInError(response.message);
+            setSignInError(response.message || 'Login failed');
           }
       } catch (error) {
           console.error('Error during login:', error);
@@ -99,7 +101,7 @@ const SignInPage = ({ open, onClose }) => {
         </Button>
         {signInError && (
           <Typography variant="body2" color="error" sx={{ mt: 2, textAlign: 'center' }}>
-            {loginError}
+            {signInError}
           </Typography>
         )}
       </Box>
