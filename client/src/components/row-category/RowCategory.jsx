@@ -46,7 +46,6 @@ RowCategory.propTypes = {
   category: PropTypes.string.isRequired,
   recipes: PropTypes.arrayOf(
     PropTypes.shape({
-      recipeId: PropTypes.string.isRequired,  
       image: PropTypes.string.isRequired,    
       name: PropTypes.string.isRequired,      
       avgTime: PropTypes.number.isRequired, 
