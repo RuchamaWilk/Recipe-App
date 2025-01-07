@@ -15,7 +15,7 @@ const Card = ({ recipe }) => {
     const navigate = useNavigate();
 
     const showRecipe = () => {
-        navigate(`/recipe/${recipe.recipeId}`);
+        navigate(`/recipe/${recipe._id}`);
     };
 
     return (
@@ -61,7 +61,6 @@ const Card = ({ recipe }) => {
 
 Card.propTypes = {
     recipe: PropTypes.shape({
-        recipeId: PropTypes.string.isRequired,  // מזהה המתכון (במספר)
         image: PropTypes.string.isRequired,     // כתובת התמונה (מחרוזת)
         name: PropTypes.string.isRequired,      // שם המתכון (מחרוזת)
         avgTime: PropTypes.number.isRequired,  // זמן ממוצע ב-Min (מספר)

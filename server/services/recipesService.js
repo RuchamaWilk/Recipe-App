@@ -16,7 +16,7 @@ const getRecipes = async () => {
 const fetchRecipe = async (recipeID) => {
     try {
         logger.info(`fetchRecipe- find recipe with recipeID: ${recipeID}`)
-        const recipe = await Recipe.findOne({ recipeId: recipeID });
+        const recipe = await Recipe.findOne({ _id: recipeID });
         if (!recipe) {
             throw new Error(`There is no recipe with this id: ${recipeID}`);
         }

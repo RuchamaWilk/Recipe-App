@@ -5103,3 +5103,39 @@
 2025-01-07 12:20:03 [info]: getChefs- find all recipe
 2025-01-07 12:20:03 [info]: success fetching recipes from DB
 2025-01-07 12:20:03 [info]: success with getRecipes
+2025-01-07 12:22:19 [info]: calling getRecipes
+2025-01-07 12:22:19 [info]: getChefs- find all recipe
+2025-01-07 12:22:20 [info]: success fetching recipes from DB
+2025-01-07 12:22:20 [info]: success with getRecipes
+2025-01-07 12:23:32 [info]: fetchRecipe - calling recipe with ID: 677cff9628b8197c80b22454
+2025-01-07 12:23:32 [info]: fetchRecipe- find recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 12:23:32 [info]: fetchRecipe - calling recipe with ID: 677cff9628b8197c80b22454
+2025-01-07 12:23:32 [info]: fetchRecipe- find recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 12:24:10 [info]: calling getRecipes
+2025-01-07 12:24:10 [info]: getChefs- find all recipe
+2025-01-07 12:24:11 [info]: success fetching recipes from DB
+2025-01-07 12:24:11 [info]: success with getRecipes
+2025-01-07 12:24:11 [info]: calling getRecipes
+2025-01-07 12:24:11 [info]: getChefs- find all recipe
+2025-01-07 12:24:11 [info]: success fetching recipes from DB
+2025-01-07 12:24:11 [info]: success with getRecipes
+2025-01-07 12:24:13 [info]: fetchRecipe - calling recipe with ID: 677cff9628b8197c80b22454
+2025-01-07 12:24:13 [info]: fetchRecipe- find recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 12:24:13 [info]: fetchRecipe - calling recipe with ID: 677cff9628b8197c80b22454
+2025-01-07 12:24:13 [info]: fetchRecipe- find recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 12:31:53 [info]: calling getRecipes
+2025-01-07 12:31:53 [info]: getChefs- find all recipe
+2025-01-07 12:31:53 [info]: success fetching recipes from DB
+2025-01-07 12:31:53 [info]: success with getRecipes
+2025-01-07 12:31:53 [info]: calling getRecipes
+2025-01-07 12:31:53 [info]: getChefs- find all recipe
+2025-01-07 12:31:53 [info]: success fetching recipes from DB
+2025-01-07 12:31:53 [info]: success with getRecipes
+2025-01-07 12:31:55 [info]: fetchRecipe - calling recipe with ID: 677cff9628b8197c80b22454
+2025-01-07 12:31:55 [info]: fetchRecipe- find recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 12:31:55 [info]: found a recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 12:31:55 [info]: success with fetchRecipe id: 677cff9628b8197c80b22454
+2025-01-07 12:31:55 [info]: fetchRecipe - calling recipe with ID: 677cff9628b8197c80b22454
+2025-01-07 12:31:55 [info]: fetchRecipe- find recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 12:31:55 [info]: found a recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 12:31:55 [info]: success with fetchRecipe id: 677cff9628b8197c80b22454
