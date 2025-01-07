@@ -5139,3 +5139,88 @@
 2025-01-07 12:31:55 [info]: fetchRecipe- find recipe with recipeID: 677cff9628b8197c80b22454
 2025-01-07 12:31:55 [info]: found a recipe with recipeID: 677cff9628b8197c80b22454
 2025-01-07 12:31:55 [info]: success with fetchRecipe id: 677cff9628b8197c80b22454
+2025-01-07 13:09:15 [info]: calling getRecipes
+2025-01-07 13:09:15 [info]: getChefs- find all recipe
+2025-01-07 13:09:15 [info]: success fetching recipes from DB
+2025-01-07 13:09:15 [info]: success with getRecipes
+2025-01-07 13:09:15 [info]: calling getRecipes
+2025-01-07 13:09:15 [info]: getChefs- find all recipe
+2025-01-07 13:09:15 [info]: success fetching recipes from DB
+2025-01-07 13:09:15 [info]: success with getRecipes
+2025-01-07 13:09:40 [info]: Calling signIn with email: try1@gmail.com and password: 1234567
+2025-01-07 13:09:40 [info]: signIn- find chef with email: try1@gmail.com and password 1234567
+2025-01-07 13:09:40 [info]: found a chef with the email" try1@gmail.com
+2025-01-07 13:09:40 [info]: success with signIn false
+2025-01-07 13:09:47 [info]: Calling signIn with email: try4@gmail.com and password: 1234567
+2025-01-07 13:09:47 [info]: signIn- find chef with email: try4@gmail.com and password 1234567
+2025-01-07 13:09:47 [info]: found a chef with the email" try4@gmail.com
+2025-01-07 13:09:47 [info]: success with signIn false
+2025-01-07 13:10:39 [info]: Calling signIn with email: try5@gmail.com and password: 1234567
+2025-01-07 13:10:39 [info]: signIn- find chef with email: try5@gmail.com and password 1234567
+2025-01-07 13:10:39 [info]: found a chef with the email" try5@gmail.com
+2025-01-07 13:10:39 [info]: found a chef with email: try5@gmail.com and password 1234567 
+2025-01-07 13:10:39 [info]: success with signIn true
+2025-01-07 13:10:56 [info]: chefMiddleware
+2025-01-07 13:10:56 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdhYjgyYzkyY2Q2ZGYxMjA5YjNmZWYiLCJlbWFpbEFkZHJlc3MiOiJ0cnk1QGdtYWlsLmNvbSIsInR5cGUiOiJ1c2VyIiwiaWF0IjoxNzM2MjQ4MjM5LCJleHAiOjE3MzYyNTU0Mzl9.294YuVIvD5my1ccBnxbj_Zgrs-GnylI8vTlnIdfMZDw
+2025-01-07 13:10:56 [info]: secretForNow
+2025-01-07 13:10:56 [info]: type user
+2025-01-07 13:17:37 [info]: calling getRecipes
+2025-01-07 13:17:37 [info]: getChefs- find all recipe
+2025-01-07 13:17:37 [info]: success fetching recipes from DB
+2025-01-07 13:17:37 [info]: success with getRecipes
+2025-01-07 13:17:37 [info]: calling getRecipes
+2025-01-07 13:17:37 [info]: getChefs- find all recipe
+2025-01-07 13:17:37 [info]: success fetching recipes from DB
+2025-01-07 13:17:37 [info]: success with getRecipes
+2025-01-07 13:17:46 [info]: calling getRecipes
+2025-01-07 13:17:46 [info]: getChefs- find all recipe
+2025-01-07 13:17:46 [info]: success fetching recipes from DB
+2025-01-07 13:17:46 [info]: success with getRecipes
+2025-01-07 13:17:46 [info]: calling getRecipes
+2025-01-07 13:17:46 [info]: getChefs- find all recipe
+2025-01-07 13:17:46 [info]: success fetching recipes from DB
+2025-01-07 13:17:46 [info]: success with getRecipes
+2025-01-07 13:23:47 [info]: calling getRecipes
+2025-01-07 13:23:47 [info]: getChefs- find all recipe
+2025-01-07 13:23:47 [info]: success fetching recipes from DB
+2025-01-07 13:23:47 [info]: success with getRecipes
+2025-01-07 13:30:45 [info]: calling getRecipes
+2025-01-07 13:30:45 [info]: getChefs- find all recipe
+2025-01-07 13:30:46 [info]: success fetching recipes from DB
+2025-01-07 13:30:46 [info]: success with getRecipes
+2025-01-07 13:30:46 [info]: calling getRecipes
+2025-01-07 13:30:46 [info]: getChefs- find all recipe
+2025-01-07 13:30:46 [info]: success fetching recipes from DB
+2025-01-07 13:30:46 [info]: success with getRecipes
+2025-01-07 13:33:06 [info]: fetchRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-07 13:33:06 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-07 13:33:06 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-07 13:33:06 [info]: success with fetchRecipe id: 67616ab2c713f8f0218320c0
+2025-01-07 13:33:06 [info]: fetchRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-07 13:33:06 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-07 13:33:06 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-07 13:33:06 [info]: success with fetchRecipe id: 67616ab2c713f8f0218320c0
+2025-01-07 13:33:08 [info]: calling getRecipes
+2025-01-07 13:33:08 [info]: getChefs- find all recipe
+2025-01-07 13:33:08 [info]: success fetching recipes from DB
+2025-01-07 13:33:08 [info]: success with getRecipes
+2025-01-07 13:33:08 [info]: calling getRecipes
+2025-01-07 13:33:08 [info]: getChefs- find all recipe
+2025-01-07 13:33:08 [info]: success fetching recipes from DB
+2025-01-07 13:33:08 [info]: success with getRecipes
+2025-01-07 13:33:11 [info]: fetchRecipe - calling recipe with ID: 677cff9628b8197c80b22454
+2025-01-07 13:33:11 [info]: fetchRecipe- find recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 13:33:11 [info]: found a recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 13:33:11 [info]: success with fetchRecipe id: 677cff9628b8197c80b22454
+2025-01-07 13:33:11 [info]: fetchRecipe - calling recipe with ID: 677cff9628b8197c80b22454
+2025-01-07 13:33:11 [info]: fetchRecipe- find recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 13:33:11 [info]: found a recipe with recipeID: 677cff9628b8197c80b22454
+2025-01-07 13:33:11 [info]: success with fetchRecipe id: 677cff9628b8197c80b22454
+2025-01-07 13:33:13 [info]: calling getRecipes
+2025-01-07 13:33:13 [info]: getChefs- find all recipe
+2025-01-07 13:33:13 [info]: success fetching recipes from DB
+2025-01-07 13:33:13 [info]: success with getRecipes
+2025-01-07 13:33:13 [info]: calling getRecipes
+2025-01-07 13:33:13 [info]: getChefs- find all recipe
+2025-01-07 13:33:14 [info]: success fetching recipes from DB
+2025-01-07 13:33:14 [info]: success with getRecipes

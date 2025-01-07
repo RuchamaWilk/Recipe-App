@@ -20,7 +20,7 @@ export const fetchRecipesById = async (id) => {
     const response = await axios.get(`${BASE_URL}/recipes/${id}`);
     return response.data;
   } catch (error) {
-    console.error('Error fetching recipes:', error);
+    console.error('Error fetching recipe by ID:', error);
     throw error;
   }
 };
@@ -45,10 +45,6 @@ export const addRecipe = async (recipeData) => {
     return;
   }
   console.log('Token:', token);
-  //const tokenReg=  verifyJwt(token);
-  //console.log('Token:', tokenReg);
-  //recipeData.chefId= token._id;
-  //console.log(token._id)
     const response = await axios.post(`${BASE_URL}/recipes/add`,recipeData,{
       headers: {
         Authorization: `Bearer ${token}`

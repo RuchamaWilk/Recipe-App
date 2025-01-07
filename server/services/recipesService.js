@@ -9,6 +9,7 @@ const getRecipes = async () => {
         logger.info('success fetching recipes from DB')
         return Promise.resolve(recipes);
     } catch (err) {
+        logger.error(err);
         return Promise.reject(err);
     }
 };
@@ -23,6 +24,7 @@ const fetchRecipe = async (recipeID) => {
         logger.info(`found a recipe with recipeID: ${recipeID}`)
         return Promise.resolve(recipe);
       } catch (err) {
+        logger.error(err)
         return Promise.reject(err);
       }
 };
@@ -37,6 +39,7 @@ const fetchRecipesCategory = async (category) => {
         logger.info(`found recipes of category: ${category}`)
         return Promise.resolve(recipes);
       } catch (err) {
+        logger.error(err)
         return Promise.reject(err);
       }
 };
@@ -51,7 +54,6 @@ const addRecipe= async(recipe)=>{
         return Promise.resolve(recipes);
     } catch (err) {
         logger.error(err)
-
         return Promise.reject(err);
     }
     
