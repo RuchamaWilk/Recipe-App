@@ -1,8 +1,23 @@
 import React, { useState } from 'react';
-import { Button, TextField, Typography, Box } from '@mui/material';
+import { 
+  Button, 
+  TextField, 
+  Typography, 
+  Box, 
+  Paper,
+  Container,
+  Divider
+} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { addChefToDb } from '../../services/apiService'; // שירות ה-API שלך
-import { validateUserName, validateEmail, validatePassword,validateYearsOfExperience,validatephoneNumber } from '../../utils/validation';
+import { addChefToDb } from '../../services/apiService';
+import { 
+  validateUserName, 
+  validateEmail, 
+  validatePassword,
+  validateYearsOfExperience,
+  validatephoneNumber 
+} from '../../utils/validation';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
 
 const ChefSignUpForm = () => {
   const [userName, setUserName] = useState('');
@@ -16,7 +31,6 @@ const ChefSignUpForm = () => {
   const [userNameError, setUserNameError] = useState('');
   const [yearsOfExperienceError, setYearsOfExperienceError] = useState('');
   const [phoneNumberError, setPhoneNumberError] = useState('');
-
   
   const navigate = useNavigate();
 
@@ -26,123 +40,183 @@ const ChefSignUpForm = () => {
     setUserNameError('');
     setYearsOfExperienceError('');
     setPhoneNumberError('');
-    setUserNameError(validateUserName(userName));
-    setEmailError(validateEmail(email));
-    setPasswordError(validatePassword(password));
-    setYearsOfExperienceError(validateYearsOfExperience(yearsOfExperience));
-    setPhoneNumberError(validatephoneNumber(phoneNumber));
-    try {
-      const chefData = {
-        userName,
-        email,
-        password,
-        yearsOfExperience: parseInt(yearsOfExperience),
-        phoneNumber,
-        aboutMe,
-        type: 'chef',
-      };
-      await addChefToDb(chefData); // קריאה לשירות API להוספת השף למסד הנתונים
-      navigate('/');
-    } catch (error) {
-      console.error('Error during Chef SignUp:', error);
+    
+    const userNameErrorMsg = validateUserName(userName);
+    const emailErrorMsg = validateEmail(email);
+    const passwordErrorMsg = validatePassword(password);
+    const yearsErrorMsg = validateYearsOfExperience(yearsOfExperience);
+    const phoneErrorMsg = validatephoneNumber(phoneNumber);
+
+    setUserNameError(userNameErrorMsg);
+    setEmailError(emailErrorMsg);
+    setPasswordError(passwordErrorMsg);
+    setYearsOfExperienceError(yearsErrorMsg);
+    setPhoneNumberError(phoneErrorMsg);
+
+    if (!userNameErrorMsg && !emailErrorMsg && !passwordErrorMsg && 
+        !yearsErrorMsg && !phoneErrorMsg) {
+      try {
+        const chefData = {
+          userName,
+          email,
+          password,
+          yearsOfExperience: parseInt(yearsOfExperience),
+          phoneNumber,
+          aboutMe,
+          type: 'chef',
+        };
+        await addChefToDb(chefData);
+        navigate('/');
+      } catch (error) {
+        console.error('Error during Chef SignUp:', error);
+      }
     }
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 3 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Sign Up As Chef
-      </Typography>
-      
-      <Box sx={{ 
-        display: 'flex', 
-        flexDirection: { xs: 'column', md: 'row' },
-        gap: 2, 
-        width: '100%', 
-        marginBottom: 2 
+    <Container maxWidth="md" sx={{ py: 4 }}>
+      <Paper elevation={3} sx={{
+        p: { xs: 2, md: 6 },
+        backgroundColor: '#ffffff',
+        borderRadius: 2
       }}>
-        <TextField
-          label="Username"
-          variant="outlined"
-          fullWidth
-          value={userName}
-          onChange={(e) => setUserName(e.target.value)}
-          error={!!userNameError}
-          helperText={userNameError}
-          sx={{ marginBottom: { xs: 0, md: 0 } }}
-        />
-        <TextField
-          label="Email"
-          variant="outlined"
-          fullWidth
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          error={!!emailError}
-          helperText={emailError}
-          sx={{ marginBottom: { xs: 0, md: 0 } }}
-        />
-        <TextField
-          label="Password"
-          type="password"
-          variant="outlined"
-          fullWidth
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          error={!!passwordError}
-          helperText={passwordError}
-          sx={{ marginBottom: { xs: 0, md: 0 } }}
-        />
-      </Box>
+        <Box sx={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          alignItems: 'center',
+          mb: 4
+        }}>
+          <RestaurantIcon sx={{ 
+            fontSize: 40, 
+            mb: 2,
+            color: '#939185'
+          }} />
+          <Typography variant="h4" component="h1" sx={{
+            fontWeight: 600,
+            color: '#2C3E50',
+            mb: 1
+          }}>
+            הצטרף כשף
+          </Typography>
+          <Typography variant="body1" sx={{ color: '#7F8C8D', mb: 3 }}>
+            מלא את הפרטים הבאים כדי להתחיל לשתף את המתכונים שלך
+          </Typography>
+          <Divider sx={{ width: '100%', mb: 4 }} />
+        </Box>
 
-      <Box sx={{ 
-        display: 'flex', 
-        flexDirection: { xs: 'column', md: 'row' },
-        gap: 2, 
-        width: '100%', 
-        marginBottom: 2 
-      }}>
-        <TextField
-          label="Years of Experience"
-          variant="outlined"
-          fullWidth
-          type="number"
-          value={yearsOfExperience}
-          onChange={(e) => setYearsOfExperience(e.target.value)}
-          error={!!yearsOfExperienceError}
-          helperText={yearsOfExperienceError}
-          sx={{ marginBottom: { xs: 0, md: 0 } }}
-        />
-        <TextField
-          label="Phone Number"
-          variant="outlined"
-          fullWidth
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
-          error={!!phoneNumberError}
-          helperText={phoneNumberError}
-          sx={{ marginBottom: { xs: 0, md: 0 } }}
-        />
-      </Box>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+          <Box sx={{ 
+            display: 'flex', 
+            flexDirection: { xs: 'column', md: 'row' },
+            gap: 2
+          }}>
+            <TextField
+              label="שם משתמש"
+              variant="outlined"
+              fullWidth
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              error={!!userNameError}
+              helperText={userNameError}
+              sx={{ bgcolor: 'white' }}
+              dir="rtl"
+            />
+            <TextField
+              label="אימייל"
+              variant="outlined"
+              fullWidth
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              error={!!emailError}
+              helperText={emailError}
+              sx={{ bgcolor: 'white' }}
+              dir="rtl"
+            />
+          </Box>
 
-      <TextField
-        label="About Me"
-        variant="outlined"
-        fullWidth
-        multiline
-        rows={4}
-        value={aboutMe}
-        onChange={(e) => setAboutMe(e.target.value)}
-        sx={{ marginBottom: 2 }}
-      />
-      
-      <Button 
-        variant="contained" 
-        onClick={handleSubmit}
-        sx={{ width: { xs: '100%', md: 'auto' } }}
-      >
-        Sign Up
-      </Button>
-    </Box>
+          <TextField
+            label="סיסמה"
+            type="password"
+            variant="outlined"
+            fullWidth
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            error={!!passwordError}
+            helperText={passwordError}
+            sx={{ bgcolor: 'white' }}
+            dir="rtl"
+          />
+
+          <Box sx={{ 
+            display: 'flex', 
+            flexDirection: { xs: 'column', md: 'row' },
+            gap: 2
+          }}>
+            <TextField
+              label="שנות ניסיון"
+              variant="outlined"
+              fullWidth
+              type="number"
+              value={yearsOfExperience}
+              onChange={(e) => setYearsOfExperience(e.target.value)}
+              error={!!yearsOfExperienceError}
+              helperText={yearsOfExperienceError}
+              sx={{ bgcolor: 'white' }}
+              dir="rtl"
+            />
+            <TextField
+              label="מספר טלפון"
+              variant="outlined"
+              fullWidth
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              error={!!phoneNumberError}
+              helperText={phoneNumberError}
+              sx={{ bgcolor: 'white' }}
+              dir="rtl"
+            />
+          </Box>
+
+          <TextField
+            label="ספר קצת על עצמך"
+            variant="outlined"
+            fullWidth
+            multiline
+            rows={4}
+            value={aboutMe}
+            onChange={(e) => setAboutMe(e.target.value)}
+            sx={{ 
+              bgcolor: 'white',
+              '& .MuiOutlinedInput-root': {
+                '&:hover fieldset': {
+                  borderColor: '#939185',
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: '#939185',
+                },
+              }
+            }}
+            dir="rtl"
+          />
+          
+          <Button 
+            variant="contained" 
+            onClick={handleSubmit}
+            sx={{
+              mt: 2,
+              py: 1.5,
+              backgroundColor: '#939185',
+              '&:hover': {
+                backgroundColor: '#7a796f'
+              },
+              fontSize: '1.1rem'
+            }}
+          >
+            הרשמה
+          </Button>
+        </Box>
+      </Paper>
+    </Container>
   );
 };
 

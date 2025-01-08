@@ -22,11 +22,10 @@ function ResponsiveAppBar() {
   const navigate = useNavigate();
 
   React.useEffect(() => {
-    // בדיקה אם יש טוקן ב-localStorage
     const token = localStorage.getItem('token');
     if (token) {
       setEmail(email)
-      setIsLoggedIn(true); // אם יש טוקן, המשתמש מחובר
+      setIsLoggedIn(true); 
     }
   }, []);
 
@@ -51,22 +50,22 @@ function ResponsiveAppBar() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // להסיר את הטוקן ב-`localStorage`
+    localStorage.removeItem('token'); 
     setEmail('');
-    setIsLoggedIn(false);  // עדכון המצב אחרי יציאה
-    navigate('/');  // חזרה לדף הבית
+    setIsLoggedIn(false);  
+    navigate('/');  
   };
 
   const handleLogin = (email, token) => {
-    setIsLoggedIn(true); // עדכון המצב של התחברות
+    setIsLoggedIn(true); 
     setEmail(email)
-    localStorage.setItem('token', token); // שמירת הטוקן ב-localStorage
-    navigate('/');  // חזרה לדף הבית אחרי התחברות
+    localStorage.setItem('token', token);
+    navigate('/');
   };
 
   return (
     <>
-      <AppBar position="fixed" sx={{ backgroundColor: /*'white'*/"#E6B9A6" }}>
+      <AppBar position="fixed" sx={{ backgroundColor: 'white'}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <RestaurantIcon sx={{ display: { xs: 'none', md: 'flex' ,color: '#2F3645'}, mr: 4 }} />

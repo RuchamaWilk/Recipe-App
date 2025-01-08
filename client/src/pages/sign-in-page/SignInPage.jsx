@@ -11,14 +11,12 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const SignInPage = ({ open, onClose,onLogin  }) => {
+const SignInPage = ({ open= true, onClose,onLogin  = () => {} }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [emailError, setEmailError] = useState('')
   const [passwordError, setPasswordError] = useState('')
   const [signInError, setSignInError] = useState('')
-
-  const navigate = useNavigate();
 
 
   const handleClose = () =>{

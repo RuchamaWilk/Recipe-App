@@ -1,71 +1,189 @@
-import CardUi from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import * as React from 'react';
+import React, { useState } from 'react';
+import {
+  Card as CardUi,
+  CardMedia,
+  CardContent,
+  CardActions,
+  IconButton,
+  Typography,
+  Rating,
+  Box,
+  Chip,
+} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Rating from '@mui/material/Rating';
-
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import PersonIcon from '@mui/icons-material/Person';
 
 const Card = ({ recipe }) => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+  const [isHovered, setIsHovered] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
 
-    const showRecipe = () => {
-        navigate(`/recipe/${recipe._id}`);
-    };
+  const showRecipe = () => {
+    navigate(`/recipe/${recipe._id}`);
+  };
 
-    return (
-        <CardUi sx={{
-            border: "1px solid #ada6a7",
-            width: 320, height: 200, display: 'flex', flexDirection: 'column',
-            position: 'relative',
-            borderRadius: "12px",
-            cursor: 'pointer',
-            transition: 'all 0.3s ease',
-            backgroundColor: '#ebebeb',
-            '&:hover': {
-                transform: 'scale(1.03)',
-                boxShadow: "4px solid black"
-            },
-        }}>
-            <CardMedia
-                component="img"
-                image={recipe.image}
-                alt={recipe.name}
-                sx={{ height: '60%' }}
+  const handleFavoriteClick = (e) => {
+    e.stopPropagation();
+    setIsFavorite(!isFavorite);
+  };
+
+  return (
+    <CardUi
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onClick={showRecipe}
+      sx={{
+        width: { xs: '100%', sm: 320 },
+        height: 200,
+        position: 'relative',
+        borderRadius: '12px',
+        cursor: 'pointer',
+        overflow: 'hidden',
+        transition: 'all 0.3s ease-in-out',
+        boxShadow: isHovered 
+          ? '0 8px 24px rgba(0,0,0,0.15)' 
+          : '0 2px 8px rgba(0,0,0,0.1)',
+        '&:hover': {
+          transform: 'translateY(-4px)',
+        },
+        bgcolor: '#ffffff',
+        border: '1px solid rgba(0,0,0,0.08)',
+      }}
+    >
+      {/* Image Container */}
+      <Box sx={{ position: 'relative', height: '65%' }}>
+        <CardMedia
+          component="img"
+          image={recipe.image}
+          alt={recipe.name}
+          sx={{
+            height: '100%',
+            transition: 'transform 0.3s ease-in-out',
+            transform: isHovered ? 'scale(1.05)' : 'scale(1)',
+          }}
+        />
+        <CardActions 
+          sx={{
+            position: 'absolute',
+            top: 8,
+            right: 8,
+            padding: 0,
+          }}
+        >
+          <IconButton
+            onClick={handleFavoriteClick}
+            sx={{
+              bgcolor: 'rgba(255,255,255,0.9)',
+              padding: '4px',
+              '&:hover': {
+                bgcolor: 'rgba(255,255,255,1)',
+                transform: 'scale(1.1)',
+              },
+              transition: 'all 0.2s ease',
+            }}
+          >
+            <FavoriteIcon
+              fontSize="small"
+              sx={{
+                color: isFavorite ? '#ff4444' : '#666',
+                transition: 'color 0.2s ease',
+              }}
             />
-            <CardActions disableSpacing sx={{position: 'absolute', margin: "-10px"}}>
-                <IconButton  sx={{ color: 'transparent',stroke: 'white',
-                    '&:hover': {transform: 'scale(1.05)',color: "red", stroke: 'red'},}}>
-                    <FavoriteIcon fontSize="large"  />
-                </IconButton>
-            </CardActions>
-            <CardContent onClick={showRecipe} sx={{ flex: '1 0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', padding: '2px 4px' }}>
-                <div>
-                    <Typography variant="h6" noWrap>{recipe.name}</Typography>
-                    <Typography color="text.secondary" sx={{ lineHeight: 0.70, paddingTop: "4px" }}>
-                        {`${recipe.avgTime} Min | Difficulty: ? | Chef: ${recipe.chefId}`}
-                    </Typography>
-                    <Rating name="no-value" value={3} readOnly  sx= {{paddingBlock: "2px",fontSize: "1.1rem", paddingTop: "8px"}}/>
+          </IconButton>
+        </CardActions>
+      </Box>
 
-                    
-                </div>
-            </CardContent>
-        </CardUi>
-    );
+      {/* Content Container */}
+      <CardContent 
+        sx={{ 
+          p: 1.5,
+          height: '35%',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 0.5,
+          padding: "6px"
+        }}
+      >
+        <Typography 
+          variant="h6" 
+          sx={{
+            fontWeight: 600,
+            fontSize: '0.9rem',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {recipe.name}
+        </Typography>
+
+        <Box 
+          sx={{ 
+            display: 'flex',
+            alignItems: 'center',
+            gap: 0.5,
+          }}
+        >
+          <Chip
+            icon={<AccessTimeIcon sx={{ fontSize: '0.7rem' }} />}
+            label={`${recipe.avgTime} דקות`}
+            size="small"
+            sx={{ 
+              height: '16px',
+              '& .MuiChip-label': {
+                fontSize: '0.6rem',
+                px: 1,
+              },
+              '& .MuiChip-icon': {
+                ml: 0.5,
+              },
+            }}
+          />
+          <Chip
+            icon={<PersonIcon sx={{ fontSize: '0.7rem' }} />}
+            label={recipe.chefId}
+            size="small"
+            sx={{ 
+              height: '16px',
+              '& .MuiChip-label': {
+                fontSize: '0.6rem',
+                px: 1,
+              },
+              '& .MuiChip-icon': {
+                ml: 0.5,
+              },
+            }}
+          />
+        </Box>
+
+        <Rating 
+          name="recipe-rating" 
+          value={3} 
+          readOnly
+          size="small"
+          sx={{
+            '& .MuiRating-icon': {
+              color: '#ffd700',
+              fontSize: '0.8rem',
+            }
+          }}
+        />
+      </CardContent>
+    </CardUi>
+  );
 };
 
 Card.propTypes = {
-    recipe: PropTypes.shape({
-        image: PropTypes.string.isRequired,     // כתובת התמונה (מחרוזת)
-        name: PropTypes.string.isRequired,      // שם המתכון (מחרוזת)
-        avgTime: PropTypes.number.isRequired,  // זמן ממוצע ב-Min (מספר)
-        chefId: PropTypes.string.isRequired
-    }).isRequired, // שדה recipe חייב להיות תמיד
+  recipe: PropTypes.shape({
+    _id: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    avgTime: PropTypes.number.isRequired,
+    chefId: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Card;
