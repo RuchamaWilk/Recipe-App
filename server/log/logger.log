@@ -8035,3 +8035,262 @@
 2025-01-08 15:09:36 [info]: fetchRecipesCategory- find recipes of category: Dessert
 2025-01-08 15:09:36 [info]: found recipes of category: Dessert
 2025-01-08 15:09:36 [info]: success with fetchRecipesCategory category: Dessert
+2025-01-09 12:31:02 [info]: calling getRecipes
+2025-01-09 12:31:02 [info]: getChefs- find all recipe
+2025-01-09 12:31:03 [info]: success fetching recipes from DB
+2025-01-09 12:31:03 [info]: success with getRecipes
+2025-01-09 12:31:03 [info]: calling getRecipes
+2025-01-09 12:31:03 [info]: getChefs- find all recipe
+2025-01-09 12:31:03 [info]: success fetching recipes from DB
+2025-01-09 12:31:03 [info]: success with getRecipes
+2025-01-09 12:32:20 [info]: chefMiddleware
+2025-01-09 12:32:20 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2MzQxNjUxLCJleHAiOjE3MzYzNDg4NTF9.APAXkZbNffoWh1zxpTPJdaf-lNCFbHbRcMcInPPKn5c
+2025-01-09 12:32:20 [info]: secretForNow
+2025-01-09 12:32:20 [error]: Token verification error: jwt expired
+2025-01-09 12:32:30 [info]: calling getRecipes
+2025-01-09 12:32:30 [info]: getChefs- find all recipe
+2025-01-09 12:32:31 [info]: success fetching recipes from DB
+2025-01-09 12:32:31 [info]: success with getRecipes
+2025-01-09 12:32:31 [info]: calling getRecipes
+2025-01-09 12:32:31 [info]: getChefs- find all recipe
+2025-01-09 12:32:31 [info]: success fetching recipes from DB
+2025-01-09 12:32:31 [info]: success with getRecipes
+2025-01-09 12:32:49 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-09 12:32:49 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-09 12:32:49 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-09 12:32:49 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-09 12:32:49 [info]: success with signIn true
+2025-01-09 12:33:09 [info]: chefMiddleware
+2025-01-09 12:33:09 [info]: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdiZjgyMTM3YzIwNjBmNTBmMjU5M2UiLCJlbWFpbEFkZHJlc3MiOiJoZWxsb2hpQGdtYWlsLmNvbSIsInR5cGUiOiJjaGVmIiwiaWF0IjoxNzM2NDE4NzY5LCJleHAiOjE3MzY0MjU5Njl9.BMq5ufy08ZaiLmhluFaeq9c1RsLEP_WRUFPw4x0qbhA
+2025-01-09 12:33:09 [info]: secretForNow
+2025-01-09 12:33:09 [info]: type chef
+2025-01-09 12:33:09 [info]: [object Object]
+2025-01-09 12:33:09 [info]: addRecipe - set new recipe to DB, recipe Name: 677bf82137c2060f50f2593e
+2025-01-09 12:33:09 [info]: addRecipe- recipe name: d
+2025-01-09 12:33:09 [info]: chef id: 677bf82137c2060f50f2593e
+2025-01-09 12:33:10 [info]: save recipe d in DB  
+2025-01-09 12:33:10 [info]: successfull post recipe: 677fa5e566f0bdf7b78d295d 
+2025-01-09 12:33:10 [info]: calling getRecipes
+2025-01-09 12:33:10 [info]: getChefs- find all recipe
+2025-01-09 12:33:10 [info]: success fetching recipes from DB
+2025-01-09 12:33:10 [info]: success with getRecipes
+2025-01-09 12:33:10 [info]: calling getRecipes
+2025-01-09 12:33:10 [info]: getChefs- find all recipe
+2025-01-09 12:33:10 [info]: success fetching recipes from DB
+2025-01-09 12:33:10 [info]: success with getRecipes
+2025-01-09 12:38:28 [info]: calling getRecipes
+2025-01-09 12:38:28 [info]: getChefs- find all recipe
+2025-01-09 12:38:28 [info]: success fetching recipes from DB
+2025-01-09 12:38:28 [info]: success with getRecipes
+2025-01-09 12:38:28 [info]: calling getRecipes
+2025-01-09 12:38:28 [info]: getChefs- find all recipe
+2025-01-09 12:38:29 [info]: success fetching recipes from DB
+2025-01-09 12:38:29 [info]: success with getRecipes
+2025-01-09 12:47:12 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-09 12:47:12 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-09 12:47:12 [info]: found recipes of category: Meat
+2025-01-09 12:47:12 [info]: success with fetchRecipesCategory category: Meat
+2025-01-09 12:47:12 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-09 12:47:12 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-09 12:47:12 [info]: found recipes of category: Meat
+2025-01-09 12:47:12 [info]: success with fetchRecipesCategory category: Meat
+2025-01-09 12:47:15 [info]: calling getRecipes
+2025-01-09 12:47:15 [info]: getChefs- find all recipe
+2025-01-09 12:47:15 [info]: success fetching recipes from DB
+2025-01-09 12:47:15 [info]: success with getRecipes
+2025-01-09 12:47:16 [info]: calling getRecipes
+2025-01-09 12:47:16 [info]: getChefs- find all recipe
+2025-01-09 12:47:16 [info]: success fetching recipes from DB
+2025-01-09 12:47:16 [info]: success with getRecipes
+2025-01-09 12:51:44 [info]: calling getRecipes
+2025-01-09 12:51:44 [info]: getChefs- find all recipe
+2025-01-09 12:51:44 [info]: success fetching recipes from DB
+2025-01-09 12:51:44 [info]: success with getRecipes
+2025-01-09 12:51:44 [info]: calling getRecipes
+2025-01-09 12:51:44 [info]: getChefs- find all recipe
+2025-01-09 12:51:44 [info]: success fetching recipes from DB
+2025-01-09 12:51:44 [info]: success with getRecipes
+2025-01-09 12:53:04 [info]: calling getRecipes
+2025-01-09 12:53:04 [info]: getChefs- find all recipe
+2025-01-09 12:53:04 [info]: success fetching recipes from DB
+2025-01-09 12:53:04 [info]: success with getRecipes
+2025-01-09 12:53:04 [info]: calling getRecipes
+2025-01-09 12:53:04 [info]: getChefs- find all recipe
+2025-01-09 12:53:04 [info]: success fetching recipes from DB
+2025-01-09 12:53:04 [info]: success with getRecipes
+2025-01-09 12:53:11 [info]: fetchRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:53:11 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:53:11 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:53:11 [info]: success with fetchRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-09 12:53:11 [info]: fetchRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:53:11 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:53:11 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:53:11 [info]: success with fetchRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-09 12:53:15 [info]: calling getRecipes
+2025-01-09 12:53:15 [info]: getChefs- find all recipe
+2025-01-09 12:53:15 [info]: success fetching recipes from DB
+2025-01-09 12:53:15 [info]: success with getRecipes
+2025-01-09 12:53:15 [info]: calling getRecipes
+2025-01-09 12:53:15 [info]: getChefs- find all recipe
+2025-01-09 12:53:15 [info]: success fetching recipes from DB
+2025-01-09 12:53:15 [info]: success with getRecipes
+2025-01-09 12:55:22 [info]: calling getRecipes
+2025-01-09 12:55:22 [info]: getChefs- find all recipe
+2025-01-09 12:55:22 [info]: success fetching recipes from DB
+2025-01-09 12:55:22 [info]: success with getRecipes
+2025-01-09 12:55:22 [info]: calling getRecipes
+2025-01-09 12:55:22 [info]: getChefs- find all recipe
+2025-01-09 12:55:22 [info]: success fetching recipes from DB
+2025-01-09 12:55:22 [info]: success with getRecipes
+2025-01-09 12:56:50 [info]: calling getRecipes
+2025-01-09 12:56:50 [info]: getChefs- find all recipe
+2025-01-09 12:56:50 [info]: success fetching recipes from DB
+2025-01-09 12:56:50 [info]: success with getRecipes
+2025-01-09 12:56:50 [info]: calling getRecipes
+2025-01-09 12:56:50 [info]: getChefs- find all recipe
+2025-01-09 12:56:50 [info]: success fetching recipes from DB
+2025-01-09 12:56:50 [info]: success with getRecipes
+2025-01-09 12:57:31 [info]: calling getRecipes
+2025-01-09 12:57:31 [info]: getChefs- find all recipe
+2025-01-09 12:57:31 [info]: success fetching recipes from DB
+2025-01-09 12:57:31 [info]: success with getRecipes
+2025-01-09 12:57:31 [info]: calling getRecipes
+2025-01-09 12:57:31 [info]: getChefs- find all recipe
+2025-01-09 12:57:31 [info]: success fetching recipes from DB
+2025-01-09 12:57:31 [info]: success with getRecipes
+2025-01-09 12:57:48 [info]: calling getRecipes
+2025-01-09 12:57:48 [info]: getChefs- find all recipe
+2025-01-09 12:57:48 [info]: success fetching recipes from DB
+2025-01-09 12:57:48 [info]: success with getRecipes
+2025-01-09 12:57:48 [info]: calling getRecipes
+2025-01-09 12:57:48 [info]: getChefs- find all recipe
+2025-01-09 12:57:48 [info]: success fetching recipes from DB
+2025-01-09 12:57:48 [info]: success with getRecipes
+2025-01-09 12:57:53 [info]: fetchRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:57:53 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:57:53 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:57:53 [info]: success with fetchRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-09 12:57:53 [info]: fetchRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:57:53 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:57:53 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-09 12:57:53 [info]: success with fetchRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-09 12:58:00 [info]: calling getRecipes
+2025-01-09 12:58:00 [info]: getChefs- find all recipe
+2025-01-09 12:58:00 [info]: success fetching recipes from DB
+2025-01-09 12:58:00 [info]: success with getRecipes
+2025-01-09 12:58:00 [info]: calling getRecipes
+2025-01-09 12:58:00 [info]: getChefs- find all recipe
+2025-01-09 12:58:00 [info]: success fetching recipes from DB
+2025-01-09 12:58:00 [info]: success with getRecipes
+2025-01-09 12:58:03 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-09 12:58:03 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-09 12:58:03 [info]: found recipes of category: Meat
+2025-01-09 12:58:03 [info]: success with fetchRecipesCategory category: Meat
+2025-01-09 12:58:03 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-09 12:58:03 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-09 12:58:04 [info]: found recipes of category: Meat
+2025-01-09 12:58:04 [info]: success with fetchRecipesCategory category: Meat
+2025-01-09 13:09:01 [info]: calling getRecipes
+2025-01-09 13:09:01 [info]: getChefs- find all recipe
+2025-01-09 13:09:01 [info]: success fetching recipes from DB
+2025-01-09 13:09:01 [info]: success with getRecipes
+2025-01-09 13:09:01 [info]: calling getRecipes
+2025-01-09 13:09:01 [info]: getChefs- find all recipe
+2025-01-09 13:09:01 [info]: success fetching recipes from DB
+2025-01-09 13:09:01 [info]: success with getRecipes
+2025-01-09 13:14:51 [info]: calling getRecipes
+2025-01-09 13:14:51 [info]: getChefs- find all recipe
+2025-01-09 13:14:51 [info]: success fetching recipes from DB
+2025-01-09 13:14:51 [info]: success with getRecipes
+2025-01-09 13:14:51 [info]: calling getRecipes
+2025-01-09 13:14:51 [info]: getChefs- find all recipe
+2025-01-09 13:14:51 [info]: success fetching recipes from DB
+2025-01-09 13:14:51 [info]: success with getRecipes
+2025-01-09 13:15:49 [info]: calling getRecipes
+2025-01-09 13:15:49 [info]: getChefs- find all recipe
+2025-01-09 13:15:49 [info]: success fetching recipes from DB
+2025-01-09 13:15:49 [info]: success with getRecipes
+2025-01-09 13:15:51 [info]: calling getRecipes
+2025-01-09 13:15:51 [info]: getChefs- find all recipe
+2025-01-09 13:15:51 [info]: success fetching recipes from DB
+2025-01-09 13:15:51 [info]: success with getRecipes
+2025-01-09 13:15:51 [info]: calling getRecipes
+2025-01-09 13:15:51 [info]: getChefs- find all recipe
+2025-01-09 13:15:52 [info]: success fetching recipes from DB
+2025-01-09 13:15:52 [info]: success with getRecipes
+2025-01-09 13:19:52 [info]: calling getRecipes
+2025-01-09 13:19:52 [info]: getChefs- find all recipe
+2025-01-09 13:19:53 [info]: success fetching recipes from DB
+2025-01-09 13:19:53 [info]: success with getRecipes
+2025-01-09 13:19:53 [info]: calling getRecipes
+2025-01-09 13:19:53 [info]: getChefs- find all recipe
+2025-01-09 13:19:53 [info]: success fetching recipes from DB
+2025-01-09 13:19:53 [info]: success with getRecipes
+2025-01-09 13:19:55 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-09 13:19:55 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-09 13:19:55 [info]: found recipes of category: Meat
+2025-01-09 13:19:55 [info]: success with fetchRecipesCategory category: Meat
+2025-01-09 13:19:55 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-09 13:19:55 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-09 13:19:55 [info]: found recipes of category: Meat
+2025-01-09 13:19:55 [info]: success with fetchRecipesCategory category: Meat
+2025-01-09 13:20:00 [info]: calling getRecipes
+2025-01-09 13:20:00 [info]: getChefs- find all recipe
+2025-01-09 13:20:00 [info]: success fetching recipes from DB
+2025-01-09 13:20:00 [info]: success with getRecipes
+2025-01-09 13:20:00 [info]: calling getRecipes
+2025-01-09 13:20:00 [info]: getChefs- find all recipe
+2025-01-09 13:20:00 [info]: success fetching recipes from DB
+2025-01-09 13:20:00 [info]: success with getRecipes
+2025-01-09 13:22:16 [info]: calling getRecipes
+2025-01-09 13:22:16 [info]: getChefs- find all recipe
+2025-01-09 13:22:16 [info]: success fetching recipes from DB
+2025-01-09 13:22:16 [info]: success with getRecipes
+2025-01-09 13:22:28 [info]: calling getRecipes
+2025-01-09 13:22:28 [info]: getChefs- find all recipe
+2025-01-09 13:22:28 [info]: success fetching recipes from DB
+2025-01-09 13:22:28 [info]: success with getRecipes
+2025-01-09 13:22:28 [info]: calling getRecipes
+2025-01-09 13:22:28 [info]: getChefs- find all recipe
+2025-01-09 13:22:28 [info]: success fetching recipes from DB
+2025-01-09 13:22:28 [info]: success with getRecipes
+2025-01-09 13:23:09 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-09 13:23:09 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-09 13:23:10 [info]: found recipes of category: Meat
+2025-01-09 13:23:10 [info]: success with fetchRecipesCategory category: Meat
+2025-01-09 13:23:10 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-09 13:23:10 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-09 13:23:10 [info]: found recipes of category: Meat
+2025-01-09 13:23:10 [info]: success with fetchRecipesCategory category: Meat
+2025-01-09 13:24:09 [info]: calling getRecipes
+2025-01-09 13:24:09 [info]: getChefs- find all recipe
+2025-01-09 13:24:09 [info]: success fetching recipes from DB
+2025-01-09 13:24:09 [info]: success with getRecipes
+2025-01-09 13:24:09 [info]: calling getRecipes
+2025-01-09 13:24:09 [info]: getChefs- find all recipe
+2025-01-09 13:24:09 [info]: success fetching recipes from DB
+2025-01-09 13:24:09 [info]: success with getRecipes
+2025-01-09 13:25:29 [info]: calling getRecipes
+2025-01-09 13:25:29 [info]: getChefs- find all recipe
+2025-01-09 13:25:29 [info]: success fetching recipes from DB
+2025-01-09 13:25:29 [info]: success with getRecipes
+2025-01-09 13:25:29 [info]: calling getRecipes
+2025-01-09 13:25:29 [info]: getChefs- find all recipe
+2025-01-09 13:25:29 [info]: success fetching recipes from DB
+2025-01-09 13:25:29 [info]: success with getRecipes
+2025-01-09 13:27:42 [info]: calling getRecipes
+2025-01-09 13:27:42 [info]: getChefs- find all recipe
+2025-01-09 13:27:42 [info]: success fetching recipes from DB
+2025-01-09 13:27:42 [info]: success with getRecipes
+2025-01-09 13:27:42 [info]: calling getRecipes
+2025-01-09 13:27:42 [info]: getChefs- find all recipe
+2025-01-09 13:27:42 [info]: success fetching recipes from DB
+2025-01-09 13:27:42 [info]: success with getRecipes
+2025-01-09 13:28:17 [info]: calling getRecipes
+2025-01-09 13:28:17 [info]: getChefs- find all recipe
+2025-01-09 13:28:17 [info]: success fetching recipes from DB
+2025-01-09 13:28:17 [info]: success with getRecipes
+2025-01-09 13:28:17 [info]: calling getRecipes
+2025-01-09 13:28:17 [info]: getChefs- find all recipe
+2025-01-09 13:28:17 [info]: success fetching recipes from DB
+2025-01-09 13:28:17 [info]: success with getRecipes

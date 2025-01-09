@@ -36,7 +36,7 @@ const Card = ({ recipe }) => {
       onMouseLeave={() => setIsHovered(false)}
       onClick={showRecipe}
       sx={{
-        width: { xs: '100%', sm: 320 },
+        width: '100%', // Changed from fixed width to 100%
         height: 200,
         position: 'relative',
         borderRadius: '12px',
