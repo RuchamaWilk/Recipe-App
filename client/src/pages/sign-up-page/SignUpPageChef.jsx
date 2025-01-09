@@ -80,29 +80,29 @@ const ChefSignUpForm = () => {
         backgroundColor: '#ffffff',
         borderRadius: 2
       }}>
-        <Box sx={{ 
-          display: 'flex', 
-          flexDirection: 'column', 
-          alignItems: 'center',
-          mb: 4
-        }}>
-          <RestaurantIcon sx={{ 
-            fontSize: 40, 
-            mb: 2,
-            color: '#939185'
-          }} />
-          <Typography variant="h4" component="h1" sx={{
-            fontWeight: 600,
-            color: '#2C3E50',
-            mb: 1
+          <Box sx={{ 
+            display: 'flex', 
+            flexDirection: 'column', 
+            alignItems: 'center',
+            mb: 4
           }}>
-            הצטרף כשף
-          </Typography>
-          <Typography variant="body1" sx={{ color: '#7F8C8D', mb: 3 }}>
-            מלא את הפרטים הבאים כדי להתחיל לשתף את המתכונים שלך
-          </Typography>
-          <Divider sx={{ width: '100%', mb: 4 }} />
-        </Box>
+              <RestaurantIcon sx={{ 
+                fontSize: 40, 
+                mb: 2,
+                color: '#939185'
+              }} />
+              <Typography variant="h4" component="h1" sx={{
+                fontWeight: 600,
+                color: '#2C3E50',
+                mb: 1
+              }}>
+                Join as a Chef
+                </Typography>
+              <Typography variant="body1" sx={{ color: '#7F8C8D', mb: 3 }}>
+              Fill in the following details to start sharing your recipes.
+              </Typography>
+              <Divider sx={{ width: '100%', mb: 4 }} />
+          </Box>
 
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
           <Box sx={{ 
@@ -111,7 +111,7 @@ const ChefSignUpForm = () => {
             gap: 2
           }}>
             <TextField
-              label="שם משתמש"
+              label="User Name"
               variant="outlined"
               fullWidth
               value={userName}
@@ -122,7 +122,7 @@ const ChefSignUpForm = () => {
               dir="rtl"
             />
             <TextField
-              label="אימייל"
+              label="Email"
               variant="outlined"
               fullWidth
               value={email}
@@ -135,7 +135,7 @@ const ChefSignUpForm = () => {
           </Box>
 
           <TextField
-            label="סיסמה"
+            label="Password"
             type="password"
             variant="outlined"
             fullWidth
@@ -153,7 +153,7 @@ const ChefSignUpForm = () => {
             gap: 2
           }}>
             <TextField
-              label="שנות ניסיון"
+              label="Years of Experience"
               variant="outlined"
               fullWidth
               type="number"
@@ -165,7 +165,7 @@ const ChefSignUpForm = () => {
               dir="rtl"
             />
             <TextField
-              label="מספר טלפון"
+              label="Phone Number"
               variant="outlined"
               fullWidth
               value={phoneNumber}
@@ -178,7 +178,7 @@ const ChefSignUpForm = () => {
           </Box>
 
           <TextField
-            label="ספר קצת על עצמך"
+            label="Tell us a bit about yourself"
             variant="outlined"
             fullWidth
             multiline
@@ -212,7 +212,7 @@ const ChefSignUpForm = () => {
               fontSize: '1.1rem'
             }}
           >
-            הרשמה
+            Sign Up
           </Button>
         </Box>
       </Paper>

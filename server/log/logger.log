@@ -7736,3 +7736,302 @@
 2025-01-08 13:29:14 [info]: getChefs- find all recipe
 2025-01-08 13:29:14 [info]: success fetching recipes from DB
 2025-01-08 13:29:14 [info]: success with getRecipes
+2025-01-08 13:31:12 [info]: fetchRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-08 13:31:12 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 13:31:12 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 13:31:12 [info]: success with fetchRecipe id: 67616ab2c713f8f0218320c0
+2025-01-08 13:31:12 [info]: fetchRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-08 13:31:12 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 13:31:12 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 13:31:12 [info]: success with fetchRecipe id: 67616ab2c713f8f0218320c0
+2025-01-08 13:31:14 [info]: calling getRecipes
+2025-01-08 13:31:14 [info]: getChefs- find all recipe
+2025-01-08 13:31:15 [info]: success fetching recipes from DB
+2025-01-08 13:31:15 [info]: success with getRecipes
+2025-01-08 13:31:15 [info]: calling getRecipes
+2025-01-08 13:31:15 [info]: getChefs- find all recipe
+2025-01-08 13:31:15 [info]: success fetching recipes from DB
+2025-01-08 13:31:15 [info]: success with getRecipes
+2025-01-08 13:38:53 [info]: calling getRecipes
+2025-01-08 13:38:53 [info]: getChefs- find all recipe
+2025-01-08 13:38:53 [info]: success fetching recipes from DB
+2025-01-08 13:38:53 [info]: success with getRecipes
+2025-01-08 13:38:53 [info]: calling getRecipes
+2025-01-08 13:38:53 [info]: getChefs- find all recipe
+2025-01-08 13:38:53 [info]: success fetching recipes from DB
+2025-01-08 13:38:53 [info]: success with getRecipes
+2025-01-08 13:42:42 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-08 13:42:42 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-08 13:42:42 [info]: found recipes of category: Meat
+2025-01-08 13:42:42 [info]: success with fetchRecipesCategory category: Meat
+2025-01-08 13:42:42 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-08 13:42:42 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-08 13:42:42 [info]: found recipes of category: Meat
+2025-01-08 13:42:42 [info]: success with fetchRecipesCategory category: Meat
+2025-01-08 13:42:45 [info]: calling getRecipes
+2025-01-08 13:42:45 [info]: getChefs- find all recipe
+2025-01-08 13:42:45 [info]: success fetching recipes from DB
+2025-01-08 13:42:45 [info]: success with getRecipes
+2025-01-08 13:42:45 [info]: calling getRecipes
+2025-01-08 13:42:45 [info]: getChefs- find all recipe
+2025-01-08 13:42:45 [info]: success fetching recipes from DB
+2025-01-08 13:42:45 [info]: success with getRecipes
+2025-01-08 13:51:31 [info]: calling getRecipes
+2025-01-08 13:51:31 [info]: getChefs- find all recipe
+2025-01-08 13:51:31 [info]: success fetching recipes from DB
+2025-01-08 13:51:31 [info]: success with getRecipes
+2025-01-08 13:51:31 [info]: calling getRecipes
+2025-01-08 13:51:31 [info]: getChefs- find all recipe
+2025-01-08 13:51:32 [info]: success fetching recipes from DB
+2025-01-08 13:51:32 [info]: success with getRecipes
+2025-01-08 13:54:32 [info]: calling getRecipes
+2025-01-08 13:54:32 [info]: getChefs- find all recipe
+2025-01-08 13:54:33 [info]: success fetching recipes from DB
+2025-01-08 13:54:33 [info]: success with getRecipes
+2025-01-08 13:54:33 [info]: calling getRecipes
+2025-01-08 13:54:33 [info]: getChefs- find all recipe
+2025-01-08 13:54:33 [info]: success fetching recipes from DB
+2025-01-08 13:54:33 [info]: success with getRecipes
+2025-01-08 13:55:00 [info]: fetchRecipe - calling recipe with ID: 676046cece9abf8bb07801fd
+2025-01-08 13:55:00 [info]: fetchRecipe- find recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-08 13:55:00 [info]: found a recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-08 13:55:00 [info]: success with fetchRecipe id: 676046cece9abf8bb07801fd
+2025-01-08 13:55:00 [info]: fetchRecipe - calling recipe with ID: 676046cece9abf8bb07801fd
+2025-01-08 13:55:00 [info]: fetchRecipe- find recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-08 13:55:01 [info]: found a recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-08 13:55:01 [info]: success with fetchRecipe id: 676046cece9abf8bb07801fd
+2025-01-08 13:55:04 [info]: calling getRecipes
+2025-01-08 13:55:04 [info]: getChefs- find all recipe
+2025-01-08 13:55:04 [info]: success fetching recipes from DB
+2025-01-08 13:55:04 [info]: success with getRecipes
+2025-01-08 13:55:04 [info]: calling getRecipes
+2025-01-08 13:55:04 [info]: getChefs- find all recipe
+2025-01-08 13:55:04 [info]: success fetching recipes from DB
+2025-01-08 13:55:04 [info]: success with getRecipes
+2025-01-08 13:55:15 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-08 13:55:15 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-08 13:55:15 [info]: found recipes of category: Meat
+2025-01-08 13:55:15 [info]: success with fetchRecipesCategory category: Meat
+2025-01-08 13:55:15 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-08 13:55:15 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-08 13:55:16 [info]: found recipes of category: Meat
+2025-01-08 13:55:16 [info]: success with fetchRecipesCategory category: Meat
+2025-01-08 13:55:18 [info]: calling getRecipes
+2025-01-08 13:55:18 [info]: getChefs- find all recipe
+2025-01-08 13:55:19 [info]: success fetching recipes from DB
+2025-01-08 13:55:19 [info]: success with getRecipes
+2025-01-08 13:55:19 [info]: calling getRecipes
+2025-01-08 13:55:19 [info]: getChefs- find all recipe
+2025-01-08 13:55:19 [info]: success fetching recipes from DB
+2025-01-08 13:55:19 [info]: success with getRecipes
+2025-01-08 13:56:57 [info]: fetchRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-08 13:56:57 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-08 13:56:58 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-08 13:56:58 [info]: success with fetchRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-08 13:56:58 [info]: fetchRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-08 13:56:58 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-08 13:56:58 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-08 13:56:58 [info]: success with fetchRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-08 13:57:51 [info]: calling getRecipes
+2025-01-08 13:57:51 [info]: getChefs- find all recipe
+2025-01-08 13:57:52 [info]: success fetching recipes from DB
+2025-01-08 13:57:52 [info]: success with getRecipes
+2025-01-08 13:57:52 [info]: calling getRecipes
+2025-01-08 13:57:52 [info]: getChefs- find all recipe
+2025-01-08 13:57:53 [info]: success fetching recipes from DB
+2025-01-08 13:57:53 [info]: success with getRecipes
+2025-01-08 14:04:07 [info]: Calling signIn with email: hellihi@gmail.com and password: 1234567
+2025-01-08 14:04:07 [info]: signIn- find chef with email: hellihi@gmail.com and password 1234567
+2025-01-08 14:04:07 [info]: success with signIn false
+2025-01-08 14:04:17 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-08 14:04:17 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-08 14:04:17 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-08 14:04:17 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-08 14:04:18 [info]: success with signIn true
+2025-01-08 14:04:18 [info]: calling getRecipes
+2025-01-08 14:04:18 [info]: getChefs- find all recipe
+2025-01-08 14:04:18 [info]: success fetching recipes from DB
+2025-01-08 14:04:18 [info]: success with getRecipes
+2025-01-08 14:04:18 [info]: calling getRecipes
+2025-01-08 14:04:18 [info]: getChefs- find all recipe
+2025-01-08 14:04:18 [info]: success fetching recipes from DB
+2025-01-08 14:04:18 [info]: success with getRecipes
+2025-01-08 14:12:07 [info]: calling getRecipes
+2025-01-08 14:12:07 [info]: getChefs- find all recipe
+2025-01-08 14:12:07 [info]: success fetching recipes from DB
+2025-01-08 14:12:07 [info]: success with getRecipes
+2025-01-08 14:12:07 [info]: calling getRecipes
+2025-01-08 14:12:07 [info]: getChefs- find all recipe
+2025-01-08 14:12:07 [info]: success fetching recipes from DB
+2025-01-08 14:12:07 [info]: success with getRecipes
+2025-01-08 14:14:02 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-08 14:14:02 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-08 14:14:02 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-08 14:14:02 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-08 14:14:02 [info]: success with signIn true
+2025-01-08 14:14:02 [info]: calling getRecipes
+2025-01-08 14:14:02 [info]: getChefs- find all recipe
+2025-01-08 14:14:03 [info]: success fetching recipes from DB
+2025-01-08 14:14:03 [info]: success with getRecipes
+2025-01-08 14:14:03 [info]: calling getRecipes
+2025-01-08 14:14:03 [info]: getChefs- find all recipe
+2025-01-08 14:14:03 [info]: success fetching recipes from DB
+2025-01-08 14:14:03 [info]: success with getRecipes
+2025-01-08 14:21:29 [info]: calling getRecipes
+2025-01-08 14:21:29 [info]: getChefs- find all recipe
+2025-01-08 14:21:29 [info]: success fetching recipes from DB
+2025-01-08 14:21:29 [info]: success with getRecipes
+2025-01-08 14:21:29 [info]: calling getRecipes
+2025-01-08 14:21:29 [info]: getChefs- find all recipe
+2025-01-08 14:21:29 [info]: success fetching recipes from DB
+2025-01-08 14:21:29 [info]: success with getRecipes
+2025-01-08 14:22:00 [info]: fetchRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-08 14:22:00 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 14:22:00 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 14:22:00 [info]: success with fetchRecipe id: 67616ab2c713f8f0218320c0
+2025-01-08 14:22:00 [info]: fetchRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-08 14:22:00 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 14:22:01 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 14:22:01 [info]: success with fetchRecipe id: 67616ab2c713f8f0218320c0
+2025-01-08 14:22:13 [info]: calling getRecipes
+2025-01-08 14:22:13 [info]: getChefs- find all recipe
+2025-01-08 14:22:14 [info]: success fetching recipes from DB
+2025-01-08 14:22:14 [info]: success with getRecipes
+2025-01-08 14:22:14 [info]: calling getRecipes
+2025-01-08 14:22:14 [info]: getChefs- find all recipe
+2025-01-08 14:22:14 [info]: success fetching recipes from DB
+2025-01-08 14:22:14 [info]: success with getRecipes
+2025-01-08 14:22:25 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-08 14:22:25 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-08 14:22:25 [info]: found recipes of category: Meat
+2025-01-08 14:22:25 [info]: success with fetchRecipesCategory category: Meat
+2025-01-08 14:22:25 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-08 14:22:25 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-08 14:22:25 [info]: found recipes of category: Meat
+2025-01-08 14:22:25 [info]: success with fetchRecipesCategory category: Meat
+2025-01-08 14:27:13 [info]: callibg getChefs
+2025-01-08 14:27:13 [info]: getChefs- find all chefs
+2025-01-08 14:27:13 [info]: success fetching chefs from DB
+2025-01-08 14:27:13 [info]: success with getChefs
+2025-01-08 14:29:13 [info]: fetchRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-08 14:29:13 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 14:29:13 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 14:29:13 [info]: success with fetchRecipe id: 67616ab2c713f8f0218320c0
+2025-01-08 14:29:13 [info]: fetchRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-08 14:29:13 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 14:29:13 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-08 14:29:13 [info]: success with fetchRecipe id: 67616ab2c713f8f0218320c0
+2025-01-08 15:07:03 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-08 15:07:03 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-08 15:07:03 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-08 15:07:03 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-08 15:07:03 [info]: success with signIn true
+2025-01-08 15:07:03 [info]: calling getRecipes
+2025-01-08 15:07:03 [info]: getChefs- find all recipe
+2025-01-08 15:07:04 [info]: success fetching recipes from DB
+2025-01-08 15:07:04 [info]: success with getRecipes
+2025-01-08 15:07:04 [info]: calling getRecipes
+2025-01-08 15:07:04 [info]: getChefs- find all recipe
+2025-01-08 15:07:04 [info]: success fetching recipes from DB
+2025-01-08 15:07:04 [info]: success with getRecipes
+2025-01-08 15:07:13 [info]: calling getRecipes
+2025-01-08 15:07:13 [info]: getChefs- find all recipe
+2025-01-08 15:07:13 [info]: success fetching recipes from DB
+2025-01-08 15:07:13 [info]: success with getRecipes
+2025-01-08 15:07:13 [info]: calling getRecipes
+2025-01-08 15:07:13 [info]: getChefs- find all recipe
+2025-01-08 15:07:13 [info]: success fetching recipes from DB
+2025-01-08 15:07:13 [info]: success with getRecipes
+2025-01-08 15:07:31 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-08 15:07:31 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-08 15:07:31 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-08 15:07:31 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-08 15:07:31 [info]: success with signIn true
+2025-01-08 15:08:46 [info]: fetchRecipe - calling recipe with ID: 676046cece9abf8bb07801fd
+2025-01-08 15:08:46 [info]: fetchRecipe- find recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-08 15:08:46 [info]: found a recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-08 15:08:46 [info]: success with fetchRecipe id: 676046cece9abf8bb07801fd
+2025-01-08 15:08:46 [info]: fetchRecipe - calling recipe with ID: 676046cece9abf8bb07801fd
+2025-01-08 15:08:46 [info]: fetchRecipe- find recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-08 15:08:46 [info]: found a recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-08 15:08:46 [info]: success with fetchRecipe id: 676046cece9abf8bb07801fd
+2025-01-08 15:08:54 [info]: calling getRecipes
+2025-01-08 15:08:54 [info]: getChefs- find all recipe
+2025-01-08 15:08:54 [info]: success fetching recipes from DB
+2025-01-08 15:08:54 [info]: success with getRecipes
+2025-01-08 15:08:54 [info]: calling getRecipes
+2025-01-08 15:08:54 [info]: getChefs- find all recipe
+2025-01-08 15:08:55 [info]: success fetching recipes from DB
+2025-01-08 15:08:55 [info]: success with getRecipes
+2025-01-08 15:08:57 [info]: fetchRecipe - calling recipe with ID: 676025ce9b0173cc30625805
+2025-01-08 15:08:57 [info]: fetchRecipe- find recipe with recipeID: 676025ce9b0173cc30625805
+2025-01-08 15:08:57 [info]: found a recipe with recipeID: 676025ce9b0173cc30625805
+2025-01-08 15:08:57 [info]: success with fetchRecipe id: 676025ce9b0173cc30625805
+2025-01-08 15:08:57 [info]: fetchRecipe - calling recipe with ID: 676025ce9b0173cc30625805
+2025-01-08 15:08:57 [info]: fetchRecipe- find recipe with recipeID: 676025ce9b0173cc30625805
+2025-01-08 15:08:57 [info]: found a recipe with recipeID: 676025ce9b0173cc30625805
+2025-01-08 15:08:57 [info]: success with fetchRecipe id: 676025ce9b0173cc30625805
+2025-01-08 15:09:01 [info]: calling getRecipes
+2025-01-08 15:09:01 [info]: getChefs- find all recipe
+2025-01-08 15:09:01 [info]: success fetching recipes from DB
+2025-01-08 15:09:01 [info]: success with getRecipes
+2025-01-08 15:09:01 [info]: calling getRecipes
+2025-01-08 15:09:01 [info]: getChefs- find all recipe
+2025-01-08 15:09:01 [info]: success fetching recipes from DB
+2025-01-08 15:09:01 [info]: success with getRecipes
+2025-01-08 15:09:06 [info]: fetchRecipe - calling recipe with ID: 6760487cce9abf8bb0780204
+2025-01-08 15:09:06 [info]: fetchRecipe- find recipe with recipeID: 6760487cce9abf8bb0780204
+2025-01-08 15:09:06 [info]: found a recipe with recipeID: 6760487cce9abf8bb0780204
+2025-01-08 15:09:06 [info]: success with fetchRecipe id: 6760487cce9abf8bb0780204
+2025-01-08 15:09:06 [info]: fetchRecipe - calling recipe with ID: 6760487cce9abf8bb0780204
+2025-01-08 15:09:06 [info]: fetchRecipe- find recipe with recipeID: 6760487cce9abf8bb0780204
+2025-01-08 15:09:06 [info]: found a recipe with recipeID: 6760487cce9abf8bb0780204
+2025-01-08 15:09:06 [info]: success with fetchRecipe id: 6760487cce9abf8bb0780204
+2025-01-08 15:09:09 [info]: calling getRecipes
+2025-01-08 15:09:09 [info]: getChefs- find all recipe
+2025-01-08 15:09:10 [info]: success fetching recipes from DB
+2025-01-08 15:09:10 [info]: success with getRecipes
+2025-01-08 15:09:10 [info]: calling getRecipes
+2025-01-08 15:09:10 [info]: getChefs- find all recipe
+2025-01-08 15:09:10 [info]: success fetching recipes from DB
+2025-01-08 15:09:10 [info]: success with getRecipes
+2025-01-08 15:09:12 [info]: fetchRecipesCategory - calling recipes of Dessert category
+2025-01-08 15:09:12 [info]: fetchRecipesCategory- find recipes of category: Dessert
+2025-01-08 15:09:12 [info]: found recipes of category: Dessert
+2025-01-08 15:09:12 [info]: success with fetchRecipesCategory category: Dessert
+2025-01-08 15:09:12 [info]: fetchRecipesCategory - calling recipes of Dessert category
+2025-01-08 15:09:12 [info]: fetchRecipesCategory- find recipes of category: Dessert
+2025-01-08 15:09:13 [info]: found recipes of category: Dessert
+2025-01-08 15:09:13 [info]: success with fetchRecipesCategory category: Dessert
+2025-01-08 15:09:15 [info]: fetchRecipe - calling recipe with ID: 6760811ace9abf8bb0780207
+2025-01-08 15:09:15 [info]: fetchRecipe- find recipe with recipeID: 6760811ace9abf8bb0780207
+2025-01-08 15:09:15 [info]: found a recipe with recipeID: 6760811ace9abf8bb0780207
+2025-01-08 15:09:15 [info]: success with fetchRecipe id: 6760811ace9abf8bb0780207
+2025-01-08 15:09:15 [info]: fetchRecipe - calling recipe with ID: 6760811ace9abf8bb0780207
+2025-01-08 15:09:15 [info]: fetchRecipe- find recipe with recipeID: 6760811ace9abf8bb0780207
+2025-01-08 15:09:15 [info]: found a recipe with recipeID: 6760811ace9abf8bb0780207
+2025-01-08 15:09:15 [info]: success with fetchRecipe id: 6760811ace9abf8bb0780207
+2025-01-08 15:09:27 [info]: fetchRecipesCategory - calling recipes of Dessert category
+2025-01-08 15:09:27 [info]: fetchRecipesCategory- find recipes of category: Dessert
+2025-01-08 15:09:27 [info]: found recipes of category: Dessert
+2025-01-08 15:09:27 [info]: success with fetchRecipesCategory category: Dessert
+2025-01-08 15:09:27 [info]: fetchRecipesCategory - calling recipes of Dessert category
+2025-01-08 15:09:27 [info]: fetchRecipesCategory- find recipes of category: Dessert
+2025-01-08 15:09:27 [info]: found recipes of category: Dessert
+2025-01-08 15:09:27 [info]: success with fetchRecipesCategory category: Dessert
+2025-01-08 15:09:33 [info]: fetchRecipe - calling recipe with ID: 67604749ce9abf8bb0780201
+2025-01-08 15:09:33 [info]: fetchRecipe- find recipe with recipeID: 67604749ce9abf8bb0780201
+2025-01-08 15:09:33 [info]: found a recipe with recipeID: 67604749ce9abf8bb0780201
+2025-01-08 15:09:33 [info]: success with fetchRecipe id: 67604749ce9abf8bb0780201
+2025-01-08 15:09:33 [info]: fetchRecipe - calling recipe with ID: 67604749ce9abf8bb0780201
+2025-01-08 15:09:33 [info]: fetchRecipe- find recipe with recipeID: 67604749ce9abf8bb0780201
+2025-01-08 15:09:33 [info]: found a recipe with recipeID: 67604749ce9abf8bb0780201
+2025-01-08 15:09:33 [info]: success with fetchRecipe id: 67604749ce9abf8bb0780201
+2025-01-08 15:09:36 [info]: fetchRecipesCategory - calling recipes of Dessert category
+2025-01-08 15:09:36 [info]: fetchRecipesCategory- find recipes of category: Dessert
+2025-01-08 15:09:36 [info]: found recipes of category: Dessert
+2025-01-08 15:09:36 [info]: success with fetchRecipesCategory category: Dessert
+2025-01-08 15:09:36 [info]: fetchRecipesCategory - calling recipes of Dessert category
+2025-01-08 15:09:36 [info]: fetchRecipesCategory- find recipes of category: Dessert
+2025-01-08 15:09:36 [info]: found recipes of category: Dessert
+2025-01-08 15:09:36 [info]: success with fetchRecipesCategory category: Dessert

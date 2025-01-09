@@ -10,6 +10,8 @@ import {
   IconButton,
   Divider
 } from '@mui/material';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+
 import SendIcon from '@mui/icons-material/Send';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -83,8 +85,13 @@ const AddRecipePage = () => {
   return (
     <Container maxWidth="md" sx={{ py: 4 }}>
       <Paper elevation={3} sx={{ p: { xs: 2, md: 4 } }}>
+      <RestaurantIcon sx={{ 
+                fontSize: 75, 
+                mb: 2,
+                color: '#939185'
+              }} />
         <Typography variant="h4" sx={{ textAlign: 'center', mb: 4, fontWeight: 'bold', color: 'text.primary' }}>
-          הוספת מתכון חדש
+          Add New Recipe        
         </Typography>
         
         <form onSubmit={handleSubmit}>
@@ -99,7 +106,7 @@ const AddRecipePage = () => {
             }}>
               <TextField
                 fullWidth
-                label="שם המתכון"
+                label="Add a New Recipe "
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
@@ -113,7 +120,8 @@ const AddRecipePage = () => {
             }}>
               <TextField
                 fullWidth
-                label="זמן הכנה"
+                label="Preparation Time"
+
                 name="avgTime"
                 value={formData.avgTime}
                 onChange={handleChange}
@@ -127,7 +135,7 @@ const AddRecipePage = () => {
             }}>
               <TextField
                 fullWidth
-                label="קישור לתמונה"
+                label="Link to Image "
                 name="image"
                 value={formData.image}
                 onChange={handleChange}
@@ -141,7 +149,7 @@ const AddRecipePage = () => {
             }}>
               <TextField
                 fullWidth
-                label="קטגוריה"
+                label="Category"
                 name="category"
                 value={formData.category}
                 onChange={handleChange}
@@ -156,7 +164,7 @@ const AddRecipePage = () => {
           
           <Box sx={{ mb: 4 }}>
             <Typography variant="h5" sx={{ mb: 2, fontWeight: 'bold', color: 'text.primary' }}>
-              מרכיבים
+            Ingredients
             </Typography>
             {formData.ingredients.map((ingredient, index) => (
               <Box key={index} sx={{ 
@@ -171,7 +179,7 @@ const AddRecipePage = () => {
                 }}>
                   <TextField
                     fullWidth
-                    label="שם המרכיב"
+                    label="Ingredient Name"
                     name="name"
                     value={ingredient.name}
                     onChange={(e) => handleIngredientChange(index, e)}
@@ -185,7 +193,7 @@ const AddRecipePage = () => {
                 }}>
                   <TextField
                     fullWidth
-                    label="כמות"
+                    label="Amout"
                     name="amount"
                     value={ingredient.amount}
                     onChange={(e) => handleIngredientChange(index, e)}
@@ -216,7 +224,7 @@ const AddRecipePage = () => {
               fullWidth
               sx={{ mt: 2 }}
             >
-              הוסף מרכיב
+              Add Ingredient
             </Button>
           </Box>
 
@@ -224,7 +232,7 @@ const AddRecipePage = () => {
 
           <Box sx={{ mb: 4 }}>
             <Typography variant="h5" sx={{ mb: 2, fontWeight: 'bold', color: 'text.primary' }}>
-              הוראות הכנה
+            Instructions
             </Typography>
             {formData.instructions.map((instruction, index) => (
               <Box key={index} sx={{ 
@@ -239,7 +247,7 @@ const AddRecipePage = () => {
                 }}>
                   <TextField
                     fullWidth
-                    label={`שלב ${index + 1}`}
+                    label={`Step ${index + 1}`}
                     name="name"
                     value={instruction.name}
                     onChange={(e) => handleInstructionChange(index, e)}
@@ -272,7 +280,7 @@ const AddRecipePage = () => {
               fullWidth
               sx={{ mt: 2 }}
             >
-              הוסף שלב
+              Add Step
             </Button>
           </Box>
 
@@ -291,7 +299,7 @@ const AddRecipePage = () => {
                 }
               }}
             >
-              שמור מתכון
+              Save Recipe
             </Button>
           </Box>
         </form>
