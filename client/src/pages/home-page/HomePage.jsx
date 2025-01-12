@@ -34,7 +34,7 @@ const HomePage = () => {
   return (
     <div >
         {Object.keys(categories).map((category, index) => (
-        <RowCategory  key={index} category={category} recipes={categories[category]} sx={{gap: "15px"}} />
+        <RowCategory  key={index} category={category} recipes={categories[category]}/* sx={{gap: "15px"}}*/ />
       ))}
      
     </div>

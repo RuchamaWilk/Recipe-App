@@ -38,14 +38,12 @@ const Card = ({ recipe }) => {
       sx={{
         width: '100%', // Changed from fixed width to 100%
         height: 200,
+        minWidth: "320px",
         position: 'relative',
         borderRadius: '12px',
         cursor: 'pointer',
-        overflow: 'hidden',
+        //overflow: 'hidden',
         transition: 'all 0.3s ease-in-out',
-        boxShadow: isHovered 
-          ? '0 8px 24px rgba(0,0,0,0.15)' 
-          : '0 2px 8px rgba(0,0,0,0.1)',
         '&:hover': {
           transform: 'translateY(-4px)',
         },
@@ -108,13 +106,11 @@ const Card = ({ recipe }) => {
         }}
       >
         <Typography 
-          variant="h6" 
+          variant="h5" 
           sx={{
             fontWeight: 600,
             fontSize: '0.9rem',
             overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            whiteSpace: 'nowrap',
           }}
         >
           {recipe.name}
@@ -129,7 +125,7 @@ const Card = ({ recipe }) => {
         >
           <Chip
             icon={<AccessTimeIcon sx={{ fontSize: '0.7rem' }} />}
-            label={`${recipe.avgTime} דקות`}
+            label={`${recipe.avgTime} Min`}
             size="small"
             sx={{ 
               height: '16px',

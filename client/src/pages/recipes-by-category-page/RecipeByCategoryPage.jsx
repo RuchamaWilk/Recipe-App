@@ -27,10 +27,9 @@ const RecipeByCategory = () => {
   }
 
   return (
-    <Box sx={{ display: "grid", gridTemplateColumns:"auto" }}>
+    <Box sx={{ display: "grid", gridTemplateColumns:"auto", placeItems: 'center'}}>
       <Typography variant="h4" component="h1"  sx={{ 
           textAlign: 'center',  // מרכז את הטקסט
-          
            color: '#2F3645' ,
         }}>{category}</Typography>
       
