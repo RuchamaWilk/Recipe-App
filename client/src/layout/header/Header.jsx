@@ -1,5 +1,4 @@
-//client//src/layout/heder/Header
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,23 +8,28 @@ import RestaurantIcon from '@mui/icons-material/Restaurant';
 import { useNavigate } from 'react-router-dom';
 import SignUp from '../../components/sign-up/SignUp';
 import SignIn from '../../pages/sign-in-page/SignInPage';
-import { Avatar } from '@mui/material';
+import { Avatar, Menu, MenuItem, Typography } from '@mui/material';
+import { jwtDecode } from 'jwt-decode';
 
 const pages = ['About Us', 'Our Chefs'];
 
 function ResponsiveAppBar() {
-  const [popupOpenSignUp, setPopupOpenSignUp] = React.useState(false);
-  const [popupOpenSignIn, setPopupOpenSignIn] = React.useState(false);
-  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
-  const [email,setEmail]= React.useState('');
-  
+  const [popupOpenSignUp, setPopupOpenSignUp] = useState(false);
+  const [popupOpenSignIn, setPopupOpenSignIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [email, setEmail] = useState('');
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [userType, setUserType] = useState('');
+
   const navigate = useNavigate();
 
-  React.useEffect(() => {
+  useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      setEmail(email)
-      setIsLoggedIn(true); 
+      const decodedToken = jwtDecode(token);
+      setEmail(decodedToken.emailAddress);
+      setUserType(decodedToken.type);
+      setIsLoggedIn(true);
     }
   }, []);
 
@@ -50,25 +54,59 @@ function ResponsiveAppBar() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); 
+    localStorage.removeItem('token');
     setEmail('');
-    setIsLoggedIn(false);  
-    navigate('/');  
+    setIsLoggedIn(false);
+    setUserType('');
+    handleMenuClose();
+    navigate('/');
   };
 
+  const handleAdd = () => {
+    handleMenuClose();
+    navigate('/add-recipe');
+  };
+
+  const handleFavorites = () => {
+    handleMenuClose();
+    navigate('/favorite');
+  };
+  
+  const menuItems = userType === 'chef'
+    ? [
+        { text: 'Add Recipe', action: handleAdd },
+        { text: 'Log Out', action: handleLogout },
+      ]
+    : [
+        { text: 'My Favorites', action: handleFavorites },
+        { text: 'Log Out', action: handleLogout },
+      ];
+
   const handleLogin = (email, token) => {
-    setIsLoggedIn(true); 
-    setEmail(email)
+    const decodedToken = jwtDecode(token);  // פענוח הטוקן מיד בלוגין
+    setEmail(decodedToken.emailAddress);
+    setUserType(decodedToken.type);         // עדכון סוג המשתמש מיד
+    setIsLoggedIn(true);
     localStorage.setItem('token', token);
     navigate('/');
   };
 
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <>
-      <AppBar position="fixed" sx={{ backgroundColor: 'white'}}>
+      <AppBar position="fixed" sx={{ backgroundColor: 'white' }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <RestaurantIcon sx={{ display: { xs: 'none', md: 'flex' ,color: '#2F3645'}, mr: 4 }} />
+            <RestaurantIcon
+              sx={{ color: '#939185', display: { xs: 'none', md: 'flex' }, mr: 4 }}
+            />
             <Button
               onClick={onButtonHome}
               sx={{
@@ -76,10 +114,10 @@ function ResponsiveAppBar() {
                 display: { xs: 'none', md: 'flex' },
                 fontFamily: 'monospace',
                 fontWeight: 700,
-                fontSize: "1.4rem",
+                fontSize: '1.4rem',
                 letterSpacing: '.3rem',
-                color: "#2F3645",
-                textDecoration: 'none'
+                color: '#939185',
+                textDecoration: 'none',
               }}
             >
               RECIPES FOR YOU!
@@ -87,40 +125,50 @@ function ResponsiveAppBar() {
 
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <Button key={page} sx={{ my: 2, color: '#2F3645', display: 'block' }}>
+                <Button key={page} sx={{ my: 2, color: '#939185', display: 'block' }}>
                   {page}
                 </Button>
               ))}
             </Box>
 
-            {/* אם המשתמש מחובר, הראה את האייקון עם האות הראשונה משם המשתמש */}
             {isLoggedIn ? (
-              <>
-                <Avatar sx={{ bgcolor: "#2F3645" }}>
+              <Box>
+                <Avatar
+                  sx={{ bgcolor: '#939185', cursor: 'pointer' }}
+                  onClick={handleMenuOpen}
+                >
                   {email.charAt(0).toUpperCase()}
                 </Avatar>
+                <Menu
+                  id="menu-appbar"
+                  anchorEl={anchorEl}
+                  open={Boolean(anchorEl)}
+                  onClose={handleMenuClose}
+                >
+                  {menuItems.map((item, index) => (
+                    <MenuItem key={index} onClick={item.action}>
+                      <Typography textAlign="center">{item.text}</Typography>
+                    </MenuItem>
+                  ))}
+                </Menu>
+              </Box>
+            ) : (
+              <Box sx={{ display: 'flex', gap: 1 }}>
                 <Button
                   variant="contained"
-                  onClick={handleLogout}
-                >
-                  Logout
-                </Button>
-              </>
-            ) : (
-              <>
-                <Button 
-                  variant="contained" 
-                  onClick={openPopupSignUp} 
+                  sx={{ backgroundColor: '#939185' }}
+                  onClick={openPopupSignUp}
                 >
                   Sign Up
                 </Button>
-                <Button 
-                  variant="inline" 
-                  onClick={openPopupSignIn} 
+                <Button
+                  variant="text"
+                  sx={{ color: '#939185' }}
+                  onClick={openPopupSignIn}
                 >
                   Sign In
                 </Button>
-              </>
+              </Box>
             )}
           </Toolbar>
         </Container>
