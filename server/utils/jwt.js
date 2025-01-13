@@ -1,3 +1,4 @@
+//server/utils/jwt
 const jwt = require("jsonwebtoken");
 
 const generateToken = (id, email, type) => {

@@ -35,17 +35,15 @@ const SignInPage = ({ open= true, onClose,onLogin  = () => {} }) => {
     console.log("loginPage" ,email)
     try {
           const response =await checkChef(email, password); // קריאה לפונקציה שתשלח את הנתונים לשרת
-          console.log(response.token)
+          console.log("EEEE" ,response.token)
           if (response.token) {
-            localStorage.setItem('token', response.token);  // שמירת הטוקן ב-localStorage
-            localStorage.setItem('email', email);
             console.log("Token saved:", response.token);
             onLogin(email, response.token);
             handleClose()
 
-          } else {
-            setSignInError(response.message || 'Login failed');
-          }
+          }/* else {
+            setSignInError(/*response.message || 'Login failed');
+          }*/
       } catch (error) {
           console.error('Error during login:', error);
       }
@@ -105,11 +103,11 @@ const SignInPage = ({ open= true, onClose,onLogin  = () => {} }) => {
         >
           Sign In
         </Button>
-        {signInError && (
+        {/*{signInError=== 'Login failed' && (
           <Typography variant="body2" color="error" sx={{ mt: 2, textAlign: 'center' }}>
             {signInError}
           </Typography>
-        )}
+        )}*/}
       </Box>
     </Dialog>
   );
