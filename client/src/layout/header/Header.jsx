@@ -9,56 +9,29 @@ import { useNavigate } from 'react-router-dom';
 import SignUp from '../../components/sign-up/SignUp';
 import SignIn from '../../pages/sign-in-page/SignInPage';
 import { Avatar, Menu, MenuItem, Typography } from '@mui/material';
-import { jwtDecode } from 'jwt-decode';
+import { useUser } from '../../providers/UserProvider';
+
 
 const pages = ['About Us', 'Our Chefs'];
 
 function ResponsiveAppBar() {
   const [popupOpenSignUp, setPopupOpenSignUp] = useState(false);
   const [popupOpenSignIn, setPopupOpenSignIn] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [email, setEmail] = useState('');
   const [anchorEl, setAnchorEl] = useState(null);
-  const [userType, setUserType] = useState('');
-
+  const {user,setUser, token, setToken} = useUser();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
-      const decodedToken = jwtDecode(token);
-      setEmail(decodedToken.emailAddress);
-      setUserType(decodedToken.type);
-      setIsLoggedIn(true);
-    }
-  }, []);
-
-  const onButtonHome = () => {
-    navigate('/');
-  };
-
-  const openPopupSignUp = () => {
-    setPopupOpenSignUp(true);
-  };
-
-  const closePopupSignUp = () => {
-    setPopupOpenSignUp(false);
-  };
-
-  const openPopupSignIn = () => {
-    setPopupOpenSignIn(true);
-  };
-
-  const closePopupSignIn = () => {
-    setPopupOpenSignIn(false);
-  };
+  const onButtonHome = () => { navigate('/')};
+  const openPopupSignUp = () => {setPopupOpenSignUp(true);};
+  const closePopupSignUp = () => {setPopupOpenSignUp(false);};
+  const openPopupSignIn = () => {setPopupOpenSignIn(true);};
+  const closePopupSignIn = () => {setPopupOpenSignIn(false);};
 
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
-    setEmail('');
-    setIsLoggedIn(false);
-    setUserType('');
+    setToken(null);
+    setUser(null);
     handleMenuClose();
     navigate('/');
   };
@@ -70,13 +43,11 @@ function ResponsiveAppBar() {
 
   const handleFavorites = () => {
     handleMenuClose();
-    const token = localStorage.getItem('token');
-    const decodedToken = jwtDecode(token);
 
-    navigate(`/favorite/${decodedToken._id}`);
+    navigate(`/favorite/${user._id}`);
   };
   
-  const menuItems = userType === 'chef'
+  const menuItems = user?.type === 'chef'
     ? [
         { text: 'Add Recipe', action: handleAdd },
         { text: 'Log Out', action: handleLogout },
@@ -85,15 +56,6 @@ function ResponsiveAppBar() {
         { text: 'My Favorites', action: handleFavorites },
         { text: 'Log Out', action: handleLogout },
       ];
-
-  const handleLogin = (email, token) => {
-    const decodedToken = jwtDecode(token);  // פענוח הטוקן מיד בלוגין
-    setEmail(decodedToken.emailAddress);
-    setUserType(decodedToken.type);         // עדכון סוג המשתמש מיד
-    setIsLoggedIn(true);
-    localStorage.setItem('token', token);
-    navigate('/');
-  };
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -135,13 +97,13 @@ function ResponsiveAppBar() {
               ))}
             </Box>
 
-            {isLoggedIn ? (
+            {user ? (
               <Box>
                 <Avatar
                   sx={{ bgcolor: '#939185', cursor: 'pointer' }}
                   onClick={handleMenuOpen}
                 >
-                  {email.charAt(0).toUpperCase()}
+                  {(user.userName).charAt(0).toUpperCase()}
                 </Avatar>
                 <Menu
                   id="menu-appbar"
@@ -178,7 +140,7 @@ function ResponsiveAppBar() {
         </Container>
       </AppBar>
       <SignUp open={popupOpenSignUp} onClose={closePopupSignUp} />
-      <SignIn open={popupOpenSignIn} onClose={closePopupSignIn} onLogin={handleLogin} />
+      <SignIn open={popupOpenSignIn} onClose={closePopupSignIn} />
     </>
   );
 }
