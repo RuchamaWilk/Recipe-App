@@ -58,7 +58,7 @@ export const addRecipe = async (recipeData) => {
   }
 };
 
-export const checkChef = async (email, password) => {
+export const signIn = async (email, password) => {
   try {
     console.log("api ",email)
     const response = await axios.post(`${BASE_URL}/auth/signIn`,{email,password});
