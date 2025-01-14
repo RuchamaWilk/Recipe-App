@@ -1,50 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { fetchRecipesByCategory } from '../../services/apiService'; // ייבוא הפונקציה
-import Card from '../../components/card/Card';
-import { Typography, Box, Container } from '@mui/material';
+import React from 'react';
+import RecipesPage from '../../pages/recipes-page/RecipesPage';
+import { fetchRecipesByCategory } from '../../services/apiService';
 
-const RecipeByCategory = () => {
-  const { category } = useParams(); // הוצאת ה-ID מתוך ה-URL
-  const [recipesByCategory, setRecipesByCategory] = useState(null); // שמירה במצב על המתכון
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const getRecipes = async () => {
-      try {
-        const fetchedRecipes = await fetchRecipesByCategory(category); // קריאה ל-API
-        setRecipesByCategory(fetchedRecipes); // עדכון המצב במתכון
-      } catch (error) {
-        console.error('Error fetching recipe:', error);
-      }
-    };
-
-    getRecipes();
-  }, [category]); // הפעלת useEffect כאשר ה-ID משתנה
-
-  if (!recipesByCategory) {
-    return <div>Loading...</div>;
-  }
-
+const RecipeByCategoryPage = () => {
+  console.log("RecipeByCategoryPage")
   return (
-    <Box sx={{ display: "grid", gridTemplateColumns:"auto", placeItems: 'center'}}>
-      <Typography variant="h4" component="h1"  sx={{ 
-          textAlign: 'center',  // מרכז את הטקסט
-           color: '#2F3645' ,
-        }}>{category}</Typography>
-      
-      <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: '8px', flexWrap: 'wrap' }}>
-        {recipesByCategory.map((item, index) => (
-          <Box 
-            key={index}
-          >
-            <Card sx= {{width: "33%"}}recipe={item} />
-          </Box>
-        ))}
-        </Box>
-      </Box>
-      
+    <RecipesPage fetchFunction={fetchRecipesByCategory} isFavorite={false} />
   );
 };
 
-export default RecipeByCategory;
+export default RecipeByCategoryPage;
