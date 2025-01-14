@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Card from '../../components/card/Card';
 import { Typography, Box } from '@mui/material';
-import { jwtDecode } from "jwt-decode";
 import { useUser } from '../../providers/UserProvider'
 
 
@@ -12,7 +11,6 @@ const RecipesPage = ({ fetchFunction, isFavorite }) => {
   console.log("RecipesPage")
   const { category } = useParams(); // הוצאת ה-ID מתוך ה-URL
   const [recipesByCategory, setRecipesByCategory] = useState(null); // שמירה במצב על המתכון
-  const navigate = useNavigate();
   const { user } = useUser(); // שימוש ב-UserContext
 
 
@@ -34,26 +32,54 @@ const RecipesPage = ({ fetchFunction, isFavorite }) => {
     return <div>Loading...</div>;
   }
 
+ 
+
   return (
-    <Box sx={{ display: "grid", gridTemplateColumns:"auto", placeItems: 'center'}}>
-      <Typography variant="h4" component="h1"  sx={{ 
-          textAlign: 'center',  // מרכז את הטקסט
-           color: '#2F3645' ,
-        }}>
-          {isFavorite? "My Favorites Recipes" :category}
-          </Typography>
+    <Box sx={{ 
+      display: "flex", 
+      flexDirection: "column", 
+      alignItems: "center",
+      width: "100%",
+    }}>
+      <Typography variant="h4" component="h1" sx={{ 
+        textAlign: 'center',
+        color: '#2F3645',
+        marginBottom: "20px"
+      }}>
+        {isFavorite ? "My Favorites Recipes" : category}
+      </Typography>
       
-      <Box sx={{ display: 'flex', justifyContent: 'flex-start', gap: '8px', flexWrap: 'wrap' }}>
+      <Box sx={{ 
+        display: 'grid',
+        gridTemplateColumns: 'repeat(4, 300px)', // קובע מספר קבוע של טורים
+        gap: '32px',
+        justifyContent: 'center',
+        maxWidth: "1500px",
+        margin: "0 auto",
+        // מוסיף תמיכה במסכים שונים
+        '@media (max-width: 1400px)': {
+          gridTemplateColumns: 'repeat(3, 300px)',
+        },
+        '@media (max-width: 1100px)': {
+          gridTemplateColumns: 'repeat(2, 300px)',
+        },
+        '@media (max-width: 700px)': {
+          gridTemplateColumns: 'repeat(1, 300px)',
+        }
+      }}>
         {recipesByCategory.map((item, index) => (
           <Box 
             key={index}
+            sx={{ 
+              width: '300px',
+              height: 'fit-content'
+            }}
           >
-            <Card sx= {{width: "33%"}}recipe={item} />
+            <Card recipe={item} />
           </Box>
         ))}
-        </Box>
       </Box>
-      
+    </Box>
   );
 };
 
