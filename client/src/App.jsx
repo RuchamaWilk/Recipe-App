@@ -4,14 +4,17 @@ import './App.css';
 import Layout from './layout/Layout';
 import AppRouters from './routers/AppRouters';
 import ScrollToTop from './utils/scrollToTop';
+import {UserProvider} from './providers/UserProviser'
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop/>
-      <Layout>
-        <AppRouters />
-      </Layout>
+      <UserProvider>
+        <Layout>
+          <AppRouters />
+        </Layout>
+      </UserProvider>
     </BrowserRouter>
   );
 }
