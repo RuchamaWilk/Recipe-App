@@ -62,8 +62,10 @@ export const checkChef = async (email, password) => {
   try {
     console.log("api ",email)
     const response = await axios.post(`${BASE_URL}/auth/signIn`,{email,password});
-    localStorage.setItem('token', response.data.token);
-    console.log("now??? " ,response.data)
+    localStorage.setItem('user',JSON.stringify(response.data.user))
+    localStorage.setItem('token', response.data.token)
+    console.log("user??? " ,response.data.user)
+    console.log("token??? " ,response.data.token)
     return response.data;
   } catch (error) {
     console.error('Error feching chefs:', error);

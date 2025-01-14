@@ -28,9 +28,11 @@ const signIn = async ({email, password}) => {
             throw new Error(`Incorrect password for user: ${email}`);
         }
         logger.info(`found a chef with email: ${email} and password ${password} `)
-        console.log(`id: ${userOfEmail._id} email: ${userOfEmail.emailAddress} type: ${userOfEmail.type}`)
+        logger.info(`id: ${userOfEmail._id} email: ${userOfEmail.emailAddress} type: ${userOfEmail.type}`)
         const token = generateToken(userOfEmail._id,userOfEmail.emailAddress, userOfEmail.type);
-        return {success: true,token: token };  // חזרה עם תוצאה
+
+        
+        return {success: true,token: token , user: userOfEmail };  // חזרה עם תוצאה
     } catch (err) {
         return { success: false, message: err.message };
     }

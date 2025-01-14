@@ -20,10 +20,10 @@ router.post('/signIn', async (req, res, next) => {
     try {
         const { email, password } = req.body;
         logger.info(`Calling signIn with email: ${email} and password: ${password}`);
-        const { success, token, message } = await signIn({ email, password });        
+        const { success, token,user, message } = await signIn({ email, password });        
         logger.info(`success with signIn ${success}`);
         if (success) {
-            return res.status(200).send({ success, token });
+            return res.status(200).send({ success, token , user});
         } else {
             return res.status(400).send({ success, message });
         }
