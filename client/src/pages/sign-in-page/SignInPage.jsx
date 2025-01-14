@@ -7,6 +7,7 @@ import { Button,Dialog } from '@mui/material';
 import { Typography ,Box} from '@mui/material';
 import {  validateEmail, validatePassword } from '../../utils/validation';
 import { useUser } from '../../providers/UserProvider'; // ייבוא הקונטקסט
+import { useNavigate } from 'react-router-dom';
 
 const SignInPage = ({ open= true, onClose}) => {
   const [email, setEmail] = useState('')
@@ -15,6 +16,7 @@ const SignInPage = ({ open= true, onClose}) => {
   const [passwordError, setPasswordError] = useState('')
   const [signInError, setSignInError] = useState('')
   const { setUser, setToken } = useUser(); // מקבלים גישה לפונקציות הקונטקסט
+  const navigate = useNavigate();
 
   const handleClose = () =>{
     setEmail('');
@@ -36,6 +38,7 @@ const SignInPage = ({ open= true, onClose}) => {
             console.log("Token saved:", response.token);
             setToken(response.token); 
             setUser(response.user);
+            navigate('/')
             handleClose()
 
           } else {
