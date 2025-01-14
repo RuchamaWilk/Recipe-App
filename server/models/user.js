@@ -11,7 +11,8 @@ const userSchema = new mongoose.Schema({
     type: { type: String, enum: ['chef', 'user'], required: true }, 
     yearsOfExperience: { type: Number, required: function () { return this.type === 'chef'; } },
     phoneNumber: { type: String, required: function () { return this.type === 'chef'; } },
-    aboutMe: {type: String ,required: function () { return this.type === 'chef';}}
+    aboutMe: {type: String ,required: function () { return this.type === 'chef';}},
+    favoriteRecipes: [{ type: mongoose.Schema.Types.ObjectId, ref: 'recipes' }] // New field for favorite recipes
 });
 
 userSchema.pre('save', function(next) {
