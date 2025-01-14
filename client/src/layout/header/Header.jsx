@@ -55,6 +55,7 @@ function ResponsiveAppBar() {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
+    localStorage.removeItem('user');
     setEmail('');
     setIsLoggedIn(false);
     setUserType('');
