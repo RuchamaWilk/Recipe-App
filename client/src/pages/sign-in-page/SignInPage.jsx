@@ -1,23 +1,20 @@
 //client/src/pages/sign-in-page/SignInPage
 import React, { useState } from 'react'
-import {checkChef} from '../../services/apiService'
+import {signIn} from '../../services/apiService'
 import TextField from '@mui/material/TextField';
 import LoginIcon from '@mui/icons-material/Login';
 import { Button,Dialog } from '@mui/material';
 import { Typography ,Box} from '@mui/material';
 import {  validateEmail, validatePassword } from '../../utils/validation';
-import { useNavigate } from 'react-router-dom';
+import { useUser } from '../../providers/UserProvider'; // ייבוא הקונטקסט
 
-
-
-
-const SignInPage = ({ open= true, onClose,onLogin  = () => {} }) => {
+const SignInPage = ({ open= true, onClose}) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [emailError, setEmailError] = useState('')
   const [passwordError, setPasswordError] = useState('')
   const [signInError, setSignInError] = useState('')
-
+  const { setUser, setToken } = useUser(); // מקבלים גישה לפונקציות הקונטקסט
 
   const handleClose = () =>{
     setEmail('');
@@ -34,16 +31,17 @@ const SignInPage = ({ open= true, onClose,onLogin  = () => {} }) => {
     setPasswordError(validatePassword(password));
     console.log("loginPage" ,email)
     try {
-          const response =await checkChef(email, password); // קריאה לפונקציה שתשלח את הנתונים לשרת
-          console.log("EEEE" ,response.token)
+          const response =await signIn(email, password); // קריאה לפונקציה שתשלח את הנתונים לשרת
           if (response.token) {
             console.log("Token saved:", response.token);
-            onLogin(email, response.token);
+            setToken(response.token); 
+            setUser(response.user);
             handleClose()
 
-          }/* else {
-            setSignInError(/*response.message || 'Login failed');
-          }*/
+          } else {
+            console.log("loginPage failed" )
+            setSignInError(response.message || 'Login failed');
+          }
       } catch (error) {
           console.error('Error during login:', error);
       }
@@ -52,12 +50,10 @@ const SignInPage = ({ open= true, onClose,onLogin  = () => {} }) => {
   return (
     <Dialog open={open} onClose={handleClose} PaperProps={{ sx: { padding: 4, borderRadius: 3, width: '400px' } }}>
       <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
-        {/* כותרת */}
         <Typography variant="h5" component="h1" sx={{ fontWeight: 'bold', color: '#2F3645' }}>
           Sign In
         </Typography>
 
-        {/* שדה מייל */}
         <TextField
           id="email"
           label="Email"
@@ -70,7 +66,6 @@ const SignInPage = ({ open= true, onClose,onLogin  = () => {} }) => {
           helperText={emailError}
         />
 
-        {/* שדה סיסמה */}
         <TextField
           id="password"
           label="Password"
@@ -84,7 +79,6 @@ const SignInPage = ({ open= true, onClose,onLogin  = () => {} }) => {
           helperText={passwordError}
         />
 
-        {/* כפתור התחברות */}
         <Button
           onClick={onButtonClick}
           variant="contained"
@@ -103,11 +97,12 @@ const SignInPage = ({ open= true, onClose,onLogin  = () => {} }) => {
         >
           Sign In
         </Button>
-        {/*{signInError=== 'Login failed' && (
+        {signInError && (
           <Typography variant="body2" color="error" sx={{ mt: 2, textAlign: 'center' }}>
             {signInError}
           </Typography>
-        )}*/}
+        )}
+
       </Box>
     </Dialog>
   );
