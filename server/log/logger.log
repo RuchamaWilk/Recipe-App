@@ -10411,3 +10411,1405 @@
 2025-01-13 13:40:50 [info]: getChefs- find all recipe
 2025-01-13 13:40:51 [info]: success fetching recipes from DB
 2025-01-13 13:40:51 [info]: success with getRecipes
+2025-01-13 13:53:32 [info]: calling getRecipes
+2025-01-13 13:53:32 [info]: getChefs- find all recipe
+2025-01-13 13:53:32 [info]: success fetching recipes from DB
+2025-01-13 13:53:32 [info]: success with getRecipes
+2025-01-13 14:19:33 [info]: calling getRecipes
+2025-01-13 14:19:33 [info]: getChefs- find all recipe
+2025-01-13 14:19:33 [info]: success fetching recipes from DB
+2025-01-13 14:19:33 [info]: success with getRecipes
+2025-01-13 17:10:32 [info]: calling getRecipes
+2025-01-13 17:10:32 [info]: getChefs- find all recipe
+2025-01-13 17:10:32 [info]: success fetching recipes from DB
+2025-01-13 17:10:32 [info]: success with getRecipes
+2025-01-13 17:10:32 [info]: calling getRecipes
+2025-01-13 17:10:32 [info]: getChefs- find all recipe
+2025-01-13 17:10:32 [info]: success fetching recipes from DB
+2025-01-13 17:10:32 [info]: success with getRecipes
+2025-01-13 17:11:03 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 17:11:03 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 17:11:03 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 17:11:04 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 17:11:04 [info]: success with signIn true
+2025-01-13 17:16:12 [info]: calling getRecipes
+2025-01-13 17:16:12 [info]: getChefs- find all recipe
+2025-01-13 17:16:12 [info]: success fetching recipes from DB
+2025-01-13 17:16:12 [info]: success with getRecipes
+2025-01-13 17:16:12 [info]: calling getRecipes
+2025-01-13 17:16:12 [info]: getChefs- find all recipe
+2025-01-13 17:16:12 [info]: success fetching recipes from DB
+2025-01-13 17:16:12 [info]: success with getRecipes
+2025-01-13 17:16:18 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:16:18 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:16:18 [info]: found recipes of category: Meat
+2025-01-13 17:16:18 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:16:18 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:16:18 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:16:18 [info]: found recipes of category: Meat
+2025-01-13 17:16:18 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:16:24 [info]: calling getRecipes
+2025-01-13 17:16:24 [info]: getChefs- find all recipe
+2025-01-13 17:16:25 [info]: success fetching recipes from DB
+2025-01-13 17:16:25 [info]: success with getRecipes
+2025-01-13 17:16:25 [info]: calling getRecipes
+2025-01-13 17:16:25 [info]: getChefs- find all recipe
+2025-01-13 17:16:25 [info]: success fetching recipes from DB
+2025-01-13 17:16:25 [info]: success with getRecipes
+2025-01-13 17:16:51 [info]: calling getRecipes
+2025-01-13 17:16:51 [info]: getChefs- find all recipe
+2025-01-13 17:16:51 [info]: success fetching recipes from DB
+2025-01-13 17:16:51 [info]: success with getRecipes
+2025-01-13 17:16:51 [info]: calling getRecipes
+2025-01-13 17:16:51 [info]: getChefs- find all recipe
+2025-01-13 17:16:51 [info]: success fetching recipes from DB
+2025-01-13 17:16:51 [info]: success with getRecipes
+2025-01-13 17:16:53 [info]: getRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:16:53 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:16:54 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:16:54 [info]: success with getRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-13 17:16:54 [info]: getRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:16:54 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:16:54 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:16:54 [info]: success with getRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-13 17:16:56 [info]: calling getRecipes
+2025-01-13 17:16:56 [info]: getChefs- find all recipe
+2025-01-13 17:16:56 [info]: success fetching recipes from DB
+2025-01-13 17:16:56 [info]: success with getRecipes
+2025-01-13 17:16:56 [info]: calling getRecipes
+2025-01-13 17:16:56 [info]: getChefs- find all recipe
+2025-01-13 17:16:56 [info]: success fetching recipes from DB
+2025-01-13 17:16:56 [info]: success with getRecipes
+2025-01-13 17:19:05 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 17:19:05 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 17:19:05 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 17:19:05 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 17:19:05 [info]: success with signIn true
+2025-01-13 17:19:17 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:19:17 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:19:17 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:19:17 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:19:17 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:19:17 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:19:46 [info]: calling getRecipes
+2025-01-13 17:19:46 [info]: getChefs- find all recipe
+2025-01-13 17:19:46 [info]: success fetching recipes from DB
+2025-01-13 17:19:46 [info]: success with getRecipes
+2025-01-13 17:19:46 [info]: calling getRecipes
+2025-01-13 17:19:46 [info]: getChefs- find all recipe
+2025-01-13 17:19:47 [info]: success fetching recipes from DB
+2025-01-13 17:19:47 [info]: success with getRecipes
+2025-01-13 17:19:51 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:19:51 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:19:51 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:19:51 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:19:51 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:19:51 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:19:53 [info]: calling getRecipes
+2025-01-13 17:19:53 [info]: getChefs- find all recipe
+2025-01-13 17:19:54 [info]: success fetching recipes from DB
+2025-01-13 17:19:54 [info]: success with getRecipes
+2025-01-13 17:19:54 [info]: calling getRecipes
+2025-01-13 17:19:54 [info]: getChefs- find all recipe
+2025-01-13 17:19:54 [info]: success fetching recipes from DB
+2025-01-13 17:19:54 [info]: success with getRecipes
+2025-01-13 17:19:55 [info]: calling getRecipes
+2025-01-13 17:19:55 [info]: getChefs- find all recipe
+2025-01-13 17:19:55 [info]: success fetching recipes from DB
+2025-01-13 17:19:55 [info]: success with getRecipes
+2025-01-13 17:19:55 [info]: calling getRecipes
+2025-01-13 17:19:55 [info]: getChefs- find all recipe
+2025-01-13 17:19:56 [info]: success fetching recipes from DB
+2025-01-13 17:19:56 [info]: success with getRecipes
+2025-01-13 17:20:12 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 17:20:12 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 17:20:12 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 17:20:12 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 17:20:12 [info]: success with signIn true
+2025-01-13 17:20:15 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:20:15 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:20:15 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:20:15 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:20:15 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:20:15 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:20:45 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:20:45 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:20:45 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:21:50 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:21:50 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:21:50 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:21:56 [info]: calling getRecipes
+2025-01-13 17:21:56 [info]: getChefs- find all recipe
+2025-01-13 17:21:56 [info]: success fetching recipes from DB
+2025-01-13 17:21:56 [info]: success with getRecipes
+2025-01-13 17:21:56 [info]: calling getRecipes
+2025-01-13 17:21:56 [info]: getChefs- find all recipe
+2025-01-13 17:21:56 [info]: success fetching recipes from DB
+2025-01-13 17:21:56 [info]: success with getRecipes
+2025-01-13 17:22:03 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:22:03 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:22:03 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:22:03 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:22:03 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:22:03 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:23:50 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:23:50 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:23:50 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:23:50 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:23:50 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:23:50 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:24:43 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:24:43 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:24:43 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:27:16 [info]: calling getRecipes
+2025-01-13 17:27:16 [info]: getChefs- find all recipe
+2025-01-13 17:27:17 [info]: success fetching recipes from DB
+2025-01-13 17:27:17 [info]: success with getRecipes
+2025-01-13 17:27:17 [info]: calling getRecipes
+2025-01-13 17:27:17 [info]: getChefs- find all recipe
+2025-01-13 17:27:17 [info]: success fetching recipes from DB
+2025-01-13 17:27:17 [info]: success with getRecipes
+2025-01-13 17:27:18 [info]: getRecipe - calling recipe with ID: 676046cece9abf8bb07801fd
+2025-01-13 17:27:18 [info]: fetchRecipe- find recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-13 17:27:19 [info]: found a recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-13 17:27:19 [info]: success with getRecipe id: 676046cece9abf8bb07801fd
+2025-01-13 17:27:19 [info]: getRecipe - calling recipe with ID: 676046cece9abf8bb07801fd
+2025-01-13 17:27:19 [info]: fetchRecipe- find recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-13 17:27:19 [info]: found a recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-13 17:27:19 [info]: success with getRecipe id: 676046cece9abf8bb07801fd
+2025-01-13 17:27:23 [info]: calling getRecipes
+2025-01-13 17:27:23 [info]: getChefs- find all recipe
+2025-01-13 17:27:23 [info]: success fetching recipes from DB
+2025-01-13 17:27:23 [info]: success with getRecipes
+2025-01-13 17:27:23 [info]: calling getRecipes
+2025-01-13 17:27:23 [info]: getChefs- find all recipe
+2025-01-13 17:27:23 [info]: success fetching recipes from DB
+2025-01-13 17:27:23 [info]: success with getRecipes
+2025-01-13 17:27:26 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:27:26 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:27:26 [info]: found recipes of category: Meat
+2025-01-13 17:27:26 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:27:26 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:27:26 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:27:27 [info]: found recipes of category: Meat
+2025-01-13 17:27:27 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:27:39 [info]: calling getRecipes
+2025-01-13 17:27:39 [info]: getChefs- find all recipe
+2025-01-13 17:27:40 [info]: success fetching recipes from DB
+2025-01-13 17:27:40 [info]: success with getRecipes
+2025-01-13 17:27:40 [info]: calling getRecipes
+2025-01-13 17:27:40 [info]: getChefs- find all recipe
+2025-01-13 17:27:40 [info]: success fetching recipes from DB
+2025-01-13 17:27:40 [info]: success with getRecipes
+2025-01-13 17:27:45 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:27:45 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:27:45 [info]: found recipes of category: Meat
+2025-01-13 17:27:45 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:27:45 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:27:45 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:27:45 [info]: found recipes of category: Meat
+2025-01-13 17:27:45 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:28:54 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:28:54 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:28:54 [info]: found recipes of category: Meat
+2025-01-13 17:28:54 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:28:56 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:28:56 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:28:56 [info]: found recipes of category: Meat
+2025-01-13 17:28:56 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:29:02 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:29:02 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:29:02 [info]: found recipes of category: Meat
+2025-01-13 17:29:02 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:29:02 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:29:02 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:29:02 [info]: found recipes of category: Meat
+2025-01-13 17:29:02 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:29:18 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:29:18 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:29:18 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:29:18 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:29:18 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:29:18 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:29:58 [info]: calling getRecipes
+2025-01-13 17:29:58 [info]: getChefs- find all recipe
+2025-01-13 17:29:59 [info]: success fetching recipes from DB
+2025-01-13 17:29:59 [info]: success with getRecipes
+2025-01-13 17:29:59 [info]: calling getRecipes
+2025-01-13 17:29:59 [info]: getChefs- find all recipe
+2025-01-13 17:29:59 [info]: success fetching recipes from DB
+2025-01-13 17:29:59 [info]: success with getRecipes
+2025-01-13 17:30:00 [info]: getRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:30:00 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:30:00 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:30:00 [info]: success with getRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-13 17:30:00 [info]: getRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:30:00 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:30:01 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-13 17:30:01 [info]: success with getRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-13 17:30:16 [info]: calling getRecipes
+2025-01-13 17:30:16 [info]: getChefs- find all recipe
+2025-01-13 17:30:16 [info]: success fetching recipes from DB
+2025-01-13 17:30:16 [info]: success with getRecipes
+2025-01-13 17:30:16 [info]: calling getRecipes
+2025-01-13 17:30:16 [info]: getChefs- find all recipe
+2025-01-13 17:30:16 [info]: success fetching recipes from DB
+2025-01-13 17:30:16 [info]: success with getRecipes
+2025-01-13 17:30:19 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:30:19 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:30:19 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:30:19 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:30:19 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:30:19 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:31:42 [info]: calling getRecipes
+2025-01-13 17:31:42 [info]: getChefs- find all recipe
+2025-01-13 17:31:42 [info]: success fetching recipes from DB
+2025-01-13 17:31:42 [info]: success with getRecipes
+2025-01-13 17:31:42 [info]: calling getRecipes
+2025-01-13 17:31:42 [info]: getChefs- find all recipe
+2025-01-13 17:31:42 [info]: success fetching recipes from DB
+2025-01-13 17:31:42 [info]: success with getRecipes
+2025-01-13 17:36:29 [info]: calling getRecipes
+2025-01-13 17:36:29 [info]: getChefs- find all recipe
+2025-01-13 17:36:29 [info]: success fetching recipes from DB
+2025-01-13 17:36:29 [info]: success with getRecipes
+2025-01-13 17:36:29 [info]: calling getRecipes
+2025-01-13 17:36:29 [info]: getChefs- find all recipe
+2025-01-13 17:36:29 [info]: success fetching recipes from DB
+2025-01-13 17:36:29 [info]: success with getRecipes
+2025-01-13 17:36:39 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:36:39 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:36:39 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:36:39 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:36:39 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:36:39 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:36:43 [info]: calling getRecipes
+2025-01-13 17:36:43 [info]: getChefs- find all recipe
+2025-01-13 17:36:43 [info]: success fetching recipes from DB
+2025-01-13 17:36:43 [info]: success with getRecipes
+2025-01-13 17:36:43 [info]: calling getRecipes
+2025-01-13 17:36:43 [info]: getChefs- find all recipe
+2025-01-13 17:36:43 [info]: success fetching recipes from DB
+2025-01-13 17:36:43 [info]: success with getRecipes
+2025-01-13 17:37:01 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 17:37:01 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 17:37:02 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 17:37:02 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 17:37:02 [info]: success with signIn true
+2025-01-13 17:37:05 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:37:05 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:37:05 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:37:05 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:37:05 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:37:05 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:46:18 [info]: calling getRecipes
+2025-01-13 17:46:18 [info]: getChefs- find all recipe
+2025-01-13 17:46:18 [info]: success fetching recipes from DB
+2025-01-13 17:46:18 [info]: success with getRecipes
+2025-01-13 17:46:18 [info]: calling getRecipes
+2025-01-13 17:46:18 [info]: getChefs- find all recipe
+2025-01-13 17:46:18 [info]: success fetching recipes from DB
+2025-01-13 17:46:18 [info]: success with getRecipes
+2025-01-13 17:46:21 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:46:21 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:46:21 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:46:21 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:46:21 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:46:21 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:46:27 [info]: calling getRecipes
+2025-01-13 17:46:27 [info]: getChefs- find all recipe
+2025-01-13 17:46:27 [info]: success fetching recipes from DB
+2025-01-13 17:46:27 [info]: success with getRecipes
+2025-01-13 17:46:27 [info]: calling getRecipes
+2025-01-13 17:46:27 [info]: getChefs- find all recipe
+2025-01-13 17:46:27 [info]: success fetching recipes from DB
+2025-01-13 17:46:27 [info]: success with getRecipes
+2025-01-13 17:46:41 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 17:46:41 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 17:46:42 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 17:46:42 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 17:46:42 [info]: success with signIn true
+2025-01-13 17:47:37 [info]: calling getRecipes
+2025-01-13 17:47:37 [info]: getChefs- find all recipe
+2025-01-13 17:47:38 [info]: success fetching recipes from DB
+2025-01-13 17:47:38 [info]: success with getRecipes
+2025-01-13 17:47:38 [info]: calling getRecipes
+2025-01-13 17:47:38 [info]: getChefs- find all recipe
+2025-01-13 17:47:38 [info]: success fetching recipes from DB
+2025-01-13 17:47:38 [info]: success with getRecipes
+2025-01-13 17:49:15 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:49:15 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:49:15 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:49:15 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:49:15 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:49:15 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:54:02 [info]: calling getRecipes
+2025-01-13 17:54:02 [info]: getChefs- find all recipe
+2025-01-13 17:54:02 [info]: success fetching recipes from DB
+2025-01-13 17:54:02 [info]: success with getRecipes
+2025-01-13 17:54:02 [info]: calling getRecipes
+2025-01-13 17:54:02 [info]: getChefs- find all recipe
+2025-01-13 17:54:02 [info]: success fetching recipes from DB
+2025-01-13 17:54:02 [info]: success with getRecipes
+2025-01-13 17:54:09 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:54:09 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:54:09 [info]: found recipes of category: Meat
+2025-01-13 17:54:09 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:54:09 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:54:09 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:54:09 [info]: found recipes of category: Meat
+2025-01-13 17:54:09 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:54:38 [info]: calling getRecipes
+2025-01-13 17:54:38 [info]: getChefs- find all recipe
+2025-01-13 17:54:39 [info]: success fetching recipes from DB
+2025-01-13 17:54:39 [info]: success with getRecipes
+2025-01-13 17:54:39 [info]: calling getRecipes
+2025-01-13 17:54:39 [info]: getChefs- find all recipe
+2025-01-13 17:54:39 [info]: success fetching recipes from DB
+2025-01-13 17:54:39 [info]: success with getRecipes
+2025-01-13 17:54:53 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 17:54:53 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 17:54:54 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 17:54:54 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 17:54:54 [info]: success with signIn true
+2025-01-13 17:54:56 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:54:56 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:54:56 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:54:56 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:54:56 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:54:56 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:55:35 [info]: calling getRecipes
+2025-01-13 17:55:35 [info]: getChefs- find all recipe
+2025-01-13 17:55:36 [info]: success fetching recipes from DB
+2025-01-13 17:55:36 [info]: success with getRecipes
+2025-01-13 17:55:36 [info]: calling getRecipes
+2025-01-13 17:55:36 [info]: getChefs- find all recipe
+2025-01-13 17:55:36 [info]: success fetching recipes from DB
+2025-01-13 17:55:36 [info]: success with getRecipes
+2025-01-13 17:55:40 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:55:40 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:55:40 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:55:40 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:55:40 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:55:40 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:56:48 [info]: calling getRecipes
+2025-01-13 17:56:48 [info]: getChefs- find all recipe
+2025-01-13 17:56:48 [info]: success fetching recipes from DB
+2025-01-13 17:56:48 [info]: success with getRecipes
+2025-01-13 17:56:48 [info]: calling getRecipes
+2025-01-13 17:56:48 [info]: getChefs- find all recipe
+2025-01-13 17:56:48 [info]: success fetching recipes from DB
+2025-01-13 17:56:48 [info]: success with getRecipes
+2025-01-13 17:56:51 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:56:51 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:56:51 [info]: found recipes of category: Meat
+2025-01-13 17:56:51 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:56:51 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 17:56:51 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 17:56:52 [info]: found recipes of category: Meat
+2025-01-13 17:56:52 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 17:59:34 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:59:34 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:59:34 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 17:59:34 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 17:59:34 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 17:59:34 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 18:00:58 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 18:00:58 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 18:00:58 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 18:01:05 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 18:01:05 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 18:01:05 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 18:01:21 [info]: calling getRecipes
+2025-01-13 18:01:21 [info]: getChefs- find all recipe
+2025-01-13 18:01:21 [info]: success fetching recipes from DB
+2025-01-13 18:01:21 [info]: success with getRecipes
+2025-01-13 18:01:21 [info]: calling getRecipes
+2025-01-13 18:01:21 [info]: getChefs- find all recipe
+2025-01-13 18:01:21 [info]: success fetching recipes from DB
+2025-01-13 18:01:21 [info]: success with getRecipes
+2025-01-13 18:01:25 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 18:01:25 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 18:01:25 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 18:01:25 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 18:01:25 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 18:01:25 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 18:09:31 [info]: calling getRecipes
+2025-01-13 18:09:31 [info]: getChefs- find all recipe
+2025-01-13 18:09:31 [info]: success fetching recipes from DB
+2025-01-13 18:09:31 [info]: success with getRecipes
+2025-01-13 18:09:31 [info]: calling getRecipes
+2025-01-13 18:09:31 [info]: getChefs- find all recipe
+2025-01-13 18:09:32 [info]: success fetching recipes from DB
+2025-01-13 18:09:32 [info]: success with getRecipes
+2025-01-13 18:09:54 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 18:09:54 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 18:09:55 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 18:09:55 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 18:09:55 [info]: success with signIn true
+2025-01-13 18:09:58 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 18:09:58 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 18:09:58 [info]: found recipes of category: Meat
+2025-01-13 18:09:58 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 18:09:58 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 18:09:58 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 18:09:58 [info]: found recipes of category: Meat
+2025-01-13 18:09:58 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 18:10:13 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 18:10:13 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 18:10:13 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 18:10:13 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 18:10:13 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 18:10:13 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 20:18:46 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 20:18:46 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 20:18:46 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 20:18:46 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 20:18:46 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 20:18:46 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 20:51:10 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 20:51:10 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 20:51:10 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 20:51:10 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 20:51:10 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 20:51:10 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:11:29 [info]: calling getRecipes
+2025-01-13 22:11:29 [info]: getChefs- find all recipe
+2025-01-13 22:11:31 [info]: success fetching recipes from DB
+2025-01-13 22:11:31 [info]: success with getRecipes
+2025-01-13 22:11:31 [info]: calling getRecipes
+2025-01-13 22:11:31 [info]: getChefs- find all recipe
+2025-01-13 22:11:31 [info]: success fetching recipes from DB
+2025-01-13 22:11:31 [info]: success with getRecipes
+2025-01-13 22:11:35 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:11:35 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:11:35 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:14:11 [info]: calling getRecipes
+2025-01-13 22:14:11 [info]: getChefs- find all recipe
+2025-01-13 22:14:11 [info]: calling getRecipes
+2025-01-13 22:14:11 [info]: getChefs- find all recipe
+2025-01-13 22:14:11 [info]: success fetching recipes from DB
+2025-01-13 22:14:11 [info]: success with getRecipes
+2025-01-13 22:14:12 [info]: success fetching recipes from DB
+2025-01-13 22:14:12 [info]: success with getRecipes
+2025-01-13 22:14:12 [info]: calling getRecipes
+2025-01-13 22:14:12 [info]: getChefs- find all recipe
+2025-01-13 22:14:12 [info]: success fetching recipes from DB
+2025-01-13 22:14:12 [info]: success with getRecipes
+2025-01-13 22:14:18 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 22:14:18 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 22:14:18 [info]: found recipes of category: Meat
+2025-01-13 22:14:18 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 22:14:18 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-13 22:14:18 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-13 22:14:18 [info]: found recipes of category: Meat
+2025-01-13 22:14:18 [info]: success with fetchRecipesCategory category: Meat
+2025-01-13 22:15:34 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 22:15:34 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 22:15:34 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 22:15:34 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 22:15:34 [info]: success with signIn true
+2025-01-13 22:15:34 [info]: calling getRecipes
+2025-01-13 22:15:34 [info]: getChefs- find all recipe
+2025-01-13 22:15:34 [info]: success fetching recipes from DB
+2025-01-13 22:15:34 [info]: success with getRecipes
+2025-01-13 22:15:34 [info]: calling getRecipes
+2025-01-13 22:15:34 [info]: getChefs- find all recipe
+2025-01-13 22:15:34 [info]: success fetching recipes from DB
+2025-01-13 22:15:34 [info]: success with getRecipes
+2025-01-13 22:15:39 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:15:39 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:15:39 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:15:39 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:15:39 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:15:39 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:17:29 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:17:29 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:17:29 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:19:27 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:19:27 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:19:27 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:19:34 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:19:34 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:19:34 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:19:34 [info]: calling getRecipes
+2025-01-13 22:19:34 [info]: getChefs- find all recipe
+2025-01-13 22:19:34 [info]: success fetching recipes from DB
+2025-01-13 22:19:34 [info]: success with getRecipes
+2025-01-13 22:19:34 [info]: calling getRecipes
+2025-01-13 22:19:34 [info]: getChefs- find all recipe
+2025-01-13 22:19:34 [info]: success fetching recipes from DB
+2025-01-13 22:19:34 [info]: success with getRecipes
+2025-01-13 22:19:38 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:19:38 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:19:38 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:19:38 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:19:38 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:19:38 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:25:32 [info]: calling getRecipes
+2025-01-13 22:25:32 [info]: getChefs- find all recipe
+2025-01-13 22:25:32 [info]: success fetching recipes from DB
+2025-01-13 22:25:32 [info]: success with getRecipes
+2025-01-13 22:25:32 [info]: calling getRecipes
+2025-01-13 22:25:32 [info]: getChefs- find all recipe
+2025-01-13 22:25:33 [info]: success fetching recipes from DB
+2025-01-13 22:25:33 [info]: success with getRecipes
+2025-01-13 22:25:36 [info]: calling getRecipes
+2025-01-13 22:25:36 [info]: getChefs- find all recipe
+2025-01-13 22:25:36 [info]: success fetching recipes from DB
+2025-01-13 22:25:36 [info]: success with getRecipes
+2025-01-13 22:25:36 [info]: calling getRecipes
+2025-01-13 22:25:36 [info]: getChefs- find all recipe
+2025-01-13 22:25:36 [info]: success fetching recipes from DB
+2025-01-13 22:25:36 [info]: success with getRecipes
+2025-01-13 22:25:55 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 22:25:55 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 22:25:56 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 22:25:56 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 22:25:56 [info]: success with signIn true
+2025-01-13 22:26:00 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:26:00 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:26:00 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:26:00 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:26:00 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:26:00 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:44:45 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:44:45 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:44:45 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:49:36 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:49:36 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:49:36 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:49:36 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:49:36 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:49:36 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:49:36 [info]: calling getRecipes
+2025-01-13 22:49:36 [info]: getChefs- find all recipe
+2025-01-13 22:49:36 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:49:36 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:49:36 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:49:36 [info]: calling getRecipes
+2025-01-13 22:49:36 [info]: getChefs- find all recipe
+2025-01-13 22:49:36 [info]: calling getRecipes
+2025-01-13 22:49:36 [info]: getChefs- find all recipe
+2025-01-13 22:49:38 [info]: calling getRecipes
+2025-01-13 22:49:38 [info]: getChefs- find all recipe
+2025-01-13 22:49:39 [info]: success fetching recipes from DB
+2025-01-13 22:49:39 [info]: success with getRecipes
+2025-01-13 22:49:56 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 22:49:56 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 22:49:56 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 22:49:56 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 22:49:56 [info]: success with signIn true
+2025-01-13 22:50:10 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:50:10 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:50:10 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:50:10 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:50:10 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:50:10 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:51:38 [info]: calling getRecipes
+2025-01-13 22:51:38 [info]: getChefs- find all recipe
+2025-01-13 22:51:38 [info]: success fetching recipes from DB
+2025-01-13 22:51:38 [info]: success with getRecipes
+2025-01-13 22:51:38 [info]: calling getRecipes
+2025-01-13 22:51:38 [info]: getChefs- find all recipe
+2025-01-13 22:51:38 [info]: success fetching recipes from DB
+2025-01-13 22:51:38 [info]: success with getRecipes
+2025-01-13 22:51:42 [info]: calling getRecipes
+2025-01-13 22:51:42 [info]: getChefs- find all recipe
+2025-01-13 22:51:42 [info]: success fetching recipes from DB
+2025-01-13 22:51:42 [info]: success with getRecipes
+2025-01-13 22:51:42 [info]: calling getRecipes
+2025-01-13 22:51:42 [info]: getChefs- find all recipe
+2025-01-13 22:51:42 [info]: success fetching recipes from DB
+2025-01-13 22:51:42 [info]: success with getRecipes
+2025-01-13 22:51:54 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:51:54 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:51:54 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:51:54 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:51:54 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:51:54 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 22:54:41 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 22:54:41 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 22:54:41 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:00:37 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:00:37 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:00:37 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:00:43 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:00:43 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:00:43 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:00:43 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:00:43 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:00:43 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:00:50 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:00:50 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:00:50 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:00:50 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:00:50 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:00:50 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:00:55 [info]: calling getRecipes
+2025-01-13 23:00:55 [info]: getChefs- find all recipe
+2025-01-13 23:00:56 [info]: success fetching recipes from DB
+2025-01-13 23:00:56 [info]: success with getRecipes
+2025-01-13 23:00:56 [info]: calling getRecipes
+2025-01-13 23:00:56 [info]: getChefs- find all recipe
+2025-01-13 23:00:56 [info]: success fetching recipes from DB
+2025-01-13 23:00:56 [info]: success with getRecipes
+2025-01-13 23:01:11 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 23:01:11 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 23:01:11 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 23:01:11 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 23:01:11 [info]: success with signIn true
+2025-01-13 23:01:14 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:01:14 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:01:14 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:01:14 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:01:14 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:01:14 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:01:30 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:01:30 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:01:30 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:01:42 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:01:42 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:01:42 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:11:14 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:11:14 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:11:14 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:11:58 [info]: calling getRecipes
+2025-01-13 23:11:58 [info]: getChefs- find all recipe
+2025-01-13 23:11:58 [info]: calling getRecipes
+2025-01-13 23:11:58 [info]: getChefs- find all recipe
+2025-01-13 23:11:58 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 23:11:58 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 23:11:58 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:11:58 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:11:58 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:11:58 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 23:11:58 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 23:11:58 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 23:11:58 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 23:11:58 [info]: success with signIn true
+2025-01-13 23:11:58 [info]: success fetching recipes from DB
+2025-01-13 23:11:58 [info]: success with getRecipes
+2025-01-13 23:11:58 [info]: success fetching recipes from DB
+2025-01-13 23:11:58 [info]: success with getRecipes
+2025-01-13 23:11:59 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 23:11:59 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 23:11:59 [info]: success with signIn true
+2025-01-13 23:12:05 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:12:05 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:12:05 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:12:05 [info]: getRecipe - calling recipe with ID: undefined
+2025-01-13 23:12:05 [info]: fetchRecipe- find recipe with recipeID: undefined
+2025-01-13 23:12:05 [error]: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "recipes"
+2025-01-13 23:13:39 [info]: favorite - get favorite recipes from DB, user id: undefined
+2025-01-13 23:13:39 [info]: getFavorite- find recipes of userID: undefined
+2025-01-13 23:13:39 [error]: Cannot access 'User' before initialization
+2025-01-13 23:13:39 [info]: favorite - get favorite recipes from DB, user id: undefined
+2025-01-13 23:13:39 [info]: getFavorite- find recipes of userID: undefined
+2025-01-13 23:13:39 [error]: Cannot access 'User' before initialization
+2025-01-13 23:15:15 [info]: favorite - get favorite recipes from DB, user id: undefined
+2025-01-13 23:15:15 [info]: getFavorite- find recipes of userID: undefined
+2025-01-13 23:15:15 [error]: Cannot access 'User' before initialization
+2025-01-13 23:15:15 [info]: favorite - get favorite recipes from DB, user id: undefined
+2025-01-13 23:15:15 [info]: getFavorite- find recipes of userID: undefined
+2025-01-13 23:15:15 [error]: Cannot access 'User' before initialization
+2025-01-13 23:22:18 [info]: calling getRecipes
+2025-01-13 23:22:18 [info]: getChefs- find all recipe
+2025-01-13 23:22:18 [info]: success fetching recipes from DB
+2025-01-13 23:22:18 [info]: success with getRecipes
+2025-01-13 23:22:18 [info]: calling getRecipes
+2025-01-13 23:22:18 [info]: getChefs- find all recipe
+2025-01-13 23:22:18 [info]: success fetching recipes from DB
+2025-01-13 23:22:18 [info]: success with getRecipes
+2025-01-13 23:22:45 [info]: calling getRecipes
+2025-01-13 23:22:45 [info]: getChefs- find all recipe
+2025-01-13 23:22:45 [info]: success fetching recipes from DB
+2025-01-13 23:22:45 [info]: success with getRecipes
+2025-01-13 23:22:45 [info]: calling getRecipes
+2025-01-13 23:22:45 [info]: getChefs- find all recipe
+2025-01-13 23:22:45 [info]: success fetching recipes from DB
+2025-01-13 23:22:45 [info]: success with getRecipes
+2025-01-13 23:23:02 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-13 23:23:02 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-13 23:23:03 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-13 23:23:03 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-13 23:23:03 [info]: success with signIn true
+2025-01-13 23:24:17 [info]: favorite - get favorite recipes from DB, user id: undefined
+2025-01-13 23:24:17 [info]: getFavorite- find recipes of userID: undefined
+2025-01-13 23:24:17 [error]: Cannot access 'User' before initialization
+2025-01-13 23:24:17 [info]: favorite - get favorite recipes from DB, user id: undefined
+2025-01-13 23:24:17 [info]: getFavorite- find recipes of userID: undefined
+2025-01-13 23:24:17 [error]: Cannot access 'User' before initialization
+2025-01-13 23:25:09 [info]: favorite - get favorite recipes from DB, user id: undefined
+2025-01-13 23:25:09 [info]: getFavorite- find recipes of userID: undefined
+2025-01-13 23:25:09 [error]: Cannot access 'User' before initialization
+2025-01-13 23:25:09 [info]: favorite - get favorite recipes from DB, user id: undefined
+2025-01-13 23:25:09 [info]: getFavorite- find recipes of userID: undefined
+2025-01-13 23:25:09 [error]: Cannot access 'User' before initialization
+2025-01-13 23:26:03 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-13 23:26:03 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-13 23:26:03 [error]: Cannot access 'User' before initialization
+2025-01-13 23:26:03 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-13 23:26:03 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-13 23:26:03 [error]: Cannot access 'User' before initialization
+2025-01-14 00:06:45 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:06:45 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:06:45 [error]: Cannot access 'User' before initialization
+2025-01-14 00:07:06 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:07:06 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:07:06 [error]: Cannot access 'User' before initialization
+2025-01-14 00:07:06 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:07:06 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:07:06 [error]: Cannot access 'User' before initialization
+2025-01-14 00:07:09 [info]: calling getRecipes
+2025-01-14 00:07:09 [info]: getChefs- find all recipe
+2025-01-14 00:07:09 [info]: success fetching recipes from DB
+2025-01-14 00:07:09 [info]: success with getRecipes
+2025-01-14 00:07:09 [info]: calling getRecipes
+2025-01-14 00:07:09 [info]: getChefs- find all recipe
+2025-01-14 00:07:09 [info]: success fetching recipes from DB
+2025-01-14 00:07:09 [info]: success with getRecipes
+2025-01-14 00:07:32 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-14 00:07:32 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-14 00:07:32 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-14 00:07:32 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-14 00:07:33 [info]: success with signIn true
+2025-01-14 00:07:36 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:07:36 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:07:36 [error]: Cannot access 'User' before initialization
+2025-01-14 00:07:36 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:07:36 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 00:07:36 [error]: Cannot access 'User' before initialization
+2025-01-14 00:08:05 [info]: calling getRecipes
+2025-01-14 00:08:05 [info]: getChefs- find all recipe
+2025-01-14 00:08:06 [info]: success fetching recipes from DB
+2025-01-14 00:08:06 [info]: success with getRecipes
+2025-01-14 00:08:06 [info]: calling getRecipes
+2025-01-14 00:08:06 [info]: getChefs- find all recipe
+2025-01-14 00:08:06 [info]: success fetching recipes from DB
+2025-01-14 00:08:06 [info]: success with getRecipes
+2025-01-14 00:10:12 [info]: calling getRecipes
+2025-01-14 00:10:12 [info]: getChefs- find all recipe
+2025-01-14 00:10:13 [info]: success fetching recipes from DB
+2025-01-14 00:10:13 [info]: success with getRecipes
+2025-01-14 00:10:13 [info]: calling getRecipes
+2025-01-14 00:10:13 [info]: getChefs- find all recipe
+2025-01-14 00:10:13 [info]: success fetching recipes from DB
+2025-01-14 00:10:13 [info]: success with getRecipes
+2025-01-14 00:10:44 [info]: calling getRecipes
+2025-01-14 00:10:44 [info]: getChefs- find all recipe
+2025-01-14 00:10:44 [info]: success fetching recipes from DB
+2025-01-14 00:10:44 [info]: success with getRecipes
+2025-01-14 00:10:44 [info]: calling getRecipes
+2025-01-14 00:10:44 [info]: getChefs- find all recipe
+2025-01-14 00:10:44 [info]: success fetching recipes from DB
+2025-01-14 00:10:44 [info]: success with getRecipes
+2025-01-14 00:10:53 [info]: calling getRecipes
+2025-01-14 00:10:53 [info]: getChefs- find all recipe
+2025-01-14 00:10:53 [info]: success fetching recipes from DB
+2025-01-14 00:10:53 [info]: success with getRecipes
+2025-01-14 00:10:53 [info]: calling getRecipes
+2025-01-14 00:10:53 [info]: getChefs- find all recipe
+2025-01-14 00:10:53 [info]: success fetching recipes from DB
+2025-01-14 00:10:53 [info]: success with getRecipes
+2025-01-14 00:11:19 [info]: calling getRecipes
+2025-01-14 00:11:19 [info]: getChefs- find all recipe
+2025-01-14 00:11:20 [info]: success fetching recipes from DB
+2025-01-14 00:11:20 [info]: success with getRecipes
+2025-01-14 00:11:20 [info]: calling getRecipes
+2025-01-14 00:11:20 [info]: getChefs- find all recipe
+2025-01-14 00:11:20 [info]: success fetching recipes from DB
+2025-01-14 00:11:20 [info]: success with getRecipes
+2025-01-14 01:19:11 [info]: calling getRecipes
+2025-01-14 01:19:11 [info]: getChefs- find all recipe
+2025-01-14 01:19:12 [info]: success fetching recipes from DB
+2025-01-14 01:19:12 [info]: success with getRecipes
+2025-01-14 01:19:12 [info]: calling getRecipes
+2025-01-14 01:19:12 [info]: getChefs- find all recipe
+2025-01-14 01:19:12 [info]: success fetching recipes from DB
+2025-01-14 01:19:12 [info]: success with getRecipes
+2025-01-14 11:17:20 [info]: calling getRecipes
+2025-01-14 11:17:20 [info]: getChefs- find all recipe
+2025-01-14 11:17:21 [info]: success fetching recipes from DB
+2025-01-14 11:17:21 [info]: success with getRecipes
+2025-01-14 11:17:21 [info]: calling getRecipes
+2025-01-14 11:17:21 [info]: getChefs- find all recipe
+2025-01-14 11:17:21 [info]: success fetching recipes from DB
+2025-01-14 11:17:21 [info]: success with getRecipes
+2025-01-14 11:46:42 [info]: calling getRecipes
+2025-01-14 11:46:42 [info]: getChefs- find all recipe
+2025-01-14 11:46:43 [info]: success fetching recipes from DB
+2025-01-14 11:46:43 [info]: success with getRecipes
+2025-01-14 11:47:52 [info]: calling getRecipes
+2025-01-14 11:47:52 [info]: getChefs- find all recipe
+2025-01-14 11:47:53 [info]: success fetching recipes from DB
+2025-01-14 11:47:53 [info]: success with getRecipes
+2025-01-14 11:53:55 [info]: calling getRecipes
+2025-01-14 11:53:55 [info]: getChefs- find all recipe
+2025-01-14 11:53:55 [info]: success fetching recipes from DB
+2025-01-14 11:53:55 [info]: success with getRecipes
+2025-01-14 12:09:45 [info]: calling getRecipes
+2025-01-14 12:09:45 [info]: getChefs- find all recipe
+2025-01-14 12:09:45 [info]: success fetching recipes from DB
+2025-01-14 12:09:46 [info]: success with getRecipes
+2025-01-14 12:12:24 [info]: calling getRecipes
+2025-01-14 12:12:24 [info]: getChefs- find all recipe
+2025-01-14 12:12:25 [info]: success fetching recipes from DB
+2025-01-14 12:12:25 [info]: success with getRecipes
+2025-01-14 12:12:25 [info]: calling getRecipes
+2025-01-14 12:12:25 [info]: getChefs- find all recipe
+2025-01-14 12:12:25 [info]: success fetching recipes from DB
+2025-01-14 12:12:25 [info]: success with getRecipes
+2025-01-14 12:13:44 [info]: calling getRecipes
+2025-01-14 12:13:44 [info]: getChefs- find all recipe
+2025-01-14 12:13:44 [info]: success fetching recipes from DB
+2025-01-14 12:13:44 [info]: success with getRecipes
+2025-01-14 12:13:44 [info]: calling getRecipes
+2025-01-14 12:13:44 [info]: getChefs- find all recipe
+2025-01-14 12:13:44 [info]: success fetching recipes from DB
+2025-01-14 12:13:44 [info]: success with getRecipes
+2025-01-14 12:13:46 [info]: Calling AddFavorite with userID : undefined
+2025-01-14 12:13:46 [info]: AddFavorite- add a favorite recipe to DB for user: [object Object]
+2025-01-14 12:13:46 [error]: Failed to add favorite recipe: undefined for user: [object Object]. Error: Cast to ObjectId failed for value "{ userID: undefined, recipeID: undefined }" (type Object) at path "_id" for model "users"
+2025-01-14 12:15:31 [info]: calling getRecipes
+2025-01-14 12:15:31 [info]: getChefs- find all recipe
+2025-01-14 12:15:32 [info]: success fetching recipes from DB
+2025-01-14 12:15:32 [info]: success with getRecipes
+2025-01-14 12:15:38 [info]: calling getRecipes
+2025-01-14 12:15:38 [info]: getChefs- find all recipe
+2025-01-14 12:15:39 [info]: success fetching recipes from DB
+2025-01-14 12:15:39 [info]: success with getRecipes
+2025-01-14 12:15:39 [info]: calling getRecipes
+2025-01-14 12:15:39 [info]: getChefs- find all recipe
+2025-01-14 12:15:39 [info]: success fetching recipes from DB
+2025-01-14 12:15:39 [info]: success with getRecipes
+2025-01-14 12:15:41 [info]: Calling AddFavorite with userID : undefined
+2025-01-14 12:15:41 [info]: AddFavorite- add a favorite recipe to DB for user: [object Object]
+2025-01-14 12:15:41 [error]: Failed to add favorite recipe: undefined for user: [object Object]. Error: Cast to ObjectId failed for value "{ userID: undefined, recipeID: undefined }" (type Object) at path "_id" for model "users"
+2025-01-14 12:17:05 [info]: calling getRecipes
+2025-01-14 12:17:05 [info]: getChefs- find all recipe
+2025-01-14 12:17:06 [info]: success fetching recipes from DB
+2025-01-14 12:17:06 [info]: success with getRecipes
+2025-01-14 12:17:10 [info]: calling getRecipes
+2025-01-14 12:17:10 [info]: getChefs- find all recipe
+2025-01-14 12:17:10 [info]: success fetching recipes from DB
+2025-01-14 12:17:10 [info]: success with getRecipes
+2025-01-14 12:17:14 [info]: calling getRecipes
+2025-01-14 12:17:14 [info]: getChefs- find all recipe
+2025-01-14 12:17:15 [info]: success fetching recipes from DB
+2025-01-14 12:17:15 [info]: success with getRecipes
+2025-01-14 12:17:15 [info]: calling getRecipes
+2025-01-14 12:17:15 [info]: getChefs- find all recipe
+2025-01-14 12:17:15 [info]: success fetching recipes from DB
+2025-01-14 12:17:15 [info]: success with getRecipes
+2025-01-14 12:17:16 [info]: Calling AddFavorite with userID : undefined
+2025-01-14 12:17:16 [info]: AddFavorite- add a favorite recipe to DB for user: [object Object]
+2025-01-14 12:17:16 [error]: Failed to add favorite recipe: undefined for user: [object Object]. Error: Cast to ObjectId failed for value "{ userID: undefined, recipeID: '676046a9ce9abf8bb07801fc' }" (type Object) at path "_id" for model "users"
+2025-01-14 12:17:18 [info]: Calling AddFavorite with userID : undefined
+2025-01-14 12:17:18 [info]: AddFavorite- add a favorite recipe to DB for user: [object Object]
+2025-01-14 12:17:18 [error]: Failed to add favorite recipe: undefined for user: [object Object]. Error: Cast to ObjectId failed for value "{ userID: undefined, recipeID: '676046a9ce9abf8bb07801fc' }" (type Object) at path "_id" for model "users"
+2025-01-14 12:17:48 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-14 12:17:48 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-14 12:17:48 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-14 12:17:48 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-14 12:17:48 [info]: success with signIn true
+2025-01-14 12:17:52 [info]: Calling AddFavorite with userID : undefined
+2025-01-14 12:17:52 [info]: AddFavorite- add a favorite recipe to DB for user: [object Object]
+2025-01-14 12:17:52 [error]: Failed to add favorite recipe: undefined for user: [object Object]. Error: Cast to ObjectId failed for value "{ userID: undefined, recipeID: '676046cece9abf8bb07801fd' }" (type Object) at path "_id" for model "users"
+2025-01-14 12:18:13 [info]: calling getRecipes
+2025-01-14 12:18:13 [info]: getChefs- find all recipe
+2025-01-14 12:18:13 [info]: success fetching recipes from DB
+2025-01-14 12:18:13 [info]: success with getRecipes
+2025-01-14 12:18:18 [info]: calling getRecipes
+2025-01-14 12:18:18 [info]: getChefs- find all recipe
+2025-01-14 12:18:19 [info]: success fetching recipes from DB
+2025-01-14 12:18:19 [info]: success with getRecipes
+2025-01-14 12:18:19 [info]: calling getRecipes
+2025-01-14 12:18:19 [info]: getChefs- find all recipe
+2025-01-14 12:18:19 [info]: success fetching recipes from DB
+2025-01-14 12:18:19 [info]: success with getRecipes
+2025-01-14 12:18:20 [info]: Calling AddFavorite with userID : undefined
+2025-01-14 12:18:20 [info]: AddFavorite- add a favorite recipe to DB for user: [object Object]
+2025-01-14 12:18:20 [error]: Failed to add favorite recipe: undefined for user: [object Object]. Error: Cast to ObjectId failed for value "{ userID: undefined, recipeID: '676046a9ce9abf8bb07801fc' }" (type Object) at path "_id" for model "users"
+2025-01-14 12:20:57 [info]: calling getRecipes
+2025-01-14 12:20:57 [info]: getChefs- find all recipe
+2025-01-14 12:20:57 [info]: success fetching recipes from DB
+2025-01-14 12:20:57 [info]: success with getRecipes
+2025-01-14 12:21:02 [info]: calling getRecipes
+2025-01-14 12:21:02 [info]: getChefs- find all recipe
+2025-01-14 12:21:02 [info]: success fetching recipes from DB
+2025-01-14 12:21:02 [info]: success with getRecipes
+2025-01-14 12:21:02 [info]: calling getRecipes
+2025-01-14 12:21:02 [info]: getChefs- find all recipe
+2025-01-14 12:21:02 [info]: success fetching recipes from DB
+2025-01-14 12:21:02 [info]: success with getRecipes
+2025-01-14 12:21:04 [info]: Calling AddFavorite with userID : undefined
+2025-01-14 12:21:04 [info]: AddFavorite- add a favorite recipe to DB for user: [object Object]
+2025-01-14 12:21:04 [error]: Failed to add favorite recipe: undefined for user: [object Object]. Error: Cast to ObjectId failed for value "{ userID: undefined, recipeID: '676046a9ce9abf8bb07801fc' }" (type Object) at path "_id" for model "users"
+2025-01-14 12:21:52 [info]: calling getRecipes
+2025-01-14 12:21:52 [info]: getChefs- find all recipe
+2025-01-14 12:21:53 [info]: success fetching recipes from DB
+2025-01-14 12:21:53 [info]: success with getRecipes
+2025-01-14 12:22:14 [info]: calling getRecipes
+2025-01-14 12:22:14 [info]: getChefs- find all recipe
+2025-01-14 12:22:15 [info]: success fetching recipes from DB
+2025-01-14 12:22:15 [info]: success with getRecipes
+2025-01-14 12:22:15 [info]: calling getRecipes
+2025-01-14 12:22:15 [info]: getChefs- find all recipe
+2025-01-14 12:22:15 [info]: success fetching recipes from DB
+2025-01-14 12:22:15 [info]: success with getRecipes
+2025-01-14 12:22:16 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 12:22:16 [info]: AddFavorite- add a favorite recipe to DB for user: [object Object]
+2025-01-14 12:22:16 [error]: Failed to add favorite recipe: undefined for user: [object Object]. Error: Cast to ObjectId failed for value "{
+  userID: '677d2cd0b0b09f6df5cdb52e',
+  recipeID: '676046a9ce9abf8bb07801fc'
+}" (type Object) at path "_id" for model "users"
+2025-01-14 12:23:35 [info]: calling getRecipes
+2025-01-14 12:23:35 [info]: getChefs- find all recipe
+2025-01-14 12:23:35 [info]: success fetching recipes from DB
+2025-01-14 12:23:35 [info]: success with getRecipes
+2025-01-14 12:23:35 [info]: calling getRecipes
+2025-01-14 12:23:35 [info]: getChefs- find all recipe
+2025-01-14 12:23:35 [info]: success fetching recipes from DB
+2025-01-14 12:23:35 [info]: success with getRecipes
+2025-01-14 12:23:37 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 12:23:37 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 12:23:37 [info]: add recipe: 676046a9ce9abf8bb07801fc to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 12:23:37 [info]: success with AddFavorite to DB
+2025-01-14 12:30:50 [info]: calling getRecipes
+2025-01-14 12:30:50 [info]: getChefs- find all recipe
+2025-01-14 12:30:50 [info]: success fetching recipes from DB
+2025-01-14 12:30:50 [info]: success with getRecipes
+2025-01-14 12:30:50 [info]: calling getRecipes
+2025-01-14 12:30:50 [info]: getChefs- find all recipe
+2025-01-14 12:30:51 [info]: success fetching recipes from DB
+2025-01-14 12:30:51 [info]: success with getRecipes
+2025-01-14 12:31:07 [info]: Calling signIn with email: h@gmail.com and password: 1234567
+2025-01-14 12:31:07 [info]: signIn- find chef with email: h@gmail.com and password 1234567
+2025-01-14 12:31:08 [info]: found a chef with the email" h@gmail.com
+2025-01-14 12:31:08 [info]: found a chef with email: h@gmail.com and password 1234567 
+2025-01-14 12:31:08 [info]: success with signIn true
+2025-01-14 12:31:16 [info]: Calling AddFavorite with userID : 677ab8f592cd6df1209b41f1
+2025-01-14 12:31:16 [info]: AddFavorite- add a favorite recipe to DB for user: 677ab8f592cd6df1209b41f1
+2025-01-14 12:31:16 [info]: add recipe: 676046cece9abf8bb07801fd to user 677ab8f592cd6df1209b41f1
+2025-01-14 12:31:16 [info]: success with AddFavorite to DB
+2025-01-14 12:45:26 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:45:26 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:45:26 [error]: Cannot access 'User' before initialization
+2025-01-14 12:45:26 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:45:26 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:45:26 [error]: Cannot access 'User' before initialization
+2025-01-14 12:49:01 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:49:01 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:49:01 [error]: Cannot access 'User' before initialization
+2025-01-14 12:49:06 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:49:06 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:49:06 [error]: Cannot access 'User' before initialization
+2025-01-14 12:49:08 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:49:08 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:49:08 [error]: Cannot access 'User' before initialization
+2025-01-14 12:52:17 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:52:17 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:52:17 [error]: this is a err: ReferenceError: Cannot access 'User' before initialization 
+2025-01-14 12:52:17 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:52:17 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:52:17 [error]: this is a err: ReferenceError: Cannot access 'User' before initialization 
+2025-01-14 12:54:12 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:54:12 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:54:12 [error]: this is a err: ReferenceError: userId is not defined 
+2025-01-14 12:54:12 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:54:12 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:54:12 [error]: this is a err: ReferenceError: userId is not defined 
+2025-01-14 12:55:33 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:33 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:33 [error]: this is a err: ReferenceError: userId is not defined 
+2025-01-14 12:55:33 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:33 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:33 [error]: this is a err: ReferenceError: userId is not defined 
+2025-01-14 12:55:42 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:42 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:43 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:43 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-14 12:55:43 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:43 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:43 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:55:43 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-14 12:56:05 [info]: calling getRecipes
+2025-01-14 12:56:05 [info]: getChefs- find all recipe
+2025-01-14 12:56:05 [info]: success fetching recipes from DB
+2025-01-14 12:56:05 [info]: success with getRecipes
+2025-01-14 12:56:05 [info]: calling getRecipes
+2025-01-14 12:56:05 [info]: getChefs- find all recipe
+2025-01-14 12:56:05 [info]: success fetching recipes from DB
+2025-01-14 12:56:05 [info]: success with getRecipes
+2025-01-14 12:56:07 [info]: Calling AddFavorite with userID : 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:07 [info]: AddFavorite- add a favorite recipe to DB for user: 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:08 [info]: add recipe: 676046f1ce9abf8bb07801ff to user 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:08 [info]: success with AddFavorite to DB
+2025-01-14 12:56:09 [info]: Calling AddFavorite with userID : 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:09 [info]: AddFavorite- add a favorite recipe to DB for user: 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:09 [info]: add recipe: 67604708ce9abf8bb0780200 to user 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:09 [info]: success with AddFavorite to DB
+2025-01-14 12:56:10 [info]: Calling AddFavorite with userID : 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:10 [info]: AddFavorite- add a favorite recipe to DB for user: 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:10 [info]: add recipe: 67616ab2c713f8f0218320c0 to user 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:10 [info]: success with AddFavorite to DB
+2025-01-14 12:56:12 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:12 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:12 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:12 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-14 12:56:12 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:12 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:13 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-14 12:56:13 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-14 12:59:52 [info]: calling getRecipes
+2025-01-14 12:59:52 [info]: getChefs- find all recipe
+2025-01-14 12:59:52 [info]: success fetching recipes from DB
+2025-01-14 12:59:52 [info]: success with getRecipes
+2025-01-14 12:59:52 [info]: calling getRecipes
+2025-01-14 12:59:52 [info]: getChefs- find all recipe
+2025-01-14 12:59:52 [info]: success fetching recipes from DB
+2025-01-14 12:59:52 [info]: success with getRecipes
+2025-01-14 13:00:04 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-14 13:00:04 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-14 13:00:05 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-14 13:00:05 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-14 13:00:05 [info]: success with signIn true
+2025-01-14 13:00:07 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:07 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:07 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:07 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:00:07 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:07 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:07 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:07 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:00:10 [info]: calling getRecipes
+2025-01-14 13:00:10 [info]: getChefs- find all recipe
+2025-01-14 13:00:10 [info]: success fetching recipes from DB
+2025-01-14 13:00:10 [info]: success with getRecipes
+2025-01-14 13:00:10 [info]: calling getRecipes
+2025-01-14 13:00:10 [info]: getChefs- find all recipe
+2025-01-14 13:00:11 [info]: success fetching recipes from DB
+2025-01-14 13:00:11 [info]: success with getRecipes
+2025-01-14 13:00:14 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:14 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:14 [info]: add recipe: 67604813ce9abf8bb0780202 to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:14 [info]: success with AddFavorite to DB
+2025-01-14 13:00:15 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:15 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:15 [info]: add recipe: 67604854ce9abf8bb0780203 to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:15 [info]: success with AddFavorite to DB
+2025-01-14 13:00:17 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:17 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:17 [info]: add recipe: 676046f1ce9abf8bb07801ff to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:17 [info]: success with AddFavorite to DB
+2025-01-14 13:00:20 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:20 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:21 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:21 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:00:21 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:21 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:21 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:21 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:00:31 [info]: calling getRecipes
+2025-01-14 13:00:31 [info]: getChefs- find all recipe
+2025-01-14 13:00:31 [info]: success fetching recipes from DB
+2025-01-14 13:00:31 [info]: success with getRecipes
+2025-01-14 13:00:31 [info]: calling getRecipes
+2025-01-14 13:00:31 [info]: getChefs- find all recipe
+2025-01-14 13:00:32 [info]: success fetching recipes from DB
+2025-01-14 13:00:32 [info]: success with getRecipes
+2025-01-14 13:00:33 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-14 13:00:33 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-14 13:00:33 [info]: found recipes of category: Meat
+2025-01-14 13:00:33 [info]: success with fetchRecipesCategory category: Meat
+2025-01-14 13:00:33 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-14 13:00:33 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-14 13:00:33 [info]: found recipes of category: Meat
+2025-01-14 13:00:33 [info]: success with fetchRecipesCategory category: Meat
+2025-01-14 13:00:36 [info]: calling getRecipes
+2025-01-14 13:00:36 [info]: getChefs- find all recipe
+2025-01-14 13:00:36 [info]: success fetching recipes from DB
+2025-01-14 13:00:36 [info]: success with getRecipes
+2025-01-14 13:00:36 [info]: calling getRecipes
+2025-01-14 13:00:36 [info]: getChefs- find all recipe
+2025-01-14 13:00:36 [info]: success fetching recipes from DB
+2025-01-14 13:00:36 [info]: success with getRecipes
+2025-01-14 13:00:39 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:39 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:39 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:39 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:00:39 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:39 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:39 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:39 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:00:42 [info]: calling getRecipes
+2025-01-14 13:00:42 [info]: getChefs- find all recipe
+2025-01-14 13:00:43 [info]: success fetching recipes from DB
+2025-01-14 13:00:43 [info]: success with getRecipes
+2025-01-14 13:00:43 [info]: calling getRecipes
+2025-01-14 13:00:43 [info]: getChefs- find all recipe
+2025-01-14 13:00:43 [info]: success fetching recipes from DB
+2025-01-14 13:00:43 [info]: success with getRecipes
+2025-01-14 13:00:49 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:49 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:49 [info]: add recipe: 677fa5e566f0bdf7b78d295d to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:49 [info]: success with AddFavorite to DB
+2025-01-14 13:00:50 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:50 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:50 [info]: add recipe: 677d8012edd69aa5e5a633fc to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:50 [info]: success with AddFavorite to DB
+2025-01-14 13:00:51 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:51 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:51 [info]: add recipe: 6783d3b44c487da11d2abe33 to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:51 [info]: success with AddFavorite to DB
+2025-01-14 13:00:53 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:53 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:53 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:53 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:00:53 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:53 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:53 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:00:53 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:01:02 [info]: calling getRecipes
+2025-01-14 13:01:02 [info]: getChefs- find all recipe
+2025-01-14 13:01:02 [info]: success fetching recipes from DB
+2025-01-14 13:01:02 [info]: success with getRecipes
+2025-01-14 13:01:02 [info]: calling getRecipes
+2025-01-14 13:01:02 [info]: getChefs- find all recipe
+2025-01-14 13:01:02 [info]: success fetching recipes from DB
+2025-01-14 13:01:02 [info]: success with getRecipes
+2025-01-14 13:24:07 [info]: calling getRecipes
+2025-01-14 13:24:07 [info]: getChefs- find all recipe
+2025-01-14 13:24:08 [info]: success fetching recipes from DB
+2025-01-14 13:24:08 [info]: success with getRecipes
+2025-01-14 13:24:08 [info]: calling getRecipes
+2025-01-14 13:24:08 [info]: getChefs- find all recipe
+2025-01-14 13:24:08 [info]: success fetching recipes from DB
+2025-01-14 13:24:08 [info]: success with getRecipes
+2025-01-14 13:24:21 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:21 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:21 [info]: add recipe: 676046cece9abf8bb07801fd to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:21 [info]: success with AddFavorite to DB
+2025-01-14 13:24:23 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:23 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:24 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:24 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:24:24 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:24 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:24 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:24 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:24:32 [info]: calling getRecipes
+2025-01-14 13:24:32 [info]: getChefs- find all recipe
+2025-01-14 13:24:32 [info]: success fetching recipes from DB
+2025-01-14 13:24:32 [info]: success with getRecipes
+2025-01-14 13:24:32 [info]: calling getRecipes
+2025-01-14 13:24:32 [info]: getChefs- find all recipe
+2025-01-14 13:24:32 [info]: success fetching recipes from DB
+2025-01-14 13:24:32 [info]: success with getRecipes
+2025-01-14 13:24:33 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:33 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:34 [info]: add recipe: 676046cece9abf8bb07801fd to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:34 [info]: success with AddFavorite to DB
+2025-01-14 13:24:35 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:35 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:35 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:35 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:24:35 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:35 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:36 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:24:36 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:25:19 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:25:19 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:25:19 [info]: add recipe: 676046f1ce9abf8bb07801ff to user 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:25:19 [info]: success with AddFavorite to DB
+2025-01-14 13:35:50 [info]: calling getRecipes
+2025-01-14 13:35:50 [info]: getChefs- find all recipe
+2025-01-14 13:35:50 [info]: success fetching recipes from DB
+2025-01-14 13:35:50 [info]: success with getRecipes
+2025-01-14 13:35:50 [info]: calling getRecipes
+2025-01-14 13:35:50 [info]: getChefs- find all recipe
+2025-01-14 13:35:50 [info]: success fetching recipes from DB
+2025-01-14 13:35:50 [info]: success with getRecipes
+2025-01-14 13:40:01 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-14 13:40:01 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-14 13:40:01 [info]: found recipes of category: Meat
+2025-01-14 13:40:01 [info]: success with fetchRecipesCategory category: Meat
+2025-01-14 13:40:01 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-14 13:40:01 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-14 13:40:01 [info]: found recipes of category: Meat
+2025-01-14 13:40:01 [info]: success with fetchRecipesCategory category: Meat
+2025-01-14 13:40:06 [info]: calling getRecipes
+2025-01-14 13:40:06 [info]: getChefs- find all recipe
+2025-01-14 13:40:06 [info]: success fetching recipes from DB
+2025-01-14 13:40:06 [info]: success with getRecipes
+2025-01-14 13:40:06 [info]: calling getRecipes
+2025-01-14 13:40:06 [info]: getChefs- find all recipe
+2025-01-14 13:40:06 [info]: success fetching recipes from DB
+2025-01-14 13:40:06 [info]: success with getRecipes
+2025-01-14 13:46:03 [info]: getRecipe - calling recipe with ID: 676046cece9abf8bb07801fd
+2025-01-14 13:46:03 [info]: fetchRecipe- find recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-14 13:46:03 [info]: found a recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-14 13:46:03 [info]: success with getRecipe id: 676046cece9abf8bb07801fd
+2025-01-14 13:46:03 [info]: getRecipe - calling recipe with ID: 676046cece9abf8bb07801fd
+2025-01-14 13:46:03 [info]: fetchRecipe- find recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-14 13:46:04 [info]: found a recipe with recipeID: 676046cece9abf8bb07801fd
+2025-01-14 13:46:04 [info]: success with getRecipe id: 676046cece9abf8bb07801fd
+2025-01-14 13:48:45 [info]: calling getRecipes
+2025-01-14 13:48:45 [info]: getChefs- find all recipe
+2025-01-14 13:48:46 [info]: success fetching recipes from DB
+2025-01-14 13:48:46 [info]: success with getRecipes
+2025-01-14 13:48:46 [info]: calling getRecipes
+2025-01-14 13:48:46 [info]: getChefs- find all recipe
+2025-01-14 13:48:48 [info]: success fetching recipes from DB
+2025-01-14 13:48:48 [info]: success with getRecipes
+2025-01-14 13:51:25 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-14 13:51:25 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-14 13:51:25 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-14 13:51:25 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-14 13:51:25 [info]: success with signIn true
+2025-01-14 13:51:26 [info]: calling getRecipes
+2025-01-14 13:51:26 [info]: getChefs- find all recipe
+2025-01-14 13:51:26 [info]: success fetching recipes from DB
+2025-01-14 13:51:26 [info]: success with getRecipes
+2025-01-14 13:51:26 [info]: calling getRecipes
+2025-01-14 13:51:26 [info]: getChefs- find all recipe
+2025-01-14 13:51:26 [info]: success fetching recipes from DB
+2025-01-14 13:51:26 [info]: success with getRecipes
+2025-01-14 13:53:17 [info]: calling getRecipes
+2025-01-14 13:53:17 [info]: getChefs- find all recipe
+2025-01-14 13:53:19 [info]: success fetching recipes from DB
+2025-01-14 13:53:19 [info]: success with getRecipes
+2025-01-14 13:53:19 [info]: calling getRecipes
+2025-01-14 13:53:19 [info]: getChefs- find all recipe
+2025-01-14 13:53:21 [info]: success fetching recipes from DB
+2025-01-14 13:53:21 [info]: success with getRecipes
+2025-01-14 13:54:39 [info]: calling getRecipes
+2025-01-14 13:54:39 [info]: getChefs- find all recipe
+2025-01-14 13:54:40 [info]: success fetching recipes from DB
+2025-01-14 13:54:40 [info]: success with getRecipes
+2025-01-14 13:54:40 [info]: calling getRecipes
+2025-01-14 13:54:40 [info]: getChefs- find all recipe
+2025-01-14 13:54:40 [info]: success fetching recipes from DB
+2025-01-14 13:54:40 [info]: success with getRecipes
+2025-01-14 13:55:11 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-14 13:55:11 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-14 13:55:13 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-14 13:55:13 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-14 13:55:13 [info]: success with signIn true
+2025-01-14 13:55:18 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:55:18 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:55:18 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:55:18 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:55:18 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:55:18 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:55:19 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-14 13:55:19 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-14 13:55:48 [info]: calling getRecipes
+2025-01-14 13:55:48 [info]: getChefs- find all recipe
+2025-01-14 13:55:48 [info]: success fetching recipes from DB
+2025-01-14 13:55:48 [info]: success with getRecipes
+2025-01-14 13:55:48 [info]: calling getRecipes
+2025-01-14 13:55:48 [info]: getChefs- find all recipe
+2025-01-14 13:55:48 [info]: success fetching recipes from DB
+2025-01-14 13:55:48 [info]: success with getRecipes
+2025-01-14 13:55:52 [info]: calling getRecipes
+2025-01-14 13:55:52 [info]: getChefs- find all recipe
+2025-01-14 13:55:52 [info]: success fetching recipes from DB
+2025-01-14 13:55:52 [info]: success with getRecipes
+2025-01-14 13:55:52 [info]: calling getRecipes
+2025-01-14 13:55:52 [info]: getChefs- find all recipe
+2025-01-14 13:55:53 [info]: success fetching recipes from DB
+2025-01-14 13:55:53 [info]: success with getRecipes
+2025-01-14 14:01:00 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-14 14:01:00 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-14 14:01:02 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-14 14:01:02 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-14 14:01:02 [info]: success with signIn true
+2025-01-14 14:03:58 [info]: calling getRecipes
+2025-01-14 14:03:58 [info]: getChefs- find all recipe
+2025-01-14 14:03:59 [info]: success fetching recipes from DB
+2025-01-14 14:03:59 [info]: success with getRecipes
+2025-01-14 14:03:59 [info]: calling getRecipes
+2025-01-14 14:03:59 [info]: getChefs- find all recipe
+2025-01-14 14:03:59 [info]: success fetching recipes from DB
+2025-01-14 14:03:59 [info]: success with getRecipes
+2025-01-14 14:04:34 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-14 14:04:34 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-14 14:04:35 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-14 14:04:35 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-14 14:04:35 [info]: success with signIn true
+2025-01-14 14:04:55 [info]: calling getRecipes
+2025-01-14 14:04:55 [info]: getChefs- find all recipe
+2025-01-14 14:04:55 [info]: success fetching recipes from DB
+2025-01-14 14:04:55 [info]: success with getRecipes
+2025-01-14 14:04:55 [info]: calling getRecipes
+2025-01-14 14:04:55 [info]: getChefs- find all recipe
+2025-01-14 14:04:56 [info]: success fetching recipes from DB
+2025-01-14 14:04:56 [info]: success with getRecipes
+2025-01-14 14:18:47 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-14 14:18:47 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-14 14:18:47 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-14 14:18:47 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-14 14:18:47 [info]: success with signIn true
+2025-01-14 14:18:47 [info]: calling getRecipes
+2025-01-14 14:18:47 [info]: getChefs- find all recipe
+2025-01-14 14:18:48 [info]: success fetching recipes from DB
+2025-01-14 14:18:48 [info]: success with getRecipes
+2025-01-14 14:18:48 [info]: calling getRecipes
+2025-01-14 14:18:48 [info]: getChefs- find all recipe
+2025-01-14 14:18:48 [info]: success fetching recipes from DB
+2025-01-14 14:18:48 [info]: success with getRecipes
+2025-01-14 14:19:00 [info]: calling getRecipes
+2025-01-14 14:19:00 [info]: getChefs- find all recipe
+2025-01-14 14:19:00 [info]: success fetching recipes from DB
+2025-01-14 14:19:00 [info]: success with getRecipes
+2025-01-14 14:19:00 [info]: calling getRecipes
+2025-01-14 14:19:00 [info]: getChefs- find all recipe
+2025-01-14 14:19:00 [info]: success fetching recipes from DB
+2025-01-14 14:19:00 [info]: success with getRecipes
+2025-01-14 14:19:34 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-14 14:19:34 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-14 14:19:35 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-14 14:19:35 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-14 14:19:35 [info]: success with signIn true
+2025-01-14 14:19:35 [info]: calling getRecipes
+2025-01-14 14:19:35 [info]: getChefs- find all recipe
+2025-01-14 14:19:35 [info]: success fetching recipes from DB
+2025-01-14 14:19:35 [info]: success with getRecipes
+2025-01-14 14:19:35 [info]: calling getRecipes
+2025-01-14 14:19:35 [info]: getChefs- find all recipe
+2025-01-14 14:19:35 [info]: success fetching recipes from DB
+2025-01-14 14:19:35 [info]: success with getRecipes
+2025-01-14 14:19:37 [info]: getRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-14 14:19:37 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-14 14:19:37 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-14 14:19:37 [info]: success with getRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-14 14:19:37 [info]: getRecipe - calling recipe with ID: 676046a9ce9abf8bb07801fc
+2025-01-14 14:19:37 [info]: fetchRecipe- find recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-14 14:19:37 [info]: found a recipe with recipeID: 676046a9ce9abf8bb07801fc
+2025-01-14 14:19:37 [info]: success with getRecipe id: 676046a9ce9abf8bb07801fc
+2025-01-14 14:19:40 [info]: calling getRecipes
+2025-01-14 14:19:40 [info]: getChefs- find all recipe
+2025-01-14 14:19:40 [info]: success fetching recipes from DB
+2025-01-14 14:19:40 [info]: success with getRecipes
+2025-01-14 14:19:40 [info]: calling getRecipes
+2025-01-14 14:19:40 [info]: getChefs- find all recipe
+2025-01-14 14:19:40 [info]: success fetching recipes from DB
+2025-01-14 14:19:40 [info]: success with getRecipes
+2025-01-14 14:19:41 [info]: getRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-14 14:19:41 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-14 14:19:41 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-14 14:19:41 [info]: success with getRecipe id: 67616ab2c713f8f0218320c0
+2025-01-14 14:19:41 [info]: getRecipe - calling recipe with ID: 67616ab2c713f8f0218320c0
+2025-01-14 14:19:41 [info]: fetchRecipe- find recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-14 14:19:41 [info]: found a recipe with recipeID: 67616ab2c713f8f0218320c0
+2025-01-14 14:19:41 [info]: success with getRecipe id: 67616ab2c713f8f0218320c0
+2025-01-14 14:19:44 [info]: calling getRecipes
+2025-01-14 14:19:44 [info]: getChefs- find all recipe
+2025-01-14 14:19:44 [info]: success fetching recipes from DB
+2025-01-14 14:19:44 [info]: success with getRecipes
+2025-01-14 14:19:44 [info]: calling getRecipes
+2025-01-14 14:19:44 [info]: getChefs- find all recipe
+2025-01-14 14:19:44 [info]: success fetching recipes from DB
+2025-01-14 14:19:44 [info]: success with getRecipes

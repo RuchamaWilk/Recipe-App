@@ -1,6 +1,5 @@
 // client/src/services/api.jsx
 import axios from 'axios';
-//import verifyJwt from '../../../server/utils/jwt';
 
 const BASE_URL = 'http://localhost:8080/api';
 
@@ -17,6 +16,7 @@ export const fetchRecipes = async () => {
 
 export const fetchRecipesById = async (id) => {
   try {
+    console.log("HI WHAT ARE YOU DOING HERE?")
     const response = await axios.get(`${BASE_URL}/recipes/${id}`);
     return response.data;
   } catch (error) {
@@ -51,7 +51,6 @@ export const addRecipe = async (recipeData) => {
       }
     });
     
-    console.log("now??? " ,response)
     return response.data;
   } catch (error) {
     console.error('Error adding recipe:', error);
@@ -91,6 +90,33 @@ export const addChefToDb = async (chefData) => {
       throw error;
     }
 };
+
+
+export const fetchFavoriteRecipes = async (userId) => {
+  try {
+    console.log("Fetching favorite recipes for user:", userId);
+    const response = await axios.get(`${BASE_URL}/auth/favorite/${userId}`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching recipes:', error);
+    throw error;
+  }
+};
+
+export const addFavoriteRecipes = async (userID, recipeID) => {
+  try {
+    console.log(`add favorite recipes to user:  ${userID} and recipe id: ${recipeID}`);
+    const response = await axios.post(`${BASE_URL}/auth/addFavorite`,{userID,recipeID});
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching recipes:', error);
+    throw error;
+  }
+};
+
+
+
+
 
 
 

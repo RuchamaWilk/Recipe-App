@@ -10,7 +10,7 @@ const errorMiddleware = require('../middlewares/erroeMiddleware')
 
 router.use('/auth', authController);
 router.post('/recipes/add', verifyChef, recipesController); // הוספת מתכון (נגיש רק לשפים)
-router.use('/recipes', recipesMiddleware, recipesController);
+router.use('/recipes', recipesController);
 
 
 router.use((req, res, next) => {

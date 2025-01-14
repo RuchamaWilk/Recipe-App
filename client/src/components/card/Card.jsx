@@ -15,6 +15,8 @@ import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import PersonIcon from '@mui/icons-material/Person';
+import {jwtDecode} from "jwt-decode";
+import {addFavoriteRecipes} from '../../services/apiService'
 
 const Card = ({ recipe }) => {
   const navigate = useNavigate();
@@ -25,9 +27,26 @@ const Card = ({ recipe }) => {
     navigate(`/recipe/${recipe._id}`);
   };
 
-  const handleFavoriteClick = (e) => {
+  const getUserIdFromToken=()=>{
+    console.log("WHAT?")
+    const token = localStorage.getItem('token');
+    if (!token) {
+      console.error("Token not found");
+      return null;
+    }
+    const decodedToken = jwtDecode(token);
+    console.log(decodedToken._id)
+    return decodedToken._id;
+
+  }
+
+  const  handleFavoriteClick = async(e) => {
     e.stopPropagation();
     setIsFavorite(!isFavorite);
+    const userID =getUserIdFromToken();
+    console.log("handleFavoriteClick")
+    await addFavoriteRecipes(userID,recipe._id );
+    
   };
 
   return (

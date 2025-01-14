@@ -69,7 +69,10 @@ function ResponsiveAppBar() {
 
   const handleFavorites = () => {
     handleMenuClose();
-    navigate('/favorite');
+    const token = localStorage.getItem('token');
+    const decodedToken = jwtDecode(token);
+
+    navigate(`/favorite/${decodedToken._id}`);
   };
   
   const menuItems = userType === 'chef'

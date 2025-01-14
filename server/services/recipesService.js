@@ -14,7 +14,7 @@ const getRecipes = async () => {
     }
 };
 
-const fetchRecipe = async (recipeID) => {
+const getRecipe = async (recipeID) => {
     try {
         logger.info(`fetchRecipe- find recipe with recipeID: ${recipeID}`)
         const recipe = await Recipe.findOne({ _id: recipeID });
@@ -55,10 +55,10 @@ const addRecipe= async(recipe)=>{
     } catch (err) {
         logger.error(err)
         return Promise.reject(err);
-    }
-    
-    
+    }  
 }
 
 
-module.exports = { getRecipes, fetchRecipe,fetchRecipesCategory,addRecipe};
+
+
+module.exports = { getRecipes, getRecipe,fetchRecipesCategory,addRecipe};

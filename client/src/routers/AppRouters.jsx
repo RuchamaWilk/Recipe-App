@@ -7,7 +7,7 @@ import AddRecipePage from '../pages/add-recipe-page/AddRecipePage';
 import ErrPage from '../pages/err-page/errPage'
 import SignUpPageChef from '../pages/sign-up-page/SignUpPageChef'
 import ProtectedRoute from './ProtectedRouts';
-import MyFavorite from  '../pages/my-favorite-page/MyFavoritePage'
+import MyFavoritePage from  '../pages/my-favorite-page/MyFavoritePage'
 
 
 function AppRouters() {
@@ -25,10 +25,10 @@ function AppRouters() {
           </ProtectedRoute>
         } 
       />
-      <Route path="/favorite" 
+      <Route path="/favorite/:userID" 
         element={
           <ProtectedRoute allowedTypes={['user']}>
-            <MyFavorite />
+            <MyFavoritePage />
           </ProtectedRoute>
         } 
       />
