@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { 
-  Box,
-  Container,
-  Typography,
-  TextField,
-  Button,
-  Paper,
-  IconButton,
-  Divider
-} from '@mui/material';
+import { Box,Container,Typography,TextField,Button,Paper,IconButton,Divider} from '@mui/material';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
-
 import SendIcon from '@mui/icons-material/Send';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
@@ -27,6 +17,7 @@ const AddRecipePage = () => {
     instructions: [{ name: '' }],
     category: ''
   });
+
   const navigate = useNavigate();
 
   const handleChange = (e) => {

@@ -4,7 +4,7 @@ import './App.css';
 import Layout from './layout/Layout';
 import AppRouters from './routers/AppRouters';
 import ScrollToTop from './utils/scrollToTop';
-import {UserProvider} from './providers/UserProviser'
+import {UserProvider} from './providers/UserProvider'
 
 function App() {
   return (
