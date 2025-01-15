@@ -7,6 +7,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import PersonIcon from '@mui/icons-material/Person';
 import {addFavoriteRecipes,removeFavoriteRecipe} from '../../services/apiService'
 import {useUser} from '../../providers/UserProvider'
+import SignInDialog from '../../components/signInDialog/SignInDialog'
 
 const Card = ({ recipe }) => {
   const navigate = useNavigate();
@@ -14,6 +15,8 @@ const Card = ({ recipe }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const { user, setUser, fetchChefName } = useUser();
   const [chefName, setChefName] = useState('');
+  const [openDialog, setOpenDialog] = useState(false);
+
 
   useEffect(() => {
     const getChefName = async () => {
@@ -41,7 +44,7 @@ const Card = ({ recipe }) => {
 
 
 
-  const  handleFavoriteClick = async(e) => {
+  const handleFavoriteClick = async(e) => {
     e.stopPropagation();
     if(user){
       try {
@@ -64,10 +67,15 @@ const Card = ({ recipe }) => {
 
     }
     else{
-      console.log("here will be want to ssign up?")
+      setOpenDialog(true);    
     }
 
   };
+
+  const handleDialogClick = (e) => {
+    e.stopPropagation();
+};
+
 
   return (
     <CardUi
@@ -207,7 +215,16 @@ const Card = ({ recipe }) => {
           }}
         />
       </CardContent>
+      <SignInDialog
+    open={openDialog}
+    onClose={(e) => {
+        handleDialogClick(e);
+        setOpenDialog(false);
+    }}
+    onClick={handleDialogClick} // נוסיף את זה
+/>
     </CardUi>
+    
   );
 };
 

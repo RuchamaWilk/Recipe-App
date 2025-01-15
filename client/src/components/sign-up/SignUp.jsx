@@ -13,12 +13,17 @@ const SignUp = ({ open, onClose }) => {
   const [passwordError, setPasswordError] = useState('');
   const [userNameError, setUserNameError] = useState('');
 
+  const handleDialogClick = (e) => {
+    e.stopPropagation();
+  };
+
   const handleClose = () =>{
     setEmailError('');
     setPasswordError('');
     setUserNameError('');
     setUserName('');
     setEmail('');
+    setPassword('');
     onClose();
   }
   
@@ -29,6 +34,10 @@ const SignUp = ({ open, onClose }) => {
     setUserNameError(validateUserName(userName));
     setEmailError(validateEmail(email));
     setPasswordError(validatePassword(password));
+    if (userNameError || emailError || passwordError) {
+      return; // אם יש שגיאות, נצא מהפונקציה בלי לסגור את החלון
+    }
+
     try {
       console.log('addUserToDb');
       await addUserToDb(userName, email, password);
@@ -42,7 +51,9 @@ const SignUp = ({ open, onClose }) => {
     <Dialog
     open={open}
     onClose={handleClose}
+    onClick={handleDialogClick}
     PaperProps={{
+      onClick: handleDialogClick,  // הוספנו גם לאלמנט הנייר
       sx: {
         padding: 4,
         borderRadius: 3,
@@ -50,7 +61,7 @@ const SignUp = ({ open, onClose }) => {
       },
     }}
   >
-    <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
+    <Box display="flex" flexDirection="column" alignItems="center" gap={2}   onClick={handleDialogClick}>
       {/* כותרת */}
       <Typography variant="h5" component="h1" sx={{ fontWeight: 'bold', color: '#2F3645' }}>
         Sign Up
@@ -95,7 +106,10 @@ const SignUp = ({ open, onClose }) => {
 
       {/* כפתור הרשמה */}
       <Button
-        onClick={handleSubmit}
+         onClick={(e) => {
+          e.stopPropagation();
+          handleSubmit();
+        }}
         variant="contained"
         fullWidth
         sx={{
@@ -111,7 +125,8 @@ const SignUp = ({ open, onClose }) => {
         Sign Up
       </Button>
 
-      <Box display="flex" justifyContent="space-between" width="100%">  
+      <Box display="flex" justifyContent="space-between" width="100%"  onClick={handleDialogClick}
+>  
         <Typography
             variant="body2"
             sx={{
@@ -122,7 +137,10 @@ const SignUp = ({ open, onClose }) => {
         >
             <Link
             to="/chef-sign-up"
-            onClick={handleClose}
+            onClick={(e) => {
+              e.stopPropagation();
+              handleClose();
+            }}
             style={{
                 textDecoration: 'none',
                 color: '#2F3645',
@@ -133,7 +151,10 @@ const SignUp = ({ open, onClose }) => {
             </Link>
         </Typography>
         <Button
-            onClick={handleClose}
+            onClick={(e) => {
+              e.stopPropagation();
+              handleClose();
+            }}
             variant="outlined" 
             sx={{
             fontWeight: 'bold',
