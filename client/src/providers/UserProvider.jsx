@@ -1,34 +1,48 @@
-import React, {useState, useContext, useEffect, useMemo} from "react"
-import {getToken, getUser} from '../services/localStorageService'
+import React, { useState, useContext, useEffect, useMemo } from "react";
+import { getToken, getUser } from '../services/localStorageService';
+import { getUserById } from '../services/apiService';
 
 const UserContext = React.createContext(null);
 
-export const UserProvider = ({children}) =>{
-    const [user, setUser]= useState(null);
-    const [token, setToken] = useState(getToken)
+export const UserProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+  const [token, setToken] = useState(getToken);
+  const [chefCache, setChefCache] = useState({});
 
-    useEffect(()=>{
-        if(!user){
-            const userFromLocalStorage = getUser();
-            setUser(userFromLocalStorage)
-        }
-            
-    }, [user]);
+  useEffect(() => {
+    if (!user) {
+      const userFromLocalStorage = getUser();
+      setUser(userFromLocalStorage);
+    }
+  }, [user]);
 
-    const value = useMemo(() => {
-        return {user, setUser,token,setToken};
-    }, [user, token]);
+  const fetchChefName = async (chefId) => {
+    if (chefCache[chefId]) {
+      return chefCache[chefId];
+    }
+    try {
+      const response = await getUserById(chefId);
+      const chefName = response.result || 'Unknown Chef';
+      setChefCache((prevCache) => ({
+        ...prevCache,
+        [chefId]: chefName,
+      }));
+      return chefName;
+    } catch (error) {
+      console.error('Failed to fetch chef name:', error);
+      return 'Unknown Chef';
+    }
+  };
 
-    return <UserContext.Provider value={value}>{children}</UserContext.Provider>
-}
+  const value = useMemo(() => {
+    return { user, setUser, token, setToken, fetchChefName };
+  }, [user, token, chefCache]);
 
-export const useUser=() =>{
-    const context = useContext(UserContext)
-    if(!context)
-        throw new Error("useUser must be used within a UserProvider");
-    return context;
-}
+  return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
+};
 
-/*UserProvider.prototype = {
-    children: Node.isRquired
-}*/
+export const useUser = () => {
+  const context = useContext(UserContext);
+  if (!context) throw new Error("useUser must be used within a UserProvider");
+  return context;
+};

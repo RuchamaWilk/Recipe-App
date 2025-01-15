@@ -5,18 +5,18 @@ import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import PersonIcon from '@mui/icons-material/Person';
-import {addFavoriteRecipes,removeFavoriteRecipe,getUserById} from '../../services/apiService'
+import {addFavoriteRecipes,removeFavoriteRecipe} from '../../services/apiService'
 import {useUser} from '../../providers/UserProvider'
 
 const Card = ({ recipe }) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
-  const { user, setUser} = useUser()
+  const { user, setUser, fetchChefName } = useUser();
   const [chefName, setChefName] = useState('');
 
 
-  useEffect(() => {
+  /*useEffect(() => {
     const fetchChefName = async () => {
       try {
         const chefName = await getUserById(recipe.chefId); // קריאה ל-API
@@ -27,8 +27,15 @@ const Card = ({ recipe }) => {
     };
   
     fetchChefName();
-  }, [recipe.chefId]);
-  
+  }, [recipe.chefId]);*/
+
+  useEffect(() => {
+    const getChefName = async () => {
+      const name = await fetchChefName(recipe.chefId);
+      setChefName(name);
+    };
+    getChefName();
+  }, [recipe.chefId, fetchChefName]);
 
   useEffect(() => {
     const fetchFavorites = async () => {
