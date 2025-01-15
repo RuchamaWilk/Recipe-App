@@ -15,20 +15,6 @@ const Card = ({ recipe }) => {
   const { user, setUser, fetchChefName } = useUser();
   const [chefName, setChefName] = useState('');
 
-
-  /*useEffect(() => {
-    const fetchChefName = async () => {
-      try {
-        const chefName = await getUserById(recipe.chefId); // קריאה ל-API
-        setChefName(chefName.result); // עדכון שם השף במצב
-      } catch (error) {
-        console.error('Failed to fetch chef name:', error);
-      }
-    };
-  
-    fetchChefName();
-  }, [recipe.chefId]);*/
-
   useEffect(() => {
     const getChefName = async () => {
       const name = await fetchChefName(recipe.chefId);
@@ -37,19 +23,15 @@ const Card = ({ recipe }) => {
     getChefName();
   }, [recipe.chefId, fetchChefName]);
 
-  useEffect(() => {
-    const fetchFavorites = async () => {
-      if (user) {
-        try {
-          const favorites = user.favoriteRecipes // אוסף את רשימת המועדפים
-          const isFavoriteRecipe = favorites.includes(recipe._id); // בודק אם המתכון ברשימה
-          setIsFavorite(isFavoriteRecipe);
-        } catch (error) {
-          console.error('Failed to fetch favorites:', error);
-        }
-      }
-    };
-    fetchFavorites();
+  useEffect(() => { const updateFavoriteState = async () => {
+     if (user) {
+        const isFavoriteRecipe = user.favoriteRecipes.includes(recipe._id);
+        setIsFavorite(isFavoriteRecipe);
+     } else { 
+        setIsFavorite(false);
+    } 
+  }; 
+  updateFavoriteState();
   }, [user, recipe._id]);
 
   const showRecipe = () => {
