@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams,useLocation } from 'react-router-dom';
 import { fetchRecipesById } from '../../services/apiService';
 import { Box, CircularProgress, Card, CardContent ,Container,Divider} from '@mui/material';
 import RecipeHeader from "../../components/recipe/RecipeHeader";
@@ -10,7 +10,13 @@ import RecipeAIBox from "../../components/recipe/RecipeAIBox"
 
 const Recipe = () => {
   const { id } = useParams();
+  const location = useLocation(); // נקבל את ה-`location`
   const [recipe, setRecipe] = useState(null);
+  const chefName = location.state?.chefName || "Unknown Chef";
+
+  console.log("Location State:", location.state); // בדיקה
+  console.log("Chef Name:", chefName); // בדיקה
+
 
   useEffect(() => {
     const getRecipes = async () => {
@@ -46,7 +52,7 @@ const Recipe = () => {
       }}>
         <RecipeHeader image={recipe.image} name={recipe.name} />
         <CardContent sx={{ p: 4 }}>
-          <ChefRating chefId={recipe.chefId} />
+          <ChefRating chefName={chefName} />
           <Divider sx={{ my: 3 }} />
           <RecipeInstructions 
             ingredients={recipe.ingredients} 

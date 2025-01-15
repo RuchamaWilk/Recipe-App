@@ -3,7 +3,7 @@ import { Box, Typography, Rating,Paper,Avatar } from '@mui/material';
 import PropTypes from 'prop-types';
 
 // Chef Rating Component
-const ChefRating = ({ chefId }) => {
+const ChefRating = ({ chefName }) => {
   const [value, setValue] = useState(0);
 
   return (
@@ -17,9 +17,9 @@ const ChefRating = ({ chefId }) => {
       justifyContent: 'space-between'
     }}>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-        <Avatar sx={{ bgcolor: '#E6B9A6' }}>{chefId[0].toUpperCase()}</Avatar>
+        <Avatar sx={{ bgcolor: '#E6B9A6' }}>{chefName[0].toUpperCase()}</Avatar>
         <Typography variant="subtitle1" sx={{ fontWeight: 500 }}>
-          {chefId}
+          {chefName}
         </Typography>
       </Box>
       <Rating 
@@ -38,7 +38,7 @@ const ChefRating = ({ chefId }) => {
 };
 
 ChefRating.propTypes = {
-  chefId: PropTypes.string.isRequired,
+  chefName: PropTypes.string.isRequired,
 };
 
 export default ChefRating;

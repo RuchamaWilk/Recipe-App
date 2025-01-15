@@ -36,8 +36,8 @@ const RecipeAIBox = () => {
   );
 };
 
-RecipeAIBox.propTypes = {
+/*RecipeAIBox.propTypes = {
   aiSuggestion: PropTypes.string.isRequired,
-};
+};*/
 
 export default RecipeAIBox;

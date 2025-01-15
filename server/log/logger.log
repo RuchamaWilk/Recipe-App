@@ -20224,3 +20224,2112 @@
 2025-01-15 11:57:50 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
 2025-01-15 11:57:50 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
 2025-01-15 11:57:50 [info]: success with getUserName from DB
+2025-01-15 14:11:19 [info]: calling getRecipes
+2025-01-15 14:11:19 [info]: getChefs- find all recipe
+2025-01-15 14:11:20 [info]: success fetching recipes from DB
+2025-01-15 14:11:20 [info]: success with getRecipes
+2025-01-15 14:11:20 [info]: calling getRecipes
+2025-01-15 14:11:20 [info]: getChefs- find all recipe
+2025-01-15 14:11:20 [info]: success fetching recipes from DB
+2025-01-15 14:11:20 [info]: success with getRecipes
+2025-01-15 14:11:20 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:20 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:20 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:20 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:20 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:20 [info]: success with getUserName from DB
+2025-01-15 14:11:20 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:20 [info]: success with getUserName from DB
+2025-01-15 14:11:20 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:20 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:20 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:20 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:20 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:20 [info]: success with getUserName from DB
+2025-01-15 14:11:20 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:20 [info]: success with getUserName from DB
+2025-01-15 14:11:20 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:20 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:20 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:20 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:21 [info]: success with getUserName from DB
+2025-01-15 14:11:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:22 [info]: success with getUserName from DB
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:23 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:23 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:23 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:23 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:23 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:23 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:23 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:23 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:23 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:23 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:23 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:23 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:23 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:23 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:23 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:23 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:23 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:23 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:11:24 [info]: success with getUserName from DB
+2025-01-15 14:11:24 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:24 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:25 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:25 [info]: success with getUserName from DB
+2025-01-15 14:11:25 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:25 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:25 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:25 [info]: success with getUserName from DB
+2025-01-15 14:11:25 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:11:25 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:11:25 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:11:25 [info]: success with getUserName from DB
+2025-01-15 14:14:02 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-15 14:14:02 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-15 14:14:03 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-15 14:14:03 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-15 14:14:03 [info]: id: 677bf82137c2060f50f2593e email: hellohi@gmail.com type: chef
+2025-01-15 14:14:03 [info]: success with signIn true
+2025-01-15 14:14:27 [info]: Calling RemoveFavorite with userID : 677bf82137c2060f50f2593e and recipe 676046a9ce9abf8bb07801fc
+2025-01-15 14:14:27 [info]: RemoveFavorite - removing a favorite recipe from DB for user: 677bf82137c2060f50f2593e
+2025-01-15 14:14:27 [info]: Successfully removed recipe: 676046a9ce9abf8bb07801fc for user: 677bf82137c2060f50f2593e
+2025-01-15 14:14:27 [info]: success with RemoveFavorite from DB
+2025-01-15 14:14:46 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:14:46 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:14:46 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:14:46 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:14:46 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:14:46 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:14:47 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:14:47 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:14:50 [info]: calling getRecipes
+2025-01-15 14:14:50 [info]: getChefs- find all recipe
+2025-01-15 14:14:51 [info]: success fetching recipes from DB
+2025-01-15 14:14:51 [info]: success with getRecipes
+2025-01-15 14:14:51 [info]: calling getRecipes
+2025-01-15 14:14:51 [info]: getChefs- find all recipe
+2025-01-15 14:14:51 [info]: success fetching recipes from DB
+2025-01-15 14:14:51 [info]: success with getRecipes
+2025-01-15 14:14:58 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-15 14:14:58 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-15 14:14:58 [info]: found recipes of category: Meat
+2025-01-15 14:14:58 [info]: success with fetchRecipesCategory category: Meat
+2025-01-15 14:14:58 [info]: fetchRecipesCategory - calling recipes of Meat category
+2025-01-15 14:14:58 [info]: fetchRecipesCategory- find recipes of category: Meat
+2025-01-15 14:14:58 [info]: found recipes of category: Meat
+2025-01-15 14:14:58 [info]: success with fetchRecipesCategory category: Meat
+2025-01-15 14:15:01 [info]: calling getRecipes
+2025-01-15 14:15:01 [info]: getChefs- find all recipe
+2025-01-15 14:15:01 [info]: success fetching recipes from DB
+2025-01-15 14:15:01 [info]: success with getRecipes
+2025-01-15 14:15:01 [info]: calling getRecipes
+2025-01-15 14:15:01 [info]: getChefs- find all recipe
+2025-01-15 14:15:02 [info]: success fetching recipes from DB
+2025-01-15 14:15:02 [info]: success with getRecipes
+2025-01-15 14:22:41 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-15 14:22:41 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-15 14:22:41 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-15 14:22:42 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-15 14:22:42 [info]: id: 677d2cd0b0b09f6df5cdb52e email: ruchamawilk@gmail.com type: user
+2025-01-15 14:22:42 [info]: success with signIn true
+2025-01-15 14:22:45 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:45 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:45 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:45 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-15 14:22:45 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:45 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:45 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:45 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-15 14:22:47 [info]: calling getRecipes
+2025-01-15 14:22:47 [info]: getChefs- find all recipe
+2025-01-15 14:22:48 [info]: success fetching recipes from DB
+2025-01-15 14:22:48 [info]: success with getRecipes
+2025-01-15 14:22:48 [info]: calling getRecipes
+2025-01-15 14:22:48 [info]: getChefs- find all recipe
+2025-01-15 14:22:48 [info]: success fetching recipes from DB
+2025-01-15 14:22:48 [info]: success with getRecipes
+2025-01-15 14:22:49 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:49 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:49 [info]: add recipe: 676025ce9b0173cc30625805 to user 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:49 [info]: success with AddFavorite to DB
+2025-01-15 14:22:50 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:50 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:51 [info]: add recipe: 676046a9ce9abf8bb07801fc to user 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:51 [info]: success with AddFavorite to DB
+2025-01-15 14:22:52 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:52 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:52 [info]: add recipe: 676046cece9abf8bb07801fd to user 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:52 [info]: success with AddFavorite to DB
+2025-01-15 14:22:54 [info]: Calling AddFavorite with userID : 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:54 [info]: AddFavorite- add a favorite recipe to DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:54 [info]: add recipe: 67616ab2c713f8f0218320c0 to user 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:22:54 [info]: success with AddFavorite to DB
+2025-01-15 14:23:03 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:23:03 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:23:03 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:23:03 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-15 14:23:03 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:23:03 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:23:03 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:23:03 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-15 14:23:06 [info]: calling getRecipes
+2025-01-15 14:23:06 [info]: getChefs- find all recipe
+2025-01-15 14:23:07 [info]: success fetching recipes from DB
+2025-01-15 14:23:07 [info]: success with getRecipes
+2025-01-15 14:23:07 [info]: calling getRecipes
+2025-01-15 14:23:07 [info]: getChefs- find all recipe
+2025-01-15 14:23:07 [info]: success fetching recipes from DB
+2025-01-15 14:23:07 [info]: success with getRecipes
+2025-01-15 14:23:21 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-15 14:23:21 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-15 14:23:21 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-15 14:23:21 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-15 14:23:21 [info]: id: 677bf82137c2060f50f2593e email: hellohi@gmail.com type: chef
+2025-01-15 14:23:21 [info]: success with signIn true
+2025-01-15 14:40:50 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-15 14:40:50 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-15 14:40:51 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-15 14:40:51 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-15 14:40:51 [info]: id: 677bf82137c2060f50f2593e email: hellohi@gmail.com type: chef
+2025-01-15 14:40:51 [info]: success with signIn true
+2025-01-15 14:40:54 [info]: Calling RemoveFavorite with userID : 677bf82137c2060f50f2593e and recipe 676046cece9abf8bb07801fd
+2025-01-15 14:40:54 [info]: RemoveFavorite - removing a favorite recipe from DB for user: 677bf82137c2060f50f2593e
+2025-01-15 14:40:54 [info]: Successfully removed recipe: 676046cece9abf8bb07801fd for user: 677bf82137c2060f50f2593e
+2025-01-15 14:40:54 [info]: success with RemoveFavorite from DB
+2025-01-15 14:40:55 [info]: Calling RemoveFavorite with userID : 677bf82137c2060f50f2593e and recipe 67616ab2c713f8f0218320c0
+2025-01-15 14:40:55 [info]: RemoveFavorite - removing a favorite recipe from DB for user: 677bf82137c2060f50f2593e
+2025-01-15 14:40:55 [info]: Successfully removed recipe: 67616ab2c713f8f0218320c0 for user: 677bf82137c2060f50f2593e
+2025-01-15 14:40:55 [info]: success with RemoveFavorite from DB
+2025-01-15 14:41:18 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:41:18 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:41:19 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:41:19 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:41:19 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:41:19 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:41:19 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:41:19 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:41:35 [info]: calling getRecipes
+2025-01-15 14:41:35 [info]: getChefs- find all recipe
+2025-01-15 14:41:35 [info]: success fetching recipes from DB
+2025-01-15 14:41:35 [info]: success with getRecipes
+2025-01-15 14:41:35 [info]: calling getRecipes
+2025-01-15 14:41:35 [info]: getChefs- find all recipe
+2025-01-15 14:41:35 [info]: success fetching recipes from DB
+2025-01-15 14:41:35 [info]: success with getRecipes
+2025-01-15 14:41:52 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-15 14:41:52 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-15 14:41:52 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-15 14:41:52 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-15 14:41:52 [info]: id: 677bf82137c2060f50f2593e email: hellohi@gmail.com type: chef
+2025-01-15 14:41:52 [info]: success with signIn true
+2025-01-15 14:43:07 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-15 14:43:07 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-15 14:43:07 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-15 14:43:07 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-15 14:43:07 [info]: id: 677d2cd0b0b09f6df5cdb52e email: ruchamawilk@gmail.com type: user
+2025-01-15 14:43:07 [info]: success with signIn true
+2025-01-15 14:43:37 [info]: calling getRecipes
+2025-01-15 14:43:37 [info]: getChefs- find all recipe
+2025-01-15 14:43:38 [info]: success fetching recipes from DB
+2025-01-15 14:43:38 [info]: success with getRecipes
+2025-01-15 14:43:38 [info]: calling getRecipes
+2025-01-15 14:43:38 [info]: getChefs- find all recipe
+2025-01-15 14:43:38 [info]: success fetching recipes from DB
+2025-01-15 14:43:38 [info]: success with getRecipes
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:38 [info]: success with getUserName from DB
+2025-01-15 14:43:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:38 [info]: success with getUserName from DB
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:38 [info]: success with getUserName from DB
+2025-01-15 14:43:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:38 [info]: success with getUserName from DB
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:38 [info]: success with getUserName from DB
+2025-01-15 14:43:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:38 [info]: success with getUserName from DB
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:38 [info]: success with getUserName from DB
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:38 [info]: success with getUserName from DB
+2025-01-15 14:43:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:39 [info]: success with getUserName from DB
+2025-01-15 14:43:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:40 [info]: success with getUserName from DB
+2025-01-15 14:43:41 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:41 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:41 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:41 [info]: success with getUserName from DB
+2025-01-15 14:43:41 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:41 [info]: success with getUserName from DB
+2025-01-15 14:43:41 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:43:41 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:43:41 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:41 [info]: success with getUserName from DB
+2025-01-15 14:43:41 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:43:41 [info]: success with getUserName from DB
+2025-01-15 14:43:41 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:41 [info]: success with getUserName from DB
+2025-01-15 14:43:41 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:41 [info]: success with getUserName from DB
+2025-01-15 14:43:41 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:41 [info]: success with getUserName from DB
+2025-01-15 14:43:41 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:41 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:42 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:42 [info]: success with getUserName from DB
+2025-01-15 14:43:42 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:42 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:42 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:42 [info]: success with getUserName from DB
+2025-01-15 14:43:42 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:43:42 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:43:42 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:43:42 [info]: success with getUserName from DB
+2025-01-15 14:44:01 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-15 14:44:01 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-15 14:44:01 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-15 14:44:02 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-15 14:44:02 [info]: id: 677d2cd0b0b09f6df5cdb52e email: ruchamawilk@gmail.com type: user
+2025-01-15 14:44:02 [info]: success with signIn true
+2025-01-15 14:44:23 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-15 14:44:23 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-15 14:44:23 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-15 14:44:23 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-15 14:44:23 [info]: id: 677d2cd0b0b09f6df5cdb52e email: ruchamawilk@gmail.com type: user
+2025-01-15 14:44:23 [info]: success with signIn true
+2025-01-15 14:44:25 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:44:25 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:44:25 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:44:25 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-15 14:44:25 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:44:25 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:44:26 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:44:26 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-15 14:44:28 [info]: calling getRecipes
+2025-01-15 14:44:28 [info]: getChefs- find all recipe
+2025-01-15 14:44:28 [info]: success fetching recipes from DB
+2025-01-15 14:44:28 [info]: success with getRecipes
+2025-01-15 14:44:28 [info]: calling getRecipes
+2025-01-15 14:44:28 [info]: getChefs- find all recipe
+2025-01-15 14:44:29 [info]: success fetching recipes from DB
+2025-01-15 14:44:29 [info]: success with getRecipes
+2025-01-15 14:44:36 [info]: calling getRecipes
+2025-01-15 14:44:36 [info]: getChefs- find all recipe
+2025-01-15 14:44:36 [info]: success fetching recipes from DB
+2025-01-15 14:44:36 [info]: success with getRecipes
+2025-01-15 14:44:36 [info]: calling getRecipes
+2025-01-15 14:44:36 [info]: getChefs- find all recipe
+2025-01-15 14:44:37 [info]: success fetching recipes from DB
+2025-01-15 14:44:37 [info]: success with getRecipes
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:37 [info]: success with getUserName from DB
+2025-01-15 14:44:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:37 [info]: success with getUserName from DB
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:37 [info]: success with getUserName from DB
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:37 [info]: success with getUserName from DB
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:37 [info]: success with getUserName from DB
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:37 [info]: success with getUserName from DB
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:37 [info]: success with getUserName from DB
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:37 [info]: success with getUserName from DB
+2025-01-15 14:44:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:38 [info]: success with getUserName from DB
+2025-01-15 14:44:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:39 [info]: success with getUserName from DB
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:40 [info]: success with getUserName from DB
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:41 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:41 [info]: success with getUserName from DB
+2025-01-15 14:44:41 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:41 [info]: success with getUserName from DB
+2025-01-15 14:44:41 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:44:41 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:44:41 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:41 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:41 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:44:41 [info]: success with getUserName from DB
+2025-01-15 14:44:41 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:41 [info]: success with getUserName from DB
+2025-01-15 14:44:41 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:41 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:41 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:41 [info]: success with getUserName from DB
+2025-01-15 14:44:41 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:41 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:41 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:41 [info]: success with getUserName from DB
+2025-01-15 14:44:41 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:44:41 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:44:41 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:44:41 [info]: success with getUserName from DB
+2025-01-15 14:44:50 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-15 14:44:50 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-15 14:44:50 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-15 14:44:50 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-15 14:44:50 [info]: id: 677bf82137c2060f50f2593e email: hellohi@gmail.com type: chef
+2025-01-15 14:44:50 [info]: success with signIn true
+2025-01-15 14:44:55 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:44:55 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:44:56 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:44:56 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:44:56 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:44:56 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:44:56 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:44:56 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:44:58 [info]: calling getRecipes
+2025-01-15 14:44:58 [info]: getChefs- find all recipe
+2025-01-15 14:44:58 [info]: success fetching recipes from DB
+2025-01-15 14:44:58 [info]: success with getRecipes
+2025-01-15 14:44:58 [info]: calling getRecipes
+2025-01-15 14:44:58 [info]: getChefs- find all recipe
+2025-01-15 14:44:58 [info]: success fetching recipes from DB
+2025-01-15 14:44:58 [info]: success with getRecipes
+2025-01-15 14:45:04 [info]: calling getRecipes
+2025-01-15 14:45:04 [info]: getChefs- find all recipe
+2025-01-15 14:45:04 [info]: success fetching recipes from DB
+2025-01-15 14:45:04 [info]: success with getRecipes
+2025-01-15 14:45:04 [info]: calling getRecipes
+2025-01-15 14:45:04 [info]: getChefs- find all recipe
+2025-01-15 14:45:05 [info]: success fetching recipes from DB
+2025-01-15 14:45:05 [info]: success with getRecipes
+2025-01-15 14:45:05 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:05 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:05 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:05 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:05 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:05 [info]: success with getUserName from DB
+2025-01-15 14:45:05 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:05 [info]: success with getUserName from DB
+2025-01-15 14:45:05 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:05 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:05 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:05 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:05 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:05 [info]: success with getUserName from DB
+2025-01-15 14:45:05 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:05 [info]: success with getUserName from DB
+2025-01-15 14:45:05 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:05 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:05 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:05 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:05 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:05 [info]: success with getUserName from DB
+2025-01-15 14:45:05 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:05 [info]: success with getUserName from DB
+2025-01-15 14:45:05 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:05 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:05 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:05 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:06 [info]: success with getUserName from DB
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:06 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:06 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:07 [info]: success with getUserName from DB
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:07 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:07 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:08 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:08 [info]: success with getUserName from DB
+2025-01-15 14:45:08 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:08 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:09 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:09 [info]: success with getUserName from DB
+2025-01-15 14:45:09 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:09 [info]: success with getUserName from DB
+2025-01-15 14:45:09 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:45:09 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:45:09 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:09 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:09 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:45:09 [info]: success with getUserName from DB
+2025-01-15 14:45:09 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:09 [info]: success with getUserName from DB
+2025-01-15 14:45:09 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:09 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:09 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:09 [info]: success with getUserName from DB
+2025-01-15 14:45:09 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:09 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:09 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:09 [info]: success with getUserName from DB
+2025-01-15 14:45:09 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:45:09 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:45:09 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:45:09 [info]: success with getUserName from DB
+2025-01-15 14:46:22 [info]: Calling signIn with email: h@gmail.com and password: 1234568
+2025-01-15 14:46:22 [info]: signIn- find chef with email: h@gmail.com and password 1234568
+2025-01-15 14:46:23 [info]: found a chef with the email" h@gmail.com
+2025-01-15 14:46:23 [info]: success with signIn false
+2025-01-15 14:46:26 [info]: Calling signIn with email: h@gmail.com and password: 1234567
+2025-01-15 14:46:26 [info]: signIn- find chef with email: h@gmail.com and password 1234567
+2025-01-15 14:46:26 [info]: found a chef with the email" h@gmail.com
+2025-01-15 14:46:26 [info]: found a chef with email: h@gmail.com and password 1234567 
+2025-01-15 14:46:26 [info]: id: 677ab8f592cd6df1209b41f1 email: h@gmail.com type: user
+2025-01-15 14:46:26 [info]: success with signIn true
+2025-01-15 14:46:32 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:32 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:32 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:32 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-15 14:46:32 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:32 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:32 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:32 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-15 14:46:34 [info]: calling getRecipes
+2025-01-15 14:46:34 [info]: getChefs- find all recipe
+2025-01-15 14:46:34 [info]: success fetching recipes from DB
+2025-01-15 14:46:34 [info]: success with getRecipes
+2025-01-15 14:46:34 [info]: calling getRecipes
+2025-01-15 14:46:34 [info]: getChefs- find all recipe
+2025-01-15 14:46:34 [info]: success fetching recipes from DB
+2025-01-15 14:46:34 [info]: success with getRecipes
+2025-01-15 14:46:35 [info]: Calling AddFavorite with userID : 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:35 [info]: AddFavorite- add a favorite recipe to DB for user: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:36 [info]: add recipe: 67616ab2c713f8f0218320c0 to user 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:36 [info]: success with AddFavorite to DB
+2025-01-15 14:46:37 [info]: Calling AddFavorite with userID : 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:37 [info]: AddFavorite- add a favorite recipe to DB for user: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:37 [info]: add recipe: 676046cece9abf8bb07801fd to user 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:37 [info]: success with AddFavorite to DB
+2025-01-15 14:46:40 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:40 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:40 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:40 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-15 14:46:40 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:40 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:40 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:46:40 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-15 14:46:41 [info]: calling getRecipes
+2025-01-15 14:46:41 [info]: getChefs- find all recipe
+2025-01-15 14:46:42 [info]: success fetching recipes from DB
+2025-01-15 14:46:42 [info]: success with getRecipes
+2025-01-15 14:46:42 [info]: calling getRecipes
+2025-01-15 14:46:42 [info]: getChefs- find all recipe
+2025-01-15 14:46:42 [info]: success fetching recipes from DB
+2025-01-15 14:46:42 [info]: success with getRecipes
+2025-01-15 14:46:53 [info]: calling getRecipes
+2025-01-15 14:46:53 [info]: getChefs- find all recipe
+2025-01-15 14:46:53 [info]: success fetching recipes from DB
+2025-01-15 14:46:53 [info]: success with getRecipes
+2025-01-15 14:46:53 [info]: calling getRecipes
+2025-01-15 14:46:53 [info]: getChefs- find all recipe
+2025-01-15 14:46:53 [info]: success fetching recipes from DB
+2025-01-15 14:46:53 [info]: success with getRecipes
+2025-01-15 14:46:53 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:53 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:53 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:53 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:53 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:53 [info]: success with getUserName from DB
+2025-01-15 14:46:53 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:53 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:53 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:53 [info]: success with getUserName from DB
+2025-01-15 14:46:53 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:53 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:53 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:53 [info]: success with getUserName from DB
+2025-01-15 14:46:53 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:53 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:53 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:53 [info]: success with getUserName from DB
+2025-01-15 14:46:53 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:53 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:54 [info]: success with getUserName from DB
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:54 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:54 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:55 [info]: success with getUserName from DB
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:55 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:55 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:56 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:56 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:56 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:46:56 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:56 [info]: success with getUserName from DB
+2025-01-15 14:46:56 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:56 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:57 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:57 [info]: success with getUserName from DB
+2025-01-15 14:46:57 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:57 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:57 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:57 [info]: success with getUserName from DB
+2025-01-15 14:46:57 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:57 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:57 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:57 [info]: success with getUserName from DB
+2025-01-15 14:46:57 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:46:57 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:46:57 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:46:57 [info]: success with getUserName from DB
+2025-01-15 14:47:10 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-15 14:47:10 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-15 14:47:10 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-15 14:47:11 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-15 14:47:11 [info]: id: 677d2cd0b0b09f6df5cdb52e email: ruchamawilk@gmail.com type: user
+2025-01-15 14:47:11 [info]: success with signIn true
+2025-01-15 14:47:17 [info]: calling getRecipes
+2025-01-15 14:47:17 [info]: getChefs- find all recipe
+2025-01-15 14:47:18 [info]: success fetching recipes from DB
+2025-01-15 14:47:18 [info]: success with getRecipes
+2025-01-15 14:47:18 [info]: calling getRecipes
+2025-01-15 14:47:18 [info]: getChefs- find all recipe
+2025-01-15 14:47:18 [info]: success fetching recipes from DB
+2025-01-15 14:47:18 [info]: success with getRecipes
+2025-01-15 14:47:18 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:18 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:18 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:18 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:18 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:18 [info]: success with getUserName from DB
+2025-01-15 14:47:18 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:18 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:18 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:18 [info]: success with getUserName from DB
+2025-01-15 14:47:18 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:18 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:18 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:18 [info]: success with getUserName from DB
+2025-01-15 14:47:18 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:18 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:18 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:18 [info]: success with getUserName from DB
+2025-01-15 14:47:18 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:18 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:18 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:18 [info]: success with getUserName from DB
+2025-01-15 14:47:18 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:18 [info]: success with getUserName from DB
+2025-01-15 14:47:18 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:18 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:18 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:18 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:19 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:19 [info]: success with getUserName from DB
+2025-01-15 14:47:19 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:19 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:20 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:20 [info]: success with getUserName from DB
+2025-01-15 14:47:20 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:20 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:21 [info]: success with getUserName from DB
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:21 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:21 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:22 [info]: success with getUserName from DB
+2025-01-15 14:47:22 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:22 [info]: success with getUserName from DB
+2025-01-15 14:47:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:22 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:22 [info]: success with getUserName from DB
+2025-01-15 14:47:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:22 [info]: success with getUserName from DB
+2025-01-15 14:47:22 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:47:22 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:47:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:22 [info]: success with getUserName from DB
+2025-01-15 14:47:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:47:22 [info]: success with getUserName from DB
+2025-01-15 14:47:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:22 [info]: success with getUserName from DB
+2025-01-15 14:47:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:22 [info]: success with getUserName from DB
+2025-01-15 14:47:22 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:47:22 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:47:22 [info]: success with getUserName from DB
+2025-01-15 14:51:30 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 12345687
+2025-01-15 14:51:30 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 12345687
+2025-01-15 14:51:30 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-15 14:51:30 [info]: success with signIn false
+2025-01-15 14:51:35 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-15 14:51:35 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-15 14:51:35 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-15 14:51:36 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-15 14:51:36 [info]: id: 677d2cd0b0b09f6df5cdb52e email: ruchamawilk@gmail.com type: user
+2025-01-15 14:51:36 [info]: success with signIn true
+2025-01-15 14:51:52 [info]: Calling signIn with email: ruchamawilk@gmail.com and password: 1234567
+2025-01-15 14:51:52 [info]: signIn- find chef with email: ruchamawilk@gmail.com and password 1234567
+2025-01-15 14:51:52 [info]: found a chef with the email" ruchamawilk@gmail.com
+2025-01-15 14:51:52 [info]: found a chef with email: ruchamawilk@gmail.com and password 1234567 
+2025-01-15 14:51:52 [info]: id: 677d2cd0b0b09f6df5cdb52e email: ruchamawilk@gmail.com type: user
+2025-01-15 14:51:52 [info]: success with signIn true
+2025-01-15 14:51:55 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:55 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:55 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:55 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-15 14:51:55 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:55 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:56 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:56 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-15 14:51:57 [info]: Calling RemoveFavorite with userID : 677d2cd0b0b09f6df5cdb52e and recipe 676046a9ce9abf8bb07801fc
+2025-01-15 14:51:57 [info]: RemoveFavorite - removing a favorite recipe from DB for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:57 [info]: Successfully removed recipe: 676046a9ce9abf8bb07801fc for user: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:57 [info]: success with RemoveFavorite from DB
+2025-01-15 14:51:57 [info]: favorite - get favorite recipes from DB, user id: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:57 [info]: getFavorite- find recipes of userID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:58 [info]: found user with ID: 677d2cd0b0b09f6df5cdb52e
+2025-01-15 14:51:58 [info]: successfull get recipes of userID: 677d2cd0b0b09f6df5cdb52e 
+2025-01-15 14:51:59 [info]: calling getRecipes
+2025-01-15 14:51:59 [info]: getChefs- find all recipe
+2025-01-15 14:51:59 [info]: success fetching recipes from DB
+2025-01-15 14:51:59 [info]: success with getRecipes
+2025-01-15 14:51:59 [info]: calling getRecipes
+2025-01-15 14:51:59 [info]: getChefs- find all recipe
+2025-01-15 14:51:59 [info]: success fetching recipes from DB
+2025-01-15 14:51:59 [info]: success with getRecipes
+2025-01-15 14:52:17 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-15 14:52:17 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-15 14:52:18 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-15 14:52:18 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-15 14:52:18 [info]: id: 677bf82137c2060f50f2593e email: hellohi@gmail.com type: chef
+2025-01-15 14:52:18 [info]: success with signIn true
+2025-01-15 14:52:34 [info]: Calling signIn with email: h@gmail.com and password: 1234567
+2025-01-15 14:52:34 [info]: signIn- find chef with email: h@gmail.com and password 1234567
+2025-01-15 14:52:35 [info]: found a chef with the email" h@gmail.com
+2025-01-15 14:52:35 [info]: found a chef with email: h@gmail.com and password 1234567 
+2025-01-15 14:52:35 [info]: id: 677ab8f592cd6df1209b41f1 email: h@gmail.com type: user
+2025-01-15 14:52:35 [info]: success with signIn true
+2025-01-15 14:52:38 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:38 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:38 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:38 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-15 14:52:38 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:38 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:39 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:39 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-15 14:52:40 [info]: Calling RemoveFavorite with userID : 677ab8f592cd6df1209b41f1 and recipe 676046cece9abf8bb07801fd
+2025-01-15 14:52:40 [info]: RemoveFavorite - removing a favorite recipe from DB for user: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:40 [info]: Successfully removed recipe: 676046cece9abf8bb07801fd for user: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:40 [info]: success with RemoveFavorite from DB
+2025-01-15 14:52:40 [info]: favorite - get favorite recipes from DB, user id: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:40 [info]: getFavorite- find recipes of userID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:41 [info]: found user with ID: 677ab8f592cd6df1209b41f1
+2025-01-15 14:52:41 [info]: successfull get recipes of userID: 677ab8f592cd6df1209b41f1 
+2025-01-15 14:52:42 [info]: calling getRecipes
+2025-01-15 14:52:42 [info]: getChefs- find all recipe
+2025-01-15 14:52:42 [info]: success fetching recipes from DB
+2025-01-15 14:52:42 [info]: success with getRecipes
+2025-01-15 14:52:42 [info]: calling getRecipes
+2025-01-15 14:52:42 [info]: getChefs- find all recipe
+2025-01-15 14:52:42 [info]: success fetching recipes from DB
+2025-01-15 14:52:42 [info]: success with getRecipes
+2025-01-15 14:53:26 [info]: calling getRecipes
+2025-01-15 14:53:26 [info]: getChefs- find all recipe
+2025-01-15 14:53:26 [info]: success fetching recipes from DB
+2025-01-15 14:53:26 [info]: success with getRecipes
+2025-01-15 14:53:26 [info]: calling getRecipes
+2025-01-15 14:53:26 [info]: getChefs- find all recipe
+2025-01-15 14:53:27 [info]: success fetching recipes from DB
+2025-01-15 14:53:27 [info]: success with getRecipes
+2025-01-15 14:53:27 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:27 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:27 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:27 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:27 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:27 [info]: success with getUserName from DB
+2025-01-15 14:53:27 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:27 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:27 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:27 [info]: success with getUserName from DB
+2025-01-15 14:53:27 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:27 [info]: success with getUserName from DB
+2025-01-15 14:53:27 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:27 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:27 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:27 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:27 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:27 [info]: success with getUserName from DB
+2025-01-15 14:53:27 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:27 [info]: success with getUserName from DB
+2025-01-15 14:53:27 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:27 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:27 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:27 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:28 [info]: success with getUserName from DB
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:28 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:28 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:29 [info]: success with getUserName from DB
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:29 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:29 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:30 [info]: success with getUserName from DB
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:30 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:30 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:31 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:31 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 14:53:31 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:31 [info]: success with getUserName from DB
+2025-01-15 14:53:31 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:31 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:32 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:32 [info]: success with getUserName from DB
+2025-01-15 14:53:32 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 14:53:32 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:32 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 14:53:32 [info]: success with getUserName from DB
+2025-01-15 14:53:39 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-15 14:53:39 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-15 14:53:39 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-15 14:53:39 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-15 14:53:39 [info]: id: 677bf82137c2060f50f2593e email: hellohi@gmail.com type: chef
+2025-01-15 14:53:39 [info]: success with signIn true
+2025-01-15 14:53:41 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:53:41 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:42 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:42 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:53:42 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:53:42 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:42 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:42 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:53:43 [info]: Calling RemoveFavorite with userID : 677bf82137c2060f50f2593e and recipe 676046f1ce9abf8bb07801ff
+2025-01-15 14:53:43 [info]: RemoveFavorite - removing a favorite recipe from DB for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:43 [info]: Successfully removed recipe: 676046f1ce9abf8bb07801ff for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:43 [info]: success with RemoveFavorite from DB
+2025-01-15 14:53:43 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:53:43 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:43 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:43 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:53:44 [info]: Calling RemoveFavorite with userID : 677bf82137c2060f50f2593e and recipe 676046d9ce9abf8bb07801fe
+2025-01-15 14:53:44 [info]: RemoveFavorite - removing a favorite recipe from DB for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:44 [info]: Successfully removed recipe: 676046d9ce9abf8bb07801fe for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:44 [info]: success with RemoveFavorite from DB
+2025-01-15 14:53:44 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:53:44 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:45 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:45 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:53:45 [info]: Calling RemoveFavorite with userID : 677bf82137c2060f50f2593e and recipe 67879e577a75237b97a98cac
+2025-01-15 14:53:45 [info]: RemoveFavorite - removing a favorite recipe from DB for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:45 [info]: Successfully removed recipe: 67879e577a75237b97a98cac for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:45 [info]: success with RemoveFavorite from DB
+2025-01-15 14:53:45 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:53:45 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:46 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:46 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 14:53:46 [info]: Calling RemoveFavorite with userID : 677bf82137c2060f50f2593e and recipe 676025ce9b0173cc30625805
+2025-01-15 14:53:46 [info]: RemoveFavorite - removing a favorite recipe from DB for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:47 [info]: Successfully removed recipe: 676025ce9b0173cc30625805 for user: 677bf82137c2060f50f2593e
+2025-01-15 14:53:47 [info]: success with RemoveFavorite from DB
+2025-01-15 14:53:47 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 14:53:47 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:47 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 14:53:47 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 15:21:12 [info]: calling getRecipes
+2025-01-15 15:21:12 [info]: getChefs- find all recipe
+2025-01-15 15:21:22 [error]: Operation `recipes.find()` buffering timed out after 10000ms
+2025-01-15 15:21:22 [info]: calling getRecipes
+2025-01-15 15:21:22 [info]: getChefs- find all recipe
+2025-01-15 15:21:32 [error]: Operation `recipes.find()` buffering timed out after 10000ms
+2025-01-15 15:22:49 [info]: calling getRecipes
+2025-01-15 15:22:49 [info]: getChefs- find all recipe
+2025-01-15 15:22:59 [error]: Operation `recipes.find()` buffering timed out after 10000ms
+2025-01-15 15:22:59 [info]: calling getRecipes
+2025-01-15 15:22:59 [info]: getChefs- find all recipe
+2025-01-15 15:23:09 [error]: Operation `recipes.find()` buffering timed out after 10000ms
+2025-01-15 15:23:09 [info]: calling getRecipes
+2025-01-15 15:23:09 [info]: getChefs- find all recipe
+2025-01-15 15:23:13 [info]: success fetching recipes from DB
+2025-01-15 15:23:13 [info]: success with getRecipes
+2025-01-15 15:23:14 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:14 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:14 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:14 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:14 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:14 [info]: success with getUserName from DB
+2025-01-15 15:23:14 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:14 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:14 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:14 [info]: success with getUserName from DB
+2025-01-15 15:23:14 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:14 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:15 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:15 [info]: success with getUserName from DB
+2025-01-15 15:23:15 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:15 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:15 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:15 [info]: success with getUserName from DB
+2025-01-15 15:23:15 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:15 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:16 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:16 [info]: success with getUserName from DB
+2025-01-15 15:23:16 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:16 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:17 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:17 [info]: success with getUserName from DB
+2025-01-15 15:23:17 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:17 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:17 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:17 [info]: success with getUserName from DB
+2025-01-15 15:23:17 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:17 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:20 [info]: calling getRecipes
+2025-01-15 15:23:20 [info]: getChefs- find all recipe
+2025-01-15 15:23:30 [error]: Failed to getUserName for user: 677bf82137c2060f50f2593e. Error: read ECONNRESET
+2025-01-15 15:23:33 [info]: success fetching recipes from DB
+2025-01-15 15:23:33 [info]: success with getRecipes
+2025-01-15 15:23:33 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:33 [info]: success with getUserName from DB
+2025-01-15 15:23:33 [info]: calling getRecipes
+2025-01-15 15:23:33 [info]: getChefs- find all recipe
+2025-01-15 15:23:33 [info]: success fetching recipes from DB
+2025-01-15 15:23:33 [info]: success with getRecipes
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:36 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:36 [info]: success with getUserName from DB
+2025-01-15 15:23:36 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:36 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:37 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:37 [info]: success with getUserName from DB
+2025-01-15 15:23:37 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:37 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:38 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:38 [info]: success with getUserName from DB
+2025-01-15 15:23:38 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:38 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: getUserName - for user: 677ad403f2960343e6f15cd3
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677ad403f2960343e6f15cd3 name is: chef 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:39 [info]: success with getUserName from DB
+2025-01-15 15:23:39 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:39 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:40 [info]: success with getUserName from DB
+2025-01-15 15:23:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:40 [info]: success with getUserName from DB
+2025-01-15 15:23:40 [info]: Calling getUserName with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:23:40 [info]: getUserName - for user: 677bf82137c2060f50f2593e
+2025-01-15 15:23:40 [info]: Successfully getUserName : 677bf82137c2060f50f2593e name is: t 
+2025-01-15 15:23:40 [info]: success with getUserName from DB
+2025-01-15 15:23:52 [info]: Calling signIn with email: hellohi@gmail.com and password: 1234567
+2025-01-15 15:23:52 [info]: signIn- find chef with email: hellohi@gmail.com and password 1234567
+2025-01-15 15:23:52 [info]: found a chef with the email" hellohi@gmail.com
+2025-01-15 15:23:52 [info]: found a chef with email: hellohi@gmail.com and password 1234567 
+2025-01-15 15:23:52 [info]: id: 677bf82137c2060f50f2593e email: hellohi@gmail.com type: chef
+2025-01-15 15:23:52 [info]: success with signIn true
+2025-01-15 15:23:57 [info]: getRecipe - calling recipe with ID: 67879e577a75237b97a98cac
+2025-01-15 15:23:57 [info]: fetchRecipe- find recipe with recipeID: 67879e577a75237b97a98cac
+2025-01-15 15:23:57 [info]: found a recipe with recipeID: 67879e577a75237b97a98cac
+2025-01-15 15:23:57 [info]: success with getRecipe id: 67879e577a75237b97a98cac
+2025-01-15 15:23:57 [info]: getRecipe - calling recipe with ID: 67879e577a75237b97a98cac
+2025-01-15 15:23:57 [info]: fetchRecipe- find recipe with recipeID: 67879e577a75237b97a98cac
+2025-01-15 15:23:57 [info]: found a recipe with recipeID: 67879e577a75237b97a98cac
+2025-01-15 15:23:57 [info]: success with getRecipe id: 67879e577a75237b97a98cac
+2025-01-15 15:23:59 [info]: calling getRecipes
+2025-01-15 15:23:59 [info]: getChefs- find all recipe
+2025-01-15 15:24:00 [info]: success fetching recipes from DB
+2025-01-15 15:24:00 [info]: success with getRecipes
+2025-01-15 15:24:00 [info]: calling getRecipes
+2025-01-15 15:24:00 [info]: getChefs- find all recipe
+2025-01-15 15:24:00 [info]: success fetching recipes from DB
+2025-01-15 15:24:00 [info]: success with getRecipes
+2025-01-15 15:24:06 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 15:24:06 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 15:24:06 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 15:24:06 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 15:24:06 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 15:24:06 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 15:24:06 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 15:24:06 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 15:24:08 [info]: calling getRecipes
+2025-01-15 15:24:08 [info]: getChefs- find all recipe
+2025-01-15 15:24:09 [info]: success fetching recipes from DB
+2025-01-15 15:24:09 [info]: success with getRecipes
+2025-01-15 15:24:09 [info]: calling getRecipes
+2025-01-15 15:24:09 [info]: getChefs- find all recipe
+2025-01-15 15:24:09 [info]: success fetching recipes from DB
+2025-01-15 15:24:09 [info]: success with getRecipes
+2025-01-15 15:24:10 [info]: Calling AddFavorite with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:24:10 [info]: AddFavorite- add a favorite recipe to DB for user: 677bf82137c2060f50f2593e
+2025-01-15 15:24:10 [info]: add recipe: 676046a9ce9abf8bb07801fc to user 677bf82137c2060f50f2593e
+2025-01-15 15:24:10 [info]: success with AddFavorite to DB
+2025-01-15 15:24:11 [info]: Calling AddFavorite with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:24:11 [info]: AddFavorite- add a favorite recipe to DB for user: 677bf82137c2060f50f2593e
+2025-01-15 15:24:11 [info]: add recipe: 676046f1ce9abf8bb07801ff to user 677bf82137c2060f50f2593e
+2025-01-15 15:24:11 [info]: success with AddFavorite to DB
+2025-01-15 15:24:12 [info]: Calling AddFavorite with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:24:12 [info]: AddFavorite- add a favorite recipe to DB for user: 677bf82137c2060f50f2593e
+2025-01-15 15:24:12 [info]: add recipe: 676025ce9b0173cc30625805 to user 677bf82137c2060f50f2593e
+2025-01-15 15:24:12 [info]: success with AddFavorite to DB
+2025-01-15 15:24:13 [info]: Calling AddFavorite with userID : 677bf82137c2060f50f2593e
+2025-01-15 15:24:13 [info]: AddFavorite- add a favorite recipe to DB for user: 677bf82137c2060f50f2593e
+2025-01-15 15:24:13 [info]: add recipe: 676046d9ce9abf8bb07801fe to user 677bf82137c2060f50f2593e
+2025-01-15 15:24:13 [info]: success with AddFavorite to DB
+2025-01-15 15:24:15 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 15:24:15 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 15:24:15 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 15:24:15 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 
+2025-01-15 15:24:15 [info]: favorite - get favorite recipes from DB, user id: 677bf82137c2060f50f2593e
+2025-01-15 15:24:15 [info]: getFavorite- find recipes of userID: 677bf82137c2060f50f2593e
+2025-01-15 15:24:15 [info]: found user with ID: 677bf82137c2060f50f2593e
+2025-01-15 15:24:15 [info]: successfull get recipes of userID: 677bf82137c2060f50f2593e 

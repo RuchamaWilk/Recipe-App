@@ -35,7 +35,8 @@ const Card = ({ recipe }) => {
   }, [user, recipe._id]);
 
   const showRecipe = () => {
-    navigate(`/recipe/${recipe._id}`);
+    console.log(`chefName: ${chefName}`);
+    navigate(`/recipe/${recipe._id}`, { state: { chefName } });
   };
 
 
