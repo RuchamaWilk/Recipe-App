@@ -27,7 +27,7 @@ function AppRouters() {
       />
       <Route path="/favorite/:userID" 
         element={
-          <ProtectedRoute allowedTypes={['user']}>
+          <ProtectedRoute allowedTypes={['user','chef']}>
             <MyFavoritePage />
           </ProtectedRoute>
         } 

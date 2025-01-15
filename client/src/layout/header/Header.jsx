@@ -72,6 +72,7 @@ const handleMenuClose = () => {
 const loggedInPages = user?.type === 'chef'
   ? [
       { name: 'Add Recipe', action: handleAdd },
+      { name: 'My Favorites', action: handleFavorites },
     ]
   : [
       { name: 'My Favorites', action: handleFavorites },
