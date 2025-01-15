@@ -11,7 +11,7 @@ const RecipesPage = ({ fetchFunction, isFavorite }) => {
   console.log("RecipesPage")
   const { category } = useParams(); // הוצאת ה-ID מתוך ה-URL
   const [recipesByCategory, setRecipesByCategory] = useState(null); // שמירה במצב על המתכון
-  const { user } = useUser(); // שימוש ב-UserContext
+  const { user } = useUser();
 
 
   useEffect(() => {

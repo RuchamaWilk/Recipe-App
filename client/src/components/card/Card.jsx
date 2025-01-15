@@ -1,52 +1,82 @@
-import React, { useState } from 'react';
-import {
-  Card as CardUi,
-  CardMedia,
-  CardContent,
-  CardActions,
-  IconButton,
-  Typography,
-  Rating,
-  Box,
-  Chip,
-} from '@mui/material';
+import React, { useState,useEffect } from 'react';
+import {Card as CardUi,CardMedia,CardContent,CardActions,IconButton,Typography,Rating,Box,Chip,} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import PersonIcon from '@mui/icons-material/Person';
-import {jwtDecode} from "jwt-decode";
-import {addFavoriteRecipes} from '../../services/apiService'
+import {addFavoriteRecipes,removeFavoriteRecipe,getUserById} from '../../services/apiService'
+import {useUser} from '../../providers/UserProvider'
 
 const Card = ({ recipe }) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
+  const { user, setUser} = useUser()
+  const [chefName, setChefName] = useState('');
+
+
+  useEffect(() => {
+    const fetchChefName = async () => {
+      try {
+        const chefName = await getUserById(recipe.chefId); // קריאה ל-API
+        setChefName(chefName.result); // עדכון שם השף במצב
+      } catch (error) {
+        console.error('Failed to fetch chef name:', error);
+      }
+    };
+  
+    fetchChefName();
+  }, [recipe.chefId]);
+  
+
+  useEffect(() => {
+    const fetchFavorites = async () => {
+      if (user) {
+        try {
+          const favorites = user.favoriteRecipes // אוסף את רשימת המועדפים
+          const isFavoriteRecipe = favorites.includes(recipe._id); // בודק אם המתכון ברשימה
+          setIsFavorite(isFavoriteRecipe);
+        } catch (error) {
+          console.error('Failed to fetch favorites:', error);
+        }
+      }
+    };
+    fetchFavorites();
+  }, [user, recipe._id]);
 
   const showRecipe = () => {
     navigate(`/recipe/${recipe._id}`);
   };
 
-  const getUserIdFromToken=()=>{
-    console.log("WHAT?")
-    const token = localStorage.getItem('token');
-    if (!token) {
-      console.error("Token not found");
-      return null;
-    }
-    const decodedToken = jwtDecode(token);
-    console.log(decodedToken._id)
-    return decodedToken._id;
 
-  }
 
   const  handleFavoriteClick = async(e) => {
     e.stopPropagation();
-    setIsFavorite(!isFavorite);
-    const userID =getUserIdFromToken();
-    console.log("handleFavoriteClick")
-    await addFavoriteRecipes(userID,recipe._id );
-    
+    if(user){
+      try {
+        if (isFavorite) {
+          await removeFavoriteRecipe(user._id, recipe._id);
+          setUser((prevUser) => ({
+            ...prevUser,
+            favoriteRecipes: prevUser.favoriteRecipes.filter((id) => id !== recipe._id),
+          }));
+        } else {
+          await addFavoriteRecipes(user._id, recipe._id);
+          setUser((prevUser) => ({
+            ...prevUser,
+            favoriteRecipes: [...prevUser.favoriteRecipes, recipe._id],
+          }));
+              }
+      } catch (error) {
+        console.error('Failed to update favorites:', error);
+      }
+
+    }
+    else{
+      console.log("here will be want to ssign up?")
+    }
+
   };
 
   return (
@@ -159,7 +189,7 @@ const Card = ({ recipe }) => {
           />
           <Chip
             icon={<PersonIcon sx={{ fontSize: '0.7rem' }} />}
-            label={recipe.chefId}
+            label={chefName}
             size="small"
             sx={{ 
               height: '16px',

@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const logger = require('../services/loggerService');
-const { getUsers, signIn ,AddUser,AddChef,getFavorite,AddFavorite} = require('../services/authService');
+const { getUsers, signIn ,AddUser,AddChef,getFavorite,AddFavorite,RemoveFavorite,getUserName} = require('../services/authService');
 
 router.get('/', async (req, res, next) => {
     try {
@@ -78,6 +78,30 @@ router.get('/favorite/:userID', async (req, res, next) => {
         logger.info(`Calling AddFavorite with userID : ${userID}` );
         const result = await AddFavorite({ userID, recipeID }); 
         logger.info('success with AddFavorite to DB');
+        return res.status(200).send({result: result});
+    } catch (err) {
+        next(err);
+    }
+});
+
+router.post('/removeFavorite', async (req, res, next) => {
+    try {
+        const { userID , recipeID} = req.body;
+        logger.info(`Calling RemoveFavorite with userID : ${userID} and recipe ${recipeID}` );
+        const result = await RemoveFavorite({ userID, recipeID }); 
+        logger.info('success with RemoveFavorite from DB');
+        return res.status(200).send({result: result});
+    } catch (err) {
+        next(err);
+    }
+});
+
+router.get('/:userID', async (req, res, next) => {
+    try {
+        const  userID  = req.params.userID;
+        logger.info(`Calling getUserName with userID : ${userID}` );
+        const result = await getUserName({ userID }); 
+        logger.info('success with getUserName from DB');
         return res.status(200).send({result: result});
     } catch (err) {
         next(err);

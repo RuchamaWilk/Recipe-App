@@ -124,9 +124,47 @@ const AddFavorite =async ({userID, recipeID}) => {
 
 }
 
+const RemoveFavorite = async ({ userID, recipeID }) => {
+    try {
+      logger.info(`RemoveFavorite - removing a favorite recipe from DB for user: ${userID}`);
+      
+      const result = await User.findByIdAndUpdate(
+        userID,
+        { $pull: { favoriteRecipes: recipeID } }, // $pull משמש להסרת ערך ממערך
+        { new: true } // מחזיר את המסמך המעודכן
+      );
+      
+      if (!result) {
+        throw new Error('User not found');
+      }
+      
+      logger.info(`Successfully removed recipe: ${recipeID} for user: ${userID}`);
+      return result.favoriteRecipes;
+    } catch (err) {
+      logger.error(`Failed to remove favorite recipe: ${recipeID} for user: ${userID}. Error: ${err.message}`);
+      throw err;
+    }
+  };
+
+  const getUserName = async({userID})=>{
+    try{
+        logger.info(`getUserName - for user: ${userID}`);
+
+       const user= await User.findOne({ _id: userID });
+       if (!user) {
+        throw new Error('User not found');
+      }
+       logger.info(`Successfully getUserName : ${userID} name is: ${user.userName} `);
+       return user.userName;
+    }
+    catch (err) {
+        logger.error(`Failed to getUserName for user: ${userID}. Error: ${err.message}`);
+        throw err;
+      }
+  }
 
 
 
 
 
-module.exports = { getUsers, signIn,AddUser, AddChef,getFavorite,AddFavorite };
+module.exports = { getUsers, signIn,AddUser, AddChef,getFavorite,AddFavorite,RemoveFavorite ,getUserName};

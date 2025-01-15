@@ -115,6 +115,26 @@ export const addFavoriteRecipes = async (userID, recipeID) => {
     throw error;
   }
 };
+export const removeFavoriteRecipe = async (userID, recipeID) => {
+  try {
+    console.log(`removeFavoriteRecipe of user:  ${userID} and recipe id: ${recipeID}`);
+    const response = await axios.post(`${BASE_URL}/auth/removeFavorite`,{userID,recipeID});
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching recipes:', error);
+    throw error;
+  }
+};
+
+export const getUserById = async (userID) => {
+  try {
+    const response = await axios.get(`${BASE_URL}/auth/${userID}`); // הנח שזו כתובת ה-API שלך
+    return response.data; // הנתונים אמורים לכלול שם של המשתמש
+  } catch (error) {
+    console.error('Failed to fetch user by ID:', error);
+    throw error;
+  }
+};
 
 
 
