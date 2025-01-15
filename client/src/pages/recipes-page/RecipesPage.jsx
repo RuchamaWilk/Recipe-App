@@ -10,17 +10,15 @@ import { useUser } from '../../providers/UserProvider'
 const RecipesPage = ({ fetchFunction, isFavorite }) => {
   console.log("RecipesPage")
   const { category } = useParams(); // הוצאת ה-ID מתוך ה-URL
-  const [recipesByCategory, setRecipesByCategory] = useState(null); // שמירה במצב על המתכון
+  const [recipes, setRecipes] = useState(null); // שמירה במצב על המתכון
   const { user } = useUser();
 
 
   useEffect(() => {
     const getRecipes = async () => {
       try {
-        console.log("getRecipes?")
-        const userId = isFavorite ? user._id : null;
-        const fetchedRecipes = await fetchFunction(isFavorite ? userId : category); 
-        setRecipesByCategory(fetchedRecipes); 
+        const fetchedRecipes = await fetchFunction(isFavorite ? user._id : category); 
+        setRecipes(fetchedRecipes); 
       } catch (error) {
         console.error('Error fetching recipe:', error);
       }
@@ -28,7 +26,7 @@ const RecipesPage = ({ fetchFunction, isFavorite }) => {
     getRecipes();
   }, [fetchFunction, category, user,isFavorite ]); 
 
-  if (!recipesByCategory) {
+  if (!recipes) {
     return <div>Loading...</div>;
   }
 
@@ -49,36 +47,44 @@ const RecipesPage = ({ fetchFunction, isFavorite }) => {
         {isFavorite ? "My Favorites Recipes" : category}
       </Typography>
       
-      <Box sx={{ 
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4, 300px)', // קובע מספר קבוע של טורים
-        gap: '32px',
-        justifyContent: 'center',
-        maxWidth: "1500px",
-        margin: "0 auto",
-        // מוסיף תמיכה במסכים שונים
-        '@media (max-width: 1400px)': {
-          gridTemplateColumns: 'repeat(3, 300px)',
-        },
-        '@media (max-width: 1100px)': {
-          gridTemplateColumns: 'repeat(2, 300px)',
-        },
-        '@media (max-width: 700px)': {
-          gridTemplateColumns: 'repeat(1, 300px)',
-        }
-      }}>
-        {recipesByCategory.map((item, index) => (
-          <Box 
-            key={index}
-            sx={{ 
-              width: '300px',
-              height: 'fit-content'
-            }}
-          >
-            <Card recipe={item} />
-          </Box>
-        ))}
-      </Box>
+      {recipes.length === 0 ? (
+        <Typography variant="h6" sx={{ 
+          textAlign: 'center',
+          color: '#555',
+        }}>
+          {isFavorite ? "You have not selected any favorite recipes yet." : "No recipes found in this category."}
+        </Typography>
+      ) : (
+        <Box sx={{ 
+          display: 'grid',
+          gridTemplateColumns: 'repeat(4, 300px)', 
+          gap: '32px',
+          justifyContent: 'center',
+          maxWidth: "1500px",
+          margin: "0 auto",
+          '@media (max-width: 1400px)': {
+            gridTemplateColumns: 'repeat(3, 300px)',
+          },
+          '@media (max-width: 1100px)': {
+            gridTemplateColumns: 'repeat(2, 300px)',
+          },
+          '@media (max-width: 700px)': {
+            gridTemplateColumns: 'repeat(1, 300px)',
+          }
+        }}>
+          {recipes.map((item, index) => (
+            <Box 
+              key={index}
+              sx={{ 
+                width: '300px',
+                height: 'fit-content'
+              }}
+            >
+              <Card recipe={item} />
+            </Box>
+          ))}
+        </Box>
+      )}
     </Box>
   );
 };
