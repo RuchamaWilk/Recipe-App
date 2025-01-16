@@ -15,7 +15,8 @@ import {
   validateEmail, 
   validatePassword,
   validateYearsOfExperience,
-  validatephoneNumber 
+  validatephoneNumber ,
+  validateAboutMe
 } from '../../utils/validation';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 
@@ -31,6 +32,8 @@ const ChefSignUpForm = () => {
   const [userNameError, setUserNameError] = useState('');
   const [yearsOfExperienceError, setYearsOfExperienceError] = useState('');
   const [phoneNumberError, setPhoneNumberError] = useState('');
+  const [aboutMeError, setAboutMeError] = useState('');
+
   
   const navigate = useNavigate();
 
@@ -40,18 +43,21 @@ const ChefSignUpForm = () => {
     setUserNameError('');
     setYearsOfExperienceError('');
     setPhoneNumberError('');
+    setAboutMeError('')
     
     const userNameErrorMsg = validateUserName(userName);
     const emailErrorMsg = validateEmail(email);
     const passwordErrorMsg = validatePassword(password);
     const yearsErrorMsg = validateYearsOfExperience(yearsOfExperience);
     const phoneErrorMsg = validatephoneNumber(phoneNumber);
+    const aboutMeErrorMsg= validateAboutMe(phoneNumber);
 
     setUserNameError(userNameErrorMsg);
     setEmailError(emailErrorMsg);
     setPasswordError(passwordErrorMsg);
     setYearsOfExperienceError(yearsErrorMsg);
     setPhoneNumberError(phoneErrorMsg);
+    setAboutMeError(aboutMeErrorMsg)
 
     if (!userNameErrorMsg && !emailErrorMsg && !passwordErrorMsg && 
         !yearsErrorMsg && !phoneErrorMsg) {
@@ -118,8 +124,7 @@ const ChefSignUpForm = () => {
               onChange={(e) => setUserName(e.target.value)}
               error={!!userNameError}
               helperText={userNameError}
-              sx={{ bgcolor: 'white' }}
-              dir="rtl"
+              required
             />
             <TextField
               label="Email"
@@ -129,8 +134,7 @@ const ChefSignUpForm = () => {
               onChange={(e) => setEmail(e.target.value)}
               error={!!emailError}
               helperText={emailError}
-              sx={{ bgcolor: 'white' }}
-              dir="rtl"
+              required
             />
           </Box>
 
@@ -143,8 +147,7 @@ const ChefSignUpForm = () => {
             onChange={(e) => setPassword(e.target.value)}
             error={!!passwordError}
             helperText={passwordError}
-            sx={{ bgcolor: 'white' }}
-            dir="rtl"
+            required
           />
 
           <Box sx={{ 
@@ -161,8 +164,7 @@ const ChefSignUpForm = () => {
               onChange={(e) => setYearsOfExperience(e.target.value)}
               error={!!yearsOfExperienceError}
               helperText={yearsOfExperienceError}
-              sx={{ bgcolor: 'white' }}
-              dir="rtl"
+              required
             />
             <TextField
               label="Phone Number"
@@ -172,8 +174,7 @@ const ChefSignUpForm = () => {
               onChange={(e) => setPhoneNumber(e.target.value)}
               error={!!phoneNumberError}
               helperText={phoneNumberError}
-              sx={{ bgcolor: 'white' }}
-              dir="rtl"
+              required
             />
           </Box>
 
@@ -184,19 +185,10 @@ const ChefSignUpForm = () => {
             multiline
             rows={4}
             value={aboutMe}
+            required
+            error={!!aboutMeError}
+            helperText={aboutMeError}
             onChange={(e) => setAboutMe(e.target.value)}
-            sx={{ 
-              bgcolor: 'white',
-              '& .MuiOutlinedInput-root': {
-                '&:hover fieldset': {
-                  borderColor: '#939185',
-                },
-                '&.Mui-focused fieldset': {
-                  borderColor: '#939185',
-                },
-              }
-            }}
-            dir="rtl"
           />
           
           <Button 

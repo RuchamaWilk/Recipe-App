@@ -41,4 +41,12 @@ export const validateUserName = (userName) => {
 
   return '';
 }
+
+export const validateAboutMe = (aboutMe) => {
+  if (aboutMe === '') {
+    return 'We would love to know a bit about you so you can join us as a chef!';
+  }
+  return '';
+};
+
   
