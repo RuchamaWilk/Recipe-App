@@ -4,6 +4,7 @@ import Card from '../../components/card/Card';
 import { Typography, Box } from '@mui/material';
 import { useUser } from '../../providers/UserProvider'
 
+const mainColor = "#5d5b4f";
 
 
 
@@ -41,7 +42,7 @@ const RecipesPage = ({ fetchFunction, isFavorite }) => {
     }}>
       <Typography variant="h4" component="h1" sx={{ 
         textAlign: 'center',
-        color: '#2F3645',
+        color: mainColor,
         marginBottom: "20px"
       }}>
         {isFavorite ? "My Favorites Recipes" : category}
@@ -50,7 +51,7 @@ const RecipesPage = ({ fetchFunction, isFavorite }) => {
       {recipes.length === 0 ? (
         <Typography variant="h6" sx={{ 
           textAlign: 'center',
-          color: '#555',
+          color: mainColor,
         }}>
           {isFavorite ? "You have not selected any favorite recipes yet." : "No recipes found in this category."}
         </Typography>

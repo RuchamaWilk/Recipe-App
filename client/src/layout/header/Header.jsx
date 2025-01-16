@@ -225,7 +225,8 @@ function ModernHeader() {
               sx={{ 
                 display: 'flex',
                 mr: 1,
-                color: mainColor
+                color: mainColor,
+                marginRight: "20px"
               }} 
             />
             <Typography

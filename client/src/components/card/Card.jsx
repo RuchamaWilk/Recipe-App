@@ -7,6 +7,9 @@ import { addFavoriteRecipes, removeFavoriteRecipe } from '../../services/apiServ
 import { useUser } from '../../providers/UserProvider';
 import SignInDialog from '../../components/signInDialog/SignInDialog';
 
+const mainColor = "#5d5b4f";
+
+
 const Card = ({ recipe }) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
@@ -127,7 +130,7 @@ const Card = ({ recipe }) => {
       >
         <Typography
           variant="h5"
-          sx={{ fontWeight: 600, fontSize: '1.3rem' }}
+          sx={{ fontWeight: 600, fontSize: '1.3rem', color: mainColor }}
         >
           {recipe.name}
         </Typography>
