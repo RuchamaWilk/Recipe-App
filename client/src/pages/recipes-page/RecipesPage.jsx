@@ -63,13 +63,13 @@ const RecipesPage = ({ fetchFunction, isFavorite }) => {
           maxWidth: "1500px",
           margin: "0 auto",
           '@media (max-width: 1400px)': {
-            gridTemplateColumns: 'repeat(3, 300px)',
+            gridTemplateColumns: 'repeat(3, 320px)',
           },
           '@media (max-width: 1100px)': {
             gridTemplateColumns: 'repeat(2, 300px)',
           },
           '@media (max-width: 700px)': {
-            gridTemplateColumns: 'repeat(1, 300px)',
+            gridTemplateColumns: 'repeat(1, 320px)',
           }
         }}>
           {recipes.map((item, index) => (
