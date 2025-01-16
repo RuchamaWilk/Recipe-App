@@ -1,13 +1,11 @@
-import React, { useState,useEffect } from 'react';
-import {Card as CardUi,CardMedia,CardContent,CardActions,IconButton,Typography,Rating,Box,Chip,} from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { Card as CardUi, CardMedia, CardContent, CardActions, IconButton, Typography, Rating, Box, Divider } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import PersonIcon from '@mui/icons-material/Person';
-import {addFavoriteRecipes,removeFavoriteRecipe} from '../../services/apiService'
-import {useUser} from '../../providers/UserProvider'
-import SignInDialog from '../../components/signInDialog/SignInDialog'
+import { addFavoriteRecipes, removeFavoriteRecipe } from '../../services/apiService';
+import { useUser } from '../../providers/UserProvider';
+import SignInDialog from '../../components/signInDialog/SignInDialog';
 
 const Card = ({ recipe }) => {
   const navigate = useNavigate();
@@ -17,7 +15,6 @@ const Card = ({ recipe }) => {
   const [chefName, setChefName] = useState('');
   const [openDialog, setOpenDialog] = useState(false);
 
-
   useEffect(() => {
     const getChefName = async () => {
       const name = await fetchChefName(recipe.chefId);
@@ -26,15 +23,16 @@ const Card = ({ recipe }) => {
     getChefName();
   }, [recipe.chefId, fetchChefName]);
 
-  useEffect(() => { const updateFavoriteState = async () => {
-     if (user) {
+  useEffect(() => {
+    const updateFavoriteState = async () => {
+      if (user) {
         const isFavoriteRecipe = user.favoriteRecipes.includes(recipe._id);
         setIsFavorite(isFavoriteRecipe);
-     } else { 
+      } else {
         setIsFavorite(false);
-    } 
-  }; 
-  updateFavoriteState();
+      }
+    };
+    updateFavoriteState();
   }, [user, recipe._id]);
 
   const showRecipe = () => {
@@ -42,11 +40,9 @@ const Card = ({ recipe }) => {
     navigate(`/recipe/${recipe._id}`, { state: { chefName } });
   };
 
-
-
-  const handleFavoriteClick = async(e) => {
+  const handleFavoriteClick = async (e) => {
     e.stopPropagation();
-    if(user){
+    if (user) {
       try {
         if (isFavorite) {
           await removeFavoriteRecipe(user._id, recipe._id);
@@ -60,22 +56,18 @@ const Card = ({ recipe }) => {
             ...prevUser,
             favoriteRecipes: [...prevUser.favoriteRecipes, recipe._id],
           }));
-              }
+        }
       } catch (error) {
         console.error('Failed to update favorites:', error);
       }
-
+    } else {
+      setOpenDialog(true);
     }
-    else{
-      setOpenDialog(true);    
-    }
-
   };
 
   const handleDialogClick = (e) => {
     e.stopPropagation();
-};
-
+  };
 
   return (
     <CardUi
@@ -83,22 +75,22 @@ const Card = ({ recipe }) => {
       onMouseLeave={() => setIsHovered(false)}
       onClick={showRecipe}
       sx={{
-        width: '100%', // Changed from fixed width to 100%
-        height: 200,
+        width: '100%',
+        height: 200, // Updated height
         minWidth: "320px",
         position: 'relative',
         borderRadius: '12px',
         cursor: 'pointer',
-        //overflow: 'hidden',
+        overflow: 'hidden',
         transition: 'all 0.3s ease-in-out',
         '&:hover': {
           transform: 'translateY(-4px)',
         },
         bgcolor: '#ffffff',
         border: '1px solid rgba(0,0,0,0.08)',
+        boxShadow: '0 4px 16px rgba(0,0,0,0.1)' // Adding shadow for style
       }}
     >
-      {/* Image Container */}
       <Box sx={{ position: 'relative', height: '65%' }}>
         <CardMedia
           component="img"
@@ -110,123 +102,76 @@ const Card = ({ recipe }) => {
             transform: isHovered ? 'scale(1.05)' : 'scale(1)',
           }}
         />
-        <CardActions 
-          sx={{
-            position: 'absolute',
-            top: 8,
-            right: 8,
-            padding: 0,
-          }}
+        <CardActions
+          sx={{ position: 'absolute', top: 8, right: 8, padding: 0 }}
         >
           <IconButton
             onClick={handleFavoriteClick}
             sx={{
               bgcolor: 'rgba(255,255,255,0.9)',
               padding: '4px',
-              '&:hover': {
-                bgcolor: 'rgba(255,255,255,1)',
-                transform: 'scale(1.1)',
-              },
-              transition: 'all 0.2s ease',
+              '&:hover': { bgcolor: 'rgba(255,255,255,1)', transform: 'scale(1.1)' },
+              transition: 'all 0.2s ease'
             }}
           >
             <FavoriteIcon
               fontSize="small"
-              sx={{
-                color: isFavorite ? '#ff4444' : '#666',
-                transition: 'color 0.2s ease',
-              }}
+              sx={{ color: isFavorite ? '#ff4444' : '#666', transition: 'color 0.2s ease' }}
             />
           </IconButton>
         </CardActions>
       </Box>
 
-      {/* Content Container */}
-      <CardContent 
-        sx={{ 
-          p: 1.5,
-          height: '35%',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 0.5,
-          padding: "6px"
-        }}
+      <CardContent
+        sx={{ p: 1.5, height: '35%', display: 'flex', flexDirection: 'column', padding: '8px' }}
       >
-        <Typography 
-          variant="h5" 
-          sx={{
-            fontWeight: 600,
-            fontSize: '0.9rem',
-            overflow: 'hidden',
-          }}
+        <Typography
+          variant="h5"
+          sx={{ fontWeight: 600, fontSize: '1.3rem' }}
         >
           {recipe.name}
         </Typography>
 
-        <Box 
-          sx={{ 
-            display: 'flex',
-            alignItems: 'center',
-            gap: 0.5,
-          }}
-        >
-          <Chip
-            icon={<AccessTimeIcon sx={{ fontSize: '0.7rem' }} />}
-            label={`${recipe.avgTime} Min`}
-            size="small"
-            sx={{ 
-              height: '16px',
-              '& .MuiChip-label': {
-                fontSize: '0.6rem',
-                px: 1,
-              },
-              '& .MuiChip-icon': {
-                ml: 0.5,
-              },
-            }}
-          />
-          <Chip
-            icon={<PersonIcon sx={{ fontSize: '0.7rem' }} />}
-            label={chefName}
-            size="small"
-            sx={{ 
-              height: '16px',
-              '& .MuiChip-label': {
-                fontSize: '0.6rem',
-                px: 1,
-              },
-              '& .MuiChip-icon': {
-                ml: 0.5,
-              },
-            }}
-          />
-        </Box>
+        <Box sx={{ display: 'flex', alignItems: 'center', marginTop: "8px", marginBottom: 0, justifyContent: 'space-between' }}>
+  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+    <Typography
+      variant="body2"
+      sx={{ fontWeight: 400, fontSize: '0.9rem', color: '#666', borderRight: '1px solid #ccc', paddingRight: '8px' }}
+    >
+      {chefName}
+    </Typography>
+    <Typography
+      variant="body2"
+      sx={{ fontWeight: 400, fontSize: '0.9rem', color: '#666' }}
+    >
+      {`${recipe.avgTime} Min`}
+    </Typography>
+  </Box>
 
-        <Rating 
-          name="recipe-rating" 
-          value={3} 
-          readOnly
-          size="small"
-          sx={{
-            '& .MuiRating-icon': {
-              color: '#ffd700',
-              fontSize: '0.8rem',
-            }
-          }}
-        />
+  <Rating
+    name="recipe-rating"
+    value={3}
+    size="small"
+    readOnly
+    sx={{ '& .MuiRating-icon': { color: '#ffd700', fontSize: '1rem' } }}
+  />
+</Box>
+
+
+       
       </CardContent>
       <SignInDialog
-    open={openDialog}
-    onClose={(e) => {
-        handleDialogClick(e);
-        setOpenDialog(false);
-    }}
-    onClick={handleDialogClick} // נוסיף את זה
-/>
+        open={openDialog}
+        onClose={(e) => {
+          handleDialogClick(e);
+          setOpenDialog(false);
+        }}
+        onClick={handleDialogClick}
+      />
     </CardUi>
-    
   );
 };
+
 
 Card.propTypes = {
   recipe: PropTypes.shape({
