@@ -1,72 +1,85 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { addUserToDb } from '../../services/apiService';
-import TextField from '@mui/material/TextField';
 import { Button, Dialog, Box, Typography } from '@mui/material';
+import TextField from '@mui/material/TextField';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+import { addUserToDb, signIn } from '../../services/apiService';
 import { validateUserName, validateEmail, validatePassword } from '../../utils/validation';
 import Succes from '../../components/succes/Succes';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import { signIn } from '../../services/apiService'; 
-import { useUser } from '../../providers/UserProvider'; // שימוש ב-Context של המשתמש
-
+import { useUser } from '../../providers/UserProvider';
 
 const SignUp = ({ open, onClose }) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [userName, setUserName] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [passwordError, setPasswordError] = useState('');
-  const [userNameError, setUserNameError] = useState('');
-  const [openSuccess, setOpenSuccess] = useState(false);
-const {setToken, setUser}= useUser()
   const navigate = useNavigate();
+  const { setToken, setUser } = useUser();
+  
+  const [formData, setFormData] = useState({
+    userName: '',
+    email: '',
+    password: ''
+  });
 
-  const handleDialogClick = (e) => {
-    e.stopPropagation();
+  const [errors, setErrors] = useState({
+    userName: '',
+    email: '',
+    password: ''
+  });
+
+  const [openSuccess, setOpenSuccess] = useState(false);
+
+  const handleInputChange = (field) => (event) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: event.target.value
+    }));
+  };
+
+  const resetForm = () => {
+    setFormData({
+      userName: '',
+      email: '',
+      password: ''
+    });
+    setErrors({
+      userName: '',
+      email: '',
+      password: ''
+    });
   };
 
   const handleClose = () => {
-    setEmailError('');
-    setPasswordError('');
-    setUserNameError('');
-    setUserName('');
-    setEmail('');
-    setPassword('');
+    resetForm();
     onClose();
   };
 
+  const validateForm = () => {
+    const newErrors = {
+      userName: validateUserName(formData.userName),
+      email: validateEmail(formData.email),
+      password: validatePassword(formData.password)
+    };
+
+    setErrors(newErrors);
+    return !Object.values(newErrors).some(error => error);
+  };
+
   const handleSubmit = async () => {
-    const userNameValidation = validateUserName(userName);
-    const emailValidation = validateEmail(email);
-    const passwordValidation = validatePassword(password);
-
-    setUserNameError(userNameValidation);
-    setEmailError(emailValidation);
-    setPasswordError(passwordValidation);
-
-    if (userNameValidation || emailValidation || passwordValidation) {
-      return; // אם יש שגיאות, לא ממשיכים
-    }
+    if (!validateForm()) return;
 
     try {
-      await addUserToDb(userName, email, password);
-      setOpenSuccess(true);
+      await addUserToDb(formData.userName, formData.email, formData.password);
+      const response = await signIn(formData.email, formData.password);
+      const { user, token } = response;
 
-      
+      setUser(user);
+      setToken(token);
+      setOpenSuccess(true);
 
       setTimeout(() => {
         setOpenSuccess(false);
         handleClose();
         navigate('/');
       }, 2500);
-      const response =await signIn(email, password);
-      const { user, token } = response;
-
-      // שמירה ב-Context
-      setUser(user);
-      setToken(token);
-
-      
     } catch (err) {
       console.error('Error during Sign Up:', err);
     }
@@ -76,8 +89,7 @@ const {setToken, setUser}= useUser()
     <Dialog
       open={open}
       onClose={handleClose}
-      onClick={handleDialogClick}
- 
+      onClick={(e) => e.stopPropagation()}
       PaperProps={{
         sx: {
           padding: 4,
@@ -87,43 +99,41 @@ const {setToken, setUser}= useUser()
       }}
     >
       <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
-        <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#2F3645' }}>
+        <RestaurantIcon 
+          sx={{ 
+            fontSize: 40, 
+            color: '#939185',
+            mb: 1,
+            marginBottom:0
+            
+          }} 
+        />
+        <Typography 
+          variant="h5" 
+          sx={{ 
+            fontWeight: 'bold', 
+            color: '#2F3645',
+            mb: 3,
+            letterSpacing: '0.5px'
+          }}
+        >
           Sign Up
         </Typography>
 
-        <TextField
-          label="User Name"
-          variant="outlined"
-          value={userName}
-          onChange={(ev) => setUserName(ev.target.value)}
-          error={!!userNameError}
-          helperText={userNameError}
-          required
-          fullWidth
-        />
-
-        <TextField
-          label="Email"
-          variant="outlined"
-          value={email}
-          onChange={(ev) => setEmail(ev.target.value)}
-          error={!!emailError}
-          helperText={emailError}
-          required
-          fullWidth
-        />
-
-        <TextField
-          label="Password"
-          variant="outlined"
-          type="password"
-          value={password}
-          onChange={(ev) => setPassword(ev.target.value)}
-          error={!!passwordError}
-          helperText={passwordError}
-          required
-          fullWidth
-        />
+        {['userName', 'email', 'password'].map((field) => (
+          <TextField
+            key={field}
+            label={field === 'userName' ? 'User Name' : field.charAt(0).toUpperCase() + field.slice(1)}
+            variant="outlined"
+            type={field === 'password' ? 'password' : 'text'}
+            value={formData[field]}
+            onChange={handleInputChange(field)}
+            error={!!errors[field]}
+            helperText={errors[field]}
+            required
+            fullWidth
+          />
+        ))}
 
         <Button
           onClick={handleSubmit}
@@ -133,7 +143,8 @@ const {setToken, setUser}= useUser()
             backgroundColor: '#2F3645',
             color: '#FFFFFF',
             fontWeight: 'bold',
-            paddingY: 1,
+            paddingY: 1.5,
+            mt: 2,
             '&:hover': {
               backgroundColor: '#4A5367',
             },
@@ -143,19 +154,34 @@ const {setToken, setUser}= useUser()
         </Button>
 
         <Box display="flex" justifyContent="space-between" width="100%">
-          <Typography variant="body2" sx={{ color: '#4A5367', marginTop: 2 }}>
-            <Link
-              to="/chef-sign-up"
-              onClick={handleClose}
-              style={{
-                textDecoration: 'none',
-                color: '#2F3645',
-                fontWeight: 'bold',
-              }}
-            >
-              Sign up as a chef
-            </Link>
-          </Typography>
+        <Typography 
+  variant="body2" 
+  sx={{ 
+    color: '#4A5367', 
+    marginTop: 2,
+    position: 'relative',
+    display: 'inline-block',
+    '&:hover::after': {
+      width: '100%'
+    }
+  }}
+>            
+  <Link               
+    to="/chef-sign-up"               
+    onClick={handleClose}               
+    style={{                 
+      textDecoration: 'none',                 
+      color: '#2F3645',                 
+      fontWeight: 'bold',
+      fontSize: '1rem',
+      letterSpacing: '0.5px',
+      position: 'relative',
+      paddingBottom: '2px'
+    }}             
+  >               
+    Join as a Chef            
+  </Link>             
+</Typography>
           <Button
             onClick={handleClose}
             variant="outlined"
@@ -163,7 +189,6 @@ const {setToken, setUser}= useUser()
               fontWeight: 'bold',
               color: '#2F3645',
               borderColor: '#2F3645',
-              marginTop: 1,
               '&:hover': {
                 backgroundColor: '#F1E4E4',
               },
