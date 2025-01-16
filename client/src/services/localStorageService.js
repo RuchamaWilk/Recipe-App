@@ -8,15 +8,15 @@ export const getToken=()=>{
       console.error("Token not found");
       return null;
     }
-    return token
-    /*try {
+    /*return token*/
+    try {
       const decodedToken = jwtDecode(token);
       console.log(decodedToken);
       return decodedToken;
     } catch (error) {
       console.error("Invalid token:", error.message);
       return null;
-    }*/
+    }
 
   }
 
