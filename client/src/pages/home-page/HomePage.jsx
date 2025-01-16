@@ -1,8 +1,7 @@
-// client/src/pages/homePage/HomePage.jsx
 import React, { useEffect, useState } from 'react';
 import RowCategory from '../../components/row-category/RowCategory';
 import { fetchRecipes } from '../../services/apiService';
-
+import { Box, Container } from '@mui/material'; // Container
 
 const HomePage = () => {
   const [categories, setCategories] = useState([]);
@@ -30,14 +29,31 @@ const HomePage = () => {
     getRecipes();
   }, []);
 
-  console.log("categories: " ,categories)
+  console.log("categories: ", categories);
   return (
-    <div >
-        {Object.keys(categories).map((category, index) => (
-        <RowCategory  key={index} category={category} recipes={categories[category]}/* sx={{gap: "15px"}}*/ />
+    <Container 
+      maxWidth="md" // הגדרת רוחב קבוע
+      sx={{
+        '@media (min-width: 900px)':
+         { maxWidth: '1420px', },
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '100vh',
+        padding:2, 
+        marginX: 'auto' // שמירת הרוחב ביחס למרכז
+      }}
+    >
+      {Object.keys(categories).map((category, index) => (
+        <RowCategory
+          key={index}
+          category={category}
+          recipes={categories[category]}
+          sx={{ marginY: 2 }} 
+        />
       ))}
-     
-    </div>
+    </Container>
   );
 };
 
