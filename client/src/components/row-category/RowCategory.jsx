@@ -6,6 +6,28 @@ import PropTypes from 'prop-types';
 
 const RowCategory = ({ category, recipes }) => {
   const navigate = useNavigate();
+  const [maxVisibleCards, setMaxVisibleCards] = useState(4);
+
+
+  useEffect(() => {
+    const updateMaxVisibleCards = () => {
+      if (window.innerWidth < 400) {
+        setMaxVisibleCards(1); // For small screens, show 2 cards
+      } else if (window.innerWidth < 641) {
+        setMaxVisibleCards(2); // For medium screens, show 3 cards
+      } 
+      else if (window.innerWidth < 2000) {
+        setMaxVisibleCards(3); // For medium screens, show 3 cards
+      } else {
+        setMaxVisibleCards(4); // For large screens, show 4 cards
+      }
+    };
+
+    updateMaxVisibleCards(); // Set the initial value
+    window.addEventListener('resize', updateMaxVisibleCards); // Listen to resize events
+    return () => window.removeEventListener('resize', updateMaxVisibleCards); // Cleanup
+  }, []);
+
 
   const showRecipes = () => {
     navigate(`/category/${category}`);
@@ -27,7 +49,7 @@ const RowCategory = ({ category, recipes }) => {
           <Typography variant="h4" component="h1" gutterBottom>
             {category}
           </Typography>
-         
+          {recipes.length>maxVisibleCards &&
             <Button
               sx={{
                 color: '#2F3645',
@@ -39,8 +61,10 @@ const RowCategory = ({ category, recipes }) => {
             >
               More
             </Button>
+}
          
         </CardActions>
+        
 
       <Box 
         id={category}
