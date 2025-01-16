@@ -67,6 +67,7 @@ const SignInPage = ({ open= true, onClose}) => {
           onChange={(ev) => setEmail(ev.target.value)}
           error={!!emailError}
           helperText={emailError}
+          required
         />
 
         <TextField
@@ -80,6 +81,7 @@ const SignInPage = ({ open= true, onClose}) => {
           onChange={(ev) => setPassword(ev.target.value)}
           error={!!passwordError}
           helperText={passwordError}
+          required
         />
 
         <Button
