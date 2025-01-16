@@ -8,20 +8,28 @@ export const getToken=()=>{
       console.error("Token not found");
       return null;
     }
-    const decodedToken = jwtDecode(token);
-    console.log(decodedToken)
-    return decodedToken;
+    return token
+    /*try {
+      const decodedToken = jwtDecode(token);
+      console.log(decodedToken);
+      return decodedToken;
+    } catch (error) {
+      console.error("Invalid token:", error.message);
+      return null;
+    }*/
 
   }
 
   export const getUser=()=>{
-    console.log("getUser?")
-    const userNow = localStorage.getItem('user');
-    if (!userNow) {
-      console.error("user not found");
+    try {
+      const user = localStorage.getItem('user');
+      if (!user) {
+        console.error("No user found in localStorage");
+        return null;
+      }
+      return JSON.parse(user);
+    } catch (error) {
+      console.error("Error parsing user JSON:", error);
       return null;
     }
-    console.log(JSON.parse(userNow))
-    return JSON.parse(userNow);
-
   }
