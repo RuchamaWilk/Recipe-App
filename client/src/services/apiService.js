@@ -115,6 +115,7 @@ export const addFavoriteRecipes = async (userID, recipeID) => {
     throw error;
   }
 };
+
 export const removeFavoriteRecipe = async (userID, recipeID) => {
   try {
     console.log(`removeFavoriteRecipe of user:  ${userID} and recipe id: ${recipeID}`);
@@ -137,7 +138,29 @@ export const getUserById = async (userID) => {
 };
 
 
+export const addRating = async (userID, recipeID,value ) => {
+  try {
+    console.log(`add rating from user:  ${userID} to recipe id: ${recipeID} and value ${value}`);
+    const rating = await axios.post(`${BASE_URL}/recipes/addRating`,{userID,recipeID,value});
+    return rating.data;
+  } catch (error) {
+    console.error('Error fetching recipes:', error);
+    throw error;
+  }
+};
 
+export const checkIfRated =async (userID, recipeID)=>{
+  try {
+    console.log(`checkIfRated user:  ${userID} to recipe id: ${recipeID}`);
+    const reply = await axios.get(`${BASE_URL}/recipes/checkIfRated`,{
+      params: { userID, recipeID },
+    });
+    return reply.data;
+  } catch (error) {
+    console.error('Error checkIfRated:', error);
+    throw error;
+  }
+}
 
 
 

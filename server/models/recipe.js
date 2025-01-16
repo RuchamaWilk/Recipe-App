@@ -11,6 +11,11 @@ const instructionsSchema = new mongoose.Schema({
   name: String,
 });
 
+const ratingSchema = new mongoose.Schema({
+  rating: { type: Number, required: true },     
+  reviewers: [String]
+});
+
 const recipeSchema = new mongoose.Schema({
     name: { type: String, required: true},
     avgTime: {type: Number, required: true},
@@ -18,8 +23,9 @@ const recipeSchema = new mongoose.Schema({
     image: {  type: String,required: true },
     ingredients: [ingredientSchema],
     instructions: [instructionsSchema],
-    category: {type: String,required: true}
-});
+    category: {type: String,required: true},
+    ratings: ratingSchema 
+  });
 
 
 const Recipe = mongoose.model('recipes', recipeSchema); 

@@ -52,7 +52,7 @@ const Recipe = () => {
       }}>
         <RecipeHeader image={recipe.image} name={recipe.name} />
         <CardContent sx={{ p: 4 }}>
-          <ChefRating chefName={chefName} />
+          <ChefRating chefName={chefName} recipeID ={recipe._id} />
           <Divider sx={{ my: 3 }} />
           <RecipeInstructions 
             ingredients={recipe.ingredients} 

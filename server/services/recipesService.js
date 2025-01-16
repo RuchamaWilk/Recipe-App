@@ -58,7 +58,50 @@ const addRecipe= async(recipe)=>{
     }  
 }
 
+const addRating= async({userID, recipeID,value})=>{
+    try {
+        logger.info(`${recipeID} by user: ${userID} and rate: ${value}`);
+        const recipe = await Recipe.findById(recipeID);
+        if (!recipe) {
+            throw new Error(`Recipe with ID ${recipeID} not found.`);
+        }
+        if (!recipe.ratings) {
+            recipe.ratings = { rating: 0, reviewers: [] };
+        }
+        if (recipe.ratings.reviewers.includes(userID)) {
+            throw new Error(`User ${userID} has already rated this recipe.`);
+        }
+        recipe.ratings.rating += value;
+        logger.info(`reviewers are ${recipe.ratings.reviewers}`);
+
+        recipe.ratings.reviewers.push(userID);
+        await recipe.save();
+        logger.info(`Successfully added rating to recipe ID: ${recipeID} by user: ${userID}`);
+        return recipe;
+      } catch (err) {
+        logger.error(`Error in addRating: ${err.message}`);
+        throw err;
+      }
+    };
+    
+    const check= async({userID, recipeID})=>{
+        try {
+            const ratedAlredy= false;
+            logger.info(`check- user : ${userID}`)
+            const recipe = await Recipe.findById(recipeID);
+            if (!recipe) {
+                throw new Error(`Recipe with ID ${recipeID} not found.`);
+            }
+            const hasRatedAlready = recipe.ratings.reviewers.includes(userID);
+
+            logger.info(`check- user : ${hasRatedAlready}`)
+            return hasRatedAlready
+        } catch (err) {
+            logger.error(err)
+            return Promise.reject(err);
+        }  
+    }
 
 
 
-module.exports = { getRecipes, getRecipe,fetchRecipesCategory,addRecipe};
+module.exports = { getRecipes, getRecipe,fetchRecipesCategory,addRecipe,addRating,check};

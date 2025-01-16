@@ -1,8 +1,19 @@
 const express = require('express');
 const router = express.Router();
-const { getRecipes ,getRecipe,fetchRecipesCategory,addRecipe} = require('../services/recipesService');
+const { getRecipes ,getRecipe,fetchRecipesCategory,addRecipe,addRating,check} = require('../services/recipesService');
 const logger = require('../services/loggerService');
 
+router.get('/checkIfRated', async (req, res, next) => {
+  try {
+      const {userID, recipeID} = req.query;
+      logger.info( `checkIfRated -  ${recipeID} and user: ${userID}`  );
+      const recipeRaited= await check({userID, recipeID});
+      logger.info(`successfull check recipe rated : ${recipeRaited} `);
+      return res.status(200).send(recipeRaited);
+  } catch (err) {
+  next(err);
+  }
+});
 
 router.get('/:id?', async (req, res, next) => {
   try {
@@ -50,6 +61,20 @@ router.get('/category/:categoryId', async (req, res) => {
     next(err);
     }
   });
+
+  router.post('/addRating', async (req, res, next) => {
+    try {
+        const {userID, recipeID,value} = req.body;
+        logger.info( `addRating -  new rating fo recipe: ${recipeID} and value: ${value}`  );
+        const recipeRaited= await addRating({userID, recipeID,value});
+        logger.info(`successfull post recipe rating for: ${recipeID} `);
+        return res.status(200).send(recipeRaited);
+    } catch (err) {
+    next(err);
+    }
+  });
+
+ 
 
   
 module.exports = router;
