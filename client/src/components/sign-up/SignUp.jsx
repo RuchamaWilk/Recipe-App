@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import {  Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { addUserToDb } from '../../services/apiService';
 import TextField from '@mui/material/TextField';
 import { Button, Dialog, Box, Typography } from '@mui/material';
 import { validateUserName, validateEmail, validatePassword } from '../../utils/validation';
+import Succes from '../../components/succes/Succes';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const SignUp = ({ open, onClose }) => {
   const [email, setEmail] = useState('');
@@ -12,12 +14,15 @@ const SignUp = ({ open, onClose }) => {
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [userNameError, setUserNameError] = useState('');
+  const [openSuccess, setOpenSuccess] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleDialogClick = (e) => {
     e.stopPropagation();
   };
 
-  const handleClose = () =>{
+  const handleClose = () => {
     setEmailError('');
     setPasswordError('');
     setUserNameError('');
@@ -25,23 +30,32 @@ const SignUp = ({ open, onClose }) => {
     setEmail('');
     setPassword('');
     onClose();
-  }
-  
+  };
+
   const handleSubmit = async () => {
-    setEmailError('');
-    setPasswordError('');
-    setUserNameError('');
-    setUserNameError(validateUserName(userName));
-    setEmailError(validateEmail(email));
-    setPasswordError(validatePassword(password));
-    if (userNameError || emailError || passwordError) {
-      return; // אם יש שגיאות, נצא מהפונקציה בלי לסגור את החלון
+    const userNameValidation = validateUserName(userName);
+    const emailValidation = validateEmail(email);
+    const passwordValidation = validatePassword(password);
+
+    setUserNameError(userNameValidation);
+    setEmailError(emailValidation);
+    setPasswordError(passwordValidation);
+
+    if (userNameValidation || emailValidation || passwordValidation) {
+      return; // אם יש שגיאות, לא ממשיכים
     }
 
     try {
-      console.log('addUserToDb');
       await addUserToDb(userName, email, password);
-      handleClose()
+      setOpenSuccess(true);
+
+      setTimeout(() => {
+        setOpenSuccess(false);
+        handleClose();
+        navigate('/');
+      }, 2500);
+
+      
     } catch (err) {
       console.error('Error during Sign Up:', err);
     }
@@ -49,129 +63,115 @@ const SignUp = ({ open, onClose }) => {
 
   return (
     <Dialog
-    open={open}
-    onClose={handleClose}
-    onClick={handleDialogClick}
-    PaperProps={{
-      onClick: handleDialogClick,  // הוספנו גם לאלמנט הנייר
-      sx: {
-        padding: 4,
-        borderRadius: 3,
-        width: '400px',
-      },
-    }}
-  >
-    <Box display="flex" flexDirection="column" alignItems="center" gap={2}   onClick={handleDialogClick}>
-      {/* כותרת */}
-      <Typography variant="h5" component="h1" sx={{ fontWeight: 'bold', color: '#2F3645' }}>
-        Sign Up
-      </Typography>
+      open={open}
+      onClose={handleClose}
+      onClick={handleDialogClick}
+ 
+      PaperProps={{
+        sx: {
+          padding: 4,
+          borderRadius: 3,
+          width: '400px',
+        },
+      }}
+    >
+      <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
+        <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#2F3645' }}>
+          Sign Up
+        </Typography>
 
-      {/* שדה שם משתמש */}
-      <TextField
-        id="outlined-userName"
-        label="User Name"
-        variant="outlined"
-        value={userName}
-        onChange={(ev) => setUserName(ev.target.value)}
-        error={!!userNameError}
-        helperText={userNameError}
-        fullWidth
-      />
+        <TextField
+          label="User Name"
+          variant="outlined"
+          value={userName}
+          onChange={(ev) => setUserName(ev.target.value)}
+          error={!!userNameError}
+          helperText={userNameError}
+          required
+          fullWidth
+        />
 
-      {/* שדה מייל */}
-      <TextField
-        id="outlined-email"
-        label="Email"
-        variant="outlined"
-        value={email}
-        onChange={(ev) => setEmail(ev.target.value)}
-        error={!!emailError}
-        helperText={emailError}
-        fullWidth
-      />
+        <TextField
+          label="Email"
+          variant="outlined"
+          value={email}
+          onChange={(ev) => setEmail(ev.target.value)}
+          error={!!emailError}
+          helperText={emailError}
+          required
+          fullWidth
+        />
 
-      {/* שדה סיסמה */}
-      <TextField
-        id="outlined-password"
-        label="Password"
-        variant="outlined"
-        type="password"
-        value={password}
-        onChange={(ev) => setPassword(ev.target.value)}
-        error={!!passwordError}
-        helperText={passwordError}
-        fullWidth
-      />
+        <TextField
+          label="Password"
+          variant="outlined"
+          type="password"
+          value={password}
+          onChange={(ev) => setPassword(ev.target.value)}
+          error={!!passwordError}
+          helperText={passwordError}
+          required
+          fullWidth
+        />
 
-      {/* כפתור הרשמה */}
-      <Button
-         onClick={(e) => {
-          e.stopPropagation();
-          handleSubmit();
-        }}
-        variant="contained"
-        fullWidth
-        sx={{
-          backgroundColor: '#2F3645',
-          color: '#FFFFFF',
-          fontWeight: 'bold',
-          paddingY: 1,
-          '&:hover': {
-            backgroundColor: '#4A5367',
-          },
-        }}
-      >
-        Sign Up
-      </Button>
-
-      <Box display="flex" justifyContent="space-between" width="100%"  onClick={handleDialogClick}
->  
-        <Typography
-            variant="body2"
-            sx={{
-            color: '#4A5367',
-            marginTop: 2,
-            textAlign: 'center',
-            }}
+        <Button
+          onClick={handleSubmit}
+          variant="contained"
+          fullWidth
+          sx={{
+            backgroundColor: '#2F3645',
+            color: '#FFFFFF',
+            fontWeight: 'bold',
+            paddingY: 1,
+            '&:hover': {
+              backgroundColor: '#4A5367',
+            },
+          }}
         >
+          Sign Up
+        </Button>
+
+        <Box display="flex" justifyContent="space-between" width="100%">
+          <Typography variant="body2" sx={{ color: '#4A5367', marginTop: 2 }}>
             <Link
-            to="/chef-sign-up"
-            onClick={(e) => {
-              e.stopPropagation();
-              handleClose();
-            }}
-            style={{
+              to="/chef-sign-up"
+              onClick={handleClose}
+              style={{
                 textDecoration: 'none',
                 color: '#2F3645',
                 fontWeight: 'bold',
-            }}
+              }}
             >
-            Sign up as a chef
+              Sign up as a chef
             </Link>
-        </Typography>
-        <Button
-            onClick={(e) => {
-              e.stopPropagation();
-              handleClose();
-            }}
-            variant="outlined" 
+          </Typography>
+          <Button
+            onClick={handleClose}
+            variant="outlined"
             sx={{
-            fontWeight: 'bold',
-            color: '#2F3645',
-            borderColor: '#2F3645',
-            marginTop: 1,
-            '&:hover': {
+              fontWeight: 'bold',
+              color: '#2F3645',
+              borderColor: '#2F3645',
+              marginTop: 1,
+              '&:hover': {
                 backgroundColor: '#F1E4E4',
-            },
+              },
             }}
-        >
+          >
             Cancel
-        </Button>
+          </Button>
+        </Box>
       </Box>
-    </Box>
-  </Dialog>
-);
+
+      <Succes
+        open={openSuccess}
+        onClose={() => setOpenSuccess(false)}
+        title="Success!"
+        message="You have signed up successfully!"
+        icon={<CheckCircleIcon color="success" fontSize="large" />}
+      />
+    </Dialog>
+  );
 };
 
 export default SignUp;
