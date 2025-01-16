@@ -10,11 +10,10 @@ const ChefRating = ({ chefName, recipeID }) => {
   const [isRated, setIsRated] = useState(false);
   const { user } = useUser();
   const [openDialog, setOpenDialog] = useState(false);
-  
+
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
-  
+
   useEffect(() => {
     const fetchRating = async () => {
       if (user) {
@@ -28,7 +27,7 @@ const ChefRating = ({ chefName, recipeID }) => {
     };
     fetchRating();
   }, [user, recipeID]);
-  
+
   const handleRating = async (event, newValue) => {
     if (newValue !== null && user && !isRated) {
       try {
@@ -42,59 +41,55 @@ const ChefRating = ({ chefName, recipeID }) => {
       setOpenDialog(true);
     }
   };
-  
-  const handleDialogClick = (e) => {
-    e.stopPropagation();
+
+  const handleCloseDialog = () => {
+    setOpenDialog(false);
   };
 
   return (
-    <Paper elevation={0} sx={{ 
-      p: 2, 
-      mt: 2, 
-      backgroundColor: '#f8f8f8',
-      borderRadius: 2,
-      display: 'flex',
-      flexDirection: isMobile ? 'column' : 'row', // השתנה לפי גודל המסך
-      alignItems: isMobile ? 'flex-start' : 'center', // מיושרים בהתאם למסך
-      justifyContent: 'space-between', // אווטאר ושאר האלמנטים יימוקמו בצורה מאוזנת
-    }}>
-      
-      <Box sx={{ 
-        display: 'flex', 
-        alignItems: 'center', 
-        gap: 2, 
-        flexDirection: isMobile ? 'column' : 'row', // התאמה למסך קטן או גדול
-        mb: 2,
-      }}>
-        <Avatar sx={{ bgcolor: '#E6B9A6',}}>
-          {chefName[0].toUpperCase()}
-        </Avatar>
-        <Typography sx={{ fontWeight: 500 }}>
-          {chefName}
-        </Typography>
+    <Paper
+      elevation={0}
+      sx={{
+        p: 2,
+        mt: 2,
+        backgroundColor: '#f8f8f8',
+        borderRadius: 2,
+        display: 'flex',
+        flexDirection: isMobile ? 'column' : 'row',
+        alignItems: isMobile ? 'flex-start' : 'center',
+        justifyContent: 'space-between',
+      }}
+    >
+      <Box
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 2,
+          flexDirection: isMobile ? 'column' : 'row',
+          mb: 2,
+        }}
+      >
+        <Avatar sx={{ bgcolor: '#E6B9A6' }}>{chefName[0].toUpperCase()}</Avatar>
+        <Typography sx={{ fontWeight: 500 }}>{chefName}</Typography>
       </Box>
-      
+
       <Box sx={{ display: 'flex', alignItems: 'center', mt: isMobile ? 2 : 0 }}>
-        <Rating 
-          name="recipe-rating" 
-          value={value} 
-          onClick={handleRating} 
+        <Rating
+          name="recipe-rating"
+          value={value}
+          onClick={handleRating}
           size={isMobile ? 'medium' : 'large'}
-          sx={{ 
+          sx={{
             '& .MuiRating-iconFilled': {
               color: 'yellow',
             },
           }}
         />
       </Box>
-      
+
       <SignInDialog
         open={openDialog}
-        onClose={(e) => {
-          handleDialogClick(e);
-          setOpenDialog(false);
-        }}
-        onClick={handleDialogClick} 
+        onClose={handleCloseDialog} // Close on clicking outside the dialog or pressing Cancel
       />
     </Paper>
   );
