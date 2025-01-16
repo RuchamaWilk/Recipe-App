@@ -6,6 +6,9 @@ import { Button, Dialog, Box, Typography } from '@mui/material';
 import { validateUserName, validateEmail, validatePassword } from '../../utils/validation';
 import Succes from '../../components/succes/Succes';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { signIn } from '../../services/apiService'; 
+import { useUser } from '../../providers/UserProvider'; // שימוש ב-Context של המשתמש
+
 
 const SignUp = ({ open, onClose }) => {
   const [email, setEmail] = useState('');
@@ -15,7 +18,7 @@ const SignUp = ({ open, onClose }) => {
   const [passwordError, setPasswordError] = useState('');
   const [userNameError, setUserNameError] = useState('');
   const [openSuccess, setOpenSuccess] = useState(false);
-
+const {setToken, setUser}= useUser()
   const navigate = useNavigate();
 
   const handleDialogClick = (e) => {
@@ -49,11 +52,19 @@ const SignUp = ({ open, onClose }) => {
       await addUserToDb(userName, email, password);
       setOpenSuccess(true);
 
+      
+
       setTimeout(() => {
         setOpenSuccess(false);
         handleClose();
         navigate('/');
       }, 2500);
+      const response =await signIn(email, password);
+      const { user, token } = response;
+
+      // שמירה ב-Context
+      setUser(user);
+      setToken(token);
 
       
     } catch (err) {
