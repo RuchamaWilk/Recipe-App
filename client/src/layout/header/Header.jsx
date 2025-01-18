@@ -40,7 +40,7 @@ function ModernHeader() {
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [openSignUp, setOpenSignUp] = useState(false);
   const [openSignIn, setOpenSignIn] = useState(false);
-  
+
   const navigate = useNavigate();
   const theme = useTheme();
   const { user, setUser, token, setToken } = useUser();
@@ -198,36 +198,35 @@ function ModernHeader() {
       </List>
     </Box>
   );
-  
+
   return (
     <>
-      <AppBar 
-        position="fixed" 
-        sx={{ 
+      <AppBar
+        position="fixed"
+        sx={{
           backgroundColor: 'white',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
+          boxShadow: '0 2px 4px rgba(0,0,0,0.08)',
         }}
       >
         <Container maxWidth="xl">
           <Toolbar disableGutters sx={{ height: 70 }}>
             <IconButton
               onClick={handleDrawerToggle}
-              sx={{ 
+              sx={{
                 color: mainColor,
                 display: { xs: 'flex', md: 'none' },
-                mr: 1
+                mr: 1,
               }}
             >
               <MenuIcon />
             </IconButton>
-
-            <RestaurantIcon 
-              sx={{ 
+            <RestaurantIcon
+              sx={{
                 display: 'flex',
                 mr: 1,
                 color: mainColor,
-                marginRight: "20px"
-              }} 
+                marginRight: '20px',
+              }}
             />
             <Typography
               variant="h6"
@@ -243,22 +242,23 @@ function ModernHeader() {
                 color: mainColor,
                 textDecoration: 'none',
                 flexGrow: { xs: 1, md: 0 },
-                fontSize: { xs: '1.1rem', md: '1.3rem' }
+                fontSize: { xs: '1.1rem', md: '1.3rem' },
               }}
             >
-              GOOD FOOD 
+              GOOD FOOD
             </Typography>
-
-            <Box sx={{ 
-              flexGrow: 1, 
-              display: { xs: 'none', md: 'flex' }, 
-              gap: 2
-            }}>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: 'none', md: 'flex' },
+                gap: 2,
+              }}
+            >
               {pages.map((page) => (
                 <Button
                   key={page.text}
                   onClick={() => navigate(page.path)}
-                  sx={{ 
+                  sx={{
                     color: mainColor,
                     px: 2,
                     '&:hover': {
@@ -266,20 +266,19 @@ function ModernHeader() {
                     },
                     fontSize: '1rem',
                     textTransform: 'none',
-                    fontWeight: 500
+                    fontWeight: 500,
                   }}
                 >
                   {page.text}
                 </Button>
               ))}
-
               {user && (
                 <>
                   {user?.type === 'chef' && (
                     <Button
                       startIcon={<AddCircleIcon />}
                       onClick={() => navigate('/add-recipe')}
-                      sx={{ 
+                      sx={{
                         color: mainColor,
                         px: 2,
                         '&:hover': {
@@ -287,7 +286,7 @@ function ModernHeader() {
                         },
                         fontSize: '1rem',
                         textTransform: 'none',
-                        fontWeight: 500
+                        fontWeight: 500,
                       }}
                     >
                       Add Recipe
@@ -296,7 +295,7 @@ function ModernHeader() {
                   <Button
                     startIcon={<FavoriteIcon />}
                     onClick={() => navigate(`/favorite/${user._id}`)}
-                    sx={{ 
+                    sx={{
                       color: mainColor,
                       px: 2,
                       '&:hover': {
@@ -304,7 +303,7 @@ function ModernHeader() {
                       },
                       fontSize: '1rem',
                       textTransform: 'none',
-                      fontWeight: 500
+                      fontWeight: 500,
                     }}
                   >
                     My Favorites
@@ -312,16 +311,15 @@ function ModernHeader() {
                 </>
               )}
             </Box>
-
             {user ? (
               <Box sx={{ flexShrink: 0 }}>
                 <Tooltip title="Open menu">
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                    <Avatar 
-                      sx={{ 
+                    <Avatar
+                      sx={{
                         bgcolor: mainColor,
                         width: 40,
-                        height: 40
+                        height: 40,
                       }}
                     >
                       {user.userName.charAt(0).toUpperCase()}
@@ -348,16 +346,16 @@ function ModernHeader() {
                     sx: {
                       minWidth: 200,
                       mt: 1.5,
-                    }
+                    },
                   }}
                 >
-                  <MenuItem 
+                  <MenuItem
                     onClick={handleLogout}
-                    sx={{ 
+                    sx={{
                       py: 1.5,
                       '&:hover': {
                         backgroundColor: alpha(mainColor, 0.1),
-                      }
+                      },
                     }}
                   >
                     <ListItemIcon sx={{ color: mainColor }}>
@@ -368,15 +366,17 @@ function ModernHeader() {
                 </Menu>
               </Box>
             ) : (
-              <Box sx={{ 
-                display: { xs: 'none', md: 'flex' }, 
-                gap: 1.5,
-                alignItems: 'center'
-              }}>
-                <Button 
+              <Box
+                sx={{
+                  display: { xs: 'none', md: 'flex' },
+                  gap: 1.5,
+                  alignItems: 'center',
+                }}
+              >
+                <Button
                   variant="contained"
                   onClick={() => setOpenSignUp(true)}
-                  sx={{ 
+                  sx={{
                     px: 3,
                     py: 1,
                     borderRadius: 2,
@@ -385,15 +385,15 @@ function ModernHeader() {
                     backgroundColor: mainColor,
                     '&:hover': {
                       backgroundColor: alpha(mainColor, 0.9),
-                    }
+                    },
                   }}
                 >
                   Sign Up
                 </Button>
-                <Button 
+                <Button
                   variant="outlined"
                   onClick={() => setOpenSignIn(true)}
-                  sx={{ 
+                  sx={{
                     px: 3,
                     py: 1,
                     borderRadius: 2,
@@ -404,7 +404,7 @@ function ModernHeader() {
                     '&:hover': {
                       borderColor: mainColor,
                       backgroundColor: alpha(mainColor, 0.1),
-                    }
+                    },
                   }}
                 >
                   Sign In
@@ -414,7 +414,6 @@ function ModernHeader() {
           </Toolbar>
         </Container>
       </AppBar>
-
       <Drawer
         variant="temporary"
         anchor="left"
@@ -425,16 +424,15 @@ function ModernHeader() {
         }}
         sx={{
           display: { xs: 'block', md: 'none' },
-          '& .MuiDrawer-paper': { 
-            boxSizing: 'border-box', 
+          '& .MuiDrawer-paper': {
+            boxSizing: 'border-box',
             width: 280,
-            boxShadow: '4px 0 8px rgba(0,0,0,0.1)'
+            boxShadow: '4px 0 8px rgba(0,0,0,0.1)',
           },
         }}
       >
         {drawer}
       </Drawer>
-
       <SignUp open={openSignUp} onClose={() => setOpenSignUp(false)} />
       <SignIn open={openSignIn} onClose={() => setOpenSignIn(false)} />
     </>
