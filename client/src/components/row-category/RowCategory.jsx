@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { Typography, Box, Button, CardActions } from '@mui/material';
 import PropTypes from 'prop-types';
 
+const mainColor = "#5d5b4f";
+
 const RowCategory = ({ category, recipes }) => {
   const navigate = useNavigate();
   const [maxVisibleCards, setMaxVisibleCards] = useState(4);
@@ -45,14 +47,15 @@ const RowCategory = ({ category, recipes }) => {
           sx={{ 
             justifyContent: 'space-between', 
             px: 2,
+            color: mainColor
           }}>
-          <Typography variant="h4" component="h1" gutterBottom>
+          <Typography variant="h4" component="h1" gutterBottom >
             {category}
           </Typography>
           {recipes.length>maxVisibleCards &&
             <Button
               sx={{
-                color: '#2F3645',
+                color: mainColor,
                 marginTop: "auto",
                 fontSize: '14px',
               }}
