@@ -1,6 +1,6 @@
 
 import React from 'react';
-import RecipesPage from '../../pages/recipes-page/RecipesPage';
+import RecipesPage from '../../pages/recipes-grid-page/RecipesGridPage';
 import { fetchFavoriteRecipes } from '../../services/apiService';
 
 const MyFavoritePage = () => {

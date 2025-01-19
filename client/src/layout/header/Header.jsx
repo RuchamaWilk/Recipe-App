@@ -30,7 +30,7 @@ import {
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import SignUp from '../../components/sign-up/SignUp';
-import SignIn from '../../pages/sign-in-page/SignInPage';
+import SignIn from '../../components/sign-in/SignIn';
 import { useUser } from '../../providers/UserProvider';
 
 const mainColor = '#939185';
