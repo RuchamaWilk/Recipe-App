@@ -4,32 +4,46 @@ import PropTypes from 'prop-types';
 import { addRating, checkIfRated } from '../../services/apiService';
 import { useUser } from '../../providers/UserProvider';
 import SignInDialog from '../sign-up/SignUp';
+import TimedAleart from '../timed-aleart/TimedAleart';
+import ReportProblemIcon from '@mui/icons-material/ReportProblem'; // הוספת האייקון
 
-const ChefRating = ({ chefName, recipeID }) => {
-  const [value, setValue] = useState(0);
-  const [isRated, setIsRated] = useState(false);
+const ChefRating = ({ chefName, recipeID, rate }) => {
   const { user } = useUser();
   const [openDialog, setOpenDialog] = useState(false);
+  const [openAlert, setOpenAlert] = useState(false);
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-
+console.log("rate ",rate )
 
   const handleRating = async (event, newValue) => {
-    if (newValue !== null && user && !isRated) {
+    if (newValue !== null && user) {
       try {
         const hasRated = await checkIfRated(user._id, recipeID);
-        setIsRated(hasRated);
-        setValue(newValue);
+        if (hasRated) {
+          setOpenAlert(true); // הצגת הודעה אם כבר דירג
+          setTimeout(() => {
+            setOpenAlert(false);
+          }, 2500);
+          return;
+        }
+  
         await addRating(user._id, recipeID, newValue);
-        setIsRated(true);
+
       } catch (error) {
         console.error('Failed to update rating:', error);
+  
+        // הצגת הודעה במקרה של שגיאה כללית
+        setOpenAlert(true);
+        setTimeout(() => {
+          setOpenAlert(false);
+        }, 2500);
       }
     } else if (!user) {
-      setOpenDialog(true);
+      setOpenDialog(true); // במקרה שמשתמש לא מחובר
     }
   };
+  
 
   const handleCloseDialog = () => {
     setOpenDialog(false);
@@ -65,7 +79,7 @@ const ChefRating = ({ chefName, recipeID }) => {
       <Box sx={{ display: 'flex', alignItems: 'center', mt: isMobile ? 2 : 0 }}>
         <Rating
           name="recipe-rating"
-          value={value}
+          value={rate}
           onChange={handleRating}
           size={isMobile ? 'medium' : 'large'}
           sx={{
@@ -79,6 +93,13 @@ const ChefRating = ({ chefName, recipeID }) => {
       <SignInDialog
         open={openDialog}
         onClose={handleCloseDialog} // Close on clicking outside the dialog or pressing Cancel
+      />
+      <TimedAleart
+        open={openAlert}
+        onClose={() => setOpenAlert(false)}
+        title="Sorry!"
+        message="You have already rated this recipe!!"
+        icon={<ReportProblemIcon color="warning" fontSize="large" />}
       />
     </Paper>
   );

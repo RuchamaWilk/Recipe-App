@@ -13,6 +13,7 @@ const Recipe = () => {
   const location = useLocation(); // נקבל את ה-`location`
   const [recipe, setRecipe] = useState(null);
   const chefName = location.state?.chefName || "Unknown Chef";
+  const rate =location.state?.ratingValue || 0;
 
   console.log("Location State:", location.state); // בדיקה
   console.log("Chef Name:", chefName); // בדיקה
@@ -52,7 +53,7 @@ const Recipe = () => {
       }}>
         <RecipeHeader image={recipe.image} name={recipe.name} />
         <CardContent sx={{ p: 4 }}>
-          <ChefRating chefName={chefName} recipeID ={recipe._id} />
+          <ChefRating chefName={chefName} recipeID ={recipe._id} rate ={rate}/>
           <Divider sx={{ my: 3 }} />
           <RecipeInstructions 
             ingredients={recipe.ingredients} 

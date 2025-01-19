@@ -13,6 +13,8 @@ import './SignUp.css'
 const SignUp = ({ open, onClose }) => {
   const navigate = useNavigate();
   const { setToken, setUser } = useUser();
+  const [openSuccess, setOpenSuccess] = useState(false);
+
   
   const [formData, setFormData] = useState({
     userName: '',
@@ -26,7 +28,6 @@ const SignUp = ({ open, onClose }) => {
     password: ''
   });
 
-  const [openSuccess, setOpenSuccess] = useState(false);
 
   const handleInputChange = (field) => (event) => {
     setFormData(prev => ({

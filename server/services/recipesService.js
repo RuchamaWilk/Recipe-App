@@ -94,8 +94,11 @@ const addRating= async({userID, recipeID,value})=>{
             if (!recipe.ratings) {
                 recipe.ratings = { rating: 0, reviewers: [] };
             }
-            const hasRatedAlready = recipe.ratings.reviewers.includes(userID);
-
+            hasRatedAlready=recipe.ratings.reviewers.includes(userID)
+            if (hasRatedAlready) {
+                throw new Error(`User ${userID} has already rated this recipe.`);
+            }
+          
             logger.info(`check- user : ${hasRatedAlready}`)
             return hasRatedAlready
         } catch (err) {

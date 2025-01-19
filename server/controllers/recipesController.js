@@ -11,6 +11,8 @@ router.get('/checkIfRated', async (req, res, next) => {
       logger.info(`successfull check recipe rated : ${recipeRaited} `);
       return res.status(200).send(recipeRaited);
   } catch (err) {
+    logger.info(err);
+
   next(err);
   }
 });

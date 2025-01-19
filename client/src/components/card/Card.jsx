@@ -48,7 +48,7 @@ const Card = ({ recipe }) => {
 
   const showRecipe = () => {
     console.log(`chefName: ${chefName}`);
-    navigate(`/recipe/${recipe._id}`, { state: { chefName } });
+    navigate(`/recipe/${recipe._id}`, { state: { chefName, ratingValue: rating } });
   };
 
   const handleFavoriteClick = async (e) => {
