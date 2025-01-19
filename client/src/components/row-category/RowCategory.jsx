@@ -6,6 +6,8 @@ import { Typography, Box, Button, CardActions } from '@mui/material';
 import PropTypes from 'prop-types';
 import './RowCategory.css';
 
+const mainColor = "#5d5b4f";
+
 const RowCategory = ({ category, recipes }) => {
   const navigate = useNavigate();
   const [maxVisibleCards, setMaxVisibleCards] = useState(4);
@@ -48,7 +50,6 @@ const RowCategory = ({ category, recipes }) => {
           </Button>
         )}
       </CardActions>
-
       <Box id={category} className="row-category-cards">
         {recipes.slice(0, 4).map((item, index) => (
           <Box key={index} /*className="row-category-card-item"*/>

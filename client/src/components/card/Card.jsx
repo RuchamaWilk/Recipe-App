@@ -8,6 +8,9 @@ import { useUser } from '../../providers/UserProvider';
 import SignInDialog from '../../components/sign-up-dialog/SignUpDialog';
 import './Card.css';
 
+const mainColor = "#5d5b4f";
+
+
 const Card = ({ recipe }) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
@@ -96,9 +99,9 @@ const Card = ({ recipe }) => {
           </IconButton>
         </CardActions>
       </Box>
-
       <CardContent className="card-content">
         <Typography variant="h5" className="recipe-title">
+
           {recipe.name}
         </Typography>
 
