@@ -73,7 +73,7 @@
 .recipe-details {
   display: flex !important;; 
   align-items: center !important;;
-  margin-top: 8px !important;;
+  margin-top: -5px !important;;
   margin-bottom: 0 !important;;
   justify-content: space-between !important;;
 }
@@ -96,9 +96,15 @@
   font-weight: 400 !important;
   font-size: 0.9rem !important;
   color: #666 !important;
+}recipe-rating .MuiRating-icon {
+  color: #ffd700 !important;
+  font-size: 1rem !important;
 }
 
-.recipe-rating .MuiRating-icon {
-  color: #ffd700 !important;;
-  font-size: 1rem !important;;
+.raters-count {
+  font-size: 0.8rem !important;
+  color: #666 !important;
+  margin-top: 2px !important;
+  text-align: right !important;
 }
+

@@ -78,9 +78,9 @@ router.get('/category/:categoryId', async (req, res) => {
     try {
         const recipeid= req.params.recipeID;
         logger.info( `getRating - calling rating of recipe ${recipeid}`  );
-        const rating = await getRating(recipeid);
+        const { count, value } = await getRating(recipeid);
         logger.info(`success with getRating category: ${recipeid}`);
-        return res.status(200).send(rating);
+        return res.status(200).send({ count, value });
     } catch (err) {
       logger.error("hello ",err)
         next(err);

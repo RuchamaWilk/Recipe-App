@@ -3,13 +3,12 @@ import { Card as CardUi, CardMedia, CardContent, CardActions, IconButton, Typogr
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { addFavoriteRecipes, removeFavoriteRecipe,fetchRating } from '../../services/apiService';
+import { addFavoriteRecipes, removeFavoriteRecipe, fetchRating } from '../../services/apiService';
 import { useUser } from '../../providers/UserProvider';
 import SignInDialog from '../../components/sign-up-dialog/SignUpDialog';
 import './Card.css';
 
 const mainColor = "#5d5b4f";
-
 
 const Card = ({ recipe }) => {
   const navigate = useNavigate();
@@ -17,15 +16,20 @@ const Card = ({ recipe }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const { user, setUser, fetchChefName } = useUser();
   const [chefName, setChefName] = useState('');
-  const [rating, setRating]= useState('');
+  const [rating, setRating] = useState('');
+  const [ratingCount, setRatingCount] = useState(0);
   const [openDialog, setOpenDialog] = useState(false);
 
   useEffect(() => {
     const getChefName = async () => {
       const name = await fetchChefName(recipe.chefId);
-      const ratingValue = await fetchRating(recipe._id)
+      const { count, value } = await fetchRating(recipe._id);
+      console.log(value);
+      console.log(count);
+
       setChefName(name);
-      setRating(ratingValue);
+      setRating(value);
+      setRatingCount(count);
     };
     getChefName();
   }, [recipe.chefId]);
@@ -104,7 +108,6 @@ const Card = ({ recipe }) => {
       </Box>
       <CardContent className="card-content">
         <Typography variant="h5" className="recipe-title">
-
           {recipe.name}
         </Typography>
 
@@ -118,13 +121,18 @@ const Card = ({ recipe }) => {
             </Typography>
           </Box>
 
-          <Rating
-            name="recipe-rating"
-            value={rating}
-            size="small"
-            readOnly
-            className="recipe-rating"
-          />
+          <Box>
+          <Typography variant="body2" className="raters-count" sx={{ textAlign: 'right' }}>
+              {ratingCount} raters
+            </Typography>
+            <Rating
+              name="recipe-rating"
+              value={rating}
+              size="small"
+              readOnly
+              className="recipe-rating"
+            />
+          </Box>
         </Box>
       </CardContent>
       

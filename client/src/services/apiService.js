@@ -166,7 +166,7 @@ export const fetchRating =async ( recipeID)=>{
   try {
     console.log(`fetchRating for recipe:  ${recipeID} `);
     const value = await axios.get(`${BASE_URL}/recipes/fetchRating/${recipeID}`);
-    return value.data.value;
+    return value.data;
   } catch (error) {
     console.error('Error checkIfRated:', error);
     throw error;
