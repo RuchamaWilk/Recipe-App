@@ -243,7 +243,8 @@ function ModernHeader() {
                 color: mainColor,
                 textDecoration: 'none',
                 flexGrow: { xs: 1, md: 0 },
-                fontSize: { xs: '1.1rem', md: '1.3rem' }
+                fontSize: { xs: '1.1rem', md: '1.3rem' },
+                cursor: 'pointer'
               }}
             >
               GOOD FOOD 
