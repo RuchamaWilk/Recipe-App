@@ -83,7 +83,7 @@ function ModernHeader() {
           }}
         >
           <RestaurantIcon sx={{ mr: 1 }} />
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h6" noWrap component="div"  onClick={() => navigate('/')}>
             GOOD FOOD
           </Typography>
         </ListItem>
@@ -233,7 +233,7 @@ function ModernHeader() {
               variant="h6"
               noWrap
               component="a"
-              href="/"
+              onClick={() => navigate('/')}
               sx={{
                 mr: 4,
                 display: 'flex',

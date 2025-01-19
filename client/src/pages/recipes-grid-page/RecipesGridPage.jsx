@@ -63,6 +63,7 @@ const RecipesPage = ({ fetchFunction, isFavorite }) => {
           justifyContent: 'center',
           maxWidth: "1500px",
           margin: "0 auto",
+          marginBottom: "30px",
           '@media (max-width: 1400px)': {
             gridTemplateColumns: 'repeat(3, 320px)',
           },

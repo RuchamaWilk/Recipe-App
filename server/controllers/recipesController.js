@@ -79,9 +79,9 @@ router.get('/category/:categoryId', async (req, res) => {
   router.get('/fetchRating/:recipeID', async (req, res) => {
     try {
         const recipeid= req.params.recipeID;
-        logger.info( `getRating - calling rating of recipe ${recipeid}`  );
+        //logger.info( `getRating - calling rating of recipe ${recipeid}`  );
         const { count, value } = await getRating(recipeid);
-        logger.info(`success with getRating category: ${recipeid}`);
+        //logger.info(`success with getRating category: ${recipeid}`);
         return res.status(200).send({ count, value });
     } catch (err) {
       logger.error("hello ",err)

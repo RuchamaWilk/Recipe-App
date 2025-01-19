@@ -21,17 +21,16 @@ const Card = ({ recipe }) => {
   const [openDialog, setOpenDialog] = useState(false);
 
   useEffect(() => {
-    const getChefName = async () => {
+    const getChefNameAndRating = async () => {
       const name = await fetchChefName(recipe.chefId);
       const { count, value } = await fetchRating(recipe._id);
       console.log(value);
       console.log(count);
-
       setChefName(name);
       setRating(value);
       setRatingCount(count);
     };
-    getChefName();
+    getChefNameAndRating();
   }, [recipe.chefId]);
 
   useEffect(() => {
