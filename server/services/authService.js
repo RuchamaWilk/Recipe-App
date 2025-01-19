@@ -148,13 +148,13 @@ const RemoveFavorite = async ({ userID, recipeID }) => {
 
   const getUserName = async({userID})=>{
     try{
-        logger.info(`getUserName - for user: ${userID}`);
+        //logger.info(`getUserName - for user: ${userID}`);
 
        const user= await User.findOne({ _id: userID });
        if (!user) {
         throw new Error('User not found');
       }
-       logger.info(`Successfully getUserName : ${userID} name is: ${user.userName} `);
+       //logger.info(`Successfully getUserName : ${userID} name is: ${user.userName} `);
        return user.userName;
     }
     catch (err) {

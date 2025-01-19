@@ -86,11 +86,13 @@ const addRating= async({userID, recipeID,value})=>{
     
     const check= async({userID, recipeID})=>{
         try {
-            const ratedAlredy= false;
             logger.info(`check- user : ${userID}`)
             const recipe = await Recipe.findById(recipeID);
             if (!recipe) {
                 throw new Error(`Recipe with ID ${recipeID} not found.`);
+            }
+            if (!recipe.ratings) {
+                recipe.ratings = { rating: 0, reviewers: [] };
             }
             const hasRatedAlready = recipe.ratings.reviewers.includes(userID);
 
@@ -102,6 +104,28 @@ const addRating= async({userID, recipeID,value})=>{
         }  
     }
 
+    const getRating= async(recipeID)=>{
+        try{
+            const recipe = await Recipe.findById(recipeID);
+            if (!recipe) {
+                throw new Error(`Recipe with ID ${recipeID} not found.`);
+            }
+            if (!recipe.ratings) {
+                recipe.ratings = { rating: 0, reviewers: [] };
+            }
+            const count = recipe.ratings.reviewers.length; 
+            const rating = recipe.ratings.rating;  
+            const value= count > 0 ? rating / count : 0;   
+
+        return { count, value }; 
+
+        }
+        catch(err){
+            logger.error("hi", err)
+            return Promise.reject(err);
+        }
+    }
 
 
-module.exports = { getRecipes, getRecipe,fetchRecipesCategory,addRecipe,addRating,check};
+
+module.exports = { getRecipes, getRecipe,fetchRecipesCategory,addRecipe,addRating,check,getRating};

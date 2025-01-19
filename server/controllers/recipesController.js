@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getRecipes ,getRecipe,fetchRecipesCategory,addRecipe,addRating,check} = require('../services/recipesService');
+const { getRecipes ,getRecipe,fetchRecipesCategory,addRecipe,addRating,check,getRating} = require('../services/recipesService');
 const logger = require('../services/loggerService');
 
 router.get('/checkIfRated', async (req, res, next) => {
@@ -74,6 +74,18 @@ router.get('/category/:categoryId', async (req, res) => {
     }
   });
 
+  router.get('/fetchRating/:recipeID', async (req, res) => {
+    try {
+        const recipeid= req.params.recipeID;
+        logger.info( `getRating - calling rating of recipe ${recipeid}`  );
+        const rating = await getRating(recipeid);
+        logger.info(`success with getRating category: ${recipeid}`);
+        return res.status(200).send(rating);
+    } catch (err) {
+      logger.error("hello ",err)
+        next(err);
+    }
+  });
  
 
   

@@ -3,7 +3,7 @@ import { Card as CardUi, CardMedia, CardContent, CardActions, IconButton, Typogr
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { addFavoriteRecipes, removeFavoriteRecipe } from '../../services/apiService';
+import { addFavoriteRecipes, removeFavoriteRecipe,fetchRating } from '../../services/apiService';
 import { useUser } from '../../providers/UserProvider';
 import SignInDialog from '../../components/sign-up-dialog/SignUpDialog';
 import './Card.css';
@@ -17,15 +17,18 @@ const Card = ({ recipe }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const { user, setUser, fetchChefName } = useUser();
   const [chefName, setChefName] = useState('');
+  const [rating, setRating]= useState('');
   const [openDialog, setOpenDialog] = useState(false);
 
   useEffect(() => {
     const getChefName = async () => {
       const name = await fetchChefName(recipe.chefId);
+      const ratingValue = await fetchRating(recipe._id)
       setChefName(name);
+      setRating(ratingValue);
     };
     getChefName();
-  }, [recipe.chefId, fetchChefName]);
+  }, [recipe.chefId]);
 
   useEffect(() => {
     const updateFavoriteState = async () => {
@@ -117,7 +120,7 @@ const Card = ({ recipe }) => {
 
           <Rating
             name="recipe-rating"
-            value={3}
+            value={rating}
             size="small"
             readOnly
             className="recipe-rating"

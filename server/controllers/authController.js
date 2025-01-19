@@ -99,9 +99,9 @@ router.post('/removeFavorite', async (req, res, next) => {
 router.get('/:userID', async (req, res, next) => {
     try {
         const  userID  = req.params.userID;
-        logger.info(`Calling getUserName with userID : ${userID}` );
+        //logger.info(`Calling getUserName with userID : ${userID}` );
         const result = await getUserName({ userID }); 
-        logger.info('success with getUserName from DB');
+        //logger.info('success with getUserName from DB');
         return res.status(200).send({result: result});
     } catch (err) {
         next(err);

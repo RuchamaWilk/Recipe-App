@@ -14,23 +14,12 @@ const ChefRating = ({ chefName, recipeID }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-  useEffect(() => {
-    const fetchRating = async () => {
-      if (user) {
-        try {
-          const hasRated = await checkIfRated(user._id, recipeID);
-          setIsRated(hasRated);
-        } catch (error) {
-          console.error('Failed to fetch rating:', error);
-        }
-      }
-    };
-    fetchRating();
-  }, [user, recipeID]);
 
   const handleRating = async (event, newValue) => {
     if (newValue !== null && user && !isRated) {
       try {
+        const hasRated = await checkIfRated(user._id, recipeID);
+        setIsRated(hasRated);
         setValue(newValue);
         await addRating(user._id, recipeID, newValue);
         setIsRated(true);
@@ -77,7 +66,7 @@ const ChefRating = ({ chefName, recipeID }) => {
         <Rating
           name="recipe-rating"
           value={value}
-          onClick={handleRating}
+          onChange={handleRating}
           size={isMobile ? 'medium' : 'large'}
           sx={{
             '& .MuiRating-iconFilled': {
