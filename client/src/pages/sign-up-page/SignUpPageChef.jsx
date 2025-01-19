@@ -21,7 +21,7 @@ import {
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import { signIn } from '../../services/apiService';
 import { useUser } from '../../providers/UserProvider';
-import Succes from '../../components/succes/Succes';
+import TimedAleart from '../../components/timed-aleart/TimedAleart';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const ChefSignUpForm = () => {
@@ -249,7 +249,7 @@ const ChefSignUpForm = () => {
         </Box>
       </Paper>
 
-      <Succes
+      <TimedAleart
         open={openSuccess}
         onClose={() => setOpenSuccess(false)}
         title="Success"

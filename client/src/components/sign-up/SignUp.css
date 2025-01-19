@@ -1,0 +1,53 @@
+.icon{
+    font-size: 40px !important;
+    fill: #939185!important ;    
+}
+
+.sign-up-title{
+    
+    font-weight:bold !important;
+    color: #2F3645 !important;
+    margin-bottom: 48px !important;
+    letter-spacing: 0.5px !important;
+}
+
+.sign-up {
+    background-color: #2F3645 !important;
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+    padding: 12px 0 !important; /* מתן ערך ברור ל־paddingY, שזה 1.5 * גובה הטקסט (12 פיקסלים במקרה הזה) */
+    margin-top: 16px !important; /* mt: 2 מתורגם ל־16 פיקסלים */
+    &:hover {
+        background-color: #4A5367 !important;
+    }
+}
+
+.sign-up-chef{
+    color:#4A5367;
+              margin-top: 32px !important;
+              position: relative !important;
+              display: inline-block !important;
+              
+}
+
+.sign-up-link{
+                  color: #2F3645 !important ;               
+                  font-weight: bold!important;
+                  font-size: 1rem!important;
+                  letter-spacing: 0.5px!important;
+                  position: relative!important;
+}
+
+.cancel-button{
+              color: #252932!important;
+              border-color: #2F3645!important;
+              &:hover {
+                background-color: #F1E4E4!important;
+              }
+              height: 45px; /* גובה הכפתור */
+
+}
+
+
+
+    

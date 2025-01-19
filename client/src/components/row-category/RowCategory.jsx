@@ -1,92 +1,61 @@
-
+// RowCategory.jsx
 import React, { useState, useEffect } from 'react';
 import Card from '../card/Card';
 import { useNavigate } from 'react-router-dom';
 import { Typography, Box, Button, CardActions } from '@mui/material';
 import PropTypes from 'prop-types';
-
-const mainColor = "#5d5b4f";
+import './RowCategory.css';
 
 const RowCategory = ({ category, recipes }) => {
   const navigate = useNavigate();
   const [maxVisibleCards, setMaxVisibleCards] = useState(4);
 
-
   useEffect(() => {
     const updateMaxVisibleCards = () => {
       if (window.innerWidth < 400) {
-        setMaxVisibleCards(1); // For small screens, show 2 cards
+        setMaxVisibleCards(1); 
       } else if (window.innerWidth < 641) {
-        setMaxVisibleCards(2); // For medium screens, show 3 cards
-      } 
-      else if (window.innerWidth < 2000) {
-        setMaxVisibleCards(3); // For medium screens, show 3 cards
+        setMaxVisibleCards(2);
+      } else if (window.innerWidth < 2000) {
+        setMaxVisibleCards(3);
       } else {
-        setMaxVisibleCards(4); // For large screens, show 4 cards
+        setMaxVisibleCards(4);
       }
     };
 
-    updateMaxVisibleCards(); // Set the initial value
-    window.addEventListener('resize', updateMaxVisibleCards); // Listen to resize events
-    return () => window.removeEventListener('resize', updateMaxVisibleCards); // Cleanup
+    updateMaxVisibleCards(); 
+    window.addEventListener('resize', updateMaxVisibleCards); 
+    return () => window.removeEventListener('resize', updateMaxVisibleCards);
   }, []);
-
 
   const showRecipes = () => {
     navigate(`/category/${category}`);
   };
 
   return (
-    <Box 
-        sx={{ 
-          width: '100%',
-          mb: 4, // Add margin bottom between categories
-        }}
-      >
-        <CardActions 
-          disableSpacing 
-          sx={{ 
-            justifyContent: 'space-between', 
-            px: 2,
-            color: mainColor
-          }}>
-          <Typography variant="h4" component="h1" gutterBottom >
-            {category}
-          </Typography>
-          {recipes.length>maxVisibleCards &&
-            <Button
-              sx={{
-                color: mainColor,
-                marginTop: "auto",
-                fontSize: '14px',
-              }}
-              onClick={showRecipes}
-              size="small"
-            >
-              More
-            </Button>
-}
-         
-        </CardActions>
-        
+    <Box className="row-category-container">
+      <CardActions className="row-category-header" disableSpacing>
+        <Typography variant="h4" component="h1" gutterBottom>
+          {category}
+        </Typography>
+        {recipes.length > maxVisibleCards && (
+          <Button
+            className="row-category-more-button"
+            onClick={showRecipes}
+            size="small"
+          >
+            More
+          </Button>
+        )}
+      </CardActions>
 
-      <Box 
-        id={category}
-        sx={{ 
-          display: 'flex',
-          flexWrap: 'nowrap',
-          gap: `16px`,
-          px: 2,
-          overflowX: 'hidden',
-        }}
-      >
+      <Box id={category} className="row-category-cards">
         {recipes.slice(0, 4).map((item, index) => (
-          <Box key={index}>
+          <Box key={index} /*className="row-category-card-item"*/>
             <Card recipe={item} />
           </Box>
         ))}
       </Box>
-
     </Box>
   );
 };

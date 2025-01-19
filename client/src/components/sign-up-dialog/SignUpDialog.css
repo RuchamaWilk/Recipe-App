@@ -1,0 +1,118 @@
+.dialog-paper {
+    border-radius: 24px !important; /* 3 * 8 */
+    width: 90% !important;
+    max-width: 500px !important;
+    margin: 16px auto !important; /* עבור מובייל */
+  }
+  
+  .dialog-paper.desktop {
+    width: 400px !important; /* עבור דסקטופ */
+  }
+  
+  .dialog-box {
+    padding: 24px !important; /* 3 * 8 */
+  }
+  
+  .dialog-box.mobile {
+    padding: 16px !important; /* 2 * 8 */
+  }
+  
+  .dialog-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 24px !important; /* 3 * 8 */
+  }
+  
+  .dialog-header.mobile {
+    margin-bottom: 16px !important; /* 2 * 8 */
+  }
+  
+  .icons-container {
+    position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 16px !important; /* 2 * 8 */
+  }
+  
+  .restaurant-icon {
+    font-size: 50px !important;
+    color: #939185 !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+  
+  .restaurant-icon.mobile {
+    font-size: 40px !important;
+  }
+  
+  .favorite {
+    font-size: 28px!important;
+    color: #ff4444!important;
+    position: absolute!important;
+    right: -8px!important;
+    bottom: -8px!important;
+    background-color: white!important;
+    border-radius: 50%!important;
+    padding: 2px!important;
+  }
+  
+  .favorite.mobile {
+    font-size: 24px!important;
+  }
+  
+  .dialog-title {
+    padding: 0!important;
+    text-align: center!important;
+    font-size: 1.5rem!important;
+    font-weight: 600!important;
+    color: #2F3645!important;
+  }
+  
+  .dialog-title.mobile {
+    font-size: 1.3rem!important;
+  }
+  
+  .dialog-content {
+    padding: 0!important;
+    margin-bottom: 32px!important; /* 4 * 8 */
+  }
+  
+  .dialog-content.mobile {
+    margin-bottom: 24px !important; /* 3 * 8 */
+  }
+  
+  .dialog-buttons {
+    display: flex!important;
+    justify-content: center!important;
+    gap: 16px!important; /* 2 * 8 */
+  }
+  
+  .dialog-buttons.mobile {
+    gap: 8px!important; /* 1 * 8 */
+  }
+  
+  .cancel-button {
+    padding: 8px 24px!important;
+    color: #2F3645!important;
+    border-color: #2F3645!important;
+    transition: background-color 0.3s ease!important;
+  }
+  
+  .cancel-button:hover {
+    background-color: #F1E4E4!important;
+    border-color: #2F3645!important;
+  }
+  
+  .sign-up-button {
+    padding: 8px 24px!important;
+    background-color: #2F3645!important;
+    color: #FFFFFF!important;
+    transition: background-color 0.3s ease!important;
+  }
+  
+  .sign-up-button:hover {
+    background-color: #4A5367!important;
+  }
+  

@@ -6,7 +6,7 @@ import SendIcon from '@mui/icons-material/Send';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { addRecipe } from '../../services/apiService';
-import Succes from '../../components/succes/Succes'
+import TimedAleart from '../../components/timed-aleart/TimedAleart'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 
@@ -315,7 +315,7 @@ const AddRecipePage = () => {
           </Box>
         </form>
       </Paper>
-      <Succes
+      <TimedAleart
         open={openSuccess}
         onClose={handleSuccessClose}
         title="Recipe Saved Successfully!"

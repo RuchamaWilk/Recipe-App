@@ -6,8 +6,9 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import { addUserToDb, signIn } from '../../services/apiService';
 import { validateUserName, validateEmail, validatePassword } from '../../utils/validation';
-import Succes from '../../components/succes/Succes';
+import TimedAleart from '../timed-aleart/TimedAleart';
 import { useUser } from '../../providers/UserProvider';
+import './SignUp.css'
 
 const SignUp = ({ open, onClose }) => {
   const navigate = useNavigate();
@@ -99,26 +100,10 @@ const SignUp = ({ open, onClose }) => {
       }}
     >
       <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
-        <RestaurantIcon 
-          sx={{ 
-            fontSize: 40, 
-            color: '#939185',
-            mb: 1,
-            marginBottom:0
-            
-          }} 
-        />
+        <RestaurantIcon className="icon"/>
         <Typography 
-          variant="h5" 
-          sx={{ 
-            fontWeight: 'bold', 
-            color: '#2F3645',
-            mb: 3,
-            letterSpacing: '0.5px'
-          }}
-        >
-          Sign Up
-        </Typography>
+          variant="h5" className='sign-up-title' 
+        >Sign Up</Typography>
 
         {['userName', 'email', 'password'].map((field) => (
           <TextField
@@ -139,67 +124,35 @@ const SignUp = ({ open, onClose }) => {
           onClick={handleSubmit}
           variant="contained"
           fullWidth
-          sx={{
-            backgroundColor: '#2F3645',
-            color: '#FFFFFF',
-            fontWeight: 'bold',
-            paddingY: 1.5,
-            mt: 2,
-            '&:hover': {
-              backgroundColor: '#4A5367',
-            },
-          }}
+          className='sign-up'
         >
           Sign Up
         </Button>
 
         <Box display="flex" justifyContent="space-between" width="100%">
         <Typography 
-  variant="body2" 
-  sx={{ 
-    color: '#4A5367', 
-    marginTop: 2,
-    position: 'relative',
-    display: 'inline-block',
-    '&:hover::after': {
-      width: '100%'
-    }
-  }}
->            
-  <Link               
-    to="/chef-sign-up"               
-    onClick={handleClose}               
-    style={{                 
-      textDecoration: 'none',                 
-      color: '#2F3645',                 
-      fontWeight: 'bold',
-      fontSize: '1rem',
-      letterSpacing: '0.5px',
-      position: 'relative',
-      paddingBottom: '2px'
-    }}             
-  >               
-    Join as a Chef            
-  </Link>             
-</Typography>
+            variant="body2" 
+            className='sign-up-chef'
+          >            
+              <Link               
+                to="/chef-sign-up"               
+                onClick={handleClose}
+                className= 'sign-up-link'                            
+              >               
+                Join As a Chef            
+              </Link>             
+        </Typography>
           <Button
             onClick={handleClose}
             variant="outlined"
-            sx={{
-              fontWeight: 'bold',
-              color: '#2F3645',
-              borderColor: '#2F3645',
-              '&:hover': {
-                backgroundColor: '#F1E4E4',
-              },
-            }}
+            className= 'cancel-button'                            
           >
             Cancel
           </Button>
         </Box>
       </Box>
 
-      <Succes
+      <TimedAleart
         open={openSuccess}
         onClose={() => setOpenSuccess(false)}
         title="Success!"

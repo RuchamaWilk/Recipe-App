@@ -1,0 +1,104 @@
+:root {
+  --main-color: #5d5b4f !important;
+}
+
+.recipe-card {
+  width: 100% !important;
+  height: 200px !important;
+  min-width: 320px !important;
+  position: relative !important;
+  cursor: pointer !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1) !important;
+  flex-shrink: 0 !important;
+}
+
+.recipe-card:hover {
+  transform: translateY(-2px) !important;
+  background-color: #ffffff !important;
+
+}
+
+.media-container {
+  position: relative !important;
+  height: 65% !important;
+}
+
+.card-media {
+  height: 100% !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.favorite-button-container {
+  position: absolute !important;;
+  top: 8px!important;;
+  right: 8px !important;;
+  padding: 0 !important;;
+}
+
+.favorite-button {
+  background-color: rgba(255,255,255,0.9) !important;
+  padding: 4px !important;
+  transition: all 0.2s ease !important;
+}
+
+.favorite-button:hover {
+  background-color: rgba(255,255,255,1) !important;
+  transform: scale(1.1) !important;;
+}
+
+.favorite-icon {
+  color: #666 !important;;
+  transition: color 0.2s ease !important;;
+}
+
+.favorite-icon.favorited {
+  color: #ff4444 !important;;
+}
+
+.card-content {
+  padding: 8px !important;
+  height: 35% !important;;
+  display: flex !important;;
+  flex-direction: column !important;;
+}
+
+.recipe-title {
+  font-weight: 600 !important;
+  font-size: 1.3rem !important;
+  color: var(--main-color) !important;
+}
+
+.recipe-details {
+  display: flex !important;; 
+  align-items: center !important;;
+  margin-top: 8px !important;;
+  margin-bottom: 0 !important;;
+  justify-content: space-between !important;;
+}
+
+.chef-time-container {
+  display: flex !important;;
+  align-items: center !important;;
+  gap: 8px !important;;
+}
+
+.chef-name {
+  font-weight: 400 !important;
+  font-size: 0.9rem !important;
+  color: #666 !important;
+  border-right: 1px solid #ccc !important;;
+  padding-right: 8px !important;;
+}
+
+.cook-time {
+  font-weight: 400 !important;
+  font-size: 0.9rem !important;
+  color: #666 !important;
+}
+
+.recipe-rating .MuiRating-icon {
+  color: #ffd700 !important;;
+  font-size: 1rem !important;;
+}
