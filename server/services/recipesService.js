@@ -6,10 +6,8 @@ const User = require('../models/user.js');
 const getRecipes = async () => {
     try {
         logger.info('getRecipes - find all recipes');
-        
         // Fetch all recipes
         const recipes = await Recipe.find();
-
         // Map through recipes and fetch chef names
         const recipeObject = await Promise.all(
             recipes.map(async (recipe) => {
@@ -20,7 +18,6 @@ const getRecipes = async () => {
                 };
             })
         );
-        
         logger.info(`success fetching recipes with chef names from DB ${recipeObject}`);
         return Promise.resolve(recipeObject);
     } catch (err) {

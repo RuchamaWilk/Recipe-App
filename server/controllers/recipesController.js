@@ -3,20 +3,6 @@ const router = express.Router();
 const { getRecipes ,fetchRecipesCategory,addRecipe,addRating} = require('../services/recipesService');
 const logger = require('../services/loggerService');
 
-router.get('/checkIfRated', async (req, res, next) => {
-  try {
-      const {userID, recipeID} = req.query;
-      logger.info( `checkIfRated -  ${recipeID} and user: ${userID}`  );
-      const recipeRaited= await check({userID, recipeID});
-      logger.info(`successfull check recipe rated : ${recipeRaited} `);
-      return res.status(200).send(recipeRaited);
-  } catch (err) {
-    logger.info(err);
-
-  next(err);
-  }
-});
-
 router.get('/', async (req, res, next) => {
   try {
       logger.info('calling getRecipes');
