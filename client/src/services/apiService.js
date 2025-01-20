@@ -51,8 +51,6 @@ export const signIn = async (email, password) => {
   try {
     console.log("api ",email)
     const response = await axios.post(`${BASE_URL}/auth/signIn`,{email,password});
-    localStorage.setItem('user',JSON.stringify(response.data.user))
-    localStorage.setItem('token', response.data.token)
     return response.data;
   } catch (error) {
     console.error('Error feching chefs:', error);
