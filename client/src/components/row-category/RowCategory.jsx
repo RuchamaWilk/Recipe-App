@@ -31,7 +31,7 @@ const RowCategory = ({ category, recipes }) => {
   }, []);
 
   const showRecipes = () => {
-    navigate(`/category/${category}`);
+    navigate(`/category/${category}`, { state: { recipes}});
   };
 
   return (
