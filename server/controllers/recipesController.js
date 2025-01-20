@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { getRecipes ,addRecipe,addRating} = require('../services/recipesService');
 const logger = require('../services/loggerService');
+const {verifyChef,verifyUser} = require('../middlewares/authMiddleware')
 
 router.get('/', async (req, res, next) => {
   try {
@@ -16,7 +17,7 @@ router.get('/', async (req, res, next) => {
 });
 
 
-  router.post('/add', async (req, res, next) => {
+  router.post('/add',verifyChef, async (req, res, next) => {
     try {
         const recipe = req.body;
         recipe.chefId = req.user._id;
@@ -30,7 +31,7 @@ router.get('/', async (req, res, next) => {
     }
   });
 
-  router.post('/addRating', async (req, res, next) => {
+  router.post('/addRating',verifyUser, async (req, res, next) => {
     try {
         const {userID, recipeID,value} = req.body;
         logger.info( `addRating -  new rating fo recipe: ${recipeID} and value: ${value}`  );

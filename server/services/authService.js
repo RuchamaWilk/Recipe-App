@@ -29,7 +29,6 @@ const signIn = async ({email, password}) => {
         logger.info(`found a chef with email: ${email} and password ${password} `)
         logger.info(`id: ${userOfEmail._id} email: ${userOfEmail.emailAddress} type: ${userOfEmail.type}`)
         const token = generateToken(userOfEmail._id,userOfEmail.emailAddress, userOfEmail.type);
-        
         return {success: true,token: token , user: userOfEmail };  // חזרה עם תוצאה
     } catch (err) {
         return { success: false, message: err.message };

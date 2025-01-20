@@ -8,7 +8,7 @@ import TimedAleart from '../timed-aleart/TimedAleart';
 import ReportProblemIcon from '@mui/icons-material/ReportProblem'; // הוספת האייקון
 
 const ChefRating = ({ recipe }) => {
-  const { user } = useUser();
+  const { user, token } = useUser();
   const [openDialog, setOpenDialog] = useState(false);
   const [openAlert, setOpenAlert] = useState(false);
 const value= recipe.ratings? recipe.ratings.rating/recipe.ratings.reviewers.length: 0;
@@ -27,7 +27,7 @@ const value= recipe.ratings? recipe.ratings.rating/recipe.ratings.reviewers.leng
           }, 2500);
           return;
         }
-        await addRating(user._id, recipe._id, newValue);
+        await addRating(user._id, recipe._id, newValue,token);
 
       } catch (error) {
         console.error('Failed to update rating:', error);

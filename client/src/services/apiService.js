@@ -14,16 +14,10 @@ export const fetchRecipes = async () => {
   }
 };
 
-export const addRecipe = async (recipeData) => {
+export const addRecipe = async (recipeData, token) => {
   
   console.log("add? " ,recipeData);
-  try {
-    const token = localStorage.getItem('token');
-  if (!token) {
-    console.error('No token found');
-    return;
-  }
-  console.log('Token:', token);
+  try { 
     const response = await axios.post(`${BASE_URL}/recipes/add`,recipeData,{
       headers: {
         Authorization: `Bearer ${token}`
@@ -106,10 +100,13 @@ export const removeFavoriteRecipe = async (userID, recipeID) => {
 };
 
 
-export const addRating = async (userID, recipeID,value ) => {
+export const addRating = async (userID, recipeID,value, token ) => {
   try {
     console.log(`add rating from user:  ${userID} to recipe id: ${recipeID} and value ${value}`);
-    const rating = await axios.post(`${BASE_URL}/recipes/addRating`,{userID,recipeID,value});
+    const rating = await axios.post(`${BASE_URL}/recipes/addRating`,{userID,recipeID,value},{
+      headers: {
+        Authorization: `Bearer ${token}`
+      }});
     return rating.data;
   } catch (error) {
     console.error('Error fetching recipes:', error);

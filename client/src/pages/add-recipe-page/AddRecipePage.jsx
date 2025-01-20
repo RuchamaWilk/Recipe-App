@@ -8,7 +8,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { addRecipe } from '../../services/apiService';
 import TimedAleart from '../../components/timed-aleart/TimedAleart'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-
+import {useUser} from '../../providers/UserProvider'
 
 const AddRecipePage = () => {
   const [formData, setFormData] = useState({
@@ -24,6 +24,7 @@ const AddRecipePage = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const navigate = useNavigate();
+  const {token}= useUser()
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -75,7 +76,7 @@ const AddRecipePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await addRecipe(formData);
+      await addRecipe(formData, token);
       setOpenSuccess(true);
       setTimeout(() => {
         navigate('/');

@@ -5,11 +5,9 @@ const authController = require('../controllers/authController');
 const authMiddleware = require('../middlewares/authMiddleware');
 const recipesController = require('../controllers/recipesController');
 const recipesMiddleware = require('../middlewares/recipesMiddleware');
-const {verifyChef} = require('../middlewares/authMiddleware')
 const errorMiddleware = require('../middlewares/erroeMiddleware')
 
 router.use('/auth', authController);
-router.post('/recipes/add', verifyChef, recipesController); // הוספת מתכון (נגיש רק לשפים)
 router.use('/recipes', recipesController);
 
 
