@@ -3,7 +3,7 @@ import { Card as CardUi, CardMedia, CardContent, CardActions, IconButton, Typogr
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import { addFavoriteRecipes, removeFavoriteRecipe, fetchRating } from '../../services/apiService';
+import { addFavoriteRecipes, removeFavoriteRecipe } from '../../services/apiService';
 import { useUser } from '../../providers/UserProvider';
 import SignInDialog from '../../components/sign-up-dialog/SignUpDialog';
 import './Card.css';
@@ -14,24 +14,11 @@ const Card = ({ recipe }) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
-  const { user, setUser, fetchChefName } = useUser();
-  const [chefName, setChefName] = useState('');
-  const [rating, setRating] = useState('');
-  const [ratingCount, setRatingCount] = useState(0);
+  const { user, setUser } = useUser();
   const [openDialog, setOpenDialog] = useState(false);
-
-  useEffect(() => {
-    const getChefNameAndRating = async () => {
-      const name = await fetchChefName(recipe.chefId);
-      const { count, value } = await fetchRating(recipe._id);
-      console.log(value);
-      console.log(count);
-      setChefName(name);
-      setRating(value);
-      setRatingCount(count);
-    };
-    getChefNameAndRating();
-  }, [recipe.chefId]);
+ const value= recipe.ratings? recipe.ratings.rating/recipe.ratings.reviewers.length: 0;
+const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
+  
 
   useEffect(() => {
     const updateFavoriteState = async () => {
@@ -46,8 +33,7 @@ const Card = ({ recipe }) => {
   }, [user, recipe._id]);
 
   const showRecipe = () => {
-    console.log(`chefName: ${chefName}`);
-    navigate(`/recipe/${recipe._id}`, { state: { chefName, ratingValue: rating } });
+    navigate(`/recipe/${recipe._id}`,{ state: { recipe}});
   };
 
   const handleFavoriteClick = async (e) => {
@@ -113,7 +99,7 @@ const Card = ({ recipe }) => {
         <Box className="recipe-details">
           <Box className="chef-time-container">
             <Typography variant="body2" className="chef-name">
-              {chefName}
+              {recipe.chefName}
             </Typography>
             <Typography variant="body2" className="cook-time">
               {`${recipe.avgTime} Min`}
@@ -122,11 +108,12 @@ const Card = ({ recipe }) => {
 
           <Box>
           <Typography variant="body2" className="raters-count" sx={{ textAlign: 'right' }}>
-              {ratingCount} raters
+              {countRates} raters
             </Typography>
             <Rating
               name="recipe-rating"
-              value={rating}
+              value={value}
+            
               size="small"
               readOnly
               className="recipe-rating"

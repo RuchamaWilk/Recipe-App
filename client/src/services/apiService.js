@@ -14,17 +14,6 @@ export const fetchRecipes = async () => {
   }
 };
 
-export const fetchRecipesById = async (id) => {
-  try {
-    console.log("HI WHAT ARE YOU DOING HERE?")
-    const response = await axios.get(`${BASE_URL}/recipes/${id}`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching recipe by ID:', error);
-    throw error;
-  }
-};
-
 export const fetchRecipesByCategory = async (category) => {
   try {
     const response = await axios.get(`${BASE_URL}/recipes/category/${category}`);
@@ -64,8 +53,6 @@ export const signIn = async (email, password) => {
     const response = await axios.post(`${BASE_URL}/auth/signIn`,{email,password});
     localStorage.setItem('user',JSON.stringify(response.data.user))
     localStorage.setItem('token', response.data.token)
-    console.log("user??? " ,response.data.user)
-    console.log("token??? " ,response.data.token)
     return response.data;
   } catch (error) {
     console.error('Error feching chefs:', error);
@@ -127,16 +114,6 @@ export const removeFavoriteRecipe = async (userID, recipeID) => {
   }
 };
 
-export const getUserById = async (userID) => {
-  try {
-    const response = await axios.get(`${BASE_URL}/auth/${userID}`); // הנח שזו כתובת ה-API שלך
-    return response.data; // הנתונים אמורים לכלול שם של המשתמש
-  } catch (error) {
-    console.error('Failed to fetch user by ID:', error);
-    throw error;
-  }
-};
-
 
 export const addRating = async (userID, recipeID,value ) => {
   try {
@@ -149,29 +126,6 @@ export const addRating = async (userID, recipeID,value ) => {
   }
 };
 
-export const checkIfRated =async (userID, recipeID)=>{
-  try {
-    console.log(`checkIfRated user:  ${userID} to recipe id: ${recipeID}`);
-    const reply = await axios.get(`${BASE_URL}/recipes/checkIfRated`,{
-      params: { userID, recipeID },
-    });
-    return reply.data;
-  } catch (error) {
-    console.error('Error checkIfRated:', error);
-    throw error;
-  }
-}
-
-export const fetchRating =async ( recipeID)=>{
-  try {
-    console.log(`fetchRating for recipe:  ${recipeID} `);
-    const value = await axios.get(`${BASE_URL}/recipes/fetchRating/${recipeID}`);
-    return value.data;
-  } catch (error) {
-    console.error('Error checkIfRated:', error);
-    throw error;
-  }
-}
 
 
 

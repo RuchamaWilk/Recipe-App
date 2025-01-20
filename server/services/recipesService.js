@@ -1,32 +1,32 @@
 const Recipe = require('../models/recipe.js');
 const logger = require('./loggerService.js');
+const User = require('../models/user.js');
 
 
 const getRecipes = async () => {
     try {
-        logger.info('getChefs- find all recipe')
+        logger.info('getRecipes - find all recipes');
+        
+        // Fetch all recipes
         const recipes = await Recipe.find();
-        logger.info('success fetching recipes from DB')
-        return Promise.resolve(recipes);
+
+        // Map through recipes and fetch chef names
+        const recipeObject = await Promise.all(
+            recipes.map(async (recipe) => {
+                const chef = await User.findById({ _id: recipe.chefId }); // Assuming 'User' is the schema for chefs
+                return {
+                    recipe,
+                    chefName: chef ? chef.userName : null, // Add chef name, or null if not found
+                };
+            })
+        );
+        
+        logger.info(`success fetching recipes with chef names from DB ${recipeObject}`);
+        return Promise.resolve(recipeObject);
     } catch (err) {
         logger.error(err);
         return Promise.reject(err);
     }
-};
-
-const getRecipe = async (recipeID) => {
-    try {
-        logger.info(`fetchRecipe- find recipe with recipeID: ${recipeID}`)
-        const recipe = await Recipe.findOne({ _id: recipeID });
-        if (!recipe) {
-            throw new Error(`There is no recipe with this id: ${recipeID}`);
-        }
-        logger.info(`found a recipe with recipeID: ${recipeID}`)
-        return Promise.resolve(recipe);
-      } catch (err) {
-        logger.error(err)
-        return Promise.reject(err);
-      }
 };
 
 const fetchRecipesCategory = async (category) => {
@@ -83,52 +83,7 @@ const addRating= async({userID, recipeID,value})=>{
         throw err;
       }
     };
-    
-    const check= async({userID, recipeID})=>{
-        try {
-            logger.info(`check- user : ${userID}`)
-            const recipe = await Recipe.findById(recipeID);
-            if (!recipe) {
-                throw new Error(`Recipe with ID ${recipeID} not found.`);
-            }
-            if (!recipe.ratings) {
-                recipe.ratings = { rating: 0, reviewers: [] };
-            }
-            hasRatedAlready=recipe.ratings.reviewers.includes(userID)
-            if (hasRatedAlready) {
-                throw new Error(`User ${userID} has already rated this recipe.`);
-            }
-          
-            logger.info(`check- user : ${hasRatedAlready}`)
-            return hasRatedAlready
-        } catch (err) {
-            logger.error(err)
-            return Promise.reject(err);
-        }  
-    }
-
-    const getRating= async(recipeID)=>{
-        try{
-            const recipe = await Recipe.findById(recipeID);
-            if (!recipe) {
-                throw new Error(`Recipe with ID ${recipeID} not found.`);
-            }
-            if (!recipe.ratings) {
-                recipe.ratings = { rating: 0, reviewers: [] };
-            }
-            const count = recipe.ratings.reviewers.length; 
-            const rating = recipe.ratings.rating;  
-            const value= count > 0 ? rating / count : 0;   
-
-        return { count, value }; 
-
-        }
-        catch(err){
-            logger.error("hi", err)
-            return Promise.reject(err);
-        }
-    }
 
 
 
-module.exports = { getRecipes, getRecipe,fetchRecipesCategory,addRecipe,addRating,check,getRating};
+module.exports = { getRecipes,fetchRecipesCategory,addRecipe,addRating};

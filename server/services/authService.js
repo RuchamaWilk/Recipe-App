@@ -89,21 +89,6 @@ const AddChef = async ({ userName, email, password, yearsOfExperience,phoneNumbe
     }
 };
 
-const getFavorite = async (userID) => {
-    try {
-        logger.info(`getFavorite- find recipes of userID: ${userID}`)
-        const user = await User.findById(userID).populate('favoriteRecipes');
-        if (!user) {
-            throw new Error(`There is no User with ID: ${userID}`);
-        }
-        logger.info(`found user with ID: ${userID}`)
-        return Promise.resolve(user.favoriteRecipes);
-      } catch (err) {
-        logger.error(`this is a err: ${err} `)
-        return Promise.reject(err);
-      }
-};
-
 const AddFavorite =async ({userID, recipeID}) => {
     try {
         logger.info(`AddFavorite- add a favorite recipe to DB for user: ${userID}`)
@@ -146,25 +131,10 @@ const RemoveFavorite = async ({ userID, recipeID }) => {
     }
   };
 
-  const getUserName = async({userID})=>{
-    try{
-        //logger.info(`getUserName - for user: ${userID}`);
-
-       const user= await User.findOne({ _id: userID });
-       if (!user) {
-        throw new Error('User not found');
-      }
-       //logger.info(`Successfully getUserName : ${userID} name is: ${user.userName} `);
-       return user.userName;
-    }
-    catch (err) {
-        logger.error(`Failed to getUserName for user: ${userID}. Error: ${err.message}`);
-        throw err;
-      }
-  }
+  
 
 
 
 
 
-module.exports = { getUsers, signIn,AddUser, AddChef,getFavorite,AddFavorite,RemoveFavorite ,getUserName};
+module.exports = { getUsers, signIn,AddUser, AddChef,AddFavorite,RemoveFavorite };

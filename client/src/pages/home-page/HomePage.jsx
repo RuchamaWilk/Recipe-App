@@ -8,16 +8,14 @@ const HomePage = () => {
 
   useEffect(() => {
     const getRecipes = async () => {
-      try {
+      try {       
         const recipes = await fetchRecipes();
-        console.log("recipes: ",recipes);
-        const grouped = recipes.reduce((acc, recipe) => {
+        const grouped = recipes.reduce((acc, { recipe, chefName }) => {
             const { category } = recipe;
             if (!acc[category]) {
               acc[category] = [];
             }
-            acc[category].push(recipe);
-            console.log(acc);
+            acc[category].push({ ...recipe, chefName });
             return acc;
           }, {});
         setCategories(grouped);
@@ -25,11 +23,9 @@ const HomePage = () => {
         console.error('Error fetching data:', error);
       }
     };
-
     getRecipes();
   }, []);
 
-  console.log("categories: ", categories);
   return (
     <Container 
       maxWidth="md" // הגדרת רוחב קבוע

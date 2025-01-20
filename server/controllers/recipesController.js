@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getRecipes ,getRecipe,fetchRecipesCategory,addRecipe,addRating,check,getRating} = require('../services/recipesService');
+const { getRecipes ,fetchRecipesCategory,addRecipe,addRating} = require('../services/recipesService');
 const logger = require('../services/loggerService');
 
 router.get('/checkIfRated', async (req, res, next) => {
@@ -17,21 +17,14 @@ router.get('/checkIfRated', async (req, res, next) => {
   }
 });
 
-router.get('/:id?', async (req, res, next) => {
+router.get('/', async (req, res, next) => {
   try {
-    const recipeID = req.params.id;
-    if (recipeID) {
-      logger.info(`getRecipe - calling recipe with ID: ${recipeID}`);
-      const result = await getRecipe(recipeID);
-      logger.info(`success with getRecipe id: ${recipeID}`);
-      return res.status(200).send(result);
-    } else {
       logger.info('calling getRecipes');
-      const recipes = await getRecipes();
+      const recipeObject = await getRecipes();
       logger.info('success with getRecipes');
-      return res.status(200).send(recipes);
+      return res.status(200).send(recipeObject);
     }
-  } catch (err) {
+  catch (err) {
     next(err);
   }
 });
@@ -73,19 +66,6 @@ router.get('/category/:categoryId', async (req, res) => {
         return res.status(200).send(recipeRaited);
     } catch (err) {
     next(err);
-    }
-  });
-
-  router.get('/fetchRating/:recipeID', async (req, res) => {
-    try {
-        const recipeid= req.params.recipeID;
-        //logger.info( `getRating - calling rating of recipe ${recipeid}`  );
-        const { count, value } = await getRating(recipeid);
-        //logger.info(`success with getRating category: ${recipeid}`);
-        return res.status(200).send({ count, value });
-    } catch (err) {
-      logger.error("hello ",err)
-        next(err);
     }
   });
  

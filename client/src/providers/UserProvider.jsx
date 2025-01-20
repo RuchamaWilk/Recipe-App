@@ -1,13 +1,11 @@
 import React, { useState, useContext, useEffect, useMemo } from "react";
 import { getToken, getUser } from '../services/localStorageService';
-import { getUserById } from '../services/apiService';
 
 const UserContext = React.createContext(null);
 
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(getToken);
-  const [chefCache, setChefCache] = useState({});
 
   useEffect(() => {
     if (!user) {
@@ -16,27 +14,9 @@ export const UserProvider = ({ children }) => {
     }
   }, [user]);
 
-  const fetchChefName = async (chefId) => {
-    if (chefCache[chefId]) {
-      return chefCache[chefId];
-    }
-    try {
-      const response = await getUserById(chefId);
-      const chefName = response.result || 'Unknown Chef';
-      setChefCache((prevCache) => ({
-        ...prevCache,
-        [chefId]: chefName,
-      }));
-      return chefName;
-    } catch (error) {
-      console.error('Failed to fetch chef name:', error);
-      return 'Unknown Chef';
-    }
-  };
-
   const value = useMemo(() => {
-    return { user, setUser, token, setToken, fetchChefName };
-  }, [user, token, chefCache]);
+    return { user, setUser, token, setToken };
+  }, [user, token]);
 
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };
