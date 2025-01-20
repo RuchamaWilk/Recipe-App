@@ -20,17 +20,16 @@ const signIn = async ({email, password}) => {
         logger.info(`signIn- find chef with email: ${email} and password ${password}`)
         const userOfEmail = await User.findOne({ emailAddress: email });
         if (!userOfEmail) {
-            throw new Error(`There is no chef with this email: ${email}`);
+            throw new Error('One or more of the entered details is incorrect'); // הודעה כללית
         }
         logger.info(`found a chef with the email" ${email}`)
         const isMatch = await userOfEmail.checkPassword(password);
         if (!isMatch) {
-            throw new Error(`Incorrect password for user: ${email}`);
+            throw new Error('One or more of the entered details is incorrect'); // הודעה כללית
         }
         logger.info(`found a chef with email: ${email} and password ${password} `)
         logger.info(`id: ${userOfEmail._id} email: ${userOfEmail.emailAddress} type: ${userOfEmail.type}`)
         const token = generateToken(userOfEmail._id,userOfEmail.emailAddress, userOfEmail.type);
-
         
         return {success: true,token: token , user: userOfEmail };  // חזרה עם תוצאה
     } catch (err) {

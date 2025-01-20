@@ -62,39 +62,41 @@ const SignInPage = ({ open= true, onClose}) => {
     }
   ];
 
-  const resetText=()=>{
+  const  resetText=()=>{
     setEmail('');
     setPassword('')
   }
 
-  const resetError=()=>{
+  const  resetError= ()=>{
     setEmailError('')
     setPasswordError('')
+    setSignInError('')
   }
   const handleClose = () =>{
-    resetText();
-    resetError()
+     resetText();
+     resetError()
     onClose()
   }
 
-  const onButtonClick =async () => {
-    resetError()
+  const onButtonClick = async() => {
+     resetError()
     setEmailError(validateEmail(email));
     setPasswordError(validatePassword(password));
-    console.log("loginPage" ,email)
+    if (validatePassword(password) !='' || validateEmail(email)!='') {
+      return;
+    }
+
     try {
           const response =await signIn(email, password); // קריאה לפונקציה שתשלח את הנתונים לשרת
           if (response.token) {
             login(response.token, response.user);
             navigate('/')
             handleClose()
-
-          } else {
-            console.log("loginPage failed" )
-            setSignInError(response.message || 'Login failed');
           }
       } catch (error) {
           console.error('Error during login:', error);
+          setSignInError(error.message); // מציג את ההודעה שהגיעה מהשרת
+
       }
     }
 
@@ -128,13 +130,22 @@ const SignInPage = ({ open= true, onClose}) => {
         >
           Sign In
         </Button>
-        {signInError && (
-          <Typography variant="body2" color="error" sx={{ mt: 2, textAlign: 'center' }}>
-            {signInError}
-          </Typography>
+        {signInError != '' && (
+          
+            <Typography 
+              variant="body2" 
+              color="error" 
+              sx={{ 
+                textAlign: 'center',
+                fontWeight: 'medium'
+              }}
+            >
+              {signInError}
+            </Typography>
         )}
-
       </Box>
+      
+
     </Dialog>
   );
 };

@@ -54,7 +54,10 @@ export const signIn = async (email, password) => {
     return response.data;
   } catch (error) {
     console.error('Error feching chefs:', error);
-    throw error;
+    if (error.response && error.response.data) {
+      throw new Error(error.response.data.message || 'Login failed');
+    }
+    throw new Error('Unable to log in. Please try again later.');
   }
 };
 
