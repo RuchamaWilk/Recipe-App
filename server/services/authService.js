@@ -85,66 +85,6 @@ const AddChef = async ({ userName, email, password, yearsOfExperience,phoneNumbe
     }
 };
 
-const AddFavorite =async ({userID, recipeID}) => {
-    try {
-        logger.info(`AddFavorite- add a favorite recipe to DB for user: ${userID}`)
-        const result = await User.findByIdAndUpdate(
-            userID,
-            { $addToSet: { favoriteRecipes: recipeID } }, // הוספה אם אינו קיים
-            { new: true } // מחזיר את המסמך המעודכן
-          );
-          if(!result){
-            throw new Error('User not found');
-          }
-        logger.info(`add recipe: ${recipeID} to user ${userID}`)
-        return result.favoriteRecipes;
-      } catch (err) {
-        logger.error(`Failed to add favorite recipe: ${recipeID} for user: ${userID}. Error: ${err.message}`)
-        throw err;
-      }
 
-}
-
-const RemoveFavorite = async ({ userID, recipeID }) => {
-    try {
-      logger.info(`RemoveFavorite - removing a favorite recipe from DB for user: ${userID}`);
-      
-      const result = await User.findByIdAndUpdate(
-        userID,
-        { $pull: { favoriteRecipes: recipeID } }, // $pull משמש להסרת ערך ממערך
-        { new: true } // מחזיר את המסמך המעודכן
-      );
-      
-      if (!result) {
-        throw new Error('User not found');
-      }
-      
-      logger.info(`Successfully removed recipe: ${recipeID} for user: ${userID}`);
-      return result.favoriteRecipes;
-    } catch (err) {
-      logger.error(`Failed to remove favorite recipe: ${recipeID} for user: ${userID}. Error: ${err.message}`);
-      throw err;
-    }
-  };
-
-  
-const getFavorite = async (userID) => {
-    try {
-        logger.info(`getFavorite- find recipes of userID: ${userID}`)
-        const user = await User.findById(userID).populate('favoriteRecipes');
-        if (!user) {
-            throw new Error(`There is no User with ID: ${userID}`);
-        }
-        logger.info(`found user with ID: ${userID}`)
-        return Promise.resolve(user.favoriteRecipes);
-      } catch (err) {
-        logger.error(`this is a err: ${err} `)
-        return Promise.reject(err);
-      }
-};
-
-
-
-
-module.exports = { getUsers, signIn,AddUser, AddChef,AddFavorite,RemoveFavorite,getFavorite };
+module.exports = { getUsers, signIn,AddUser, AddChef };
 

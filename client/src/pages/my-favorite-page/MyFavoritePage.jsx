@@ -7,14 +7,14 @@ import { useEffect, useState } from 'react';
 
 
 const MyFavoritePage = () => {
-  const { user } = useUser();
+  const { user, token } = useUser();
   const [favoriteRecipes, setFavoriteRecipes] = useState(null);
 
   useEffect(() => {
     const fetchFavorites = async () => {
       try {
         if (user) {
-          const recipes = await fetchFavoriteRecipes(user._id);
+          const recipes = await fetchFavoriteRecipes(user._id,token);
           setFavoriteRecipes(recipes);
         }
       } catch (error) {

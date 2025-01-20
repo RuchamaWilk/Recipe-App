@@ -14,7 +14,7 @@ const Card = ({ recipe }) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
-  const { user, setUser } = useUser();
+  const { user, setUser, token } = useUser();
   const [openDialog, setOpenDialog] = useState(false);
  const value= recipe.ratings? recipe.ratings.rating/recipe.ratings.reviewers.length: 0;
 const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
@@ -41,13 +41,13 @@ const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
     if (user) {
       try {
         if (isFavorite) {
-          await removeFavoriteRecipe(user._id, recipe._id);
+          await removeFavoriteRecipe(user._id, recipe._id,token);
           setUser((prevUser) => ({
             ...prevUser,
             favoriteRecipes: prevUser.favoriteRecipes.filter((id) => id !== recipe._id),
           }));
         } else {
-          await addFavoriteRecipes(user._id, recipe._id);
+          await addFavoriteRecipes(user._id, recipe._id,token);
           setUser((prevUser) => ({
             ...prevUser,
             favoriteRecipes: [...prevUser.favoriteRecipes, recipe._id],

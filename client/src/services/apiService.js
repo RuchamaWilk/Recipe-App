@@ -15,9 +15,7 @@ export const fetchRecipes = async () => {
 };
 
 export const addRecipe = async (recipeData, token) => {
-  
-  console.log("add? " ,recipeData);
-  try { 
+    try { 
     const response = await axios.post(`${BASE_URL}/recipes/add`,recipeData,{
       headers: {
         Authorization: `Bearer ${token}`
@@ -66,10 +64,14 @@ export const addChefToDb = async (chefData) => {
 };
 
 
-export const fetchFavoriteRecipes = async (userId) => {
+export const fetchFavoriteRecipes = async (userId,token) => {
   try {
     console.log("Fetching favorite recipes for user:", userId);
-    const response = await axios.get(`${BASE_URL}/auth/favorite/${userId}`);
+    const response = await axios.get(`${BASE_URL}/recipes/favorite/${userId}`,{
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
     return response.data;
   } catch (error) {
     console.error('Error fetching recipes:', error);
@@ -77,10 +79,14 @@ export const fetchFavoriteRecipes = async (userId) => {
   }
 };
 
-export const addFavoriteRecipes = async (userID, recipeID) => {
+export const addFavoriteRecipes = async (userID, recipeID,token) => {
   try {
     console.log(`add favorite recipes to user:  ${userID} and recipe id: ${recipeID}`);
-    const response = await axios.post(`${BASE_URL}/auth/addFavorite`,{userID,recipeID});
+    const response = await axios.post(`${BASE_URL}/recipes/addFavorite`,{userID,recipeID},{
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
     return response.data;
   } catch (error) {
     console.error('Error fetching recipes:', error);
@@ -88,10 +94,14 @@ export const addFavoriteRecipes = async (userID, recipeID) => {
   }
 };
 
-export const removeFavoriteRecipe = async (userID, recipeID) => {
+export const removeFavoriteRecipe = async (userID, recipeID,token) => {
   try {
     console.log(`removeFavoriteRecipe of user:  ${userID} and recipe id: ${recipeID}`);
-    const response = await axios.post(`${BASE_URL}/auth/removeFavorite`,{userID,recipeID});
+    const response = await axios.post(`${BASE_URL}/recipes/removeFavorite`,{userID,recipeID},{
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
     return response.data;
   } catch (error) {
     console.error('Error fetching recipes:', error);
