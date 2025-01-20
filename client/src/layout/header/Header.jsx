@@ -1,45 +1,24 @@
 import React, { useState } from 'react';
 import {
-  AppBar,
-  Box,
-  Toolbar,
-  IconButton,
-  Typography,
-  Menu,
-  Container,
-  Avatar,
-  Button,
-  Tooltip,
-  MenuItem,
-  Drawer,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemIcon,
-  Divider,
-  useTheme,
-  alpha,
-} from '@mui/material';
+  AppBar,Box,Toolbar,IconButton,Typography,Menu,Container,Avatar,Button,Tooltip,MenuItem,Drawer,List,
+  ListItem, ListItemText,ListItemIcon,Divider,alpha,} from '@mui/material';
 import {
-  Menu as MenuIcon,
-  Restaurant as RestaurantIcon,
-  Favorite as FavoriteIcon,
-  AddCircle as AddCircleIcon,
-  Person as PersonIcon,
-  Logout as LogoutIcon,
-} from '@mui/icons-material';
+  Menu as MenuIcon,Restaurant as RestaurantIcon,Favorite as FavoriteIcon,AddCircle as AddCircleIcon,
+  Person as PersonIcon,Logout as LogoutIcon,} from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import SignUp from '../../components/sign-up/SignUp';
 import SignIn from '../../components/sign-in/SignIn';
 import { useUser } from '../../providers/UserProvider';
-
 const mainColor = '#939185';
+import AlertDialog from '../../components/alert-dialog/AlertDialog';
 
 function ModernHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [openSignUp, setOpenSignUp] = useState(false);
   const [openSignIn, setOpenSignIn] = useState(false);
+  const [openAlertDialog, setOpenAlertDialog] = useState(false);
+
 
 
   const navigate = useNavigate();
@@ -63,10 +42,16 @@ function ModernHeader() {
   };
 
   function handleLogout() {
-    logout();  
-    handleCloseUserMenu();
-    navigate('/');
+    setOpenAlertDialog(true);
+    
   }
+
+  const confirmLogout = () => {
+    handleCloseUserMenu();
+
+    logout();
+    navigate('/');
+  };
 
   const drawer = (
     <Box sx={{ width: 280 }} role="presentation">
@@ -383,7 +368,6 @@ function ModernHeader() {
                   variant="contained"
                   onClick={() => setOpenSignUp(true)}
                   sx={{
-
                     px: 3,
                     py: 1,
                     borderRadius: 2,
@@ -445,7 +429,11 @@ function ModernHeader() {
       </Drawer>
       <SignUp open={openSignUp} onClose={() => setOpenSignUp(false)} />
       <SignIn open={openSignIn} onClose={() => setOpenSignIn(false)} />
-    </>
+      <AlertDialog
+        open={openAlertDialog}
+        onClose={() => setOpenAlertDialog(false)}
+        onConfirm={confirmLogout}
+      />    </>
   );
 }
 
