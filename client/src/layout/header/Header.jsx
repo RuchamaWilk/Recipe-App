@@ -41,9 +41,9 @@ function ModernHeader() {
   const [openSignUp, setOpenSignUp] = useState(false);
   const [openSignIn, setOpenSignIn] = useState(false);
 
+
   const navigate = useNavigate();
-  const theme = useTheme();
-  const { user, setUser, token, setToken } = useUser();
+  const { user,logout } = useUser();
 
   const pages = [
     { text: 'About Us', path: '/' },
@@ -63,10 +63,7 @@ function ModernHeader() {
   };
 
   function handleLogout() {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    setToken(null);
-    setUser(null);
+    logout();  
     handleCloseUserMenu();
     navigate('/');
   }

@@ -9,35 +9,83 @@ import {  validateEmail, validatePassword } from '../../utils/validation';
 import { useUser } from '../../providers/UserProvider'; // ייבוא הקונטקסט
 import { useNavigate } from 'react-router-dom';
 
+const FormTextField = ({ 
+  id, 
+  label, 
+  value, 
+  onChange, 
+  error, 
+  type = "text", 
+  placeholder 
+}) => {
+  return (
+    <TextField
+      id={id}
+      label={label}
+      variant="outlined"
+      fullWidth
+      type={type}
+      value={value}
+      placeholder={placeholder || `Enter your ${label.toLowerCase()}`}
+      onChange={onChange}
+      error={!!error}
+      helperText={error}
+      required
+    />
+  );
+};
+
 const SignInPage = ({ open= true, onClose}) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [emailError, setEmailError] = useState('')
   const [passwordError, setPasswordError] = useState('')
   const [signInError, setSignInError] = useState('')
-  const { setUser, setToken } = useUser(); // מקבלים גישה לפונקציות הקונטקסט
+  const { login } = useUser(); // מקבלים גישה לפונקציות הקונטקסט
   const navigate = useNavigate();
 
-  const handleClose = () =>{
+  const formFields = [
+    {
+      id: "email",
+      label: "Email",
+      value: email,
+      onChange: (ev) => setEmail(ev.target.value),
+      error: emailError
+    },
+    {
+      id: "password",
+      label: "Password",
+      value: password,
+      onChange: (ev) => setPassword(ev.target.value),
+      error: passwordError,
+      type: "password"
+    }
+  ];
+
+  const resetText=()=>{
     setEmail('');
     setPassword('')
+  }
+
+  const resetError=()=>{
     setEmailError('')
     setPasswordError('')
+  }
+  const handleClose = () =>{
+    resetText();
+    resetError()
     onClose()
   }
 
   const onButtonClick =async () => {
-    setEmailError('')
-    setPasswordError('')
+    resetError()
     setEmailError(validateEmail(email));
     setPasswordError(validatePassword(password));
     console.log("loginPage" ,email)
     try {
           const response =await signIn(email, password); // קריאה לפונקציה שתשלח את הנתונים לשרת
           if (response.token) {
-            console.log("Token saved:", response.token);
-            setToken(response.token); 
-            setUser(response.user);
+            login(response.token, response.user);
             navigate('/')
             handleClose()
 
@@ -56,39 +104,17 @@ const SignInPage = ({ open= true, onClose}) => {
         <Typography variant="h5" component="h1" sx={{ fontWeight: 'bold', color: '#2F3645' }}>
           Sign In
         </Typography>
-
-        <TextField
-          id="email"
-          label="Email"
-          variant="outlined"
-          fullWidth
-          value={email}
-          placeholder="Enter your email"
-          onChange={(ev) => setEmail(ev.target.value)}
-          error={!!emailError}
-          helperText={emailError}
-          required
-        />
-
-        <TextField
-          id="password"
-          label="Password"
-          variant="outlined"
-          type="password"
-          fullWidth
-          value={password}
-          placeholder="Enter your password"
-          onChange={(ev) => setPassword(ev.target.value)}
-          error={!!passwordError}
-          helperText={passwordError}
-          required
-        />
+        {formFields.map((field) => (
+          <FormTextField
+            key={field.id}
+            {...field}
+          />
+        ))}
 
         <Button
           onClick={onButtonClick}
           variant="contained"
           fullWidth
-         
           startIcon={<LoginIcon />}
           sx={{
             backgroundColor: '#2F3645',

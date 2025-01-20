@@ -1,35 +1,25 @@
 import { jwtDecode } from "jwt-decode";
 
+export const setTokenUser =( tokenValue,userData )=>{
+  localStorage.setItem('token', tokenValue)
+  localStorage.setItem('user', JSON.stringify(userData))
+
+}
+
+export const getDecodedToken=()=>{
+  return jwtDecode(localStorage.getItem('token'));
+}
 
 export const getToken=()=>{
-    console.log("getToken?")
-    const token = localStorage.getItem('token');
-    if (!token) {
-      console.error("Token not found");
-      return null;
-    }
-    /*return token*/
-    try {
-      const decodedToken = jwtDecode(token);
-      console.log(decodedToken);
-      return decodedToken;
-    } catch (error) {
-      console.error("Invalid token:", error.message);
-      return null;
-    }
-
+    return localStorage.getItem('token');
   }
 
   export const getUser=()=>{
-    try {
-      const user = localStorage.getItem('user');
-      if (!user) {
-        console.error("No user found in localStorage");
-        return null;
-      }
-      return JSON.parse(user);
-    } catch (error) {
-      console.error("Error parsing user JSON:", error);
-      return null;
-    }
+    return JSON.parse(localStorage.getItem('user'));
+  }
+
+  export const removeStorage=()=>{
+    localStorage.removeItem("token") 
+    localStorage.removeItem("user") 
+
   }
