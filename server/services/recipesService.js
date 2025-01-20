@@ -26,20 +26,7 @@ const getRecipes = async () => {
     }
 };
 
-const fetchRecipesCategory = async (category) => {
-    try {
-        logger.info(`fetchRecipesCategory- find recipes of category: ${category}`)
-        const recipes = await Recipe.find({ category: category });
-        if (!recipes) {
-            throw new Error(`There is no recipes with this category name: ${category}`);
-        }
-        logger.info(`found recipes of category: ${category}`)
-        return Promise.resolve(recipes);
-      } catch (err) {
-        logger.error(err)
-        return Promise.reject(err);
-      }
-};
+
 
 const addRecipe= async(recipe)=>{
     try {
@@ -83,4 +70,4 @@ const addRating= async({userID, recipeID,value})=>{
 
 
 
-module.exports = { getRecipes,fetchRecipesCategory,addRecipe,addRating};
+module.exports = { getRecipes,addRecipe,addRating};

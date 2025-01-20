@@ -3,7 +3,6 @@ const User = require('../models/user.js');
 const logger = require('./loggerService.js');
 const {generateToken}  = require('../utils/jwt.js');
 
-
 const getUsers = async () => {
     try {
         logger.info('getChefs- find all chefs')
@@ -25,7 +24,7 @@ const signIn = async ({email, password}) => {
         logger.info(`found a chef with the email" ${email}`)
         const isMatch = await userOfEmail.checkPassword(password);
         if (!isMatch) {
-            throw new Error('One or more of the entered details is incorrect'); // הודעה כללית
+            throw new Error('One or more of the entered details is incorrect.'); // הודעה כללית
         }
         logger.info(`found a chef with email: ${email} and password ${password} `)
         logger.info(`id: ${userOfEmail._id} email: ${userOfEmail.emailAddress} type: ${userOfEmail.type}`)
@@ -36,7 +35,6 @@ const signIn = async ({email, password}) => {
         return { success: false, message: err.message };
     }
 };
-
 
 const AddUser = async ({ userName, email, password }) => {
     try {
@@ -131,9 +129,23 @@ const RemoveFavorite = async ({ userID, recipeID }) => {
   };
 
   
+const getFavorite = async (userID) => {
+    try {
+        logger.info(`getFavorite- find recipes of userID: ${userID}`)
+        const user = await User.findById(userID).populate('favoriteRecipes');
+        if (!user) {
+            throw new Error(`There is no User with ID: ${userID}`);
+        }
+        logger.info(`found user with ID: ${userID}`)
+        return Promise.resolve(user.favoriteRecipes);
+      } catch (err) {
+        logger.error(`this is a err: ${err} `)
+        return Promise.reject(err);
+      }
+};
 
 
 
 
+module.exports = { getUsers, signIn,AddUser, AddChef,AddFavorite,RemoveFavorite,getFavorite };
 
-module.exports = { getUsers, signIn,AddUser, AddChef,AddFavorite,RemoveFavorite };

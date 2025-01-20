@@ -1,11 +1,15 @@
 import React from 'react';
 import RecipesPage from '../../pages/recipes-grid-page/RecipesGridPage';
-import { fetchRecipesByCategory } from '../../services/apiService';
+import { useLocation } from 'react-router-dom';
+
 
 const RecipeByCategoryPage = () => {
   console.log("RecipeByCategoryPage")
+  const location = useLocation(); 
+  const recipes = location.state?.recipes
+console.log("recipes ", recipes)
   return (
-    <RecipesPage fetchFunction={fetchRecipesByCategory} isFavorite={false} />
+    <RecipesPage recipes={recipes} isFavorite={false} />
   );
 };
 

@@ -14,16 +14,6 @@ export const fetchRecipes = async () => {
   }
 };
 
-export const fetchRecipesByCategory = async (category) => {
-  try {
-    const response = await axios.get(`${BASE_URL}/recipes/category/${category}`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching recipes:', error);
-    throw error;
-  }
-};
-
 export const addRecipe = async (recipeData) => {
   
   console.log("add? " ,recipeData);

@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const logger = require('../services/loggerService');
-const { getUsers, signIn ,AddUser,AddChef,AddFavorite,RemoveFavorite} = require('../services/authService');
+const { getUsers, signIn ,AddUser,AddChef,AddFavorite,RemoveFavorite,getFavorite} = require('../services/authService');
 
 router.get('/', async (req, res, next) => {
     try {
@@ -58,6 +58,19 @@ router.post('/signUp/chef', async (req, res, next) => {
         next(err);
     }
 });
+
+router.get('/favorite/:userID', async (req, res, next) => {
+    try {
+        const userID = req.params.userID;
+        logger.info( `favorite - get favorite recipes from DB, user id: ${userID}`  );
+        const Recipes = await getFavorite(userID);
+        logger.info(`successfull get recipes of userID: ${userID} `);
+        return res.status(200).send(Recipes);
+    } catch (err) {
+    next(err);
+    }
+  });
+
 
   router.post('/addFavorite', async (req, res, next) => {
     try {

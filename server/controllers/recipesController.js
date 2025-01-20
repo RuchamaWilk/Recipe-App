@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getRecipes ,fetchRecipesCategory,addRecipe,addRating} = require('../services/recipesService');
+const { getRecipes ,addRecipe,addRating} = require('../services/recipesService');
 const logger = require('../services/loggerService');
 
 router.get('/', async (req, res, next) => {
@@ -14,19 +14,6 @@ router.get('/', async (req, res, next) => {
     next(err);
   }
 });
-
-
-router.get('/category/:categoryId', async (req, res) => {
-    try {
-        const category= req.params.categoryId
-        logger.info( `fetchRecipesCategory - calling recipes of ${category} category`  );
-        const allRecipesFromCategory =await fetchRecipesCategory(category);
-        logger.info(`success with fetchRecipesCategory category: ${category}`);
-        return res.status(200).send(allRecipesFromCategory);
-    } catch (err) {
-        next(err);
-    }
-  });
 
 
   router.post('/add', async (req, res, next) => {
