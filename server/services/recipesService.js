@@ -65,18 +65,28 @@ const addRating= async({userID, recipeID,value})=>{
     const addFavorite = async ({ userID, recipeID }) => {
       try {
         logger.info(`AddFavorite - adding a favorite recipe to DB for user: ${userID}`);
+    
+        // עדכון רשימת המועדפים של המשתמש
         const user = await User.findByIdAndUpdate(
           userID,
           { $addToSet: { favoriteRecipes: recipeID } }, // הוספה אם אינו קיים
           { new: true } // מחזיר את המסמך המעודכן
         );
+    
         if (!user) {
           throw new Error('User not found');
         }
-        const addedRecipe = await Recipe.findById(recipeID);
+    
+        // הבאת פרטי המתכון כולל שם השף
+        const addedRecipe = await Recipe.findById(recipeID).populate({
+          path: 'chefId',
+          select: 'userName', // מביא רק את שדה ה-userName של השף
+        });
+    
         if (!addedRecipe) {
           throw new Error('Recipe not found');
         }
+    
         logger.info(`Added recipe: ${recipeID} to user ${userID}`);
         return addedRecipe; // מחזיר את פרטי המתכון שנוסף
       } catch (err) {
@@ -84,6 +94,7 @@ const addRating= async({userID, recipeID,value})=>{
         throw err;
       }
     };
+    
     
     
 

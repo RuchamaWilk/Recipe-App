@@ -25,7 +25,7 @@ const Card = ({ recipe }) => {
   //console.log("recipe.chefId.userName: ",recipe.chefId.userName)
   const isChef = user?._doc?._id === recipe.chefId._id;
 
-
+console.log("user: ",user)
   useEffect(() => {
     const updateFavoriteState = async () => {
       if (user) {
@@ -71,8 +71,7 @@ const Card = ({ recipe }) => {
             favoriteRecipes: updatedFavoritesDoc,
           },
         });
-        console.log("favoriteRecipes ", user.favoriteRecipes)
-        console.log("favoriteRecipes doc ", user._doc.favoriteRecipes)
+        console.log("user:! ", user)
         setIsFavorite(!isFavorite);
       } catch (error) {
         console.error("Failed to update favorites:", error);
