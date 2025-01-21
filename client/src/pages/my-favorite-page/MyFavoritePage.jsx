@@ -4,8 +4,7 @@ import RecipesGrid from '../recipes-grid-page/RecipesGridPage';
 
 const MyFavoritePage = () => {
   const { user } = useUser();
-  console.log("user.favoriteRecipes " ,user.favoriteRecipes)
-  return <RecipesGrid recipes={user.favoriteRecipes} isUser={true} title="My Favorite Recipes" />;
+  return <RecipesGrid recipes={user.favoriteRecipes} isChef={false} title="My Favorite Recipes" />;
 };
 
 export default MyFavoritePage;

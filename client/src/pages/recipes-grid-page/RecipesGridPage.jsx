@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import Card from '../../components/card/Card';
 
-const RecipesGrid = ({ recipes, isUser, title }) => {
+const RecipesGrid = ({ recipes, isChef, title }) => {
   const mainColor = "#5d5b4f";
 
   return (
@@ -25,9 +25,7 @@ const RecipesGrid = ({ recipes, isUser, title }) => {
           textAlign: 'center',
           color: mainColor,
         }}>
-          {isUser
-            ? "No recipes found."
-            : "No recipes found for This Category."}
+          { "No recipes found"}
         </Typography>
       ) : (
         <Box sx={{

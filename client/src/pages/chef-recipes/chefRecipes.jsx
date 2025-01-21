@@ -11,8 +11,7 @@ const ChefRecipesPage = () => {
   {
     navigate('/*')
   }
-  console.log("chefrecipes " ,user.chefRecipes)
-  return <RecipesGrid recipes={user.chefRecipes} isUser={true} title="My Recipes"  />;
+  return <RecipesGrid recipes={user.chefRecipes} isChef={true} title="My Recipes"  />;
 };
 
 export default ChefRecipesPage;
