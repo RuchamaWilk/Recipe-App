@@ -17,7 +17,9 @@ const Card = ({ recipe }) => {
   const { user, setUser, token } = useUser();
   const [openDialog, setOpenDialog] = useState(false);
  const value= recipe.ratings? recipe.ratings.rating/recipe.ratings.reviewers.length: 0;
-const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
+  const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
+
+  //console.log("recipe.chefId.userName: ",recipe.chefId.userName)
   
 
   useEffect(() => {
@@ -40,26 +42,43 @@ const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
     e.stopPropagation();
     if (user) {
       try {
+        let updatedFavorites, updatedFavoritesDoc;
+  
         if (isFavorite) {
-          await removeFavoriteRecipe(user._doc._id, recipe._id,token);
-          setUser((prevUser) => ({
-            ...prevUser,
-            favoriteRecipes: prevUser.favoriteRecipes.filter((id) => id !== recipe._id),
-          }));
+          // הסרת מתכון מהמועדפים
+          await removeFavoriteRecipe(user._doc._id, recipe._id, token);
+  
+          updatedFavorites = user.favoriteRecipes.filter((fav) => fav._id !== recipe._id);
+          updatedFavoritesDoc = user._doc.favoriteRecipes.filter((id) => id !== recipe._id);
         } else {
-          await addFavoriteRecipes(user._doc._id, recipe._id,token);
-          setUser((prevUser) => ({
-            ...prevUser,
-            favoriteRecipes: [...prevUser.favoriteRecipes, recipe._id],
-          }));
+          // הוספת מתכון למועדפים
+          const addedRecipe = await addFavoriteRecipes(user._doc._id, recipe._id, token);
+          console.log("addedRecipe ", addedRecipe)
+          updatedFavorites = [...user.favoriteRecipes, addedRecipe];
+          updatedFavoritesDoc = [...user._doc.favoriteRecipes, recipe._id];
         }
+  
+        // עדכון המשתמש ב-state
+        setUser({
+          ...user,
+          favoriteRecipes: updatedFavorites,
+          _doc: {
+            ...user._doc,
+            favoriteRecipes: updatedFavoritesDoc,
+          },
+        });
+        console.log("favoriteRecipes ", user.favoriteRecipes)
+        console.log("favoriteRecipes doc ", user._doc.favoriteRecipes)
+        setIsFavorite(!isFavorite);
       } catch (error) {
-        console.error('Failed to update favorites:', error);
+        console.error("Failed to update favorites:", error);
       }
     } else {
       setOpenDialog(true);
     }
   };
+  
+  
 
   const handleDialogClick = (e) => {
     e.stopPropagation();

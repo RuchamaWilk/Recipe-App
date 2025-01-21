@@ -17,7 +17,6 @@ const HomePage = () => {
           }
           acc[category].push({
             ...recipe,
-            chefName: recipe.chefName || "Unknown Chef", // Default chef name if missing
           });
           return acc;
         }, {});

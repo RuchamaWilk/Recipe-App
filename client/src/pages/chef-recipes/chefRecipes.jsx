@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useUser } from '../../providers/UserProvider';
 import RecipesGrid from '../recipes-grid-page/RecipesGridPage';
 import { useNavigate } from 'react-router-dom';
@@ -11,7 +11,7 @@ const ChefRecipesPage = () => {
   {
     navigate('/*')
   }
-  
+  console.log("chefrecipes " ,user.chefRecipes)
   return <RecipesGrid recipes={user.chefRecipes} isUser={true} title="My Recipes"  />;
 };
 

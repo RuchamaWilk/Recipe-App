@@ -62,25 +62,30 @@ const addRating= async({userID, recipeID,value})=>{
       }
     };
     
-const addFavorite =async ({userID, recipeID}) => {
-    try {
-        logger.info(`AddFavorite- add a favorite recipe to DB for user: ${userID}`)
-        const result = await User.findByIdAndUpdate(
-            userID,
-            { $addToSet: { favoriteRecipes: recipeID } }, // הוספה אם אינו קיים
-            { new: true } // מחזיר את המסמך המעודכן
-          );
-          if(!result){
-            throw new Error('User not found');
-          }
-        logger.info(`add recipe: ${recipeID} to user ${userID}`)
-        return result.favoriteRecipes;
+    const addFavorite = async ({ userID, recipeID }) => {
+      try {
+        logger.info(`AddFavorite - adding a favorite recipe to DB for user: ${userID}`);
+        const user = await User.findByIdAndUpdate(
+          userID,
+          { $addToSet: { favoriteRecipes: recipeID } }, // הוספה אם אינו קיים
+          { new: true } // מחזיר את המסמך המעודכן
+        );
+        if (!user) {
+          throw new Error('User not found');
+        }
+        const addedRecipe = await Recipe.findById(recipeID);
+        if (!addedRecipe) {
+          throw new Error('Recipe not found');
+        }
+        logger.info(`Added recipe: ${recipeID} to user ${userID}`);
+        return addedRecipe; // מחזיר את פרטי המתכון שנוסף
       } catch (err) {
-        logger.error(`Failed to add favorite recipe: ${recipeID} for user: ${userID}. Error: ${err.message}`)
+        logger.error(`Failed to add favorite recipe: ${recipeID} for user: ${userID}. Error: ${err.message}`);
         throw err;
       }
-
-}
+    };
+    
+    
 
 const removeFavorite = async ({ userID, recipeID }) => {
     try {

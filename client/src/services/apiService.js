@@ -78,6 +78,7 @@ export const fetchFavoriteRecipes = async (userId,token) => {
     throw error;
   }
 };
+
 export const fetchChefRecipes= async (userId,token)=>{
   try {
     console.log("Fetching chef recipes for user:", userId);
@@ -94,20 +95,27 @@ export const fetchChefRecipes= async (userId,token)=>{
 
 }
 
-export const addFavoriteRecipes = async (userID, recipeID,token) => {
+export const addFavoriteRecipes = async (userID, recipeID, token) => {
   try {
-    console.log(`add favorite recipes to user:  ${userID} and recipe id: ${recipeID}`);
-    const response = await axios.post(`${BASE_URL}/recipes/addFavorite`,{userID,recipeID},{
-      headers: {
-        Authorization: `Bearer ${token}`
+    console.log(`Adding favorite recipe for user: ${userID}, recipeID: ${recipeID}`);
+    
+    const response = await axios.post(
+      `${BASE_URL}/recipes/addFavorite`,
+      { userID, recipeID },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       }
-    });
-    return response.data;
+    );
+    return response.data.addedRecipe; 
   } catch (error) {
-    console.error('Error fetching recipes:', error);
+    console.error('Error adding favorite recipes:', error);
     throw error;
   }
 };
+
+
 
 export const removeFavoriteRecipe = async (userID, recipeID,token) => {
   try {

@@ -68,18 +68,21 @@ router.get('/chef/:userID',verifyUser, async (req, res, next) => {
   }
 });
 
-
-router.post('/addFavorite',verifyUser, async (req, res, next) => {
+router.post('/addFavorite', verifyUser, async (req, res, next) => {
   try {
-      const { userID , recipeID} = req.body;
-      logger.info(`Calling addFavorite with userID : ${userID}` );
-      const result = await addFavorite({ userID, recipeID }); 
-      logger.info('success with addFavorite to DB');
-      return res.status(200).send({result: result});
+    const { userID, recipeID } = req.body;
+    logger.info(`Calling addFavorite with userID: ${userID}`);
+    
+    const addedRecipe = await addFavorite({ userID, recipeID });
+    
+    logger.info('Successfully added favorite recipe to DB');
+    return res.status(200).send({ addedRecipe });
   } catch (err) {
-      next(err);
+    next(err);
   }
 });
+
+
 
 router.post('/removeFavorite',verifyUser, async (req, res, next) => {
   try {
