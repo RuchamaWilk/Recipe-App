@@ -8,16 +8,20 @@ const HomePage = () => {
 
   useEffect(() => {
     const getRecipes = async () => {
-      try {       
+      try {
         const recipes = await fetchRecipes();
-        const grouped = recipes.reduce((acc, { recipe, chefName }) => {
-            const { category } = recipe;
-            if (!acc[category]) {
-              acc[category] = [];
-            }
-            acc[category].push({ ...recipe, chefName });
-            return acc;
-          }, {});
+        console.log(recipes);
+        const grouped = recipes.reduce((acc, recipe) => {
+          const { category } = recipe; // Direct access to category in the recipe object
+          if (!acc[category]) {
+            acc[category] = [];
+          }
+          acc[category].push({
+            ...recipe,
+            chefName: recipe.chefName || "Unknown Chef", // Default chef name if missing
+          });
+          return acc;
+        }, {});
         setCategories(grouped);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -25,6 +29,7 @@ const HomePage = () => {
     };
     getRecipes();
   }, []);
+  
 
   return (
     <Container 
