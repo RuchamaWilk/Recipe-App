@@ -71,8 +71,8 @@ const value= recipe.ratings? recipe.ratings.rating/recipe.ratings.reviewers.leng
           mb: 2,
         }}
       >
-        <Avatar sx={{ bgcolor: '#E6B9A6' }}>{recipe.chefName[0].toUpperCase()}</Avatar>
-        <Typography sx={{ fontWeight: 500 }}>{recipe.chefName}</Typography>
+        <Avatar sx={{ bgcolor: '#E6B9A6' }}>{recipe.chefId.userName[0].toUpperCase()}</Avatar>
+        <Typography sx={{ fontWeight: 500 }}>{recipe.chefId.userName}</Typography>
       </Box>
 
       <Box sx={{ display: 'flex', alignItems: 'center', mt: isMobile ? 2 : 0 }}>

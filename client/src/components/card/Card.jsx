@@ -99,7 +99,7 @@ const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
         <Box className="recipe-details">
           <Box className="chef-time-container">
             <Typography variant="body2" className="chef-name">
-              {recipe.chefName}
+              {recipe.chefId.userName}
             </Typography>
             <Typography variant="body2" className="cook-time">
               {`${recipe.avgTime} Min`}
