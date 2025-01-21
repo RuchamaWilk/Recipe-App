@@ -4,28 +4,20 @@ const User = require('../models/user.js');
 
 
 const getRecipes = async () => {
-    try {
-        logger.info('getRecipes - find all recipes');
-        // Fetch all recipes
-        const recipes = await Recipe.find();
-        // Map through recipes and fetch chef names
-        const recipeObject = await Promise.all(
-            recipes.map(async (recipe) => {
-                const chef = await User.findById({ _id: recipe.chefId }); // Assuming 'User' is the schema for chefs
-                return {
-                    recipe,
-                    chefName: chef ? chef.userName : null, // Add chef name, or null if not found
-                };
-            })
-        );
-        logger.info(`success fetching recipes with chef names from DB ${recipeObject}`);
-        return Promise.resolve(recipeObject);
-    } catch (err) {
-        logger.error(err);
-        return Promise.reject(err);
-    }
+  try {
+      logger.info('getRecipes - find all recipes');
+      const recipes = await Recipe.find().populate({
+              path: 'chefId',
+              select: 'userName' 
+          })
+          .lean();  
+      logger.info('success fetching recipes with chef names from DB');
+      return recipes
+  } catch (err) {
+      logger.error('Error fetching recipes:', err);
+      throw err;
+  }
 };
-
 
 
 const addRecipe= async(recipe)=>{
