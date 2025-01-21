@@ -109,32 +109,6 @@ const removeFavorite = async ({ userID, recipeID }) => {
     }
   };
 
-  
-  const getFavorite = async (userID) => {
-    try {
-        logger.info(`getFavorite - find recipes of userID: ${userID}`)
-        
-        // חיפוש כל המתכונים שמועדפים ע"י userID עם מידע על השם של הכותב
-        const user = await User.findById(userID).populate({
-          path: 'favoriteRecipes',
-          populate: {
-            path: 'chefId',
-            select: 'userName' // בוחר את השדה 'userName' ממודל 'chefId'
-          }
-        }).lean();
-        
-        if (!user) {
-            throw new Error(`There is no User with ID: ${userID}`);
-        }
-        
-        logger.info(`found user with ID: ${userID}`)
-        return Promise.resolve(user.favoriteRecipes);
-    } catch (err) {
-        logger.error(`Error fetching favorite recipes for user ID: ${userID}. Error: ${err.message}`);
-        return Promise.reject(err);
-    }
-};
-
 
 const getChefRecipes = async (userID) => {
   try {
@@ -204,12 +178,4 @@ const updateRecipe = async (recipeID, updatedData) => {
 };
 
 
-
-
-
-
-
-
-
-
-module.exports = { getRecipes,addRecipe,addRating,addFavorite,removeFavorite,getFavorite,removeRecipe,updateRecipe,getChefRecipes};
+module.exports = { getRecipes,addRecipe,addRating,addFavorite,removeFavorite,removeRecipe,updateRecipe,getChefRecipes};

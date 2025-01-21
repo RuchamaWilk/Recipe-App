@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getRecipes ,addRecipe,addRating,addFavorite,removeFavorite,getFavorite,removeRecipe,getChefRecipes} = require('../services/recipesService');
+const { getRecipes ,addRecipe,addRating,addFavorite,removeFavorite,removeRecipe,getChefRecipes} = require('../services/recipesService');
 const logger = require('../services/loggerService');
 const {verifyChef,verifyUser,} = require('../middlewares/authMiddleware')
 
@@ -44,17 +44,7 @@ router.get('/', async (req, res, next) => {
   });
 
   
-router.get('/favorite/:userID',verifyUser, async (req, res, next) => {
-  try {
-      const userID = req.params.userID;
-      logger.info( `favorite - get favorite recipes from DB, user id: ${userID}`  );
-      const recipes = await getFavorite(userID);
-      logger.info(`successfull get recipes of userID: ${userID} `);
-      return res.status(200).send(recipes);
-  } catch (err) {
-  next(err);
-  }
-});
+
 
 router.get('/chef/:userID',verifyUser, async (req, res, next) => {
   try {

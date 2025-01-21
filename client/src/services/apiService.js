@@ -63,22 +63,6 @@ export const addChefToDb = async (chefData) => {
     }
 };
 
-
-export const fetchFavoriteRecipes = async (userId,token) => {
-  try {
-    console.log("Fetching favorite recipes for user:", userId);
-    const response = await axios.get(`${BASE_URL}/recipes/favorite/${userId}`,{
-      headers: {
-        Authorization: `Bearer ${token}`
-      }
-    });
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching recipes:', error);
-    throw error;
-  }
-};
-
 export const fetchChefRecipes= async (userId,token)=>{
   try {
     console.log("Fetching chef recipes for user:", userId);
