@@ -7,6 +7,9 @@ import { addFavoriteRecipes, removeFavoriteRecipe } from '../../services/apiServ
 import { useUser } from '../../providers/UserProvider';
 import SignInDialog from '../../components/sign-up-dialog/SignUpDialog';
 import './Card.css';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+
 
 const mainColor = "#5d5b4f";
 
@@ -20,7 +23,8 @@ const Card = ({ recipe }) => {
   const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
 
   //console.log("recipe.chefId.userName: ",recipe.chefId.userName)
-  
+  const isChef = user?._doc?._id === recipe.chefId._id;
+
 
   useEffect(() => {
     const updateFavoriteState = async () => {
@@ -77,6 +81,21 @@ const Card = ({ recipe }) => {
       setOpenDialog(true);
     }
   };
+
+  const handleEditClick = (e) => {
+    e.stopPropagation();
+    navigate(`/`);
+  };
+
+  const handleDeleteClick = async (e) => {
+    e.stopPropagation();
+    try {
+      // Add logic to delete the recipe
+      console.log(`Deleting recipe with ID: ${recipe._id}`);
+    } catch (error) {
+      console.error("Failed to delete recipe:", error);
+    }
+  };
   
   
 
@@ -108,6 +127,22 @@ const Card = ({ recipe }) => {
               className={`favorite-icon ${isFavorite ? 'favorited' : ''}`}
             />
           </IconButton>
+          {isChef && (
+            <Box sx={{ display: 'flex', gap: '8px' }}>
+              <IconButton
+                onClick={handleEditClick}
+                className="edit-button"
+              >
+                <EditIcon fontSize="small" />
+              </IconButton>
+              <IconButton
+                onClick={handleDeleteClick}
+                className="delete-button"
+              >
+                <DeleteIcon fontSize="small" />
+              </IconButton>
+            </Box>
+          )}
         </CardActions>
       </Box>
       <CardContent className="card-content">
