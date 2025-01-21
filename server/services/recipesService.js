@@ -1,6 +1,8 @@
 const Recipe = require('../models/recipe.js');
 const logger = require('./loggerService.js');
 const User = require('../models/user.js');
+const mongoose = require('mongoose');
+
 
 
 const getRecipes = async () => {
@@ -60,7 +62,7 @@ const addRating= async({userID, recipeID,value})=>{
       }
     };
     
-const AddFavorite =async ({userID, recipeID}) => {
+const addFavorite =async ({userID, recipeID}) => {
     try {
         logger.info(`AddFavorite- add a favorite recipe to DB for user: ${userID}`)
         const result = await User.findByIdAndUpdate(
@@ -80,7 +82,7 @@ const AddFavorite =async ({userID, recipeID}) => {
 
 }
 
-const RemoveFavorite = async ({ userID, recipeID }) => {
+const removeFavorite = async ({ userID, recipeID }) => {
     try {
       logger.info(`RemoveFavorite - removing a favorite recipe from DB for user: ${userID}`);
       
@@ -103,19 +105,97 @@ const RemoveFavorite = async ({ userID, recipeID }) => {
   };
 
   
-const getFavorite = async (userID) => {
+  const getFavorite = async (userID) => {
     try {
-        logger.info(`getFavorite- find recipes of userID: ${userID}`)
-        const user = await User.findById(userID).populate('favoriteRecipes');
+        logger.info(`getFavorite - find recipes of userID: ${userID}`)
+        
+        // חיפוש כל המתכונים שמועדפים ע"י userID עם מידע על השם של הכותב
+        const user = await User.findById(userID).populate({
+          path: 'favoriteRecipes',
+          populate: {
+            path: 'chefId',
+            select: 'userName' // בוחר את השדה 'userName' ממודל 'chefId'
+          }
+        }).lean();
+        
         if (!user) {
             throw new Error(`There is no User with ID: ${userID}`);
         }
+        
         logger.info(`found user with ID: ${userID}`)
         return Promise.resolve(user.favoriteRecipes);
-      } catch (err) {
-        logger.error(`this is a err: ${err} `)
+    } catch (err) {
+        logger.error(`Error fetching favorite recipes for user ID: ${userID}. Error: ${err.message}`);
         return Promise.reject(err);
-      }
+    }
+};
+
+
+const getChefRecipes = async (userID) => {
+  try {
+    logger.info(`getChefRecipes - finding recipes for chef ID: ${userID}`);
+    
+    // חיפוש כל המתכונים ששייכים ל- chefId המסוים עם מידע על השם
+    const recipes = await Recipe.find({ chefId: new mongoose.Types.ObjectId(userID) }).populate({
+      path: 'chefId',
+      select: 'userName' // בוחר את השדה 'userName' ממודל 'chefId'
+    }).lean();
+    
+    logger.info(`Query result: ${JSON.stringify(recipes, null, 2)}`);
+    if (recipes.length === 0) {
+      logger.info(`No recipes found for chef ID: ${userID}`);
+      return Promise.resolve([]);
+    }
+    
+    logger.info(`Found ${recipes.length} recipes for chef ID: ${userID}`);
+    return Promise.resolve(recipes);
+  } catch (err) {
+    logger.error(`Error fetching recipes for chef ID: ${userID}. Error: ${err.message}`);
+    return Promise.reject(err);
+  }
+};
+
+
+
+
+
+const removeRecipe = async (recipeID) => {
+  try {
+    logger.info(`Removing recipe with ID: ${recipeID} from the database`);
+    const result = await Recipe.findByIdAndDelete(recipeID);
+    if (!result) {
+      throw new Error(`Recipe with ID ${recipeID} not found`);
+    }
+
+    logger.info(`Successfully removed recipe with ID: ${recipeID}`);
+    return result; // המסמך שנמחק מוחזר כתוצאה
+  } catch (err) {
+    logger.error(`Failed to remove recipe with ID: ${recipeID}. Error: ${err.message}`);
+    throw err;
+  }
+};
+
+const updateRecipe = async (recipeID, updatedData) => {
+  try {
+    logger.info(`Updating recipe with ID: ${recipeID}`);
+
+    // עדכון הנתונים של המתכון
+    const updatedRecipe = await Recipe.findByIdAndUpdate(
+      recipeID,               // ה-ID של המתכון לעדכון
+      { $set: updatedData },  // הנתונים המעודכנים
+      { new: true, runValidators: true } // החזרת המסמך המעודכן ואימות הנתונים
+    );
+
+    if (!updatedRecipe) {
+      throw new Error(`Recipe with ID ${recipeID} not found`);
+    }
+
+    logger.info(`Successfully updated recipe with ID: ${recipeID}`);
+    return updatedRecipe;
+  } catch (err) {
+    logger.error(`Failed to update recipe with ID: ${recipeID}. Error: ${err.message}`);
+    throw err;
+  }
 };
 
 
@@ -123,4 +203,8 @@ const getFavorite = async (userID) => {
 
 
 
-module.exports = { getRecipes,addRecipe,addRating,AddFavorite,RemoveFavorite,getFavorite};
+
+
+
+
+module.exports = { getRecipes,addRecipe,addRating,addFavorite,removeFavorite,getFavorite,removeRecipe,updateRecipe,getChefRecipes};

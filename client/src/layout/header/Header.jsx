@@ -99,24 +99,24 @@ function ModernHeader() {
         {user ? (
           <>
             <Divider sx={{ my: 2 }} />
-            {user?.type === 'chef' && (
+            {user?._doc.type === 'chef' && (
               <ListItem
                 button
                 onClick={() => {
-                  navigate('/add-recipe');
+                  navigate(`/chef/${user._doc_id}`)
                   handleDrawerToggle();
                 }}
               >
                 <ListItemIcon sx={{ color: mainColor }}>
                   <AddCircleIcon />
                 </ListItemIcon>
-                <ListItemText primary="Add Recipe" />
+                <ListItemText primary="My recipe" />
               </ListItem>
             )}
             <ListItem
               button
               onClick={() => {
-                navigate(`/favorite/${user._id}`);
+                navigate(`/favorite/${user._doc._id}`);
                 handleDrawerToggle();
               }}
             >
@@ -261,10 +261,10 @@ function ModernHeader() {
 
               {user && (
                 <>
-                  {user?.type === 'chef' && (
+                  {user?._doc.type === 'chef' && (
                     <Button
                       startIcon={<AddCircleIcon />}
-                      onClick={() => navigate('/add-recipe')}
+                      onClick={() => navigate(`/chef/${user._doc._id}`)}
                       sx={{
                         color: mainColor,
                         px: 2,
@@ -277,12 +277,12 @@ function ModernHeader() {
 
                       }}
                     >
-                      Add Recipe
+                      My Recipes
                     </Button>
                   )}
                   <Button
                     startIcon={<FavoriteIcon />}
-                    onClick={() => navigate(`/favorite/${user._id}`)}
+                    onClick={() => navigate(`/favorite/${user._doc._id}`)}
                     sx={{
 
                       color: mainColor,
@@ -312,7 +312,7 @@ function ModernHeader() {
 
                       }}
                     >
-                      {user.userName.charAt(0).toUpperCase()}
+                      {user._doc.userName.charAt(0).toUpperCase()}
                     </Avatar>
                   </IconButton>
                 </Tooltip>

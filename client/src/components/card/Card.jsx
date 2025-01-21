@@ -23,7 +23,7 @@ const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
   useEffect(() => {
     const updateFavoriteState = async () => {
       if (user) {
-        const isFavoriteRecipe = user.favoriteRecipes.includes(recipe._id);
+        const isFavoriteRecipe = user._doc.favoriteRecipes.includes(recipe._id);
         setIsFavorite(isFavoriteRecipe);
       } else {
         setIsFavorite(false);
@@ -41,13 +41,13 @@ const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
     if (user) {
       try {
         if (isFavorite) {
-          await removeFavoriteRecipe(user._id, recipe._id,token);
+          await removeFavoriteRecipe(user._doc._id, recipe._id,token);
           setUser((prevUser) => ({
             ...prevUser,
             favoriteRecipes: prevUser.favoriteRecipes.filter((id) => id !== recipe._id),
           }));
         } else {
-          await addFavoriteRecipes(user._id, recipe._id,token);
+          await addFavoriteRecipes(user._doc._id, recipe._id,token);
           setUser((prevUser) => ({
             ...prevUser,
             favoriteRecipes: [...prevUser.favoriteRecipes, recipe._id],

@@ -8,7 +8,7 @@ import ErrPage from '../pages/err-page/errPage'
 import SignUpPageChef from '../pages/sign-up-page/SignUpPageChef'
 import ProtectedRoute from './ProtectedRouts';
 import MyFavoritePage from  '../pages/my-favorite-page/MyFavoritePage'
-
+import ChefRecipesPage from '../pages/chef-recipes/chefRecipes'
 
 function AppRouters() {
   return (
@@ -29,6 +29,13 @@ function AppRouters() {
         element={
           <ProtectedRoute allowedTypes={['user','chef']}>
             <MyFavoritePage />
+          </ProtectedRoute>
+        } 
+      />
+      <Route path="/chef/:userID" 
+        element={
+          <ProtectedRoute allowedTypes={['chef']}>
+            <ChefRecipesPage />
           </ProtectedRoute>
         } 
       />

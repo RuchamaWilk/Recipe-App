@@ -89,7 +89,7 @@ const SignInPage = ({ open= true, onClose}) => {
     try {
           const response =await signIn(email, password); // קריאה לפונקציה שתשלח את הנתונים לשרת
           if (response.token) {
-            login(response.token, response.user);
+            login(response.token, response.user); // שומר את כל המידע ב-UserProvider
             navigate('/')
             handleClose()
           }

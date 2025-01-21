@@ -31,17 +31,17 @@ export const addRecipe = async (recipeData, token) => {
 
 export const signIn = async (email, password) => {
   try {
-    console.log("api ",email)
-    const response = await axios.post(`${BASE_URL}/auth/signIn`,{email,password});
+    const response = await axios.post(`${BASE_URL}/auth/signIn`, { email, password });
     return response.data;
   } catch (error) {
-    console.error('Error feching chefs:', error);
+    console.error('Error during sign-in:', error);
     if (error.response && error.response.data) {
       throw new Error(error.response.data.message || 'Login failed');
     }
     throw new Error('Unable to log in. Please try again later.');
   }
 };
+
 
 export const addUserToDb = async (userName,email, password) => {
   try {
@@ -78,6 +78,21 @@ export const fetchFavoriteRecipes = async (userId,token) => {
     throw error;
   }
 };
+export const fetchChefRecipes= async (userId,token)=>{
+  try {
+    console.log("Fetching chef recipes for user:", userId);
+    const response = await axios.get(`${BASE_URL}/recipes/chef/${userId}`,{
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching recipes:', error);
+    throw error;
+  }
+
+}
 
 export const addFavoriteRecipes = async (userID, recipeID,token) => {
   try {
@@ -118,6 +133,36 @@ export const addRating = async (userID, recipeID,value, token ) => {
         Authorization: `Bearer ${token}`
       }});
     return rating.data;
+  } catch (error) {
+    console.error('Error fetching recipes:', error);
+    throw error;
+  }
+};
+
+export const remove = async ( recipeID,token) => {
+  try {
+    console.log(`remove recipe id: ${recipeID}`);
+    const response = await axios.post(`${BASE_URL}/recipes/remove`,{recipeID},{
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching recipes:', error);
+    throw error;
+  }
+};
+
+export const update = async ( recipeID, updatedData,token) => {
+  try {
+    console.log(`remove recipe id: ${recipeID}`);
+    const response = await axios.post(`${BASE_URL}/recipes/update`,{recipeID,updatedData},{
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+    return response.data;
   } catch (error) {
     console.error('Error fetching recipes:', error);
     throw error;

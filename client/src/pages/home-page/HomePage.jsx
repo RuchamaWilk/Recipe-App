@@ -10,7 +10,6 @@ const HomePage = () => {
     const getRecipes = async () => {
       try {
         const recipes = await fetchRecipes();
-        console.log(recipes);
         const grouped = recipes.reduce((acc, recipe) => {
           const { category } = recipe; // Direct access to category in the recipe object
           if (!acc[category]) {

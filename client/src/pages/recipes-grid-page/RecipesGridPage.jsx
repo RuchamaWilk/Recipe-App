@@ -1,51 +1,38 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import { Box, Typography } from '@mui/material';
 import Card from '../../components/card/Card';
-import { Typography, Box } from '@mui/material';
 
-const mainColor = "#5d5b4f";
-
-
-  const RecipesPage = ({ recipes: initialRecipes, isFavorite }) => {
-    const { category } = useParams();
-    const [recipesData, setRecipesData] = useState(null);
-  
-    useEffect(() => {
-      if (initialRecipes) {
-        setRecipesData(initialRecipes);
-      }
-    }, [initialRecipes, isFavorite,]);
-  
-    if (!recipesData) {
-      return <div>Loading...</div>;
-    }
+const RecipesGrid = ({ recipes, isUser, title }) => {
+  const mainColor = "#5d5b4f";
 
   return (
-    <Box sx={{ 
-      display: "flex", 
-      flexDirection: "column", 
+    <Box sx={{
+      display: "flex",
+      flexDirection: "column",
       alignItems: "center",
       width: "100%",
     }}>
-      <Typography variant="h4" component="h1" sx={{ 
+      <Typography variant="h4" component="h1" sx={{
         textAlign: 'center',
         color: mainColor,
         marginBottom: "20px"
       }}>
-        {isFavorite ? "My Favorites Recipes" : category}
+        {title}
       </Typography>
-      
-      {recipesData.length === 0 ? (
-        <Typography variant="h6" sx={{ 
+
+      {recipes.length === 0 ? (
+        <Typography variant="h6" sx={{
           textAlign: 'center',
           color: mainColor,
         }}>
-          {isFavorite ? "You have not selected any favorite recipes yet." : "No recipes found in this category."}
+          {isUser
+            ? "No recipes found."
+            : "No recipes found for This Category."}
         </Typography>
       ) : (
-        <Box sx={{ 
+        <Box sx={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(4, 300px)', 
+          gridTemplateColumns: 'repeat(4, 300px)',
           gap: '32px',
           justifyContent: 'center',
           maxWidth: "1500px",
@@ -61,15 +48,15 @@ const mainColor = "#5d5b4f";
             gridTemplateColumns: 'repeat(1, 320px)',
           }
         }}>
-          {recipesData.map((item, index) => (
-            <Box 
+          {recipes.map((item, index) => (
+            <Box
               key={index}
-              sx={{ 
+              sx={{
                 width: '300px',
                 height: 'fit-content'
               }}
             >
-              <Card recipe={item} />
+              <Card recipe={item } />
             </Box>
           ))}
         </Box>
@@ -78,4 +65,4 @@ const mainColor = "#5d5b4f";
   );
 };
 
-export default RecipesPage;
+export default RecipesGrid;

@@ -27,7 +27,7 @@ const value= recipe.ratings? recipe.ratings.rating/recipe.ratings.reviewers.leng
           }, 2500);
           return;
         }
-        await addRating(user._id, recipe._id, newValue,token);
+        await addRating(user._doc._id, recipe._id, newValue,token);
 
       } catch (error) {
         console.error('Failed to update rating:', error);

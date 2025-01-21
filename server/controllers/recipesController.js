@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getRecipes ,addRecipe,addRating,AddFavorite,RemoveFavorite,getFavorite} = require('../services/recipesService');
+const { getRecipes ,addRecipe,addRating,addFavorite,removeFavorite,getFavorite,removeRecipe,getChefRecipes} = require('../services/recipesService');
 const logger = require('../services/loggerService');
 const {verifyChef,verifyUser,} = require('../middlewares/authMiddleware')
 
@@ -48,9 +48,21 @@ router.get('/favorite/:userID',verifyUser, async (req, res, next) => {
   try {
       const userID = req.params.userID;
       logger.info( `favorite - get favorite recipes from DB, user id: ${userID}`  );
-      const Recipes = await getFavorite(userID);
+      const recipes = await getFavorite(userID);
       logger.info(`successfull get recipes of userID: ${userID} `);
-      return res.status(200).send(Recipes);
+      return res.status(200).send(recipes);
+  } catch (err) {
+  next(err);
+  }
+});
+
+router.get('/chef/:userID',verifyUser, async (req, res, next) => {
+  try {
+      const userID = req.params.userID;
+      logger.info( `favorite - get favorite recipes from DB, user id: ${userID}`  );
+      const recipes = await getChefRecipes(userID);
+      logger.info(`successfull get recipes of userID: ${userID} `);
+      return res.status(200).send(recipes);
   } catch (err) {
   next(err);
   }
@@ -60,9 +72,9 @@ router.get('/favorite/:userID',verifyUser, async (req, res, next) => {
 router.post('/addFavorite',verifyUser, async (req, res, next) => {
   try {
       const { userID , recipeID} = req.body;
-      logger.info(`Calling AddFavorite with userID : ${userID}` );
-      const result = await AddFavorite({ userID, recipeID }); 
-      logger.info('success with AddFavorite to DB');
+      logger.info(`Calling addFavorite with userID : ${userID}` );
+      const result = await addFavorite({ userID, recipeID }); 
+      logger.info('success with addFavorite to DB');
       return res.status(200).send({result: result});
   } catch (err) {
       next(err);
@@ -72,9 +84,33 @@ router.post('/addFavorite',verifyUser, async (req, res, next) => {
 router.post('/removeFavorite',verifyUser, async (req, res, next) => {
   try {
       const { userID , recipeID} = req.body;
-      logger.info(`Calling RemoveFavorite with userID : ${userID} and recipe ${recipeID}` );
-      const result = await RemoveFavorite({ userID, recipeID }); 
-      logger.info('success with RemoveFavorite from DB');
+      logger.info(`Calling removeFavorite with userID : ${userID} and recipe ${recipeID}` );
+      const result = await removeFavorite({ userID, recipeID }); 
+      logger.info('success with removeFavorite from DB');
+      return res.status(200).send({result: result});
+  } catch (err) {
+      next(err);
+  }
+});
+
+router.post('/remove',verifyChef, async (req, res, next) => {
+  try {
+      const {  recipeID} = req.body;
+      logger.info(`Calling Remove of recipe ${recipeID}` );
+      const result = await removeRecipe({ recipeID }); 
+      logger.info('success with Remove from DB');
+      return res.status(200).send({result: result});
+  } catch (err) {
+      next(err);
+  }
+});
+
+router.post('/update',verifyChef, async (req, res, next) => {
+  try {
+      const {  recipeID, updatedData} = req.body;
+      logger.info(`Calling updatedData of recipe ${recipeID}` );
+      const result = await removeRecipe({ recipeID, updatedData }); 
+      logger.info('success with updatedData in DB');
       return res.status(200).send({result: result});
   } catch (err) {
       next(err);
