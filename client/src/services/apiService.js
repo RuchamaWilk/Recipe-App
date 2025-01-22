@@ -148,7 +148,7 @@ export const remove = async ( recipeID,token) => {
 
 export const update = async ( recipeID, updatedData,token) => {
   try {
-    console.log(`remove recipe id: ${recipeID}`);
+    console.log(`update recipe id: ${recipeID}`);
     const response = await axios.post(`${BASE_URL}/recipes/update`,{recipeID,updatedData},{
       headers: {
         Authorization: `Bearer ${token}`

@@ -18,6 +18,7 @@ function AppRouters() {
       <Route path="/category/:category" element={<RecipeByCategory />} />
       <Route path="/chef-sign-up" element={<SignUpPageChef/>} /> 
       <Route path="*" element={<ErrPage errCode= "400" />} />
+      <Route path="/recipe/edit/:recipeId" element={<AddRecipePage />} />
       <Route path="/add-recipe" 
         element={
           <ProtectedRoute allowedTypes={['chef']}>

@@ -121,7 +121,7 @@ const removeFavorite = async ({ userID, recipeID }) => {
   };
 
 
-const getChefRecipes = async (userID) => {
+/*const getChefRecipes = async (userID) => {
   try {
     logger.info(`getChefRecipes - finding recipes for chef ID: ${userID}`);
     
@@ -143,13 +143,13 @@ const getChefRecipes = async (userID) => {
     logger.error(`Error fetching recipes for chef ID: ${userID}. Error: ${err.message}`);
     return Promise.reject(err);
   }
-};
+};*/
 
 
 
 
 
-const removeRecipe = async (recipeID) => {
+const removeRecipe = async ({recipeID}) => {
   try {
     logger.info(`Removing recipe with ID: ${recipeID} from the database`);
     const result = await Recipe.findByIdAndDelete(recipeID);
@@ -165,7 +165,7 @@ const removeRecipe = async (recipeID) => {
   }
 };
 
-const updateRecipe = async (recipeID, updatedData) => {
+const updateRecipe = async ({recipeID, updatedData}) => {
   try {
     logger.info(`Updating recipe with ID: ${recipeID}`);
 
@@ -189,4 +189,4 @@ const updateRecipe = async (recipeID, updatedData) => {
 };
 
 
-module.exports = { getRecipes,addRecipe,addRating,addFavorite,removeFavorite,removeRecipe,updateRecipe,getChefRecipes};
+module.exports = { getRecipes,addRecipe,addRating,addFavorite,removeFavorite,removeRecipe,updateRecipe,/*getChefRecipes*/};

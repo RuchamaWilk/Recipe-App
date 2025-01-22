@@ -9,24 +9,24 @@ import SignInDialog from '../../components/sign-up-dialog/SignUpDialog';
 import './Card.css';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-
+import AlertDialog from '../alert-dialog/AlertDialog'
+import {remove} from '../../services/apiService'
 
 const mainColor = "#5d5b4f";
 
 const Card = ({ recipe }) => {
-  const navigate = useNavigate();
-  const [isHovered, setIsHovered] = useState(false);
-  const [isFavorite, setIsFavorite] = useState(false);
-  const { user, setUser, token } = useUser();
-  const [openDialog, setOpenDialog] = useState(false);
- const value= recipe.ratings? recipe.ratings.rating/recipe.ratings.reviewers.length: 0;
-  const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
+const navigate = useNavigate();
+const [isHovered, setIsHovered] = useState(false);
+const [isFavorite, setIsFavorite] = useState(false);
+const { user, setUser, token } = useUser();
+const [openDialog, setOpenDialog] = useState(false);
+const [openAlertDialog, setOpenAlertDialog]= useState(false); 
+const value= recipe.ratings? recipe.ratings.rating/recipe.ratings.reviewers.length: 0;
+const countRates= recipe.ratings? recipe.ratings.reviewers.length: 0;
 
-  //console.log("recipe.chefId.userName: ",recipe.chefId.userName)
-  const isChef = user?._doc?._id === recipe.chefId._id;
+const isChef = user?._doc?._id === recipe.chefId._id;
 
-console.log("user: ",user)
-  useEffect(() => {
+useEffect(() => {
     const updateFavoriteState = async () => {
       if (user) {
         const isFavoriteRecipe = user._doc.favoriteRecipes.includes(recipe._id);
@@ -47,23 +47,17 @@ console.log("user: ",user)
     if (user) {
       try {
         let updatedFavorites, updatedFavoritesDoc;
-  
         if (isFavorite) {
-          // הסרת מתכון מהמועדפים
           await removeFavoriteRecipe(user._doc._id, recipe._id, token);
-  
           updatedFavorites = user.favoriteRecipes.filter((fav) => fav._id !== recipe._id);
           updatedFavoritesDoc = user._doc.favoriteRecipes.filter((id) => id !== recipe._id);
         } else {
-          // הוספת מתכון למועדפים
           const addedRecipe = await addFavoriteRecipes(user._doc._id, recipe._id, token);
           console.log("addedRecipe ", addedRecipe)
           updatedFavorites = [...user.favoriteRecipes, addedRecipe];
           updatedFavoritesDoc = [...user._doc.favoriteRecipes, recipe._id];
         }
-  
-        // עדכון המשתמש ב-state
-        setUser({
+          setUser({
           ...user,
           favoriteRecipes: updatedFavorites,
           _doc: {
@@ -83,19 +77,32 @@ console.log("user: ",user)
 
   const handleEditClick = (e) => {
     e.stopPropagation();
-    navigate(`/`);
+    navigate(`/recipe/edit/:${user._doc._id}`, {state:{recipe}});
   };
 
-  const handleDeleteClick = async (e) => {
+  const handleDeleteClick = (e) => {
     e.stopPropagation();
+    setOpenAlertDialog(true);
+  };
+  
+  const handleConfirmDelete = () => {
     try {
-      // Add logic to delete the recipe
-      console.log(`Deleting recipe with ID: ${recipe._id}`);
+      remove(recipe._id, token);
+    const updatedChefRecipes = user.chefRecipes.filter((fav) => fav._id !== recipe._id);
+      setUser({...user,   chefRecipes: updatedChefRecipes})
+      navigate('/')
     } catch (error) {
       console.error("Failed to delete recipe:", error);
     }
   };
-  
+  const handleCloseAlert = () => {
+    setOpenAlertDialog(false);
+  };
+
+  const handleCloseSignIn = () => {
+    setOpenDialog(false);
+  };
+
   
 
   const handleDialogClick = (e) => {
@@ -130,13 +137,13 @@ console.log("user: ",user)
             <Box sx={{ display: 'flex', gap: '8px' }}>
               <IconButton
                 onClick={handleEditClick}
-                className="edit-button"
+                className="favorite-button"
               >
                 <EditIcon fontSize="small" />
               </IconButton>
               <IconButton
                 onClick={handleDeleteClick}
-                className="delete-button"
+                className="favorite-button"
               >
                 <DeleteIcon fontSize="small" />
               </IconButton>
@@ -175,14 +182,24 @@ console.log("user: ",user)
         </Box>
       </CardContent>
       
-      <SignInDialog
-        open={openDialog}
-        onClose={(e) => {
-          handleDialogClick(e);
-          setOpenDialog(false);
+      <Box 
+        onClick={e => e.stopPropagation()} 
+        sx={{ 
+          position: 'relative', 
+          zIndex: 1500 
         }}
-        onClick={handleDialogClick}
-      />
+      >
+        <SignInDialog
+          open={openDialog}
+          onClose={handleCloseSignIn}
+        />
+        <AlertDialog
+          open={openAlertDialog}
+          onClose={handleCloseAlert}
+          onConfirm={handleConfirmDelete}
+        />
+      </Box>
+      
     </CardUi>
   );
 };

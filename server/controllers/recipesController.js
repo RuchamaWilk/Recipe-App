@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getRecipes ,addRecipe,addRating,addFavorite,removeFavorite,removeRecipe,getChefRecipes} = require('../services/recipesService');
+const { getRecipes ,addRecipe,addRating,addFavorite,removeFavorite,removeRecipe,/*getChefRecipes,*/updateRecipe } = require('../services/recipesService');
 const logger = require('../services/loggerService');
 const {verifyChef,verifyUser,} = require('../middlewares/authMiddleware')
 
@@ -43,10 +43,7 @@ router.get('/', async (req, res, next) => {
     }
   });
 
-  
-
-
-router.get('/chef/:userID',verifyUser, async (req, res, next) => {
+/*router.get('/chef/:userID',verifyUser, async (req, res, next) => {
   try {
       const userID = req.params.userID;
       logger.info( `favorite - get favorite recipes from DB, user id: ${userID}`  );
@@ -56,7 +53,7 @@ router.get('/chef/:userID',verifyUser, async (req, res, next) => {
   } catch (err) {
   next(err);
   }
-});
+});*/
 
 router.post('/addFavorite', verifyUser, async (req, res, next) => {
   try {
@@ -100,9 +97,9 @@ router.post('/remove',verifyChef, async (req, res, next) => {
 
 router.post('/update',verifyChef, async (req, res, next) => {
   try {
-      const {  recipeID, updatedData} = req.body;
+      const { recipeID, updatedData} = req.body;
       logger.info(`Calling updatedData of recipe ${recipeID}` );
-      const result = await removeRecipe({ recipeID, updatedData }); 
+      const result = await updateRecipe({ recipeID, updatedData }); 
       logger.info('success with updatedData in DB');
       return res.status(200).send({result: result});
   } catch (err) {
