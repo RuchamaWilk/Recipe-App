@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import {
-  AppBar,Box,Toolbar,IconButton,Typography,Menu,Container,Avatar,Button,Tooltip,MenuItem,Drawer,List,
-  ListItem, ListItemText,ListItemIcon,Divider,alpha,} from '@mui/material';
+  AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Avatar, Button, Tooltip, MenuItem, Drawer, List,
+  ListItem, ListItemText, ListItemIcon, Divider, alpha,
+} from '@mui/material';
 import {
-  Menu as MenuIcon,Restaurant as RestaurantIcon,Favorite as FavoriteIcon,AddCircle as AddCircleIcon,
-  Person as PersonIcon,Logout as LogoutIcon,} from '@mui/icons-material';
+  Menu as MenuIcon, Restaurant as RestaurantIcon, Favorite as FavoriteIcon, AddCircle as AddCircleIcon,
+  Person as PersonIcon, Logout as LogoutIcon,
+} from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import SignUp from '../../components/sign-up/SignUp';
 import SignIn from '../../components/sign-in/SignIn';
 import { useUser } from '../../providers/UserProvider';
-const mainColor = '#939185';
+import './header.css';  // הכנסת הסטיילים מתוך ה-CSS
 import AlertDialog from '../../components/alert-dialog/AlertDialog';
 
 function ModernHeader() {
@@ -19,10 +21,8 @@ function ModernHeader() {
   const [openSignIn, setOpenSignIn] = useState(false);
   const [openAlertDialog, setOpenAlertDialog] = useState(false);
 
-
-
   const navigate = useNavigate();
-  const { user,logout } = useUser();
+  const { user, logout } = useUser();
 
   const pages = [
     { text: 'About Us', path: '/' },
@@ -43,12 +43,10 @@ function ModernHeader() {
 
   function handleLogout() {
     setOpenAlertDialog(true);
-    
   }
 
   const confirmLogout = () => {
     handleCloseUserMenu();
-
     logout();
     navigate('/');
   };
@@ -60,12 +58,12 @@ function ModernHeader() {
           sx={{
             justifyContent: 'center',
             py: 3,
-            backgroundColor: mainColor,
+            backgroundColor: '#939185',
             color: 'white',
           }}
         >
           <RestaurantIcon sx={{ mr: 1 }} />
-          <Typography variant="h6" noWrap component="div"  onClick={() => navigate('/')}>
+          <Typography variant="h6" noWrap component="div" onClick={() => navigate('/')}>
             GOOD FOOD
           </Typography>
         </ListItem>
@@ -81,14 +79,14 @@ function ModernHeader() {
             sx={{
               py: 1.5,
               '&:hover': {
-                backgroundColor: alpha(mainColor, 0.1),
+                backgroundColor: alpha('#939185', 0.1),
               },
             }}
           >
             <ListItemText
               primary={page.text}
               sx={{
-                color: mainColor,
+                color: '#939185',
                 '& .MuiTypography-root': {
                   fontWeight: 500,
                 },
@@ -97,17 +95,17 @@ function ModernHeader() {
           </ListItem>
         ))}
         {user ? (
-          <>
+          <React.Fragment>
             <Divider sx={{ my: 2 }} />
             {user?._doc.type === 'chef' && (
               <ListItem
                 button
                 onClick={() => {
-                  navigate(`/chef/${user._doc_id}`)
+                  navigate(`/chef/${user._doc_id}`);
                   handleDrawerToggle();
                 }}
               >
-                <ListItemIcon sx={{ color: mainColor }}>
+                <ListItemIcon sx={{ color: '#939185' }}>
                   <AddCircleIcon />
                 </ListItemIcon>
                 <ListItemText primary="My recipe" />
@@ -120,7 +118,7 @@ function ModernHeader() {
                 handleDrawerToggle();
               }}
             >
-              <ListItemIcon sx={{ color: mainColor }}>
+              <ListItemIcon sx={{ color: '#939185' }}>
                 <FavoriteIcon />
               </ListItemIcon>
               <ListItemText primary="My Favorites" />
@@ -132,18 +130,18 @@ function ModernHeader() {
               sx={{
                 py: 1.5,
                 '&:hover': {
-                  backgroundColor: alpha(mainColor, 0.1),
+                  backgroundColor: alpha('#939185', 0.1),
                 },
               }}
             >
-              <ListItemIcon sx={{ color: mainColor }}>
+              <ListItemIcon sx={{ color: '#939185' }}>
                 <LogoutIcon />
               </ListItemIcon>
               <ListItemText primary="Logout" />
             </ListItem>
-          </>
+          </React.Fragment>
         ) : (
-          <>
+          <React.Fragment>
             <Divider sx={{ my: 2 }} />
             <ListItem
               button
@@ -154,11 +152,11 @@ function ModernHeader() {
               sx={{
                 py: 1.5,
                 '&:hover': {
-                  backgroundColor: alpha(mainColor, 0.1),
+                  backgroundColor: alpha('#939185', 0.1),
                 },
               }}
             >
-              <ListItemText primary="Sign Up" sx={{ color: mainColor }} />
+              <ListItemText primary="Sign Up" sx={{ color: '#939185' }} />
             </ListItem>
             <ListItem
               button
@@ -169,91 +167,43 @@ function ModernHeader() {
               sx={{
                 py: 1.5,
                 '&:hover': {
-                  backgroundColor: alpha(mainColor, 0.1),
+                  backgroundColor: alpha('#939185', 0.1),
                 },
               }}
             >
-              <ListItemText primary="Sign In" sx={{ color: mainColor }} />
+              <ListItemText primary="Sign In" sx={{ color: '#939185' }} />
             </ListItem>
-          </>
+          </React.Fragment>
         )}
       </List>
     </Box>
   );
-  
+
   return (
     <>
-      <AppBar 
-        position="fixed" 
-        sx={{ 
-          backgroundColor: 'white',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.08)'
-        }}
-      >
+      <AppBar position="fixed" className="appBar">
         <Container maxWidth="xl">
-          <Toolbar disableGutters sx={{ height: 70 }}>
-            <IconButton
-              onClick={handleDrawerToggle}
-              sx={{ 
-                color: mainColor,
-                display: { xs: 'flex', md: 'none' },
-                mr: 1
-              }}
-            >
-              <MenuIcon />
-            </IconButton>
+          <Toolbar disableGutters className="toolbar">
+           
 
-            <RestaurantIcon 
-              sx={{ 
-                display: 'flex',
-                mr: 1,
-                color: mainColor,
-                marginRight: "20px"
-              }} 
-            />
+            <RestaurantIcon className="restaurantIcon" />
+
             <Typography
               variant="h6"
               noWrap
               component="a"
               onClick={() => navigate('/')}
-              sx={{
-                mr: 4,
-                display: 'flex',
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.2rem',
-                color: mainColor,
-                textDecoration: 'none',
-                flexGrow: { xs: 1, md: 0 },
-                fontSize: { xs: '1.1rem', md: '1.3rem' },
-                cursor: 'pointer'
-              }}
+              className="logo"
             >
-              GOOD FOOD 
+              GOOD FOOD
             </Typography>
 
-            <Box sx={{ 
-              flexGrow: 1, 
-              display: { xs: 'none', md: 'flex' }, 
-              gap: 2
-            }}>
+            <Box className="navLinks">
               {pages.map((page) => (
                 <Button
                   key={page.text}
                   onClick={() => navigate(page.path)}
-
-                  sx={{
-                    color: mainColor,
-                    px: 2,
-                    '&:hover': {
-                      backgroundColor: alpha(mainColor, 0.1),
-                    },
-                    fontSize: '1rem',
-                    textTransform: 'none',
-
-                    fontWeight: 500,
-
-                  }}
+                  className="navButton"
                 >
                   {page.text}
                 </Button>
@@ -265,17 +215,7 @@ function ModernHeader() {
                     <Button
                       startIcon={<AddCircleIcon />}
                       onClick={() => navigate(`/chef/${user._doc._id}`)}
-                      sx={{
-                        color: mainColor,
-                        px: 2,
-                        '&:hover': {
-                          backgroundColor: alpha(mainColor, 0.1),
-                        },
-                        fontSize: '1rem',
-                        textTransform: 'none',
-                        fontWeight: 500,
-
-                      }}
+                      className="navButton"
                     >
                       My Recipes
                     </Button>
@@ -283,33 +223,23 @@ function ModernHeader() {
                   <Button
                     startIcon={<FavoriteIcon />}
                     onClick={() => navigate(`/favorite/${user._doc._id}`)}
-                    sx={{
-
-                      color: mainColor,
-                      px: 2,
-                      '&:hover': {
-                        backgroundColor: alpha(mainColor, 0.1),
-                      },
-                      fontSize: '1rem',
-                      textTransform: 'none',
-                      fontWeight: 500,
-                    }}
+                    className="navButton"
                   >
                     My Favorites
                   </Button>
                 </>
               )}
             </Box>
+
             {user ? (
               <Box sx={{ flexShrink: 0 }}>
                 <Tooltip title="Open menu">
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                     <Avatar
                       sx={{
-                        bgcolor: mainColor,
+                        bgcolor: '#939185',
                         width: 40,
                         height: 40,
-
                       }}
                     >
                       {user._doc.userName.charAt(0).toUpperCase()}
@@ -341,15 +271,9 @@ function ModernHeader() {
                 >
                   <MenuItem
                     onClick={handleLogout}
-                    sx={{
-                      py: 1.5,
-                      '&:hover': {
-                        backgroundColor: alpha(mainColor, 0.1),
-                      },
-
-                    }}
+                    className="logoutButton"
                   >
-                    <ListItemIcon sx={{ color: mainColor }}>
+                    <ListItemIcon className="userMenuIcon">
                       <LogoutIcon />
                     </ListItemIcon>
                     <Typography>Logout</Typography>
@@ -367,38 +291,15 @@ function ModernHeader() {
                 <Button
                   variant="contained"
                   onClick={() => setOpenSignUp(true)}
-                  sx={{
-                    px: 3,
-                    py: 1,
-                    borderRadius: 2,
-                    textTransform: 'none',
-                    fontSize: '1rem',
-                    backgroundColor: mainColor,
-                    '&:hover': {
-                      backgroundColor: alpha(mainColor, 0.9),
-                    },
-
-                  }}
+                  className="signUpButton"
                 >
                   Sign Up
                 </Button>
 
-                <Button 
+                <Button
                   variant="outlined"
                   onClick={() => setOpenSignIn(true)}
-                  sx={{ 
-                    px: 3,
-                    py: 1,
-                    borderRadius: 2,
-                    textTransform: 'none',
-                    fontSize: '1rem',
-                    borderColor: mainColor,
-                    color: mainColor,
-                    '&:hover': {
-                      borderColor: mainColor,
-                      backgroundColor: alpha(mainColor, 0.1),
-                    }
-                  }}
+                  className="signInButton"
                 >
                   Sign In
                 </Button>
@@ -418,10 +319,10 @@ function ModernHeader() {
         }}
         sx={{
           display: { xs: 'block', md: 'none' },
-          '& .MuiDrawer-paper': { 
-            boxSizing: 'border-box', 
+          '& .MuiDrawer-paper': {
+            boxSizing: 'border-box',
             width: 280,
-            boxShadow: '4px 0 8px rgba(0,0,0,0.1)'
+            boxShadow: '4px 0 8px rgba(0,0,0,0.1)',
           },
         }}
       >
@@ -433,7 +334,8 @@ function ModernHeader() {
         open={openAlertDialog}
         onClose={() => setOpenAlertDialog(false)}
         onConfirm={confirmLogout}
-      />    </>
+      />
+    </>
   );
 }
 

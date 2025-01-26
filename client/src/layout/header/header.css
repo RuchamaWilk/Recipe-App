@@ -1,0 +1,83 @@
+/*client/src/layout/header/header.css*/
+@import 'colorStyle.css';
+
+.appBar {
+    background-color: var(--green) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08) !important;
+  }
+  
+  .toolbar {
+    height: 70px !important;
+  }
+  
+  .menuButton {
+    color: var(--light-pink) !important;
+    display: flex !important;
+    margin-right: 1rem !important;
+  }
+  
+  .restaurantIcon {
+    display: flex !important;
+    margin-right: 20px !important;
+    color: var(--light-pink) !important;
+  }
+  
+  .logo {
+    display: flex !important;
+    font-family: monospace!important;
+    font-weight: 700 !important;
+    letter-spacing: .2rem!important;
+    color: var(--light-pink)!important;
+    text-decoration: none!important;
+    cursor: pointer!important;
+    margin-right: 2rem!important;
+  }
+  
+  .navLinks {
+    flex-grow: 1!important;
+    display: flex!important;
+    margin-top: 3px;
+  }
+  
+  .navButton {
+    color: var(--light-pink)!important;
+    padding: 0.5rem 1rem!important;
+    &:hover {
+      background-color: rgba(147, 145, 133, 0.1)!important;
+    }
+  }
+  
+  .userMenuIcon {
+    color: var(--light-pink)!important;
+  }
+  
+  .logoutButton {
+    padding: 1.5rem 0!important;
+    color: var(--light-pink)!important;
+    &:hover {
+      background-color: rgba(147, 145, 133, 0.1)!important;
+    }
+  }
+  
+  .signUpButton {
+    padding: 0.5rem 1rem!important;
+    border-radius: 2px!important;
+    background-color: var(--light-pink)!important;
+    color: var(--green) !important;
+    text-transform: none!important;
+    &:hover {
+      background-color:var(--pink)!important;
+    }
+  }
+  
+  .signInButton {
+    padding: 0.5rem 1rem!important;
+    border-radius: 2px!important;
+    border: 1px solid #939185!important;
+    color: var(--light-pink)!important;
+    text-transform: none!important;
+    &:hover {
+      background-color: rgba(147, 145, 133, 0.1)!important;
+    }
+  }
+  
