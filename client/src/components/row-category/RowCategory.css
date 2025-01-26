@@ -1,5 +1,5 @@
 /* RowCategory.css */
-@import 'colorStyle.css';
+@import '../../styles/colorStyle.css';
 
 .row-category-container {
     width: 100% !important;
