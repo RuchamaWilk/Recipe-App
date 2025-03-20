@@ -15,7 +15,8 @@ const RecipesGrid = ({ recipes, isChef, title }) => {
       <Typography variant="h4" component="h1" sx={{
         textAlign: 'center',
         color: mainColor,
-        marginBottom: "20px"
+        marginBottom: "40px",
+        marginTop: "20px"
       }}>
         {title}
       </Typography>

@@ -52,7 +52,7 @@ const RowCategory = ({ category, recipes }) => {
       </CardActions>
       <Box id={category} className="row-category-cards">
         {recipes.slice(0, 4).map((item, index) => (
-          <Box key={index} /*className="row-category-card-item"*/>
+          <Box key={index} >
             <Card recipe={item} />
           </Box>
         ))}

@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect, useMemo } from "react";
-import { getToken, getUser, removeStorage ,setTokenUser} from '../services/localStorageService';
+import { getToken, removeStorage ,setTokenUser} from '../services/localStorageService';
 
 const UserContext = React.createContext(null);
 
@@ -8,12 +8,12 @@ export const UserProvider = ({ children }) => {
   const [token, setToken] = useState(getToken);
   
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (!user) {
       const userFromLocalStorage = getUser();
       setUser(userFromLocalStorage)
     }
-  }, [user]);
+  }, [user]);*/
 
   const logout = () => {
     removeStorage(); 
