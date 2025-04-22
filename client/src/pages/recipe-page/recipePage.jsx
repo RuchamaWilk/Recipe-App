@@ -44,7 +44,9 @@ const Recipe = () => {
             ingredients={recipe.ingredients} 
             instructions={recipe.instructions} 
           />
-          <RecipeAIBox />
+          <RecipeAIBox name= {recipe.name}
+          ingredients= {recipe.ingredients}
+          instructions={recipe.instructions} />
         </CardContent>
       </Card>
     </Container>

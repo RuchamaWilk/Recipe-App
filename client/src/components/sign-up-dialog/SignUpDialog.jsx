@@ -10,7 +10,6 @@ import {
   Typography
 } from '@mui/material';
 import SignUp from '../sign-up/SignUp';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import './SignUpDialog.css';
 
@@ -43,7 +42,6 @@ const SignInDialog = ({ open, onClose }) => {
           <Box className={`dialog-header ${isMobile ? 'mobile' : ''}`}>
             <Box className="icons-container">
               <RestaurantIcon className={`restaurant-icon ${isMobile ? 'mobile' : ''}`} />
-              <FavoriteIcon className={`favorite ${isMobile ? 'mobile' : ''}`} />
             </Box>
             <DialogTitle className={`dialog-title ${isMobile ? 'mobile' : ''}`}>
               Add to Favorites

@@ -6,14 +6,6 @@ const UserContext = React.createContext(null);
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [token, setToken] = useState(getToken);
-  
-
-  /*useEffect(() => {
-    if (!user) {
-      const userFromLocalStorage = getUser();
-      setUser(userFromLocalStorage)
-    }
-  }, [user]);*/
 
   const logout = () => {
     removeStorage(); 

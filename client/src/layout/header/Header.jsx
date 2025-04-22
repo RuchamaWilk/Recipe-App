@@ -23,10 +23,11 @@ function ModernHeader() {
 
   const navigate = useNavigate();
   const { user, logout } = useUser();
+  console.log("user" ,user);
 
   const pages = [
-    { text: 'About Us', path: '/' },
-    { text: 'Our Chefs', path: '/' },
+    { text: 'About Us', path: '/about-us' },
+    { text: 'Our Chefs', path: '/our-chefs' },
   ];
 
   const handleOpenUserMenu = (event) => {

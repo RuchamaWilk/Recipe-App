@@ -22,9 +22,10 @@
   }
   
   .row-category-cards {
-    display: flex !important;
-    flex-wrap: nowrap !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, 320px) !important;
     gap: 16px !important;
+    flex-wrap: nowrap !important;
     padding: 0 16px !important;
     overflow-x: hidden !important;
   }

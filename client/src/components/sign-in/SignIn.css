@@ -1,0 +1,154 @@
+@import '../../styles/colorStyle.css';
+
+/* Container and dialog styling */
+.signin-dialog-paper {
+  border-radius: 20px !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  overflow: hidden !important;
+  width: 400px !important;
+  transition: transform 0.3s ease !important;
+}
+
+.signin-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 16px !important;
+  padding: 36px 32px !important;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1)) !important;
+}
+
+/* Icon styling */
+.signin-icon {
+  font-size: 52px !important;
+  color: var(--green) !important;
+  margin-bottom: 8px !important;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.signin-icon:hover {
+  transform: scale(1.05) rotate(5deg) !important;
+}
+
+/* Title styling */
+.signin-title {
+  font-weight: 800 !important;
+  color: var(--green) !important;
+  margin-bottom: 16px !important;
+  letter-spacing: 0.75px !important;
+  font-size: 2rem !important;
+  position: relative !important;
+  padding-bottom: 8px !important;
+}
+
+.signin-title::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 60px !important;
+  height: 3px !important;
+  background-color: var(--green) !important;
+  border-radius: 3px !important;
+}
+
+/* Input fields styling */
+.signin-input-field {
+  margin-bottom: 16px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.signin-input-field:focus-within {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Custom styling for input labels */
+.signin-input-field .MuiInputLabel-root {
+  color: #4A5367 !important;
+  font-weight: 500 !important;
+}
+
+.signin-input-field .MuiInputLabel-root.Mui-focused {
+  color: var(--green) !important;
+  font-weight: 600 !important;
+}
+
+.signin-input-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--green) !important;
+  border-width: 2px !important;
+}
+
+/* Sign In button styling */
+.signin-button {
+  background-color: var(--green) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 14px 0 !important;
+  margin-top: 8px !important;
+  border-radius: 10px !important;
+  text-transform: none !important;
+  font-size: 1.05rem !important;
+  letter-spacing: 0.5px !important;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08) !important;
+}
+
+.signin-button:hover {
+  background-color: var(--light-pink) !important;
+  color: var(--green) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.signin-button:active {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.signin-button .MuiButton-startIcon {
+  margin-right: 8px !important;
+}
+
+/* Error message styling */
+.signin-error-message {
+  color: #d32f2f !important;
+  text-align: center !important;
+  font-weight: 500 !important;
+  margin-top: 16px !important;
+  padding: 8px 16px !important;
+  background-color: rgba(211, 47, 47, 0.08) !important;
+  border-radius: 8px !important;
+  width: 100% !important;
+  animation: fadeIn 0.3s ease-in-out !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 450px) {
+  .signin-dialog-paper {
+    width: 100% !important;
+    margin: 16px !important;
+    border-radius: 16px !important;
+  }
+  
+  .signin-container {
+    padding: 24px 20px !important;
+  }
+  
+  .signin-title {
+    font-size: 1.6rem !important;
+  }
+}

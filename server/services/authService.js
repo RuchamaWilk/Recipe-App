@@ -52,7 +52,7 @@ const signIn = async ({ email, password }) => {
 
         // החזרת נתוני המשתמש
         const user = {
-            success: true,
+           
             token: token,
             user: {
                 _doc: userOfEmail.toObject(), // נתוני המשתמש המקוריים

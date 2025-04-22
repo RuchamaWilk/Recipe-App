@@ -23,156 +23,156 @@ import { signIn } from '../../services/apiService';
 import { useUser } from '../../providers/UserProvider';
 import TimedAleart from '../../components/timed-aleart/TimedAleart';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import './ChefSignUp.css'; // You'll need to create this CSS file
 
 const ChefSignUpForm = () => {
-  const [userName, setUserName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [yearsOfExperience, setYearsOfExperience] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [aboutMe, setAboutMe] = useState('');
-  const [emailError, setEmailError] = useState('');
-  const [passwordError, setPasswordError] = useState('');
-  const [userNameError, setUserNameError] = useState('');
-  const [yearsOfExperienceError, setYearsOfExperienceError] = useState('');
-  const [phoneNumberError, setPhoneNumberError] = useState('');
-  const [aboutMeError, setAboutMeError] = useState('');
+  const [formData, setFormData] = useState({
+    userName: '',
+    email: '',
+    password: '',
+    yearsOfExperience: '',
+    phoneNumber: '',
+    aboutMe: ''
+  });
+  
+  const [errors, setErrors] = useState({
+    userName: '',
+    email: '',
+    password: '',
+    yearsOfExperience: '',
+    phoneNumber: '',
+    aboutMe: ''
+  });
+  
   const [openSuccess, setOpenSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const { setUser, setToken } = useUser();
   const navigate = useNavigate();
 
+  const handleInputChange = (field) => (event) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: event.target.value
+    }));
+    
+    // Clear field error when typing
+    if (errors[field]) {
+      setErrors(prev => ({
+        ...prev,
+        [field]: ''
+      }));
+    }
+    
+    // Clear general error message when typing
+    if (errorMessage) {
+      setErrorMessage('');
+    }
+  };
+
+  const validateForm = () => {
+    const newErrors = {
+      userName: validateUserName(formData.userName),
+      email: validateEmail(formData.email),
+      password: validatePassword(formData.password),
+      yearsOfExperience: validateYearsOfExperience(formData.yearsOfExperience),
+      phoneNumber: validatephoneNumber(formData.phoneNumber),
+      aboutMe: validateAboutMe(formData.aboutMe)
+    };
+
+    setErrors(newErrors);
+    return !Object.values(newErrors).some(error => error);
+  };
+
   const handleSubmit = async () => {
-    // Reset error messages
-    setEmailError('');
-    setPasswordError('');
-    setUserNameError('');
-    setYearsOfExperienceError('');
-    setPhoneNumberError('');
-    setAboutMeError('');
+    if (!validateForm()) return;
 
-    // Validate fields
-    const userNameErrorMsg = validateUserName(userName);
-    const emailErrorMsg = validateEmail(email);
-    const passwordErrorMsg = validatePassword(password);
-    const yearsErrorMsg = validateYearsOfExperience(yearsOfExperience);
-    const phoneErrorMsg = validatephoneNumber(phoneNumber);
-    const aboutMeErrorMsg = validateAboutMe(aboutMe);
+    try {
+      const chefData = {
+        userName: formData.userName,
+        email: formData.email,
+        password: formData.password,
+        yearsOfExperience: parseInt(formData.yearsOfExperience, 10),
+        phoneNumber: formData.phoneNumber,
+        aboutMe: formData.aboutMe,
+        type: 'chef',
+      };
 
-    // Set error messages
-    setUserNameError(userNameErrorMsg);
-    setEmailError(emailErrorMsg);
-    setPasswordError(passwordErrorMsg);
-    setYearsOfExperienceError(yearsErrorMsg);
-    setPhoneNumberError(phoneErrorMsg);
-    setAboutMeError(aboutMeErrorMsg);
+      // Add chef to the database
+      await addChefToDb(chefData);
 
-    if (!userNameErrorMsg && !emailErrorMsg && !passwordErrorMsg && !yearsErrorMsg && !phoneErrorMsg && !aboutMeErrorMsg) {
-      try {
-        const chefData = {
-          userName,
-          email,
-          password,
-          yearsOfExperience: parseInt(yearsOfExperience, 10),
-          phoneNumber,
-          aboutMe,
-          type: 'chef',
-        };
+      // Show success message
+      setOpenSuccess(true);
 
-        // Add chef to the database
-        await addChefToDb(chefData);
+      // Automatically log in the user
+      const response = await signIn(formData.email, formData.password);
+      const { user, token } = response;
 
-        // Show success message
-        setOpenSuccess(true);
+      // Update user context
+      setUser(user);
+      setToken(token);
 
-        // Automatically log in the user
-        const response = await signIn(email, password);
-        const { user, token } = response;
-
-        // Update user context
-        setUser(user);
-        setToken(token);
-
-        // Navigate to home page
-        setTimeout(() => {
-          setOpenSuccess(false);
-          navigate('/');
-        }, 2500);
-      } catch (error) {
-        console.error('Error during Chef SignUp:', error);
-      }
+      // Navigate to home page
+      setTimeout(() => {
+        setOpenSuccess(false);
+        navigate('/');
+      }, 2500);
+    } catch (error) {
+      console.error('Error during Chef SignUp:', error);
+      setErrorMessage(error.message || 'Sign up failed. Please try again.');
     }
   };
 
   return (
-    <Container maxWidth="md" sx={{ py: 4 }}>
+    <Container maxWidth="md" className="chef-signup-outer-container">
       <Paper
         elevation={3}
-        sx={{
-          p: { xs: 2, md: 6 },
-          backgroundColor: '#ffffff',
-          borderRadius: 2,
-        }}
+        className="chef-signup-paper"
       >
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            mb: 4,
-          }}
-        >
-          <RestaurantIcon
-            sx={{
-              fontSize: 40,
-              mb: 2,
-              color: '#939185',
-            }}
-          />
-          <Typography
-            variant="h4"
-            component="h1"
-            sx={{
-              fontWeight: 600,
-              color: '#2C3E50',
-              mb: 1,
-            }}
-          >
+        <Box className="chef-signup-container">
+          <RestaurantIcon className="chef-signup-icon" />
+          <Typography variant="h4" className="chef-signup-title">
             Join as a Chef
           </Typography>
-          <Typography variant="body1" sx={{ color: '#7F8C8D', mb: 3 }}>
+          <Typography variant="body1" className="chef-signup-subtitle">
             Fill in the following details to start sharing your recipes.
           </Typography>
-          <Divider sx={{ width: '100%', mb: 4 }} />
+          <Divider className="chef-signup-divider" />
         </Box>
 
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', md: 'row' },
-              gap: 2,
-            }}
-          >
+        <Box className="chef-signup-form">
+          <Box className="chef-signup-row">
             <TextField
               label="User Name"
               variant="outlined"
               fullWidth
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-              error={!!userNameError}
-              helperText={userNameError}
+              value={formData.userName}
+              onChange={handleInputChange('userName')}
+              error={!!errors.userName}
+              helperText={errors.userName}
               required
+              className="chef-signup-input-field"
+              InputProps={{
+                sx: {
+                  borderRadius: '10px',
+                }
+              }}
             />
             <TextField
               label="Email"
               variant="outlined"
               fullWidth
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              error={!!emailError}
-              helperText={emailError}
+              value={formData.email}
+              onChange={handleInputChange('email')}
+              error={!!errors.email}
+              helperText={errors.email}
               required
+              className="chef-signup-input-field"
+              InputProps={{
+                sx: {
+                  borderRadius: '10px',
+                }
+              }}
             />
           </Box>
 
@@ -181,40 +181,52 @@ const ChefSignUpForm = () => {
             type="password"
             variant="outlined"
             fullWidth
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            error={!!passwordError}
-            helperText={passwordError}
+            value={formData.password}
+            onChange={handleInputChange('password')}
+            error={!!errors.password}
+            helperText={errors.password}
             required
+            className="chef-signup-input-field"
+            InputProps={{
+              sx: {
+                borderRadius: '10px',
+              }
+            }}
           />
 
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: { xs: 'column', md: 'row' },
-              gap: 2,
-            }}
-          >
+          <Box className="chef-signup-row">
             <TextField
               label="Years of Experience"
               variant="outlined"
               fullWidth
               type="number"
-              value={yearsOfExperience}
-              onChange={(e) => setYearsOfExperience(e.target.value)}
-              error={!!yearsOfExperienceError}
-              helperText={yearsOfExperienceError}
+              value={formData.yearsOfExperience}
+              onChange={handleInputChange('yearsOfExperience')}
+              error={!!errors.yearsOfExperience}
+              helperText={errors.yearsOfExperience}
               required
+              className="chef-signup-input-field"
+              InputProps={{
+                sx: {
+                  borderRadius: '10px',
+                }
+              }}
             />
             <TextField
               label="Phone Number"
               variant="outlined"
               fullWidth
-              value={phoneNumber}
-              onChange={(e) => setPhoneNumber(e.target.value)}
-              error={!!phoneNumberError}
-              helperText={phoneNumberError}
+              value={formData.phoneNumber}
+              onChange={handleInputChange('phoneNumber')}
+              error={!!errors.phoneNumber}
+              helperText={errors.phoneNumber}
               required
+              className="chef-signup-input-field"
+              InputProps={{
+                sx: {
+                  borderRadius: '10px',
+                }
+              }}
             />
           </Box>
 
@@ -224,27 +236,40 @@ const ChefSignUpForm = () => {
             fullWidth
             multiline
             rows={4}
-            value={aboutMe}
-            onChange={(e) => setAboutMe(e.target.value)}
-            error={!!aboutMeError}
-            helperText={aboutMeError}
+            value={formData.aboutMe}
+            onChange={handleInputChange('aboutMe')}
+            error={!!errors.aboutMe}
+            helperText={errors.aboutMe}
             required
+            className="chef-signup-input-field"
+            InputProps={{
+              sx: {
+                borderRadius: '10px',
+              }
+            }}
           />
+
+          {errorMessage && (
+            <Typography className="chef-signup-error-message">
+              {errorMessage}
+            </Typography>
+          )}
 
           <Button
             variant="contained"
             onClick={handleSubmit}
-            sx={{
-              mt: 2,
-              py: 1.5,
-              backgroundColor: '#939185',
-              '&:hover': {
-                backgroundColor: '#7a796f',
-              },
-              fontSize: '1.1rem',
-            }}
+            className="chef-signup-button"
+            startIcon={<CheckCircleIcon />}
           >
-            Sign Up
+            Sign Up as Chef
+          </Button>
+          
+          <Button
+            variant="outlined"
+            onClick={() => navigate('/')}
+            className="chef-signup-cancel-button"
+          >
+            Cancel
           </Button>
         </Box>
       </Paper>

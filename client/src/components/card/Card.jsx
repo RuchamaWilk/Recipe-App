@@ -103,8 +103,6 @@ useEffect(() => {
     setOpenDialog(false);
   };
 
-  
-
   const handleDialogClick = (e) => {
     e.stopPropagation();
   };
@@ -173,7 +171,6 @@ useEffect(() => {
             <Rating
               name="recipe-rating"
               value={value}
-            
               size="small"
               readOnly
               className="recipe-rating"

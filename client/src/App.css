@@ -1,11 +1,12 @@
-html, body {
-  /*height: 100%;*/
+/*html, body {
+  height: 100%;
  
-}
+}*/
 
-/*body {
-  display: flex;
-  flex-direction: column;
+body {
+  /*display: flex;
+  flex-direction: column;*/
+  background-color: #ececec;
 }
 
 /*.layout {

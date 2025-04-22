@@ -1,9 +1,15 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import Card from '../../components/card/Card';
 
 const RecipesGrid = ({ recipes, isChef, title }) => {
   const mainColor = "#5d5b4f";
+  const navigate = useNavigate();
+
+  const handleAddRecipe = () => {
+    navigate('/add-recipe');
+  };
 
   return (
     <Box sx={{
@@ -12,21 +18,48 @@ const RecipesGrid = ({ recipes, isChef, title }) => {
       alignItems: "center",
       width: "100%",
     }}>
-      <Typography variant="h4" component="h1" sx={{
-        textAlign: 'center',
-        color: mainColor,
+      <Box sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'relative',
+        width: '100%',
         marginBottom: "40px",
         marginTop: "20px"
       }}>
-        {title}
-      </Typography>
+        <Typography variant="h4" component="h1" sx={{
+          textAlign: 'center',
+          color: mainColor,
+        }}>
+          {title}
+        </Typography>
+        
+        {title === "My Recipes" && (
+          <Button 
+            variant="contained" 
+            onClick={handleAddRecipe}
+            sx={{ 
+              backgroundColor: mainColor,
+              color: 'white',
+              position: 'absolute',
+              right: '20px',
+              '&:hover': { 
+                backgroundColor: '#47453c' 
+              } 
+            }}
+          >
+            ADDRECIPE
+          </Button>
+        )}
+      </Box>
 
       {recipes.length === 0 ? (
         <Typography variant="h6" sx={{
           textAlign: 'center',
           color: mainColor,
         }}>
-          { "No recipes found"}
+          {"No recipes found"}
         </Typography>
       ) : (
         <Box sx={{
@@ -55,7 +88,7 @@ const RecipesGrid = ({ recipes, isChef, title }) => {
                 height: 'fit-content'
               }}
             >
-              <Card recipe={item } />
+              <Card recipe={item} />
             </Box>
           ))}
         </Box>

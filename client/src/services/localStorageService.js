@@ -1,9 +1,7 @@
 import { jwtDecode } from "jwt-decode";
 
-export const setTokenUser =( tokenValue,userData )=>{
-  localStorage.setItem('token', tokenValue)
-  //localStorage.setItem('user', JSON.stringify(userData))
-
+export const setTokenUser =( tokenValue )=>{
+  localStorage.setItem('token', tokenValue);
 }
 
 export const getDecodedToken=()=>{
@@ -14,12 +12,6 @@ export const getToken=()=>{
     return localStorage.getItem('token');
   }
 
-  /*export const getUser=()=>{
-    return JSON.parse(localStorage.getItem('user'));
-  }*/
-
-  export const removeStorage=()=>{
+export const removeStorage=()=>{
     localStorage.removeItem("token") 
-    //localStorage.removeItem("user") 
-
-  }
+}

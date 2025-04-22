@@ -1,3 +1,5 @@
+@import '../../styles/colorStyle.css';
+
 .dialog-paper {
     border-radius: 24px !important; /* 3 * 8 */
     width: 90% !important;
@@ -38,7 +40,7 @@
   
   .restaurant-icon {
     font-size: 50px !important;
-    color: #939185 !important;
+    color: var(--green) !important;
     position: relative !important;
     z-index: 1 !important;
   }
@@ -67,7 +69,7 @@
     text-align: center!important;
     font-size: 1.5rem!important;
     font-weight: 600!important;
-    color: #2F3645!important;
+    color: var(--green)!important;
   }
   
   .dialog-title.mobile {
@@ -95,24 +97,25 @@
   
   .cancel-button {
     padding: 8px 24px!important;
-    color: #2F3645!important;
-    border-color: #2F3645!important;
+    color: var(--green)!important;
+    border-color: var(--green)!important;
     transition: background-color 0.3s ease!important;
   }
   
   .cancel-button:hover {
-    background-color: #F1E4E4!important;
-    border-color: #2F3645!important;
+    background-color:var(--light-pink) !important;
+    border-color: var(--green)!important;
   }
   
   .sign-up-button {
     padding: 8px 24px!important;
-    background-color: #2F3645!important;
+    background-color:var(--green)!important;
     color: #FFFFFF!important;
     transition: background-color 0.3s ease!important;
   }
   
   .sign-up-button:hover {
-    background-color: #4A5367!important;
+    background-color: var(--light-pink)!important;
+    color: var(--green)!important;
   }
   

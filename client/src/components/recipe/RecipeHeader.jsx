@@ -52,9 +52,9 @@ const RecipeHeader = ({ image, name }) => {
   );
 };
 
-RecipeHeader.propTypes = {
+/*RecipeHeader.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-};
+};*/
 
 export default RecipeHeader;

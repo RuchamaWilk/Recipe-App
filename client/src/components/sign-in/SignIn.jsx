@@ -1,13 +1,13 @@
-//client/src/pages/sign-in-page/SignInPage
 import React, { useState } from 'react'
-import {signIn} from '../../services/apiService'
+import { signIn } from '../../services/apiService'
 import TextField from '@mui/material/TextField';
 import LoginIcon from '@mui/icons-material/Login';
-import { Button,Dialog } from '@mui/material';
-import { Typography ,Box} from '@mui/material';
-import {  validateEmail, validatePassword } from '../../utils/validation';
-import { useUser } from '../../providers/UserProvider'; // ייבוא הקונטקסט
+import { Button, Dialog } from '@mui/material';
+import { Typography, Box } from '@mui/material';
+import { validateEmail, validatePassword } from '../../utils/validation';
+import { useUser } from '../../providers/UserProvider';
 import { useNavigate } from 'react-router-dom';
+import './SignIn.css';
 
 const FormTextField = ({ 
   id, 
@@ -31,17 +31,23 @@ const FormTextField = ({
       error={!!error}
       helperText={error}
       required
+      className="signin-input-field"
+      InputProps={{
+        sx: {
+          borderRadius: '8px',
+        }
+      }}
     />
   );
 };
 
-const SignInPage = ({ open= true, onClose}) => {
+const SignInPage = ({ open = true, onClose }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [emailError, setEmailError] = useState('')
   const [passwordError, setPasswordError] = useState('')
   const [signInError, setSignInError] = useState('')
-  const { login } = useUser(); // מקבלים גישה לפונקציות הקונטקסט
+  const { login } = useUser();
   const navigate = useNavigate();
 
   const formFields = [
@@ -62,50 +68,58 @@ const SignInPage = ({ open= true, onClose}) => {
     }
   ];
 
-  const  resetText=()=>{
+  const resetText = () => {
     setEmail('');
-    setPassword('')
+    setPassword('');
   }
 
-  const  resetError= ()=>{
-    setEmailError('')
-    setPasswordError('')
-    setSignInError('')
+  const resetError = () => {
+    setEmailError('');
+    setPasswordError('');
+    setSignInError('');
   }
-  const handleClose = () =>{
-     resetText();
-     resetError()
-    onClose()
+  
+  const handleClose = () => {
+    resetText();
+    resetError();
+    onClose();
   }
 
   const onButtonClick = async() => {
-     resetError()
+    resetError();
     setEmailError(validateEmail(email));
     setPasswordError(validatePassword(password));
-    if (validatePassword(password) !='' || validateEmail(email)!='') {
+    if (validatePassword(password) !== '' || validateEmail(email) !== '') {
       return;
     }
 
     try {
-          const response =await signIn(email, password); // קריאה לפונקציה שתשלח את הנתונים לשרת
-          if (response.token) {
-            login(response.token, response.user); // שומר את כל המידע ב-UserProvider
-            navigate('/')
-            handleClose()
-          }
-      } catch (error) {
-          console.error('Error during login:', error);
-          setSignInError(error.message); // מציג את ההודעה שהגיעה מהשרת
-
+      const response = await signIn(email, password);
+      if (response.token) {
+        login(response.token, response.user);
+        navigate('/');
+        handleClose();
       }
+    } catch (error) {
+      console.error('Error during login:', error);
+      setSignInError(error.message);
     }
+  }
 
   return (
-    <Dialog open={open} onClose={handleClose} PaperProps={{ sx: { padding: 4, borderRadius: 3, width: '400px' } }}>
-      <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
-        <Typography variant="h5" component="h1" sx={{ fontWeight: 'bold', color: '#2F3645' }}>
+    <Dialog 
+      open={open} 
+      onClose={handleClose} 
+      PaperProps={{ 
+        className: "signin-dialog-paper"
+      }}
+    >
+      <Box className="signin-container">
+        <LoginIcon className="signin-icon" />
+        <Typography variant="h5" component="h1" className="signin-title">
           Sign In
         </Typography>
+        
         {formFields.map((field) => (
           <FormTextField
             key={field.id}
@@ -118,36 +132,22 @@ const SignInPage = ({ open= true, onClose}) => {
           variant="contained"
           fullWidth
           startIcon={<LoginIcon />}
-          sx={{
-            backgroundColor: '#2F3645',
-            color: '#FFFFFF',
-            fontWeight: 'bold',
-            paddingY: 1,
-            '&:hover': {
-              backgroundColor: '#4A5367',
-            },
-          }}
+          className="signin-button"
         >
           Sign In
         </Button>
-        {signInError != '' && (
-          
-            <Typography 
-              variant="body2" 
-              color="error" 
-              sx={{ 
-                textAlign: 'center',
-                fontWeight: 'medium'
-              }}
-            >
-              {signInError}
-            </Typography>
+        
+        {signInError !== '' && (
+          <Typography 
+            variant="body2" 
+            className="signin-error-message"
+          >
+            {signInError}
+          </Typography>
         )}
       </Box>
-      
-
     </Dialog>
   );
 };
 
-export default SignInPage
+export default SignInPage;
