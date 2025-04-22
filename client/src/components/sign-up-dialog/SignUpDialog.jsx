@@ -1,14 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  Button,
-  Box,
-  useTheme,
-  useMediaQuery,
-  Typography
-} from '@mui/material';
+import {Dialog,DialogContent,DialogTitle,Button,Box,useTheme,useMediaQuery,Typography} from '@mui/material';
 import SignUp from '../sign-up/SignUp';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import './SignUpDialog.css';

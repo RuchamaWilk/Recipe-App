@@ -12,7 +12,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import AlertDialog from '../alert-dialog/AlertDialog'
 import {remove} from '../../services/apiService'
 
-const mainColor = "#5d5b4f";
 
 const Card = ({ recipe }) => {
 const navigate = useNavigate();
@@ -87,7 +86,7 @@ useEffect(() => {
   
   const handleConfirmDelete = () => {
     try {
-      remove(recipe._id, token);
+      remove(recipe._id);
     const updatedChefRecipes = user.chefRecipes.filter((fav) => fav._id !== recipe._id);
       setUser({...user,   chefRecipes: updatedChefRecipes})
       navigate('/')
@@ -103,9 +102,6 @@ useEffect(() => {
     setOpenDialog(false);
   };
 
-  const handleDialogClick = (e) => {
-    e.stopPropagation();
-  };
 
   return (
     <CardUi

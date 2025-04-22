@@ -11,8 +11,6 @@ const AlertDialog = ({ open, onClose, onConfirm }) => {
     <Dialog
       open={open}
       onClose={onClose}
-      aria-labelledby="alert-dialog-title"
-      aria-describedby="alert-dialog-description"
     >
       <DialogTitle id="alert-dialog-title">Logout</DialogTitle>
       <DialogContent>
@@ -27,7 +25,6 @@ const AlertDialog = ({ open, onClose, onConfirm }) => {
             onConfirm();
             onClose();
           }}
-          autoFocus
         >
           Logout
         </Button>
