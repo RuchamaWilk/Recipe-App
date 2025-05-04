@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Box, Container, Typography, TextField, Button, Paper, IconButton, Divider, useTheme, useMediaQuery, CircularProgress } from '@mui/material';
+import { Box, Container, Typography, TextField, Button, Paper, IconButton, Divider, useTheme, useMediaQuery } from '@mui/material';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import SendIcon from '@mui/icons-material/Send';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ImageIcon from '@mui/icons-material/Image';
-import { addRecipe, update,/* uploadImage*/ } from '../../services/apiService';
+import { addRecipe, update } from '../../services/apiService';
 import TimedAleart from '../../components/timed-aleart/TimedAleart';
 import { useUser } from '../../providers/UserProvider';
 import { useLocation } from 'react-router-dom';
@@ -24,9 +24,7 @@ const AddRecipePage = () => {
   });
   const [isEditMode, setIsEditMode] = useState(false);
   const [openSuccess, setOpenSuccess] = useState(false);
-  const [uploading, setUploading] = useState(false);
-  const [selectedFile, setSelectedFile] = useState(null);
-  const fileInputRef = useRef(null);
+  const [imageError, setImageError] = useState('');
   
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -61,6 +59,11 @@ const AddRecipePage = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    
+    // Clear image error when user starts typing a new URL
+    if (name === 'image') {
+      setImageError('');
+    }
   };
 
   const handleIngredientChange = (index, e) => {
@@ -101,50 +104,35 @@ const AddRecipePage = () => {
     }
   };
 
-  const handleFileChange = (e) => {
-    if (e.target.files && e.target.files[0]) {
-      setSelectedFile(e.target.files[0]);
-    }
-  };
-
-  const handleUploadClick = () => {
-    fileInputRef.current.click();
-  };
-
-  const handleUploadImage = async () => {
-    if (!selectedFile) return;
-    
+  const validateImageUrl = (url) => {
     try {
-      setUploading(true);
-      
-      // Create a FormData object to send the file
-      const formData = new FormData();
-      formData.append('image', selectedFile);
-      
-      // Call your image upload API function
-      const response = await uploadImage(formData, token);
-      
-      // Update the form with the returned image URL
-      setFormData(prev => ({
-        ...prev,
-        image: response.imageUrl // Adjust based on your API response structure
-      }));
-      
-      setUploading(false);
-    } catch (error) {
-      console.error('Error uploading image:', error);
-      setUploading(false);
+      new URL(url);
+      return true;
+    } catch (err) {
+      return false;
     }
   };
 
+  // Check image URL automatically when it changes
   useEffect(() => {
-    if (selectedFile) {
-      handleUploadImage();
+    if (formData.image) {
+      if (!validateImageUrl(formData.image)) {
+        setImageError('Please enter a valid URL');
+      } else {
+        setImageError('');
+      }
     }
-  }, [selectedFile]);
+  }, [formData.image]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Validate image URL before submission
+    if (formData.image && !validateImageUrl(formData.image)) {
+      setImageError('Please enter a valid image URL');
+      return;
+    }
+    
     try {
       if (isEditMode) {
         await update(recipe._id, formData, token);
@@ -225,49 +213,45 @@ const AddRecipePage = () => {
                 borderRadius: '4px',
                 backgroundColor: '#f9f9f9'
               }}>
-                <input
-                  accept="image/*"
-                  type="file"
-                  onChange={handleFileChange}
-                  style={{ display: 'none' }}
-                  ref={fileInputRef}
-                  id="recipe-image-upload"
-                />
+                <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'text.primary' }}>
+                  Recipe Image
+                </Typography>
+                
+                <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  <TextField
+                    fullWidth
+                    label="Image URL"
+                    name="image"
+                    value={formData.image}
+                    onChange={handleChange}
+                    required
+                    variant="outlined"
+                    size={isMobile ? "small" : "medium"}
+                    error={!!imageError}
+                    helperText={imageError}
+                    placeholder="https://example.com/your-image.jpg"
+                  />
+                </Box>
                 
                 {formData.image ? (
                   <Box sx={{ 
                     display: 'flex', 
                     flexDirection: 'column', 
                     alignItems: 'center',
-                    width: '100%' 
+                    width: '100%',
+                    mt: 2
                   }}>
                     <img 
                       src={formData.image} 
                       alt="Recipe preview" 
+                      onError={() => setImageError('Invalid image URL or image cannot be loaded')}
                       style={{ 
                         maxWidth: '100%', 
                         maxHeight: '200px', 
                         objectFit: 'contain',
-                        borderRadius: '4px',
-                        marginBottom: '16px'
+                        borderRadius: '4px'
                       }} 
                     />
-                    <Button
-                      variant="outlined"
-                      component="span"
-                      onClick={handleUploadClick}
-                      disabled={uploading}
-                      sx={{
-                        borderColor: '#939185',
-                        color: '#939185',
-                        '&:hover': {
-                          borderColor: '#7a796f',
-                          backgroundColor: 'rgba(122, 121, 111, 0.04)'
-                        }
-                      }}
-                    >
-                      Change Image
-                    </Button>
                   </Box>
                 ) : (
                   <Box sx={{ 
@@ -275,39 +259,14 @@ const AddRecipePage = () => {
                     flexDirection: 'column', 
                     alignItems: 'center',
                     justifyContent: 'center',
-                    minHeight: '150px'
+                    minHeight: '100px'
                   }}>
                     <ImageIcon sx={{ fontSize: 60, color: '#939185', mb: 2 }} />
-                    <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
-                      Upload a recipe image
+                    <Typography variant="body1" color="text.secondary">
+                      Enter an image URL above
                     </Typography>
-                    <Button
-                      variant="contained"
-                      component="span"
-                      onClick={handleUploadClick}
-                      disabled={uploading}
-                      sx={{
-                        backgroundColor: '#939185',
-                        '&:hover': {
-                          backgroundColor: '#7a796f'
-                        }
-                      }}
-                    >
-                      {uploading ? (
-                        <CircularProgress size={24} sx={{ color: 'white' }} />
-                      ) : (
-                        'Upload Image'
-                      )}
-                    </Button>
                   </Box>
                 )}
-                {/* Hidden field to store the image URL value */}
-                <input 
-                  type="hidden" 
-                  name="image" 
-                  value={formData.image} 
-                  required 
-                />
               </Box>
             </Box>
             <TextField
