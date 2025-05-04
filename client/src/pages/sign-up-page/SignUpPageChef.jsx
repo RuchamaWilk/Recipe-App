@@ -7,9 +7,10 @@ import {
   Paper,
   Container,
   Divider,
+  InputAdornment,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { addChefToDb } from '../../services/apiService';
+import { addChefToDb, signIn } from '../../services/apiService';
 import {
   validateUserName,
   validateEmail,
@@ -19,31 +20,42 @@ import {
   validateAboutMe,
 } from '../../utils/validation';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
-import { signIn } from '../../services/apiService';
+import ImageIcon from '@mui/icons-material/Image';
 import { useUser } from '../../providers/UserProvider';
 import TimedAleart from '../../components/timed-aleart/TimedAleart';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import './ChefSignUp.css'; // You'll need to create this CSS file
+import './ChefSignUp.css';
+
+// Validate image URL format
+/*const validateImageUrl = (url) => {
+  if (!url) return 'Image URL is required';
+  const pattern = /^https?:\/\/.*\.(?:png|jpg|jpeg|gif|webp)$/i;
+  return pattern.test(url) ? '' : 'Please enter a valid image URL';
+};*/
 
 const ChefSignUpForm = () => {
+  const { login } = useUser();
+
   const [formData, setFormData] = useState({
     userName: '',
     email: '',
     password: '',
     yearsOfExperience: '',
     phoneNumber: '',
+    profileImage: '',
     aboutMe: ''
   });
-  
+
   const [errors, setErrors] = useState({
     userName: '',
     email: '',
     password: '',
     yearsOfExperience: '',
     phoneNumber: '',
+    profileImage: '',
     aboutMe: ''
   });
-  
+
   const [openSuccess, setOpenSuccess] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -55,16 +67,14 @@ const ChefSignUpForm = () => {
       ...prev,
       [field]: event.target.value
     }));
-    
-    // Clear field error when typing
+
     if (errors[field]) {
       setErrors(prev => ({
         ...prev,
         [field]: ''
       }));
     }
-    
-    // Clear general error message when typing
+
     if (errorMessage) {
       setErrorMessage('');
     }
@@ -77,6 +87,7 @@ const ChefSignUpForm = () => {
       password: validatePassword(formData.password),
       yearsOfExperience: validateYearsOfExperience(formData.yearsOfExperience),
       phoneNumber: validatephoneNumber(formData.phoneNumber),
+      //profileImage: validateImageUrl(formData.profileImage),
       aboutMe: validateAboutMe(formData.aboutMe)
     };
 
@@ -94,25 +105,19 @@ const ChefSignUpForm = () => {
         password: formData.password,
         yearsOfExperience: parseInt(formData.yearsOfExperience, 10),
         phoneNumber: formData.phoneNumber,
+        profileImage: formData.profileImage,
         aboutMe: formData.aboutMe,
         type: 'chef',
       };
-
-      // Add chef to the database
+      console.log(chefData);
       await addChefToDb(chefData);
 
-      // Show success message
       setOpenSuccess(true);
 
-      // Automatically log in the user
       const response = await signIn(formData.email, formData.password);
-      const { user, token } = response;
 
-      // Update user context
-      setUser(user);
-      setToken(token);
+      login(response.token, response.user);
 
-      // Navigate to home page
       setTimeout(() => {
         setOpenSuccess(false);
         navigate('/');
@@ -125,10 +130,7 @@ const ChefSignUpForm = () => {
 
   return (
     <Container maxWidth="md" className="chef-signup-outer-container">
-      <Paper
-        elevation={3}
-        className="chef-signup-paper"
-      >
+      <Paper elevation={3} className="chef-signup-paper">
         <Box className="chef-signup-container">
           <RestaurantIcon className="chef-signup-icon" />
           <Typography variant="h4" className="chef-signup-title">
@@ -151,12 +153,8 @@ const ChefSignUpForm = () => {
               error={!!errors.userName}
               helperText={errors.userName}
               required
-              className="chef-signup-input-field"
-              InputProps={{
-                sx: {
-                  borderRadius: '10px',
-                }
-              }}
+              className="chef-signup-input-field username-field"
+              InputProps={{ sx: { borderRadius: '10px' } }}
             />
             <TextField
               label="Email"
@@ -167,12 +165,8 @@ const ChefSignUpForm = () => {
               error={!!errors.email}
               helperText={errors.email}
               required
-              className="chef-signup-input-field"
-              InputProps={{
-                sx: {
-                  borderRadius: '10px',
-                }
-              }}
+              className="chef-signup-input-field email-field"
+              InputProps={{ sx: { borderRadius: '10px' } }}
             />
           </Box>
 
@@ -186,12 +180,8 @@ const ChefSignUpForm = () => {
             error={!!errors.password}
             helperText={errors.password}
             required
-            className="chef-signup-input-field"
-            InputProps={{
-              sx: {
-                borderRadius: '10px',
-              }
-            }}
+            className="chef-signup-input-field password-field"
+            InputProps={{ sx: { borderRadius: '10px' } }}
           />
 
           <Box className="chef-signup-row">
@@ -205,12 +195,8 @@ const ChefSignUpForm = () => {
               error={!!errors.yearsOfExperience}
               helperText={errors.yearsOfExperience}
               required
-              className="chef-signup-input-field"
-              InputProps={{
-                sx: {
-                  borderRadius: '10px',
-                }
-              }}
+              className="chef-signup-input-field experience-field"
+              InputProps={{ sx: { borderRadius: '10px' } }}
             />
             <TextField
               label="Phone Number"
@@ -221,14 +207,29 @@ const ChefSignUpForm = () => {
               error={!!errors.phoneNumber}
               helperText={errors.phoneNumber}
               required
-              className="chef-signup-input-field"
-              InputProps={{
-                sx: {
-                  borderRadius: '10px',
-                }
-              }}
+              className="chef-signup-input-field phone-field"
+              InputProps={{ sx: { borderRadius: '10px' } }}
             />
           </Box>
+
+          <TextField
+            label="Profile Image URL"
+            variant="outlined"
+            fullWidth
+            value={formData.profileImage}
+            onChange={handleInputChange('profileImage')}
+            error={!!errors.profileImage}
+            helperText={errors.profileImage || "Add a URL to your chef profile image"}
+            className="chef-signup-input-field image-url-field"
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <ImageIcon />
+                </InputAdornment>
+              ),
+              sx: { borderRadius: '10px' }
+            }}
+          />
 
           <TextField
             label="Tell us a bit about yourself"
@@ -241,12 +242,8 @@ const ChefSignUpForm = () => {
             error={!!errors.aboutMe}
             helperText={errors.aboutMe}
             required
-            className="chef-signup-input-field"
-            InputProps={{
-              sx: {
-                borderRadius: '10px',
-              }
-            }}
+            className="chef-signup-input-field about-me-field"
+            InputProps={{ sx: { borderRadius: '10px' } }}
           />
 
           {errorMessage && (
@@ -263,7 +260,7 @@ const ChefSignUpForm = () => {
           >
             Sign Up as Chef
           </Button>
-          
+
           <Button
             variant="outlined"
             onClick={() => navigate('/')}

@@ -82,7 +82,7 @@
   width: 100% !important;
 }
 
-/* Input fields styling */
+/* Input fields styling - base styling */
 .chef-signup-input-field {
   margin-bottom: 8px !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease !important;
@@ -91,6 +91,36 @@
 .chef-signup-input-field:focus-within {
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Field-specific sizing based on importance and content length */
+.username-field {
+  width: 42% !important; /* Important, usually shorter */
+}
+
+.email-field {
+  width: 58% !important; /* Important, usually longer */
+}
+
+.password-field {
+  width: 100% !important; /* Very important, medium length */
+}
+
+.experience-field {
+  width: 35% !important; /* Less important, short content */
+}
+
+.phone-field {
+  width: 65% !important; /* Less important, medium content */
+}
+
+.image-url-field {
+  width: 100% !important; /* Medium importance, longer content */
+  margin-top: 4px !important;
+}
+
+.about-me-field {
+  width: 100% !important; /* Important but lengthy content */
 }
 
 /* Custom styling for input labels */
@@ -107,6 +137,15 @@
 .chef-signup-input-field .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
   border-color: var(--green) !important;
   border-width: 2px !important;
+}
+
+/* Image URL field special styling */
+.image-url-field .MuiInputAdornment-root {
+  color: var(--green) !important;
+}
+
+.image-url-field:focus-within .MuiInputAdornment-root {
+  color: var(--light-pink) !important;
 }
 
 /* Sign Up button styling */
@@ -183,6 +222,14 @@
   .chef-signup-row {
     flex-direction: column !important;
     gap: 16px !important;
+  }
+  
+  /* Reset field widths on mobile */
+  .username-field,
+  .email-field,
+  .experience-field,
+  .phone-field {
+    width: 100% !important;
   }
   
   .chef-signup-paper {

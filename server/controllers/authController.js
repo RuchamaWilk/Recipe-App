@@ -45,9 +45,7 @@ router.post('/signUp', async (req, res, next) => {
 router.post('/signUp/chef', async (req, res, next) => {
 
     try {
-        const { userName, email, password, yearsOfExperience,phoneNumber,aboutMe } = req.body;
-        logger.info(`Calling AddChef with user name: ${userName} email: ${email} and password: ${password}`);
-        const result = await AddChef({ userName, email, password, yearsOfExperience,phoneNumber,aboutMe }); 
+        const result = await AddChef(req.body); 
         logger.info('success with signUp as Chef');
         return res.status(200).send({result: result});
     } catch (err) {

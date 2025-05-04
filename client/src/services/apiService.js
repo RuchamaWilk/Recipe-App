@@ -39,6 +39,7 @@ export const addRecipe = async (recipeData) => {
 export const signIn = async (email, password) => {
   try {
     const response = await axios.post(`${BASE_URL}/auth/signIn`, { email, password });
+    console.log("api", response.data);
     return response.data;
   } catch (error) {
     console.error('Error during sign-in:', error);
@@ -62,6 +63,7 @@ export const addUserToDb = async (userName,email, password) => {
 
 export const addChefToDb = async (chefData) => {
   try {
+    console.log("apiservice", chefData);
       const response = await axios.post(`${BASE_URL}/auth/signUp/chef`,chefData);
       return response.data;
     } catch (error) {

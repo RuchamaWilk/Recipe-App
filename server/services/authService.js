@@ -94,15 +94,18 @@ const AddUser = async ({ userName, email, password }) => {
     }
 };
 
-const AddChef = async ({ userName, email, password, yearsOfExperience,phoneNumber,aboutMe }) => {
+const AddChef = async (chefToAdd) => {
     try {
-        logger.info(`AddChef.  ${email} to DB`);
+        
+        const { userName, email, password, yearsOfExperience,phoneNumber,profileImage,aboutMe }=chefToAdd;
+        logger.info(`service:  ${ userName, email, password, yearsOfExperience,phoneNumber,profileImage,aboutMe }`); 
         const chef = {
             userName: userName,
             emailAddress: email,
             password: password,
             yearsOfExperience: yearsOfExperience,
             phoneNumber: phoneNumber,
+            profileImage: profileImage,
             aboutMe: aboutMe,
             type: "chef"
         };
