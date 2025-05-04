@@ -14,6 +14,15 @@ import { useUser } from '../../providers/UserProvider';
 import './header.css';
 import AlertDialog from '../../components/alert-dialog/AlertDialog';
 
+// New color variables
+const colors = {
+  offwhite: '#F6E6E4',
+  lightPink: '#ffbcb3',
+  pink: '#CA8A8B',
+  green: '#577657',
+  black: '#000000'
+};
+
 function ModernHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [anchorElUser, setAnchorElUser] = useState(null);
@@ -59,7 +68,7 @@ function ModernHeader() {
     <Box sx={{ mt: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Avatar
         sx={{
-          bgcolor: '#939185',
+          bgcolor: colors.pink,
           width: 60,
           height: 60,
           mb: 1
@@ -68,7 +77,7 @@ function ModernHeader() {
       >
         {!user?._doc?.profileImage && user?._doc?.userName?.charAt(0).toUpperCase()}
       </Avatar>
-      <Typography variant="body1" sx={{ fontWeight: 500, color: '#939185' }}>
+      <Typography variant="body1" sx={{ fontWeight: 500, color: colors.green }}>
         {user?._doc?.userName || 'User'}
       </Typography>
     </Box>
@@ -81,8 +90,8 @@ function ModernHeader() {
           sx={{
             justifyContent: 'center',
             py: 3,
-            backgroundColor: '#939185',
-            color: 'white',
+            backgroundColor: colors.green,
+            color: colors.offwhite,
           }}
         >
           <RestaurantIcon sx={{ mr: 1 }} />
@@ -115,14 +124,14 @@ function ModernHeader() {
             sx={{
               py: 1.5,
               '&:hover': {
-                backgroundColor: alpha('#939185', 0.1),
+                backgroundColor: alpha(colors.lightPink, 0.2),
               },
             }}
           >
             <ListItemText
               primary={page.text}
               sx={{
-                color: '#939185',
+                color: colors.green,
                 '& .MuiTypography-root': {
                   fontWeight: 500,
                 },
@@ -141,10 +150,10 @@ function ModernHeader() {
                   handleDrawerToggle();
                 }}
               >
-                <ListItemIcon sx={{ color: '#939185' }}>
+                <ListItemIcon sx={{ color: colors.green }}>
                   <AddCircleIcon />
                 </ListItemIcon>
-                <ListItemText primary="My Recipes" />
+                <ListItemText primary="My Recipes" sx={{ color: colors.green }} />
               </ListItem>
             )}
             <ListItem
@@ -154,10 +163,10 @@ function ModernHeader() {
                 handleDrawerToggle();
               }}
             >
-              <ListItemIcon sx={{ color: '#939185' }}>
+              <ListItemIcon sx={{ color: colors.green }}>
                 <FavoriteIcon />
               </ListItemIcon>
-              <ListItemText primary="My Favorites" />
+              <ListItemText primary="My Favorites" sx={{ color: colors.green }} />
             </ListItem>
             <Divider sx={{ my: 2 }} />
             <ListItem
@@ -169,14 +178,14 @@ function ModernHeader() {
               sx={{
                 py: 1.5,
                 '&:hover': {
-                  backgroundColor: alpha('#939185', 0.1),
+                  backgroundColor: alpha(colors.lightPink, 0.2),
                 },
               }}
             >
-              <ListItemIcon sx={{ color: '#939185' }}>
+              <ListItemIcon sx={{ color: colors.green }}>
                 <LogoutIcon />
               </ListItemIcon>
-              <ListItemText primary="Logout" />
+              <ListItemText primary="Logout" sx={{ color: colors.green }} />
             </ListItem>
           </React.Fragment>
         ) : (
@@ -191,11 +200,11 @@ function ModernHeader() {
               sx={{
                 py: 1.5,
                 '&:hover': {
-                  backgroundColor: alpha('#939185', 0.1),
+                  backgroundColor: alpha(colors.lightPink, 0.2),
                 },
               }}
             >
-              <ListItemText primary="Sign Up" sx={{ color: '#939185' }} />
+              <ListItemText primary="Sign Up" sx={{ color: colors.green }} />
             </ListItem>
             <ListItem
               button
@@ -206,11 +215,11 @@ function ModernHeader() {
               sx={{
                 py: 1.5,
                 '&:hover': {
-                  backgroundColor: alpha('#939185', 0.1),
+                  backgroundColor: alpha(colors.lightPink, 0.2),
                 },
               }}
             >
-              <ListItemText primary="Sign In" sx={{ color: '#939185' }} />
+              <ListItemText primary="Sign In" sx={{ color: colors.green }} />
             </ListItem>
           </React.Fragment>
         )}
@@ -220,9 +229,9 @@ function ModernHeader() {
 
   return (
     <>
-      <AppBar position="fixed" className="appBar">
+      <AppBar position="fixed" sx={{ backgroundColor: colors.offwhite, color: colors.green, boxShadow: '0 2px 6px rgba(0, 0, 0, 0.05)' }}>
         <Container maxWidth="xl">
-          <Toolbar disableGutters className="toolbar">
+          <Toolbar disableGutters sx={{ display: 'flex', minHeight: '70px', alignItems: 'center', justifyContent: 'space-between', padding: '0 16px' }}>
             {/* Mobile layout: Menu on left, Logo in center */}
             {isMobile && (
               <>
@@ -230,10 +239,9 @@ function ModernHeader() {
                 <IconButton
                   size="large"
                   edge="start"
-                  color="inherit"
+                  sx={{ color: colors.green, mr: 2 }}
                   aria-label="menu"
                   onClick={handleDrawerToggle}
-                  sx={{ mr: 2 }}
                 >
                   <MenuIcon />
                 </IconButton>
@@ -241,14 +249,20 @@ function ModernHeader() {
                 {/* Center - Logo */}
                 <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center' }}>
                   <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                    <RestaurantIcon className="restaurantIcon" />
+                    <RestaurantIcon sx={{ color: colors.green, marginRight: '8px', fontSize: '28px' }} />
                     <Typography
                       variant="h6"
                       noWrap
                       component="a"
                       onClick={() => navigate('/')}
-                      className="logo"
-                      sx={{ cursor: 'pointer' }}
+                      sx={{ 
+                        fontWeight: 600,
+                        color: colors.green,
+                        letterSpacing: '1px',
+                        marginRight: '24px',
+                        textDecoration: 'none',
+                        cursor: 'pointer'
+                      }}
                     >
                       GOOD FOOD
                     </Typography>
@@ -265,25 +279,40 @@ function ModernHeader() {
               <>
                 {/* Left side - Logo and navigation */}
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                  <RestaurantIcon className="restaurantIcon" />
+                  <RestaurantIcon sx={{ color: colors.green, marginRight: '8px', fontSize: '28px' }} />
                   <Typography
                     variant="h6"
                     noWrap
                     component="a"
                     onClick={() => navigate('/')}
-                    className="logo"
-                    sx={{ cursor: 'pointer' }}
+                    sx={{ 
+                      fontWeight: 600,
+                      color: colors.green,
+                      letterSpacing: '1px',
+                      marginRight: '24px',
+                      textDecoration: 'none',
+                      cursor: 'pointer'
+                    }}
                   >
                     GOOD FOOD
                   </Typography>
                 
                   {/* Navigation buttons - only visible on desktop */}
-                  <Box className="navLinks" sx={{ display: 'flex', ml: 3 }}>
+                  <Box sx={{ display: 'flex', flexGrow: 1, gap: '12px', ml: 3 }}>
                     {pages.map((page) => (
                       <Button
                         key={page.text}
                         onClick={() => navigate(page.path)}
-                        className="navButton"
+                        sx={{ 
+                          color: colors.green,
+                          textTransform: 'none',
+                          fontWeight: 500,
+                          padding: '8px 12px',
+                          borderRadius: '4px',
+                          '&:hover': {
+                            backgroundColor: alpha(colors.lightPink, 0.2)
+                          }
+                        }}
                       >
                         {page.text}
                       </Button>
@@ -295,7 +324,16 @@ function ModernHeader() {
                           <Button
                             startIcon={<AddCircleIcon />}
                             onClick={() => navigate(`/chef/${user._doc?._id}`)}
-                            className="navButton"
+                            sx={{ 
+                              color: colors.green,
+                              textTransform: 'none',
+                              fontWeight: 500,
+                              padding: '8px 12px',
+                              borderRadius: '4px',
+                              '&:hover': {
+                                backgroundColor: alpha(colors.lightPink, 0.2)
+                              }
+                            }}
                           >
                             My Recipes
                           </Button>
@@ -303,7 +341,16 @@ function ModernHeader() {
                         <Button
                           startIcon={<FavoriteIcon />}
                           onClick={() => navigate(`/favorite/${user._doc?._id}`)}
-                          className="navButton"
+                          sx={{ 
+                            color: colors.green,
+                            textTransform: 'none',
+                            fontWeight: 500,
+                            padding: '8px 12px',
+                            borderRadius: '4px',
+                            '&:hover': {
+                              backgroundColor: alpha(colors.lightPink, 0.2)
+                            }
+                          }}
                         >
                           My Favorites
                         </Button>
@@ -322,7 +369,7 @@ function ModernHeader() {
                       <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                         <Avatar
                           sx={{
-                            bgcolor: '#939185',
+                            bgcolor: colors.pink,
                             width: 40,
                             height: 40,
                           }}
@@ -358,12 +405,16 @@ function ModernHeader() {
                     >
                       <MenuItem
                         onClick={handleLogout}
-                        className="logoutButton"
+                        sx={{
+                          '&:hover': {
+                            backgroundColor: alpha(colors.lightPink, 0.2)
+                          }
+                        }}
                       >
-                        <ListItemIcon className="userMenuIcon">
+                        <ListItemIcon sx={{ color: colors.green, minWidth: '36px' }}>
                           <LogoutIcon />
                         </ListItemIcon>
-                        <Typography>Logout</Typography>
+                        <Typography color={colors.green}>Logout</Typography>
                       </MenuItem>
                     </Menu>
                   </Box>
@@ -373,7 +424,17 @@ function ModernHeader() {
                     <Button
                       variant="contained"
                       onClick={() => setOpenSignUp(true)}
-                      className="signUpButton"
+                      sx={{
+                        backgroundColor: colors.green,
+                        color: colors.offwhite,
+                        textTransform: 'none',
+                        borderRadius: '4px',
+                        padding: '6px 16px',
+                        fontWeight: 500,
+                        '&:hover': {
+                          backgroundColor: alpha(colors.green, 0.8)
+                        }
+                      }}
                     >
                       Sign Up
                     </Button>
@@ -381,7 +442,18 @@ function ModernHeader() {
                     <Button
                       variant="outlined"
                       onClick={() => setOpenSignIn(true)}
-                      className="signInButton"
+                      sx={{
+                        borderColor: colors.green,
+                        color: colors.green,
+                        textTransform: 'none',
+                        borderRadius: '4px',
+                        padding: '6px 16px',
+                        fontWeight: 500,
+                        '&:hover': {
+                          backgroundColor: alpha(colors.lightPink, 0.2),
+                          borderColor: alpha(colors.green, 0.8)
+                        }
+                      }}
                     >
                       Sign In
                     </Button>
@@ -407,6 +479,7 @@ function ModernHeader() {
             boxSizing: 'border-box',
             width: 280,
             boxShadow: '4px 0 8px rgba(0,0,0,0.1)',
+            backgroundColor: colors.offwhite
           },
         }}
       >
