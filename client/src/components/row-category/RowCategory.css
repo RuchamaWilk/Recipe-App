@@ -2,35 +2,63 @@
 @import '../../styles/colorStyle.css';
 
 .row-category-container {
-    width: 100% !important;
-    margin-bottom: 32px !important; /* Add margin bottom between categories */
-    
+  width: 100% !important;
+  margin-bottom: 32px !important; /* Add margin bottom between categories */
+  /* Add a minimum height to accommodate cards */
+  min-height: 250px !important; /* Adjust this value based on your card height */
 }
-  
-  .row-category-header {
-    display: flex !important;
-    justify-content: space-between !important;
-    padding: 0 16px !important;
-    color: var(--green) !important;
-  }
-  
-  .row-category-more-button {
-    color: var(--green) !important;
-    margin-top: 10px !important;
-    font-size: 14px !important;
 
-  }
-  
+.row-category-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 0 16px !important;
+  color: var(--green) !important;
+}
+
+.row-category-more-button {
+  color: var(--green) !important;
+  margin-top: 10px !important;
+  font-size: 14px !important;
+}
+
+.row-category-cards {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important; /* Responsive grid */
+  gap: 16px !important;
+  padding: 0 16px !important;
+  /* Remove overflow hidden to let cards display fully */
+  overflow: visible !important;
+}
+
+/* For larger screens, limit to 4 cards per row */
+@media (min-width: 1280px) {
   .row-category-cards {
-    display: grid !important;
-    grid-template-columns: repeat(4, 320px) !important;
-    gap: 16px !important;
-    flex-wrap: nowrap !important;
-    padding: 0 16px !important;
-    overflow-x: hidden !important;
+    grid-template-columns: repeat(4, 1fr) !important;
   }
-  
-  .row-category-card-item {
-    flex-shrink: 0 !important;
+}
+
+/* For medium screens */
+@media (max-width: 1279px) and (min-width: 768px) {
+  .row-category-cards {
+    grid-template-columns: repeat(3, 1fr) !important;
   }
-  
+}
+
+/* For small screens */
+@media (max-width: 767px) and (min-width: 480px) {
+  .row-category-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 479px) {
+  .row-category-cards {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.row-category-card-item {
+  width: 100% !important;
+  height: 100% !important;
+}
