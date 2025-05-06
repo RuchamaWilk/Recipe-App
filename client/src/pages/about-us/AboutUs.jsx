@@ -209,9 +209,10 @@ const AboutUs = () => {
           variants={staggerContainer}
           sx={{ mt: 8 }}
         >
+          {/* Increased spacing from 3 to 6 to prevent cards from overlapping */}
           <Grid container spacing={3}>
             {featureCards.map((card, index) => (
-              <Grid item xs={12} md={6} lg={4} key={index}>
+              <Grid item xs={12} md={6} lg={4} key={index} sx={{ mb: 4 }}>
                 <MotionCard
                   variants={cardVariants}
                   whileHover={{ 
@@ -228,7 +229,9 @@ const AboutUs = () => {
                     border: '1px solid rgba(255, 255, 255, 0.5)',
                     boxShadow: '0 8px 20px rgba(0, 0, 0, 0.06)',
                     display: 'flex',
-                    flexDirection: 'column'
+                    flexDirection: 'column',
+                    position: 'relative',
+                    zIndex: 1
                   }}
                 >
                   <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
@@ -275,6 +278,7 @@ const AboutUs = () => {
                     <RouterLink to="/chef-sign-up" style={{ textDecoration: 'none' }}>
                       <Button
                         variant="outlined"
+                        fullWidth
                         sx={{
                           borderColor: '#CA8A8B',
                           color: '#CA8A8B',
@@ -282,7 +286,9 @@ const AboutUs = () => {
                           textTransform: 'none',
                           fontSize: '0.95rem',
                           fontWeight: 500,
-                          padding: '8px 16px',
+                          padding: '10px 16px',
+                          height: '44px',
+                          minWidth: '160px',
                           '&:hover': {
                             borderColor: '#CA8A8B',
                             backgroundColor: 'rgba(202, 138, 139, 0.1)'
@@ -297,6 +303,7 @@ const AboutUs = () => {
                   {card.isSignUp && (
                     <Button
                       variant="contained"
+                      fullWidth
                       onClick={handleOpenSignUp}
                       sx={{
                         backgroundColor: '#CA8A8B',
@@ -305,7 +312,9 @@ const AboutUs = () => {
                         textTransform: 'none',
                         fontSize: '0.95rem',
                         fontWeight: 500,
-                        padding: '8px 16px',
+                        padding: '10px 16px',
+                        height: '44px',
+                        minWidth: '160px',
                         boxShadow: '0 4px 10px rgba(202, 138, 139, 0.3)',
                         '&:hover': {
                           backgroundColor: '#b67879'
@@ -382,8 +391,7 @@ const AboutUs = () => {
               zIndex: 1
             }}
           >
-            Cooking is about passion, so it may look slightly temperamental in a way that it's too assertive to the naked eye.
-          </Typography>
+People who love to eat are always the best people          </Typography>
           <Typography
             variant="subtitle1"
             sx={{
@@ -391,7 +399,7 @@ const AboutUs = () => {
               fontWeight: 600
             }}
           >
-            — Gordon Ramsay
+            —  Julia Child
           </Typography>
         </MotionBox>
 
