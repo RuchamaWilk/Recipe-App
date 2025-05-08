@@ -122,7 +122,7 @@ const RecipeAIBox = ({ name, ingredients, instructions }) => {
         }}
       >
         <EmojiObjects sx={{ color: "#E6B9A6" }} />
-        Chef's Quick Tips
+        Our AI Tips!
       </Typography>
 
       {loading ? (

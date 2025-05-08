@@ -6,13 +6,15 @@ import RatingDisplay from './RatingDisplay';
 const CardFooter = ({ recipe }) => {
   return (
     <CardContent className="card-content">
-      <Typography variant="h5" className="recipe-title">
+      <Typography variant="h5" className="recipe-title" sx= {{maxWidth: 320,whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis'}}>
         {recipe.name}
       </Typography>
 
       <Box className="recipe-details">
         <Box className="chef-time-container">
-          <Typography variant="body2" className="chef-name">
+          <Typography variant="body2" className="chef-name" >
             {recipe.chefId.userName}
           </Typography>
           <Typography variant="body2" className="cook-time">

@@ -26,7 +26,7 @@ const OurChefs = () => {
     const getChefs = async () => {
       try {
         const data = await fetchChefs();
-        setChefs(data.filter((chef) => chef.type === 'chef'));
+        setChefs(data);
       } catch (err) {
         console.error('Error fetching chefs:', err);
       } finally {
