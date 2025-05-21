@@ -4,7 +4,13 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { addFavoriteRecipes, removeFavoriteRecipe } from '../../services/apiService';
 import { useUser } from '../../providers/UserProvider';
 
-const FavoriteButton = ({ recipeId, isFavorite, setIsFavorite, onLoginRequired }) => {
+const FavoriteButton = ({ 
+  recipeId, 
+  isFavorite, 
+  setIsFavorite,
+  onLoginRequired 
+}) => {
+  
   const { user, setUser, token } = useUser();
 
   const handleFavoriteClick = async (e) => {

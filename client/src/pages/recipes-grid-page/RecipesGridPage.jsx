@@ -49,7 +49,7 @@ const RecipesGrid = ({ recipes, isChef, title }) => {
               } 
             }}
           >
-            ADDRECIPE
+            ADD RECIPE
           </Button>
         )}
       </Box>
