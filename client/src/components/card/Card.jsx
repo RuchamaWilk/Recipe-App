@@ -31,7 +31,7 @@ const Card = ({ recipe }) => {
       }
     };
     updateFavoriteState();
-  }, [user, recipe._id]);
+  }, [user]);
 
   const showRecipe = () => {
     navigate(`/recipe/${recipe._id}`, { state: { recipe } });
@@ -89,7 +89,6 @@ const Card = ({ recipe }) => {
       />
       
       <CardFooter recipe={recipe} />
-      
       <Box 
         onClick={e => e.stopPropagation()} 
         sx={{ 

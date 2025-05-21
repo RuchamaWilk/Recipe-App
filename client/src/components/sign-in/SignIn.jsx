@@ -1,14 +1,14 @@
-import React, { useState,useRef } from 'react'
-import { signIn } from '../../services/apiService'
+import React from 'react';
 import TextField from '@mui/material/TextField';
 import LoginIcon from '@mui/icons-material/Login';
 import { Button, Dialog } from '@mui/material';
 import { Typography, Box } from '@mui/material';
-import { validateEmail, validatePassword } from '../../utils/validation';
-import { useUser } from '../../providers/UserProvider';
-import { useNavigate } from 'react-router-dom';
+import { useSignIn } from '../../hooks/useSignIn';
 import './SignIn.css';
 
+/**
+ * Form text field component
+ */
 const FormTextField = ({ 
   id, 
   label, 
@@ -45,89 +45,17 @@ const FormTextField = ({
   );
 };
 
+/**
+ * Sign-in dialog component
+ */
 const SignInPage = ({ open = true, onClose }) => {
-  //const emailRef = useRef();
-  const passwordRef = useRef();
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [emailError, setEmailError] = useState('')
-  const [passwordError, setPasswordError] = useState('')
-  const [signInError, setSignInError] = useState('')
-  const { login } = useUser();
-  const navigate = useNavigate();
-
-  const handleKeyDown = (e, fieldId) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      if (fieldId === 'email') {
-        passwordRef.current?.focus();
-      } else if (fieldId === 'password') {
-        onButtonClick(); // מבצע כניסה
-      }
-    }
-  };
-
-  const formFields = [
-    {
-      id: "email",
-      label: "Email",
-      value: email,
-      onChange: (ev) => setEmail(ev.target.value),
-      error: emailError,
-      //inputRef: emailRef,
-      onKeyDown: (e) => handleKeyDown(e, 'email')
-    },
-    {
-      id: "password",
-      label: "Password",
-      value: password,
-      onChange: (ev) => setPassword(ev.target.value),
-      error: passwordError,
-      type: "password",
-      inputRef: passwordRef,
-      onKeyDown: (e) => handleKeyDown(e, 'password')
-    }
-  ];
-
-  const resetText = () => {
-    setEmail('');
-    setPassword('');
-  }
-
-  const resetError = () => {
-    setEmailError('');
-    setPasswordError('');
-    setSignInError('');
-  }
-  
-  const handleClose = () => {
-    resetText();
-    resetError();
-    onClose();
-  }
-  
-  
-
-  const onButtonClick = async() => {
-    resetError();
-    setEmailError(validateEmail(email));
-    setPasswordError(validatePassword(password));
-    if (validatePassword(password) !== '' || validateEmail(email) !== '') {
-      return;
-    }
-
-    try {
-      const response = await signIn(email, password);
-      if (response.token) {
-        login(response.token, response.user);
-        navigate('/');
-        handleClose();
-      }
-    } catch (error) {
-      console.error('Error during login:', error);
-      setSignInError(error.message);
-    }
-  }
+  // Use the sign-in hook for all logic
+  const {
+    signInError,
+    formFields,
+    handleSignIn,
+    handleClose
+  } = useSignIn(onClose);
 
   return (
     <Dialog 
@@ -151,7 +79,7 @@ const SignInPage = ({ open = true, onClose }) => {
         ))}
 
         <Button
-          onClick={onButtonClick}
+          onClick={handleSignIn}
           variant="contained"
           fullWidth
           startIcon={<LoginIcon />}
