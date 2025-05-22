@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from '../pages/home-page/HomePage';
 import Recipe from '../pages/recipe-page/recipePage';
 import RecipeByCategory from '../pages/recipes-by-category-page/RecipeByCategoryPage'
-import AddRecipePage from '../pages/add-recipe-page/AddRecipePage';
+import RecipeForm from '../pages/add-recipe-page/RecipeForm';
 import ErrPage from '../pages/err-page/errPage'
 import SignUpPageChef from '../pages/sign-up-page/SignUpPageChef'
 import ProtectedRoute from './ProtectedRouts';
@@ -22,11 +22,11 @@ function AppRouters() {
       <Route path="/category/:category" element={<RecipeByCategory />} />
       <Route path="/chef-sign-up" element={<SignUpPageChef/>} /> 
       <Route path="*" element={<ErrPage errCode= "400" />} />
-      <Route path="/recipe/edit/:recipeId" element={<AddRecipePage />} />
+      <Route path="/recipe/edit/:recipeId" element={<RecipeForm />} />
       <Route path="/add-recipe" 
         element={
           <ProtectedRoute allowedTypes={['chef']}>
-            <AddRecipePage />
+            <RecipeForm />
           </ProtectedRoute>
         } 
       />
