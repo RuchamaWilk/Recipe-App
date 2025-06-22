@@ -4,7 +4,7 @@
 
 ## 📌 **Project Overview**
 
-**Recipe App** is an interactive platform to **create**, **manage**, and **share recipes** — built with **React**, **Node.js**, and **MongoDB**.
+**Recipe App** is an interactive platform to **create**, **manage**, and **share recipes** - built with **React**, **Node.js**, and **MongoDB**.
 
 ---
 
