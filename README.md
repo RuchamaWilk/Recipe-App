@@ -33,7 +33,7 @@
 ## 📞 **Contact**
 For any questions, suggestions, or feedback - feel free to reach out:
 
-Ruchama Wilk | [Ruchamawilk@gmail.com] 
+Ruchama Wilk | [RuchamaWilk@gmail.com](Ruchamawilk@gmail.com) | [Linkkdin](www.linkedin.com/in/ruchama-wilk)
 
 ---
 
