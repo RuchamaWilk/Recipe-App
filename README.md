@@ -24,11 +24,19 @@
 - **Backend:** Node.js, Express  
 - **Database:** MongoDB  
 - **Authentication:** JWT  
-- **AI Suggestion:** prompt to Gemini
+- **AI Suggestion:** Get intelligent recipe enhancement tips powered by Gemini AI.
+
+
 
 ---
 
 ## 📞 **Contact**
 For any questions, suggestions, or feedback - feel free to reach out:
 
-Ruchama Wilk | [Ruchamawilk@gmail.com]
+Ruchama Wilk | [Ruchamawilk@gmail.com] 
+
+---
+
+## 🎥 **Short clip of the website:**  
+[Watch here on Google Drive](https://drive.google.com/file/d/1qJEw4vMS4_FPNoIpatr8LrFKWLdpvdaR/view?usp=drive_link)
+
