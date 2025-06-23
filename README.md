@@ -12,7 +12,7 @@
 
 ✅ **User registration & authentication**  
 ✅ **Chefs can add, edit, and delete recipes**  
-✅ **Users can browse and save favorite recipes**  
+✅ **Users can browse, rate, and save favorite recipes**  
 ✅ **AI-based suggestions for recipe improvement**  
 ✅ **Clean and responsive UI**
 
